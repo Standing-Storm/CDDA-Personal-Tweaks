@@ -126,7 +126,7 @@
     "type": "ARMOR",
     "copy-from": "boots_survivor",
     "material_thickness": 4,
-    "armor": [ { "encumbrance": 18 "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+    "armor": [ { "encumbrance": 18, "coverage": 100, "cover_vitals": 50, "covers": [ "foot_l", "foot_r" ] } ]
   },
 {
   "id": "boots_xlsurvivor",
