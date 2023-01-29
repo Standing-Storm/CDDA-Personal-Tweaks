@@ -77,7 +77,8 @@
  "id": "duster_survivor",
     "type": "ARMOR",
     "copy-from": "pants-survivor",
-    "material_thickness": 4.5
+    "material_thickness": 4.5,
+    "warmth": 28,
     "armor": [
       { "covers": [ "torso" ], 
        "coverage": 100, 
