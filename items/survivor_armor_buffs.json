@@ -60,12 +60,13 @@
 {
   "id": "boots_xlsurvivor",
     "type": "ARMOR",
+  "copy-from": "boots_survivor",
     "category": "armor",
     "name": { "str": "pair of XL survivor boots", "str_pl": "pairs of XL survivor boots" },
     "description": "A massive pair of customized leather boots armored with Kevlar.  Balancing comfort and protection, these boots will keep you alive even when knee-deep in the dead.",
-   "proportional": { "weight"0.75, "volume": 0.75, "price": 0.5 },
+   "proportional": { "weight": 1.9, "volume": 2, "price": 0.5 },
     "extend": { "flags": [ "OVERSIZE" ] }
-  
+}
 
   
 ]
