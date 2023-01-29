@@ -116,10 +116,17 @@
     ]
   },
   {
+     "id": "gloves_survivor",
+    "type": "ARMOR",
+"copy-from": "gloves_survivor",
+    "armor": [ { "encumbrance": 15, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+
+  },
+  {
       "id": "xl_gloves_survivor",
     "type": "ARMOR",
-    "copy-from": "xl_gloves_survivor",
-    "armor": [ { "encumbrance": 16, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+    "copy-from": "gloves_survivor",
+    "proportional": { "weight": 1.9, "volume": 2, "price": 0.5 }
   },
   {
       "id": "boots_survivor",
