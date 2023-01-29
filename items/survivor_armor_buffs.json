@@ -2,7 +2,7 @@
   {
  "id": "pants_survivor",
     "type": "ARMOR",
-    "copy-from": "pants-survivor",
+    "copy-from": "pants_survivor",
     "armor": [ { "encumbrance": [ 7, 14 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
   },
   {
