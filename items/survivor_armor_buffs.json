@@ -61,15 +61,35 @@
     "copy-from": "pants-survivor",
     "material_thickness": 4,
     "armor": [
-      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 6, 11 ] },
+      { "covers": [ "torso" ], 
+       "coverage": 100, 
+       "encumbrance": [ 6, 11 ],
+      "material": [
+        {
+          "type": "canvas",
+          "covered_by_mat": 100,
+          "thickness": 1.5
+        },
+        {
+          "type": "kevlar",
+          "covered_by_mat": 95,
+          "thickness": 2.5
+        }
+      ],
+       "cover_vitals": 90,
+      },
       {
         "covers": [ "leg_l", "leg_r" ],
         "coverage": 86,
         "encumbrance": [ 3, 4 ],
+        
         "specifically_covers": [ "leg_draped_l", "leg_draped_r" ],
         "layers": [ "BELTED" ]
       },
-            { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 5, 5 ] }
+            { "covers": [ "arm_l", "arm_r" ],
+             "coverage": 100, 
+             "cover_vitals": 90,
+             "encumbrance": [ 5, 5 ] }
       ]
   },
   {
