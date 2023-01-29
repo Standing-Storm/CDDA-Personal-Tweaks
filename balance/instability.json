@@ -10,5 +10,16 @@
     "flags": [ "NO_DISPLAY" ],
     "rate": "30 m",
     "disease_excess": [ [ 1, 899 ], [ 900, 2799 ], [ 2800, 8000 ] ]
+  },
+    {
+    "type": "mutation",
+    "id": "ROBUST",
+    "name": { "str": "Robust Genetics" },
+    "points": 3,
+    "description": "Your genetics have rapidly adapted to the chaos of the Cataclysm, and the genetic damage caused by mutations will fade much quicker.",
+    "starting_trait": true,
+    "cancels": [ "CHAOTIC_BAD" ],
+    "category": [ "FISH", "SLIME", "ALPHA", "MEDICAL", "PLANT" ],
+    "vitamin_rates": [ [ "instability", 1800 ] ]
   }
 ]
