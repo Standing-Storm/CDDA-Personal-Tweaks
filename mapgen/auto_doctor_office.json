@@ -1,4 +1,21 @@
 [
+      {
+    "type": "overmap_terrain",
+    "id": [ "office_doctor", "office_doctor_1", "office_doctor_2" ],
+    "copy-from": "generic_city_building",
+    "looks_like": "office_doctor",
+    "name": "doctor's office",
+    "color": "i_light_red",
+    "extend": { "flags": [ "SOURCE_MEDICINE" ] }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "office_doctor_roof", "office_doctor_roof_1", "office_doctor_roof_2", "office_doctor_upper_roof_2" ],
+    "copy-from": "generic_city_building",
+    "looks_like": "office_doctor_roof",
+    "name": "doctor's office roof",
+    "color": "i_light_red"
+  },
     {
     "type": "mapgen",
     "method": "json",
