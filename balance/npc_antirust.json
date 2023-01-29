@@ -11,7 +11,7 @@
     "MEMORY"
   ],
   "skill_rust_multiplier": 0.01,
-  "starting_trait": true,
+  "starting_trait": false,
   "valid": false,
   "cancels": [
     "FORGETFUL"
