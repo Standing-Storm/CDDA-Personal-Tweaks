@@ -86,12 +86,17 @@
         {
           "type": "canvas",
           "covered_by_mat": 100,
+          "thickness": 1
+        },
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
           "thickness": 1.5
         },
         {
           "type": "kevlar",
           "covered_by_mat": 95,
-          "thickness": 3
+          "thickness": 2.5
         }
       ],
        "cover_vitals": 80,
