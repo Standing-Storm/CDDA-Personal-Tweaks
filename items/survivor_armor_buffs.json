@@ -1,0 +1,71 @@
+[
+  {
+ "id": "pants_survivor",
+    "type": "ARMOR",
+    "copy-from": "pants-survivor",
+    "armor": [ { "encumbrance": [ 7, 14 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+  },
+  {
+ "id": "lpants_survivor",
+    "type": "ARMOR",
+    "copy-from": "lpants-survivor",
+    "armor": [ { "encumbrance": [ 5, 11 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+  },
+  {
+ "id": "duster_survivor",
+    "type": "ARMOR",
+    "copy-from": "pants-survivor",
+    "armor": [
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 6, 11 ] },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 86,
+        "encumbrance": [ 3, 4 ],
+        "specifically_covers": [ "leg_draped_l", "leg_draped_r" ],
+        "layers": [ "BELTED" ]
+      }
+      ]
+  },
+  {
+      "id": "gloves_survivor_fingerless",
+    "type": "ARMOR",
+    "copy-from": "gloves_survivor_fingerless",
+        "armor": [
+      {
+        "encumbrance": 12,
+        "coverage": 100,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_palm_l", "hand_palm_r", "hand_back_l", "hand_back_r" ]
+      },
+      {
+        "encumbrance": 0,
+        "coverage": 50,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ]
+      }
+    ]
+  },
+  {
+      "id": "xl_gloves_survivor",
+    "type": "ARMOR",
+    "copy-from": "xl_gloves_survivor",
+    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+  },
+  {
+      "id": "boots_survivor",
+    "type": "ARMOR",
+    "copy-from": "boots_survivor",
+    "armor": [ { "encumbrance": 18 "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+  },
+{
+  "id": "boots_xlsurvivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "pair of XL survivor boots", "str_pl": "pairs of XL survivor boots" },
+    "description": "A massive pair of customized leather boots armored with Kevlar.  Balancing comfort and protection, these boots will keep you alive even when knee-deep in the dead.",
+   "proportional": { "weight"0.75, "volume": 0.75, "price": 0.5 },
+    "extend": { "flags": [ "OVERSIZE" ] }
+  
+
+  
+]
