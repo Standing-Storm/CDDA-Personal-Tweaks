@@ -3,7 +3,11 @@
  "id": "pants_survivor",
     "type": "ARMOR",
     "copy-from": "pants_survivor",
-    "armor": [ { "encumbrance": [ 6, 12 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ],
+    "armor": [ 
+      { "encumbrance": [ 6, 12 ], 
+       "coverage": 100, 
+       "cover_vitals": 75,
+       "covers": [ "leg_l", "leg_r" ] } ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
