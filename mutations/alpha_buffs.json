@@ -55,7 +55,7 @@
     "type": "mutation",
     "id": "GOODHEARING",
     "copy-from": "GOODHEARING",
-    "extend": { "category": [ "ALPHA" ] " },
+    "extend": { "category": [ "ALPHA" ] },
    "changes-to": "PER_ALPHA"
   },
 {
