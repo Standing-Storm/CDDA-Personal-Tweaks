@@ -112,7 +112,7 @@
     "purifiable": false,
     "types": [ "METABOLISM" ],
 "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 10 ], [ "vitA", 3 ], [ "vitB", 3 ], [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ] ] ],
-  "vitamin_rates": [ [ "vitA", -1200 ], [ "vitB", -1200 ], [ "vitC", -1200 ], ], 
+  "vitamin_rates": [ [ "vitA", -1200 ], [ "vitB", -1200 ], [ "vitC", -1200 ] ], 
   "metabolism_modifier": -0.5,
 "prereqs": [ "MEDICAL_DIGEST" ]
 }
