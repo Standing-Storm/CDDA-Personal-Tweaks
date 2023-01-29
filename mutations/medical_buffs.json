@@ -1,11 +1,11 @@
 [
-{
-    "type": "mutation",
-    "id": "DISIMMUNE",
-    "copy-from": "DISIMMUNE",
-    "extend": { "category": [ "MEDICAL" ] }
-  },
-{
+    {
+      "type": "mutation",
+      "id": "DISIMMUNE",
+      "copy-from": "DISIMMUNE",
+      "extend": { "category": [ "MEDICAL" ] }
+    },
+  {
     "type": "mutation",
     "id": "FASTHEALER2",
     "copy-from": "FASTHEALER2",
@@ -20,20 +20,12 @@
 {
   "type": "mutation",
   "id": "HYPERREGEN",
-  "name": {
-    "str": "Hyper-Regeneration"
-  },
+  "name": { "str": "Hyper-Regeneration" },
   "points": 15,
   "description": "When necessary, you can super-charge your regeneration to heal wounds almost immediately, but it will quickly exhaust you.",
-  "prereqs": [
-    "REGEN"
-  ],
-  "threshreq": [
-    "THRESH_MEDICAL"
-  ],
-  "category": [
-    "MEDICAL"
-  ],
+  "prereqs": [ "REGEN" ],
+  "threshreq": [ "THRESH_MEDICAL" ],
+  "category": [ "MEDICAL" ],
   "active": true,
   "transform": {
     "target": "HYPERREGEN_active",
@@ -45,20 +37,12 @@
 {
   "type": "mutation",
   "id": "HYPERREGEN_active",
-  "name": {
-    "str": "Hyper-Regeneration : on"
-  },
+  "name": { "str": "Hyper-Regeneration : on" },
   "points": 15,
   "description": "Your regeneration is working overtime.",
-  "prereqs": [
-    "REGEN"
-  ],
-  "threshreq": [
-    "THRESH_MEDICAL"
-  ],
-  "category": [
-    "MEDICAL"
-  ],
+  "prereqs": [ "REGEN" ],
+  "threshreq": [ "THRESH_MEDICAL" ],
+  "category": [ "MEDICAL" ],
   "active": true,
   "transform": {
     "target": "HYPERREGEN",
@@ -76,17 +60,11 @@
 {
   "type": "mutation",
   "id": "MEDICAL_DIGEST",
-  "name": {
-    "str": "Optimized Digestion"
-  },
+  "name": { "str": "Optimized Digestion" },
   "points": 6,
   "description": "Your digestive system is perfectly adapted to gain nutrients and calories from your food.  However, this makes you more vulnerable to toxins as well.",
-  "threshreq": [
-    "THRESH_MEDICAL"
-  ],
-  "category": [
-    "MEDICAL"
-  ],
+  "threshreq": [ "THRESH_MEDICAL" ],
+  "category": [ "MEDICAL" ],
   "valid": false,
     "purifiable": false,
    "types": [ "METABOLISM" ],
@@ -97,24 +75,18 @@
 {
   "type": "mutation",
   "id": "MEDICAL_DIGEST2",
-  "name": {
-    "str": "Hyper-Optimized Digestion"
-  },
+  "name": { "str": "Hyper-Optimized Digestion" },
   "points": 10,
   "description": "Your digestive system and metabolism are preternaturally effective, capable of synthesizing some vitamins that ordinary humans must gain through their diet. However, toxins will cause severe damage to you.",
-  "threshreq": [
-    "THRESH_MEDICAL"
-  ],
-  "category": [
-    "MEDICAL"
-  ],
+  "threshreq": [ "THRESH_MEDICAL" ],
+  "category": [ "MEDICAL" ],
     "valid": false,
     "purifiable": false,
     "types": [ "METABOLISM" ],
-"vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 10 ], [ "vitA", 3 ], [ "vitB", 3 ], [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ] ] ],
-  "vitamin_rates": [ [ "vitA", -1200 ], [ "vitB", -1200 ], [ "vitC", -1200 ] ], 
-  "metabolism_modifier": -0.5,
-"prereqs": [ "MEDICAL_DIGEST" ]
+    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 10 ], [ "vitA", 3 ], [ "vitB", 3 ], [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ] ] ],
+    "vitamin_rates": [ [ "vitA", -1200 ], [ "vitB", -1200 ], [ "vitC", -1200 ] ], 
+    "metabolism_modifier": -0.5,
+    "prereqs": [ "MEDICAL_DIGEST" ]
 }
 
 ]
