@@ -164,15 +164,18 @@
     "id": "CLIMATE_ALPHA",
     "name": { "str": "Prime Adaptability" },
     "points": 5,
-    "description": "Humans are one of the only species to live in every climate on earth. From the bone-chilling cold north of the Arctic Circle to the searing heat of the Sahara Desert, humans have built communities. In you this climate tolerance is supreme, allowing you to adapt to a wide range of temperatures.",
+    "description": "Humans are one of the only species to live in every climate on earth. From the bone-chilling cold north of the Arctic Circle to the searing heat of the Sahara Desert, humans have built communities. In you this climate tolerance is supreme, allowing you to adapt to a wide range of temperatures and to comfortably rest anywhere.",
       "valid": false,
     "purifiable": false,
     "category": [ "ALPHA" ],
       "threshreq": [ "THRESH_ALPHA" ],
   "prereqs": [ "RESISTWARM", "RESISTCHILL" ],
-  "enchantments": [ { "condition": "ALWAYS", "values": [ 
-{ "value": "CLIMATE_CONTROL_HEAT", "add": 15 },
-{ "value": "CLIMATE_CONTROL_CHILL", "add": 15 } ] } ]
+    "cancels": [ "INSOMNIA" ],
+    "enchantments": [ { "condition": "ALWAYS", "values": [ 
+        { "value": "CLIMATE_CONTROL_HEAT", "add": 15 },
+        { "value": "CLIMATE_CONTROL_CHILL", "add": 15 },
+        { "value": "SLEEPY", "add": 20 } 
+    ] } ]
 
    }
    ]
