@@ -1,0 +1,64 @@
+[
+  {
+    "type": "mutation",
+    "id": "PER_UP_4",
+    "copy-from": "PER_UP_4",
+    "extend": { "category": [ "ELFA" ], "threshreq": [ "THRESH_ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_2",
+    "copy-from": "INT_UP_2",
+    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+	    "type": "mutation",
+	    "id": "BEAUTIFUL",
+	    "copy-from": "BEAUTIFUL",
+	    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+	    "type": "mutation",
+	    "id": "BEAUTIFUL2",
+	    "copy-from": "BEAUTIFUL2",
+    "extend": { "category": [ "ELFA" ], "threshreq": [ "THRESH_ELFA" ] }
+  },
+  {
+	    "type": "mutation",
+	    "id": "BEAUTIFUL3",
+	    "copy-from": "BEAUTIFUL3",
+	    "category": [ "ELFA" ],
+    "threshreq": [ "THRESH_ELFA" ]
+  },
+  {
+	    "type": "mutation",
+	    "id": "PALE",
+	    "copy-from": "PALE",
+	    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+	    "id": "SUNLIGHT_DEPENDENT",
+	    "copy-from": "SUNLIGHT_DEPENDENT",
+	    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+	    "id": "VEGETARIAN",
+	    "copy-from": "VEGETARIAN",
+	    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+	    "type": "mutation",
+	    "id": "HERBIVORE",
+	    "copy-from": "HERBIVORE",
+	    "extend": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "WAKEFUL2",
+    "copy-from": "WAKEFUL2",
+    "fatigue_regen_modifier": 0.25,
+    "fatigue_modifier": -0.25
+  }
+]
