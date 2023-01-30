@@ -88,7 +88,7 @@
     "copy-from": "STR_ALPHA",
     "description": "Your muscles are perfectly developed, with your back in particular - the source of mankind's bipedalism - being densely packed with powerful muscles made for hard work. The maximum weight you can carry is increased by 50% and your mighty dashes break through any terrain 10% faster.",
     "purifiable": false,
-    "cancels": [ "BADBACK" ],
+    "cancels": [ "BADBACK", "ASTHMA", "GLASSJAW" ],
     "prereqs2": ["STRONGBACK"],
     "movecost_modifier": 0.9,
     "weight_capacity_modifier": 1.50,
@@ -100,6 +100,7 @@
     "copy-from": "DEX_ALPHA",
     "description": "You are perfectly coordinated. The joints within your body are designed to operate at peak agility even when encumbered by gear. All body parts other than your head and mouth receive -5 less encumbrance when wearing any sort of clothing or armor.",
     "purifiable": false,
+    "cancels": [ "BADCARDIO", "CLUMSY", "SLOWRUNNER" ],
     "prereqs": [ "DEX_UP_2" ],
     "encumbrance_covered": [ [ "arm_l", -5 ], [ "arm_r", -5 ], [ "hand_l", -5 ], [ "hand_r", -5 ], [ "torso", -5 ], [ "leg_l", -5 ], [ "leg_r", -5 ], [ "foot_l", -5 ], [ "foot_r", -5 ] ],
     "passive_mods": { "dex_mod": 3 }
