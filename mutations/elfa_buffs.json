@@ -60,5 +60,23 @@
     "copy-from": "WAKEFUL2",
     "fatigue_regen_modifier": 0.25,
     "fatigue_modifier": -0.25
-  }
+  },
+	{
+		"type": "mutation",
+	    "id": "ELFA_EARS",
+	    "copy-from": "ELFA_EARS",
+	    "ugliness": -1
+	},
+	{
+		"type": "mutation",
+	    "id": "LIGHT_BONES",
+	    "copy-from": "LIGHT_BONES",
+	    "points": 0
+	},
+	{
+		"type": "mutation",
+	    "id": "HOLLOW_BONES",
+	    "copy-from": "HOLLOW_BONES",
+	    "points": -2
+	}
 ]
