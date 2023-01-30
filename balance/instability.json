@@ -1,16 +1,4 @@
 [
-  {
-    "id": "instability",
-    "type": "vitamin",
-    "vit_type": "counter",
-    "name": { "str": "Instability" },
-    "excess": "genetics_damaged",
-    "min": 0,
-    "max": 8000,
-    "flags": [ "NO_DISPLAY" ],
-    "rate": "30 m",
-    "disease_excess": [ [ 1, 899 ], [ 900, 2799 ], [ 2800, 8000 ] ]
-  },
     {
     "type": "mutation",
     "id": "ROBUST",
@@ -20,6 +8,6 @@
     "starting_trait": true,
     "cancels": [ "CHAOTIC_BAD" ],
     "category": [ "FISH", "SLIME", "ALPHA", "MEDICAL", "PLANT" ],
-    "vitamin_rates": [ [ "instability", 1800 ] ]
+    "vitamin_rates": [ [ "instability", 900 ] ]
   }
 ]
