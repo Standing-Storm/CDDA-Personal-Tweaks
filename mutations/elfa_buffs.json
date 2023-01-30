@@ -43,12 +43,6 @@
 	    "extend": { "category": [ "ELFA" ] }
   },
   {
-    "type": "mutation",
-	    "id": "VEGETARIAN",
-	    "copy-from": "VEGETARIAN",
-	    "extend": { "category": [ "ELFA" ] }
-  },
-  {
 	    "type": "mutation",
 	    "id": "HERBIVORE",
 	    "copy-from": "HERBIVORE",
