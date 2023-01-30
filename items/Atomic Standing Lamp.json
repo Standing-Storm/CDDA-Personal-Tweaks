@@ -1,0 +1,84 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "standing_atomic_lamp",
+    "name": { "str": "standing atomic lamp" },
+    "description": "It's a standing lamp. It's an atomic lamp. It's a combination standing and atomic lamp. Produces less light than a standing lamp but does not require power.",
+    "weight": "3000 g",
+    "to_hit": -1,
+    "material": [ "plastic", "steel" ],
+    "volume": "2 L",
+    "longest_side": "170 cm",
+    "bashing": 5,
+    "price": 9000,
+    "price_postapoc": 500,
+    "symbol": "L",
+    "color": "white",
+    "looks_like": "atomic_lamp",
+    "flags": [ "ATOMIC_LIGHT"]
+  },
+ {
+    "result": "standing_atomic_lamp",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "reversible": true,
+    "skill_used": "electronics",
+    "difficulty": 1,
+    "time": "10 m",
+    "autolearn": [ [ "electronics", 1 ] ],
+    "category": "CC_APPLIANCE",
+    "subcategory": "CSC_APPLIANCE_LIGHTING",
+    "skills_required": [ [ "fabrication", 1 ] ],
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "cable", 2 ] ],
+      [ [ "atomic_lamp", 1 ] ],
+      [ [ "pipe_fittings", 1 ] ],
+      [ [ "pipe", 2 ] ]
+    ]
+  },
+ {
+    "id": "ap_standing_atomic_lamp",
+    "type": "vehicle_part",
+    "name": { "str": "standing atomic lamp" },
+    "item": "standing_atomic_lamp",
+    "symbol": "*",
+    "broken_symbol": "-",
+    "categories": [ "lighting" ],
+    "color": "blue",
+    "broken_color": "green",
+    "durability": 20,
+    "description": "An atomic device containing an atomic lamp that provides illumination.",
+    "bonus": 40,
+    "damage_modifier": 10,
+    "looks_like": "atomic_lamp",
+    "breaks_into": [
+      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "steel_chunk", "count": [ 0, 2 ] },
+      { "item": "scrap", "count": [ 1, 2 ] }
+    ],
+    "flags": [ "CIRCLE_LIGHT", "ATOMIC_LIGHT", "APPLIANCE" ],
+    "requirements": { "removal": { "time": "6 m" } }
+  },
+{
+    "type": "construction_group",
+    "id": "place_standing_atomic_lamp",
+    "name": "Place Standing Atomic Lamp"
+  },
+ {
+    "type": "construction",
+    "id": "ap_standing_atomic_lamp",
+    "group": "place_standing_atomic_lamp",
+    "category": "APPLIANCE",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "5 s",
+    "components": [ [ [ "standing_atomic_lamp", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_special": "done_appliance",
+    "activity_level": "NO_EXERCISE"
+  }
+
+]
+
+
