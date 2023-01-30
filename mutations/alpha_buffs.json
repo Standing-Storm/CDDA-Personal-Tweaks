@@ -129,7 +129,7 @@
     "prereqs2": [ "GOODHEARING" ],
     "hearing_modifier": 1.50,
     "social_modifiers": { "persuade": 5 },
-  "passive_mods": { "per_mod": 3 },
+  "passive_mods": { "per_mod": 3 }
   },
 {
     "type": "mutation",
