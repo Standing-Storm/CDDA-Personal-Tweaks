@@ -3,7 +3,8 @@
       "type": "mutation",
       "id": "DISIMMUNE",
       "copy-from": "DISIMMUNE",
-      "extend": { "category": [ "MEDICAL" ] }
+      "extend": { "category": [ "MEDICAL" ] },
+      "cancels": [ "ASTHMA" ]
     },
   {
     "type": "mutation",
