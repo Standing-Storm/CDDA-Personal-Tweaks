@@ -8,7 +8,7 @@
       { "encumbrance": [ 6, 12 ], 
        "coverage": 100, 
        "cover_vitals": 75,
-       "covers": [ "leg_l", "leg_r" ] },
+       "covers": [ "leg_l", "leg_r" ],
       "material": [
         {
           "type": "canvas",
@@ -19,6 +19,7 @@
           "type": "kevlar",
           "covered_by_mat": 95,
           "thickness": 3
+        }
         }
       ]
     ],
