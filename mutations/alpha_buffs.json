@@ -68,7 +68,7 @@
     "type": "mutation",
     "id": "VEGETARIAN",
     "copy-from": "VEGETARIAN",
-    "extend": { "category": [ "ALPHA" ] }
+    "extend": { "category": [ "ALPHA", "ELFA" ]  }
   },
 {
     "type": "mutation",
