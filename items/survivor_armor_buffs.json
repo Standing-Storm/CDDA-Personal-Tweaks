@@ -170,7 +170,8 @@
     "type": "ARMOR",
     "copy-from": "gloves_survivor",
     "name": { "str": "pair of XL survivor gloves", "str_pl": "pairs of XL survivor gloves" },
-    "proportional": { "weight": 1.9, "volume": 2, "price": 0.5 }
+    "proportional": { "weight": 1.9, "volume": 2, "price": 0.5 },
+    "extend": { "flags": [ "OVERSIZE" ] }
   },
   {
       "id": "boots_survivor",
