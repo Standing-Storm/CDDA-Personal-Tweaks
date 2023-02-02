@@ -1,7 +1,7 @@
 [
  {
     "type": "furniture",
-    "id": "f_solar_unit2",
+    "id": "f_adv_solar_unit",
     "name": "mounted advanced solar panel",
     "description": "A set of advanced photovoltaic power generators, which turns solar radiation into useable electricity.  While useful before the Cataclysm, they have become priceless tools, invaluable to any survivor.",
     "symbol": "#",
