@@ -174,12 +174,26 @@
     "extend": { "flags": [ "OVERSIZE" ] }
   },
   {
-      "id": "boots_survivor",
+    "id": "boots_survivor",
     "type": "ARMOR",
     "copy-from": "boots_survivor",
     "name": { "str": "pair of survivor boots", "str_pl": "pairs of survivor boots" },
     "material_thickness": 4,
-    "armor": [ { "encumbrance": 18, "coverage": 100, "cover_vitals": 50, "covers": [ "foot_l", "foot_r" ] } ]
+    "armor": [ { "encumbrance": 18, "coverage": 100, "cover_vitals": 50, "covers": [ "foot_l", "foot_r" ] } ],
+    "pocket_data": [
+      {
+        "magazine_well": "350 ml",
+        "holster": true,
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "70 cm",
+        "moves": 20,
+        "flag_restriction": [
+          "SHEATH_KNIFE"
+        ]
+      }
+    ]
+  },
   },
   {
     "id": "boots_xlsurvivor",
