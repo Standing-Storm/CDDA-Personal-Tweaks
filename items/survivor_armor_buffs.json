@@ -192,8 +192,12 @@
           "SHEATH_KNIFE"
         ]
       }
-    ]
-  },
+    ],
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s"
+    }
   },
   {
     "id": "boots_xlsurvivor",
