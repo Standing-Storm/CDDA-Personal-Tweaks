@@ -51,7 +51,7 @@
 		"cost": 1,
 		"time": "2 m",
 		"enchantments": [ "ELFA_POLLEN_ENCH" ],   
-		"transform": { "target": "ELFA_POLLEN", "msg_transform": "The air loses its sweet scent.", "active": true, "moves": 10 }
+		"transform": { "target": "ELFA_POLLEN", "msg_transform": "The air loses its sweet scent.", "active": false, "moves": 10 }
 	}
 			
 ]
