@@ -89,7 +89,7 @@
  {
     "type": "GENERIC",
     "id": "large_cooler",
-    "name": { "str": "air conditioner cooler" },
+    "name": { "str": "air conditioner" },
     "description": "A portable air conditioning unit.",
     "weight": "12500 g",
     "to_hit": -4,
@@ -101,6 +101,11 @@
     "category": "veh_parts",
     "price": 20000,
     "price_postapoc": 1500
+  },
+  {
+    "type": "construction_group",
+    "id": "place_cooler_large",
+    "name": "Place Air Conditioner"
   },
   {
     "id": "emit_cooler_house",
