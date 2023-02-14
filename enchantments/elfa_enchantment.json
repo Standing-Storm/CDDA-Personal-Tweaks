@@ -1,0 +1,48 @@
+[
+  {
+    "type": "enchantment",
+    "id": "ELFA_POLLEN_ENCH",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "intermittent_activation": {
+      "effects": [
+        {
+          "frequency": "2 m",
+          "spell_effects": [
+            { "id": "elfa_pollen_buff" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "elfa_pollen_buff",
+    "type": "SPELL",
+    "name": "Elf Pollen Effect",
+    "description": "The spell to activate the Elf-A pollen. It's a bug if you have it.",
+    "valid_targets": [ "ally" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_AOE", "NO_EXPLOSION_SFX" ],
+    "effect": "attack",
+    "effect_str": "effect_elfa_pollen",
+    "shape": "blast",
+    "difficulty": 1,
+    "min_duration": 1200,
+    "min_aoe": 8,
+    "max_aoe": 12
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_elfa_pollen",
+    "name": [ "Invigorated", "Invigorated", "Greatly Invigorated"  ],
+    "desc": [ "You smell something wonderful and now you feel great." ],
+    "apply_message": "",
+    "remove_message": "The smell vanishes, and with it the sensation of strength.",
+    "rating": "good",
+    "max_intensity": 3,  
+    "removes_effects": [ "venom_weaken" ],
+    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] },
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] }
+    
+  }
+  
+]
