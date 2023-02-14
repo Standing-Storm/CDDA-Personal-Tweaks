@@ -26,7 +26,7 @@
     "effect_str": "effect_elfa_pollen",
     "shape": "blast",
     "difficulty": 1,
-    "min_duration": 1200,
+    "min_duration": 12000,
     "min_aoe": 8,
     "max_aoe": 12
   },
@@ -40,6 +40,7 @@
     "rating": "good",
     "int_add_val": 1,
     "max_intensity": 3,  
+    "show_intensity": false ,
     "removes_effects": [ "venom_weaken" ],
     "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] },
     "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] }
