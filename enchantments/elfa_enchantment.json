@@ -38,6 +38,7 @@
     "apply_message": "",
     "remove_message": "The smell vanishes, and with it the sensation of strength.",
     "rating": "good",
+    "int_add_val": 1,
     "max_intensity": 3,  
     "removes_effects": [ "venom_weaken" ],
     "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] },
