@@ -1,0 +1,50 @@
+[
+  {
+    "type": "item_group",
+    "id": "vault",
+    "subtype": "distribution",
+    "copy-from": "vault",
+    "extend": {
+      "entries": [
+        { "item": "bio_time_freeze", "prob": 1 },
+        { "item": "bio_teleport", "prob": 1 },
+        { "item": "bio_probability_travel", "prob": 1 },
+        { "item": "bio_batteries", "prob": 10 },
+        { "item": "bio_power_storage", "prob": 10 },  
+        { "item": "bio_metabolics", "prob": 5 },
+        { "item": "bio_ethanol", "prob": 5 },
+        { "item": "bio_ups", "prob": 10 },
+        { "item": "bio_torsionratchet", "prob": 10 },
+        { "item": "bio_tools", "prob": 5 },
+        { "item": "bio_flashlight", "prob": 10 },
+        { "item": "bio_lighter", "prob": 10 },
+        { "item": "bio_magnet", "prob": 5 },
+        { "item": "bio_memory", "prob": 8 },
+        { "item": "bio_ears", "prob": 10 },
+        { "item": "bio_eye_optic", "prob": 10 },
+        { "item": "bio_eye_enhancer", "prob": 5 },
+        { "item": "bio_dex_enhancer", "prob": 5 },
+        { "item": "bio_int_enhancer", "prob": 10 },
+        { "item": "bio_night_vision", "prob": 1 },
+        { "item": "bio_infrared", "prob": 2 },
+        { "item": "bio_synaptic_regen", "prob": 5 },
+        { "item": "bio_gills", "prob": 5 },
+        { "item": "bio_climate", "prob": 2 },
+        { "item": "bio_heatsink", "prob": 2 },
+        { "item": "bio_blood_filter", "prob": 10 },
+        { "item": "bio_fingerhack", "prob": 2 },
+        { "item": "bio_lockpick", "prob": 2 },
+        { "item": "bio_surgical_razor", "prob": 8 },
+        { "item": "bio_nanobots", "prob": 5 },
+        { "item": "bio_blood_anal", "prob": 10 },
+        { "item": "bio_geiger", "prob": 5 },
+        { "item": "bio_radscrubber", "prob": 5 },
+        { "item": "bio_watch", "prob": 10 },
+        { "item": "bio_leukocyte", "prob": 15 },
+        { "item": "bio_syringe", "prob": 2 },
+        { "item": "bio_jointservo", "prob": 10 },
+        { "item": "bio_soporific", "prob": 2 }
+      ]
+    }
+  }
+]
