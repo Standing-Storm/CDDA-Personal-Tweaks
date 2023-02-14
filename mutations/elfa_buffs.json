@@ -72,5 +72,11 @@
 	    "id": "HOLLOW_BONES",
 	    "copy-from": "HOLLOW_BONES",
 	    "points": -2
+	},
+	{
+		"type": "mutation",
+		"id": "BIOLUM0",
+		"copy-from": "BIOLUM0",
+		"delete": { "category": [ "ELFA" ] }
 	}
 ]
