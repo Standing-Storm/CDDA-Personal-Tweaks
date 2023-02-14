@@ -35,6 +35,8 @@
     "item": "large_cooler",
     "flags": [ "CTRL_ELECTRONIC", "ENABLED_DRAINS_EPOWER", "APPLIANCE" ],
     "copy-from": "mountable_cooler",
+    "emissions": [ "emit_cooler_house" ],
+    "exhaust": [ ],
     "requirements": { "removal": { "time": "6 m" } }
   },
    {
