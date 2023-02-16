@@ -1,0 +1,37 @@
+[
+ {
+	    "id": "spacebar_side_by_side_2",
+	    "type": "widget",
+	    "style": "layout",
+	    "label": "2_Location Info",
+	    "arrange": "minimum_columns",
+            "width": 48,
+	    "widgets": [ "player_weariness_mood_block2", "overmap_full_width" ]
+	  },
+{
+	    "id": "spacebar_rs_column_2",
+	    "type": "widget",
+	    "style": "layout",
+	    "label": "stacked",
+	    "arrange": "rows",
+	    "widgets": [ "all_location_info_rows_layout", "rad_badge_desc" ]
+	  },
+{
+    "id": "player_weariness_mood_block2",
+    "type": "widget",
+    "style": "layout",
+    "label": "2_weari_mood_block",
+    "arrange": "rows",
+    "width": 28,
+    "widgets": [ "player_weariness_mood_block_tmp2" ]
+  },
+{
+    "id": "player_weariness_mood_block_tmp2",
+    "type": "widget",
+    "style": "layout",
+    "label": "mood/focus/weariness",
+    "arrange": "rows",
+    "width": 28,
+    "widgets": [ "spacebar_mood_focus_activity_layout", "spacebar_all_weariness_layout" ]
+  }
+]
