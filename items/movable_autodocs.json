@@ -52,7 +52,7 @@
     "required_str": 10,
     "deconstruct": {
       "items": [
-        { "item": "autodoc_couch_folded", "count": 11 }
+        { "item": "autodoc_couch_folded", "count": 1 }
       ]
     },
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "ORGANIC", "BLOCKSDOOR", "MOUNTABLE", "AUTODOC_COUCH" ],
@@ -69,12 +69,11 @@
       ]
     }
   },
-     {
-       "type": "GENERIC",
-       "id": "autodoc_folded",
-       "name": "folded autodoc",
-       "symbol": "H",
-       "description": "An autodoc, folded for transport.",
+	{
+		"type": "GENERIC",
+		"id": "autodoc_folded",
+		"name": "folded autodoc",
+		"description": "An autodoc, folded for transport.",
        "flags": [ "NO_SALVAGE" ],
        "symbol": "H",
        "color": "white",
@@ -91,13 +90,12 @@
            "type": "wood"
          }
      ],
-     "to_hit": -4,
+     "to_hit": -4
     },
    {
 	    "type": "GENERIC",
 	    "id": "autodoc_couch_folded",
 	    "name": "folded autodoc couch",
-	    "symbol": "H",
 	    "description": "An autodoc couch, folded for transport.",
 	    "flags": [ "NO_SALVAGE" ],
        "symbol": "H",
@@ -109,17 +107,16 @@
      "weight": "27 kg",
      "material": [
        {
-         "type": "cotton",
-         "portion": 75
-       },
+         "type": "cotton", "portion": 75
+			 },
        {
-         "type": "wood"
+				 "type": "wood"
        }
-     ],
-     "to_hit": -4,
-	  },
-   {
-    "type": "construction_group",
+		 ],
+		 "to_hit": -4
+	 },
+	{
+		"type": "construction_group",
     "id": "place_autodoc",
     "name": "Set Up Folded Autodoc"
   },
@@ -132,7 +129,7 @@
     "type": "construction",
     "id": "const_place_autodoc",
     "group": "place_autodoc",
-    "category": "APPLIANCE",
+    "category": "FURN",
     "required_skills": [ [ "fabrication", 9 ], [ "firstaid", 6 ] ],
     "time": "2 h",
     "components": [ [ [ "autodoc_folded", 1 ] ] ],
@@ -144,7 +141,7 @@
     "type": "construction",
     "id": "const_place_autodoc_couch",
     "group": "place_autodoc_couch",
-    "category": "APPLIANCE",
+    "category": "FURN",
     "required_skills": [ [ "fabrication", 4 ] ],
     "time": "5 m",
     "components": [ [ [ "autodoc_couch_folded", 1 ] ] ],
