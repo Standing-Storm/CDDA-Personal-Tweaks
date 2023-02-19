@@ -105,7 +105,7 @@
     "copy-from": "INT_ALPHA",
     "description": "Your brain's problem-solving skills are extremely well-developed, while your memory is preserved with immense long-term effectiveness. Your skills erode twice as slowly and you remember terrain details for far longer.",
     "purifiable": false,
-    "cancels": [ "FORGETFUL" ],
+    "cancels": [ "FORGETFUL", "SAVANT" ],
     "prereqs": [ "INT_UP_2" ],
     "prereqs2": [ "GOODMEMORY" ],
     "skill_rust_multiplier": 0.50,
