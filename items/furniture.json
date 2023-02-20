@@ -33,11 +33,12 @@
     "id": "ap_cooler_large",
     "name": { "str": "air conditioner" },
     "item": "large_cooler",
+    "//": "Cost based on RP restriction of using only on outer walls (mimicking window units)",
     "flags": [ "CTRL_ELECTRONIC", "ENABLED_DRAINS_EPOWER", "APPLIANCE", "SPACE_HEATER" ],
     "copy-from": "mountable_cooler",
     "emissions": [ "emit_cooler_house" ],
     "exhaust": [ ],
-    "epower": -1500,
+    "epower": -1000,
     "requirements": { "removal": { "time": "6 m" } }
   },
    {
