@@ -1,0 +1,143 @@
+[
+  {
+    "id": "mon_zombie_scientist",
+    "copy-from": "mon_zombie_scientist",
+    "type": "MONSTER",
+    "harvest": "scientist_cbm_drops"
+  },
+  {
+    "id": "mon_zombie_phase_skulker",
+    "copy-from": "mon_zombie_phase_skulker",
+    "type": "MONSTER",
+    "harvest": "scientist_cbm_drops"
+  },
+  {
+    "id": "mon_zombie_phase_shrike",
+    "copy-from": "mon_zombie_phase_shrike",
+    "type": "MONSTER",
+    "harvest": "scientist_cbm_drops"
+  },
+   {
+    "id": "scientist_cbm_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "Scientist_CBM_harvest_utility", "prob": 15 },
+      { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 15 },
+      { "item": "burnt_out_bionic", "prob": 10 },
+      { "item": "burnt_out_bionic", "prob": 10 }
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_power",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "Scientist_CBM_harvest_charging_tools", "prob": 25 },
+      {
+        "distribution": [ { "item": "bio_power_storage", "prob": 90 }, { "item": "bio_power_storage_mkII", "prob": 10 } ],
+        "prob": 50
+      },
+      { "item": "bio_power_storage", "prob": 20 },
+      { "item": "burnt_out_bionic", "prob": 50 }
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_utility",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "bio_alarm", "prob": 20 },
+          { "item": "bio_flashlight", "prob": 30 },
+          { "item": "bio_geiger", "prob": 20 },
+          { "item": "bio_jointservo", "prob": 15 },
+          { "item": "bio_lockpick", "prob": 30 },
+          { "item": "bio_tattoo_led", "prob": 40 },
+          { "item": "burnt_out_bionic", "prob": 30 }
+        ],
+        "prob": 90
+      },
+      {
+        "distribution": [
+          { "item": "bio_tools", "prob": 15 },
+          { "item": "bio_magnet", "prob": 15 },
+          { "item": "bio_soporific", "prob": 20 },
+          { "item": "bio_sunglasses", "prob": 25 },
+          { "item": "bio_syringe", "prob": 10 },
+          { "item": "bio_tattoo_led", "prob": 40 },
+          { "item": "burnt_out_bionic", "prob": 30 }
+        ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 50 },
+          { "group": "Scientist_CBM_harvest_sensors", "prob": 20 },
+          { "group": "Scientist_CBM_harvest_expensive_utilities", "prob": 5 }
+        ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 30 },
+          { "group": "Scientist_CBM_harvest_sensors", "prob": 60 }
+        ],
+        "prob": 20
+      }
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_charging_tools",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "bio_ethanol", "prob": 50 },
+      { "item": "bio_fuel_cell_gasoline", "prob": 50 },
+      { "item": "bio_torsionratchet", "prob": 200 }
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_expensive_utilities",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "bio_climate", 15 ],
+      [ "bio_digestion", 15 ],
+      [ "bio_evap", 15 ],
+      [ "bio_fingerhack", 20 ],
+      [ "bio_gills", 5 ],
+      [ "bio_purifier", 20 ],
+      [ "bio_radscrubber", 30 ],
+      [ "bio_recycler", 20 ],
+      [ "bio_tools", 30 ],
+      [ "bio_taste_blocker", 50 ],
+      [ "bio_water_extractor", 40 ]
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_sensors",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "bio_blood_anal", 30 ],
+      [ "bio_ears", 30 ],
+      [ "bio_eye_optic", 20 ],
+      [ "bio_membrane", 15 ],
+      [ "bio_meteorologist", 10 ],
+      [ "bio_infrared", 8 ]
+    ]
+  },
+  {
+    "id": "Scientist_CBM_harvest_stat_enhancements",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "bio_dex_enhancer", "prob": 30 },
+      { "item": "bio_int_enhancer", "prob": 50 },
+      { "item": "bio_memory", "prob": 40 },
+      { "item": "bio_eye_enhancer", "prob": 30 }
+    ]
+  }
+]
