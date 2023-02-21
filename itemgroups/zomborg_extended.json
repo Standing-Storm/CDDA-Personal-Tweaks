@@ -132,6 +132,7 @@
     "entries": [
       { "item": "bio_ethanol", "prob": 50 },
       { "item": "bio_fuel_cell_gasoline", "prob": 50 },
+      { "item": "cbm_bio_solar", "prob": 30 },
       { "item": "bio_torsionratchet", "prob": 200 }
     ]
   },
