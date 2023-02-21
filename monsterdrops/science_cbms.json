@@ -50,6 +50,7 @@
       {
         "distribution": [
           { "item": "bio_alarm", "prob": 20 },
+          { "item": "cbm_bio_linguistic_coprocessor", "prob": 30 },
           { "item": "bio_flashlight", "prob": 30 },
           { "item": "bio_geiger", "prob": 20 },
           { "item": "bio_jointservo", "prob": 15 },
