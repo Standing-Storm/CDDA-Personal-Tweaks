@@ -17,7 +17,13 @@
     "type": "MONSTER",
     "harvest": "scientist_cbm_drops"
   },
-   {
+  {
+    "id": "mon_feral_scientist_scalpel",
+    "copy-from": "mon_feral_scientist_scalpel",
+    "type": "MONSTER",
+    "harvest": "scientist_cbm_drops"
+  },
+  {
     "id": "scientist_cbm_drops",
     "type": "item_group",
     "subtype": "collection",
