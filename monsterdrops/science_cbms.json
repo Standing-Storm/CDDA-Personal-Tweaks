@@ -33,7 +33,7 @@
 	      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.04 },
 	      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.05 },
         {
-          "drop": "scientist_cbm_drops_list",
+		"drop": "scientist_cbm_drops_list",
 	        "type": "bionic_group",
 	        "flags": [ "NO_STERILE", "NO_PACKED" ],
 	        "faults": [ "fault_bionic_salvaged" ]
@@ -43,8 +43,9 @@
 	        "type": "bionic_group",
 	        "flags": [ "NO_STERILE", "NO_PACKED" ],
 	        "faults": [ "fault_bionic_salvaged" ]
-	      }
-  },
+				}
+			]
+	},
   {
     "id": "scientist_cbm_drops_list",
     "type": "item_group",
