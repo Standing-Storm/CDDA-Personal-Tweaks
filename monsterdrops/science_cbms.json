@@ -25,6 +25,28 @@
   },
   {
     "id": "scientist_cbm_drops",
+	    "type": "harvest",
+	    "message": "You cut into the remains of the undead scientist, searching for anything useful.",
+	    "entries": [
+        { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
+	      { "drop": "blood_tainted", "type": "blood", "mass_ratio": 0.1 },
+	      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.04 },
+	      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.05 },
+        {
+          "drop": "scientist_cbm_drops_list",
+	        "type": "bionic_group",
+	        "flags": [ "NO_STERILE", "NO_PACKED" ],
+	        "faults": [ "fault_bionic_salvaged" ]
+	      },
+        {
+          "drop": "Scientist_CBM_harvest_power",
+	        "type": "bionic_group",
+	        "flags": [ "NO_STERILE", "NO_PACKED" ],
+	        "faults": [ "fault_bionic_salvaged" ]
+	      }
+  },
+  {
+    "id": "scientist_cbm_drops_list",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
