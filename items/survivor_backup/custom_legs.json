@@ -16,52 +16,70 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "1000 ml",
-        "max_contains_weight": "2 kg",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
         "max_item_length": "21 cm",
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "1000 ml",
-        "max_contains_weight": "2 kg",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
         "max_item_length": "21 cm",
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
         "max_item_length": "15 cm",
         "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
         "max_item_length": "15 cm",
         "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "500 ml",
-        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "3 kg",
         "max_item_length": "13 cm",
         "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "500 ml",
-        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "3 kg",
         "max_item_length": "13 cm",
         "moves": 100
+      },
+       {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "1 kg",
+        "moves": 100,
+        "flag_restriction": [ "MAG_COMPACT" ],
+        "volume_encumber_modifier": 0.3
+      },
+       {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "1 kg",
+        "moves": 100,
+        "flag_restriction": [ "MAG_COMPACT" ],
+        "volume_encumber_modifier": 0.3
       }
     ],
     "warmth": 12,
     "material_thickness": 3,
     "environmental_protection": 1,
     "flags": [ "VARSIZE", "WATERPROOF", "POCKETS", "RAINPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": [ 8, 16 ], "coverage": 95, "covers": [ "leg_l", "leg_r" ] } ]
+    "armor": [ { "encumbrance": [ 5, 10 ], "coverage": 95, "covers": [ "leg_l", "leg_r" ] } ]
   },
   {
     "id": "xl_lsurvivor_pants",
@@ -99,67 +117,89 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "1250 ml",
-        "max_contains_weight": "3 kg",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "21 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
         "max_item_length": "21 cm",
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
         "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "15 cm",
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "15 cm",
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 ml",
         "max_contains_weight": "3 kg",
-        "max_item_length": "21 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "15 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "15 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "15 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "800 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "15 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "500 ml",
-        "max_contains_weight": "1 kg",
         "max_item_length": "13 cm",
         "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "500 ml",
-        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "3 kg",
         "max_item_length": "13 cm",
         "moves": 100
+      },
+       {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "1 kg",
+        "moves": 100,
+        "flag_restriction": [ "MAG_COMPACT" ],
+        "volume_encumber_modifier": 0.3
+      },
+       {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "1 kg",
+        "moves": 100,
+        "flag_restriction": [ "MAG_COMPACT" ],
+        "volume_encumber_modifier": 0.3
       }
     ],
     "warmth": 15,
-    "material_thickness": 4,
+    "material_thickness": 4.5,
     "valid_mods": [ "steel_padded" ],
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ],
-    "armor": [ { "encumbrance": [ 10, 20 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+    "armor": [ 
+      { "encumbrance": [ 8, 16 ], 
+       "coverage": 100, 
+       "cover_vitals": 75,
+       "covers": [ "leg_l", "leg_r" ],
+       "material": [
+         {
+           "type": "canvas",
+           "covered_by_mat": 100,
+           "thickness": 1.5
+         },
+         {
+           "type": "kevlar",
+           "covered_by_mat": 95,
+           "thickness": 3
+         }
+       ]
+      }
+    ]
   },
   {
     "id": "xl_pants_survivor",
