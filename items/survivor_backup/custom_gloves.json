@@ -18,7 +18,7 @@
     "material_thickness": 1,
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": 10, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+    "armor": [ { "encumbrance": 6, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
   },
   {
     "id": "xl_gloves_lsurvivor",
@@ -58,7 +58,7 @@
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "ALLOWS_NATURAL_ATTACKS" ],
     "armor": [
       {
-        "encumbrance": 8,
+        "encumbrance": 6,
         "coverage": 100,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_palm_l", "hand_palm_r", "hand_back_l", "hand_back_r" ]
@@ -109,7 +109,7 @@
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "ALLOWS_NATURAL_ATTACKS", "ALLOWS_TALONS" ],
     "armor": [
       {
-        "encumbrance": 16,
+        "encumbrance": 10,
         "coverage": 100,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_palm_l", "hand_palm_r", "hand_back_l", "hand_back_r" ]
@@ -158,28 +158,15 @@
     "material_thickness": 3,
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+    "armor": [ { "encumbrance": 10, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
   },
   {
     "id": "xl_gloves_survivor",
     "type": "ARMOR",
-    "category": "armor",
+    "copy-from": "gloves_survivor",
     "name": { "str": "pair of XL survivor gloves", "str_pl": "pairs of XL survivor gloves" },
-    "description": "A massive pair of customized, Kevlar-armored leather gloves.  These strike a balance between protection and comfort.",
-    "weight": "480 g",
-    "volume": "1500 ml",
-    "price": 18000,
-    "price_postapoc": 1500,
-    "to_hit": 2,
-    "material": [ "kevlar", "leather" ],
-    "symbol": "[",
-    "looks_like": "gloves_survivor",
-    "color": "brown",
-    "warmth": 15,
-    "material_thickness": 2,
-    "environmental_protection": 3,
-    "extend": { "flags": [ "OVERSIZE" ] },
-    "armor": [ { "encumbrance": 30, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+    "proportional": { "weight": 1.9, "volume": 2, "price": 0.5 },
+    "extend": { "flags": [ "OVERSIZE" ] }
   },
   {
     "id": "xs_gloves_survivor",
