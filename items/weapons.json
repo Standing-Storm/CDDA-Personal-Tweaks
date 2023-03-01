@@ -1,0 +1,30 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "hammer_sledge_heavy",
+    "name": { "str": "heavy sledge hammer" },
+    "copy-from": "hammer_sledge_heavy",
+    "extend": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "type": "GENERIC",
+    "id": "hammer_sledge",
+    "name": { "str": "sledge hammer" },
+    "copy-from": "hammer_sledge",
+    "extend": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "type": "GENERIC",
+    "id": "hammer_sledge_short",
+    "name": { "str": "short sledge hammer" },
+    "copy-from": "hammer_sledge_short",
+    "extend": { "flags": [ "DURABLE_MELEE" ] }
+  },
+    {
+    "type": "GENERIC",
+    "id": "hammer_sledge_engineer",
+    "name": { "str": "engineer's hammer" },
+    "copy-from": "hammer_sledge_engineer",
+    "extend": { "flags": [ "DURABLE_MELEE" ] }
+  } 
+]
