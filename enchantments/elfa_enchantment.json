@@ -40,11 +40,10 @@
     "rating": "good",
     "int_add_val": 1,
     "max_intensity": 3,  
+    "max_duration": "12 hours",
     "show_intensity": false ,
     "removes_effects": [ "venom_weaken" ],
     "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] },
     "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] }
-    
   }
-  
 ]
