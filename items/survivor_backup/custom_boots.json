@@ -170,7 +170,25 @@
     "material_thickness": 5,
     "environmental_protection": 5,
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": 38, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+    "armor": [ { "encumbrance": 38, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ],
+     "pocket_data": [
+	      {
+	        "magazine_well": "350 ml",
+	        "holster": true,
+	        "max_contains_volume": "750 ml",
+	        "max_contains_weight": "2 kg",
+	        "max_item_length": "70 cm",
+	        "moves": 35,
+	        "flag_restriction": [
+	          "SHEATH_KNIFE"
+	        ]
+	      }
+	    ],
+	    "use_action": {
+	      "type": "holster",
+	      "holster_prompt": "Sheath knife",
+	      "holster_msg": "You sheath your %s"
+	    }
   },
   {
     "id": "xl_boots_wsurvivor",
@@ -209,6 +227,24 @@
     "material_thickness": 3,
     "environmental_protection": 10,
     "flags": [ "VARSIZE", "WATER_FRIENDLY", "STURDY" ],
-    "armor": [ { "encumbrance": 32, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+    "armor": [ { "encumbrance": 32, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ],
+     "pocket_data": [
+	      {
+	        "magazine_well": "350 ml",
+	        "holster": true,
+	        "max_contains_volume": "750 ml",
+	        "max_contains_weight": "2 kg",
+	        "max_item_length": "70 cm",
+	        "moves": 35,
+	        "flag_restriction": [
+	          "SHEATH_KNIFE"
+	        ]
+	      }
+	    ],
+	    "use_action": {
+	      "type": "holster",
+	      "holster_prompt": "Sheath knife",
+	      "holster_msg": "You sheath your %s"
+	    }
   }
 ]
