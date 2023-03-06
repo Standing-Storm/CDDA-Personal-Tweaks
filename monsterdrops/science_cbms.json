@@ -3,76 +3,78 @@
     "id": "mon_zombie_scientist",
     "copy-from": "mon_zombie_scientist",
     "type": "MONSTER",
-    "harvest": "scientist_cbm_drops"
+    "dissect": "scientist_cbm_drops"
   },
   {
     "id": "mon_zombie_phase_skulker",
     "copy-from": "mon_zombie_phase_skulker",
     "type": "MONSTER",
-    "harvest": "scientist_cbm_drops"
+    "dissect": "scientist_cbm_drops"
   },
   {
     "id": "mon_zombie_phase_shrike",
     "copy-from": "mon_zombie_phase_shrike",
     "type": "MONSTER",
-    "harvest": "scientist_cbm_drops"
+    "dissect": "scientist_cbm_drops"
   },
   {
     "id": "mon_feral_scientist_scalpel",
     "copy-from": "mon_feral_scientist_scalpel",
     "type": "MONSTER",
-    "harvest": "scientist_cbm_drops"
+    "dissect": "scientist_cbm_drops"
   },
   {
-    "id": "scientist_cbm_drops",
-	    "type": "harvest",
-	    "message": "You cut into the remains of the undead scientist, searching for anything useful.",
-	    "entries": [
-        { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
-	      { "drop": "blood_tainted", "type": "blood", "mass_ratio": 0.1 },
-	      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.04 },
-	      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.05 },
-        {
-		"drop": "scientist_cbm_drops_list",
-	        "type": "bionic_group",
-	        "flags": [ "NO_STERILE", "NO_PACKED" ],
-	        "faults": [ "fault_bionic_salvaged" ]
-	      },
-        {
-          "drop": "Scientist_CBM_harvest_power",
-	        "type": "bionic_group",
-	        "flags": [ "NO_STERILE", "NO_PACKED" ],
-	        "faults": [ "fault_bionic_salvaged" ]
-				}
-			]
+		"id": "scientist_cbm_drops",
+		"type": "harvest",
+		"message": "You cut into the remains of the undead scientist, searching for anything useful.",
+		"entries": [
+			{
+				"drop": "scientist_cbm_drops_list",
+				"type": "bionic_group",
+				"flags": [ "NO_STERILE", "NO_PACKED" ],
+				"faults": [ "fault_bionic_salvaged" ],
+				"base_num": [ 0, 2 ],
+				"scale_num": [ 0.1, 0.6 ],
+				"max": 5
+			},
+			{
+				"drop": "scientist_CBM_harvest_power",
+				"type": "bionic_group",
+				"flags": [ "NO_STERILE", "NO_PACKED" ],
+				"faults": [ "fault_bionic_salvaged" ],
+				"base_num": [ 0, 2 ],
+				"scale_num": [ 0.1, 0.6 ],
+				"max": 5
+			}
+		]
 	},
   {
-    "id": "scientist_cbm_drops_list",
-    "type": "item_group",
+		"id": "scientist_cbm_drops_list",
+		"type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "Scientist_CBM_harvest_utility", "prob": 15 },
-      { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 15 },
+      { "group": "scientist_CBM_harvest_utility", "prob": 15 },
+      { "group": "scientist_CBM_harvest_stat_enhancements", "prob": 15 },
       { "item": "burnt_out_bionic", "prob": 10 },
       { "item": "burnt_out_bionic", "prob": 10 }
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_power",
+    "id": "scientist_CBM_harvest_power",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "Scientist_CBM_harvest_charging_tools", "prob": 25 },
+      { "group": "scientist_CBM_harvest_charging_tools", "prob": 25 },
       {
         "distribution": [ { "item": "bio_power_storage", "prob": 90 }, { "item": "bio_power_storage_mkII", "prob": 10 } ],
-        "prob": 50
+        "prob": 30
       },
       { "item": "bio_power_storage", "prob": 20 },
       { "item": "burnt_out_bionic", "prob": 50 }
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_utility",
+    "id": "scientist_CBM_harvest_utility",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
@@ -103,23 +105,23 @@
       },
       {
         "distribution": [
-          { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 50 },
-          { "group": "Scientist_CBM_harvest_sensors", "prob": 20 },
-          { "group": "Scientist_CBM_harvest_expensive_utilities", "prob": 5 }
+          { "group": "scientist_CBM_harvest_stat_enhancements", "prob": 50 },
+          { "group": "scientist_CBM_harvest_sensors", "prob": 20 },
+          { "group": "scientist_CBM_harvest_expensive_utilities", "prob": 5 }
         ],
         "prob": 30
       },
       {
         "distribution": [
-          { "group": "Scientist_CBM_harvest_stat_enhancements", "prob": 30 },
-          { "group": "Scientist_CBM_harvest_sensors", "prob": 60 }
+          { "group": "scientist_CBM_harvest_stat_enhancements", "prob": 30 },
+          { "group": "scientist_CBM_harvest_sensors", "prob": 60 }
         ],
         "prob": 20
       }
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_charging_tools",
+    "id": "scientist_CBM_harvest_charging_tools",
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
@@ -129,7 +131,7 @@
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_expensive_utilities",
+    "id": "scientist_CBM_harvest_expensive_utilities",
     "type": "item_group",
     "subtype": "distribution",
     "items": [
@@ -147,7 +149,7 @@
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_sensors",
+    "id": "scientist_CBM_harvest_sensors",
     "type": "item_group",
     "subtype": "distribution",
     "items": [
@@ -160,7 +162,7 @@
     ]
   },
   {
-    "id": "Scientist_CBM_harvest_stat_enhancements",
+    "id": "scientist_CBM_harvest_stat_enhancements",
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
