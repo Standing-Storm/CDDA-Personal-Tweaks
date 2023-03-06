@@ -303,5 +303,137 @@
     "time": "40 m",
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [ [ [ "xl_gloves_lsurvivor", 1 ] ] ]
+  },
+  {
+    "result": "gloves_survivor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "20 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ], [ "tailoring_leather_small", 6 ], [ "tailoring_kevlar_fabric", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_articulation" }
+    ],
+    "components": [
+      [ [ "duct_tape", 80 ] ],
+      [
+        [ "gloves_leather", 1 ],
+        [ "gloves_light", 1 ],
+        [ "gloves_liner", 1 ],
+        [ "wetsuit_gloves", 1 ],
+        [ "fire_gauntlets", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "xs_gloves_survivor",
+    "type": "recipe",
+    "copy-from": "gloves_survivor",
+    "time": "20 h",
+    "using": [ [ "sewing_standard", 37 ], [ "tailoring_leather_small", 4 ], [ "tailoring_kevlar_fabric", 1 ] ],
+    "components": [
+      [ [ "duct_tape", 60 ] ],
+      [
+        [ "gloves_leather", 1 ],
+        [ "gloves_light", 1 ],
+        [ "gloves_liner", 1 ],
+        [ "wetsuit_gloves", 1 ],
+        [ "fire_gauntlets", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "gloves_wsurvivor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "20 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ], [ "tailoring_fur_small", 4 ], [ "tailoring_kevlar_fabric", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_furriery" },
+      { "proficiency": "prof_articulation" }
+    ],
+    "components": [
+      [ [ "duct_tape", 80 ] ],
+      [
+        [ "gloves_leather", 1 ],
+        [ "gloves_light", 1 ],
+        [ "gloves_liner", 1 ],
+        [ "wetsuit_gloves", 1 ],
+        [ "fire_gauntlets", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "xs_gloves_wsurvivor",
+    "type": "recipe",
+    "copy-from": "gloves_wsurvivor",
+    "time": "20 h",
+    "using": [ [ "sewing_standard", 37 ], [ "tailoring_fur_small", 3 ], [ "tailoring_kevlar_fabric", 1 ] ],
+    "components": [
+      [ [ "duct_tape", 60 ] ],
+      [
+        [ "gloves_leather", 1 ],
+        [ "gloves_light", 1 ],
+        [ "gloves_liner", 1 ],
+        [ "wetsuit_gloves", 1 ],
+        [ "fire_gauntlets", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "xl_gloves_wsurvivor",
+    "type": "recipe",
+    "copy-from": "gloves_wsurvivor",
+    "time": "22 h 30 m",
+    "using": [ [ "sewing_standard", 75 ], [ "tailoring_fur_small", 5 ], [ "tailoring_kevlar_fabric", 2 ] ],
+    "components": [
+      [ [ "duct_tape", 120 ] ],
+      [
+        [ "gloves_leather", 1 ],
+        [ "gloves_light", 1 ],
+        [ "gloves_liner", 1 ],
+        [ "wetsuit_gloves", 1 ],
+        [ "fire_gauntlets", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "xl_gloves_survivor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "22h 30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 100 ], [ "tailoring_leather_small", 16 ], [ "tailoring_kevlar_fabric", 2 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_articulation" }
+    ],
+    "components": [ [ [ "cotton_patchwork", 6 ] ], [ [ "scrap", 2 ] ], [ [ "duct_tape", 160 ] ] ]
   }
 ]
