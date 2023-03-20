@@ -109,8 +109,7 @@
     "prereqs": [ "INT_UP_2" ],
     "prereqs2": [ "GOODMEMORY" ],
     "skill_rust_multiplier": 0.50,
-    "passive_mods": { "int_mod": 3 },
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "MAP_MEMORY", "multiply": 2 } ] } ]
+    "passive_mods": { "int_mod": 3 }
   },
 {
     "type": "mutation",
