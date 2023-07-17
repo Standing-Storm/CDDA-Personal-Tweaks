@@ -43,7 +43,7 @@
     "max_duration": "2 minutes",
     "show_intensity": false ,
     "removes_effects": [ "venom_weaken" ],
-    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] },
-    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5] }
+    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5], "fatigue_min": [ 1 ], "fatigue_chance": [ 30 ], "fatigue_tick": [ 120] },
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5], "fatigue_chance": [ -10 ], "fatigue_tick": [ -50] }
   }
 ]
