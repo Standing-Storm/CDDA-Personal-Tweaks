@@ -1,0 +1,17 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "CDDA_personal_tweaks",
+    "name": "My CDDA personal tweaks",
+    "authors": [ "Standing-Storm" ],
+    "description": "Just a list of changes I like.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SHOW_MUTATION_SELECTOR",
+    "stype": "bool",
+    "value": true
+  }
+]
