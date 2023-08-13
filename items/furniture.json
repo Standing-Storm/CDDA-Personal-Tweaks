@@ -122,5 +122,12 @@
     "intensity": 3,
     "qty": 100,
     "chance": 100
-  }
+  },
+ {
+"type": "vehicle_part",
+  "id": "solar_panel",
+  "copy-from": "solar_panel",
+  "epower": "200 W"
+  
+ }
 ]
