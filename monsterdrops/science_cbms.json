@@ -24,33 +24,33 @@
     "dissect": "scientist_cbm_drops"
   },
   {
-		"id": "scientist_cbm_drops",
-		"type": "harvest",
-		"message": "You cut into the remains of the undead scientist, searching for anything useful.",
-		"entries": [
-			{
-				"drop": "scientist_cbm_drops_list",
-				"type": "bionic_group",
-				"flags": [ "NO_STERILE", "NO_PACKED" ],
-				"faults": [ "fault_bionic_salvaged" ],
-				"base_num": [ 0, 1 ],
-				"scale_num": [ 0.1, 0.6 ],
-				"max": 4
-			},
-			{
-				"drop": "scientist_CBM_harvest_power",
-				"type": "bionic_group",
-				"flags": [ "NO_STERILE", "NO_PACKED" ],
-				"faults": [ "fault_bionic_salvaged" ],
-				"base_num": [ 0, 1 ],
-				"scale_num": [ 0.1, 0.6 ],
-				"max": 4
-			}
-		]
-	},
+    "id": "scientist_cbm_drops",
+    "type": "harvest",
+    "message": "You cut into the remains of the undead scientist, searching for anything useful.",
+    "entries": [
+      {
+        "drop": "scientist_cbm_drops_list",
+        "type": "bionic_group",
+        "flags": [ "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ],
+        "base_num": [ 0, 1 ],
+        "scale_num": [ 0.1, 0.6 ],
+        "max": 4
+      },
+      {
+        "drop": "scientist_CBM_harvest_power",
+        "type": "bionic_group",
+        "flags": [ "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ],
+        "base_num": [ 0, 1 ],
+        "scale_num": [ 0.1, 0.6 ],
+        "max": 4
+      }
+    ]
+  },
   {
-		"id": "scientist_cbm_drops_list",
-		"type": "item_group",
+    "id": "scientist_cbm_drops_list",
+    "type": "item_group",
     "subtype": "collection",
     "entries": [
       { "group": "scientist_CBM_harvest_utility", "prob": 15 },

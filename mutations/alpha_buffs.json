@@ -1,94 +1,82 @@
 [
-{
+  {
     "type": "mutation",
     "id": "PERSISTENCE_HUNTER",
     "copy-from": "PERSISTENCE_HUNTER",
     "extend": { "category": [ "ALPHA" ], "changes-to": [ "HUNTER_ALPHA" ] }
   },
-{
+  {
     "type": "mutation",
     "id": "RESISTWARM",
     "copy-from": "RESISTWARM",
     "extend": { "category": [ "ALPHA" ] },
-   "changes-to": [ "CLIMATE_ALPHA" ]
+    "changes-to": [ "CLIMATE_ALPHA" ]
   },
-{
+  {
     "type": "mutation",
     "id": "RESISTCHILL",
     "copy-from": "RESISTCHILL",
     "extend": { "category": [ "ALPHA" ] },
-   "changes-to": [ "CLIMATE_ALPHA" ]
+    "changes-to": [ "CLIMATE_ALPHA" ]
   },
-{
-    "type": "mutation",
-    "id": "NIGHTVISION",
-    "copy-from": "NIGHTVISION",
-    "extend": { "category": [ "ALPHA" ] }
-  },
-{
-    "type": "mutation",
-    "id": "NIGHTVISION2",
-    "copy-from": "NIGHTVISION2",
-    "extend": { "category": [ "ALPHA" ] }
-  },
-{
+  {
     "type": "mutation",
     "id": "GOODMEMORY",
     "copy-from": "GOODMEMORY",
     "extend": { "category": [ "ALPHA" ] },
-   "changes-to": [ "INT_ALPHA" ]
+    "changes-to": [ "INT_ALPHA" ]
   },
-{
+  {
     "type": "mutation",
     "id": "STRONGBACK",
     "copy-from": "STRONGBACK",
     "extend": { "category": [ "ALPHA" ] },
     "changes-to": "STR_ALPHA"
   },
-{
+  {
     "type": "mutation",
     "id": "GOODHEARING",
     "copy-from": "GOODHEARING",
     "extend": { "category": [ "ALPHA" ] },
-   "changes-to": "PER_ALPHA"
+    "changes-to": "PER_ALPHA"
   },
-{
+  {
     "type": "mutation",
     "id": "LACTOSE",
     "copy-from": "LACTOSE",
     "extend": { "category": [ "ALPHA" ] }
   },
-{
+  {
     "type": "mutation",
     "id": "VEGETARIAN",
     "copy-from": "VEGETARIAN",
-    "extend": { "category": [ "ALPHA", "ELFA" ]  }
+    "extend": { "category": [ "ALPHA", "ELFA" ] }
   },
-{
+  {
     "type": "mutation",
     "id": "MORE_PAIN",
     "copy-from": "MORE_PAIN",
     "extend": { "category": [ "ALPHA" ] }
   },
-{
+  {
     "type": "mutation",
     "id": "ANTIWHEAT",
     "copy-from": "ANTIWHEAT",
     "extend": { "category": [ "ALPHA" ] }
   },
-{
+  {
     "type": "mutation",
     "id": "STR_ALPHA",
     "copy-from": "STR_ALPHA",
     "description": "Your muscles are perfectly developed, with your back in particular - the source of mankind's bipedalism - being densely packed with powerful muscles made for hard work. The maximum weight you can carry is increased by 50% and your mighty dashes break through any terrain 10% faster.",
     "purifiable": false,
     "cancels": [ "BADBACK", "ASTHMA", "GLASSJAW" ],
-    "prereqs2": ["STRONGBACK"],
+    "prereqs2": [ "STRONGBACK" ],
     "movecost_modifier": 0.9,
-    "weight_capacity_modifier": 1.50,
+    "weight_capacity_modifier": 1.5,
     "passive_mods": { "str_mod": 3 }
   },
-{
+  {
     "type": "mutation",
     "id": "DEX_ALPHA",
     "copy-from": "DEX_ALPHA",
@@ -96,7 +84,17 @@
     "purifiable": false,
     "cancels": [ "BADCARDIO", "CLUMSY", "SLOWRUNNER" ],
     "prereqs": [ "DEX_UP_2" ],
-    "encumbrance_covered": [ [ "arm_l", -5 ], [ "arm_r", -5 ], [ "hand_l", -5 ], [ "hand_r", -5 ], [ "torso", -5 ], [ "leg_l", -5 ], [ "leg_r", -5 ], [ "foot_l", -5 ], [ "foot_r", -5 ] ],
+    "encumbrance_covered": [
+      [ "arm_l", -5 ],
+      [ "arm_r", -5 ],
+      [ "hand_l", -5 ],
+      [ "hand_r", -5 ],
+      [ "torso", -5 ],
+      [ "leg_l", -5 ],
+      [ "leg_r", -5 ],
+      [ "foot_l", -5 ],
+      [ "foot_r", -5 ]
+    ],
     "passive_mods": { "dex_mod": 3 }
   },
   {
@@ -108,10 +106,10 @@
     "cancels": [ "FORGETFUL", "SAVANT" ],
     "prereqs": [ "INT_UP_2" ],
     "prereqs2": [ "GOODMEMORY" ],
-    "skill_rust_multiplier": 0.50,
+    "skill_rust_multiplier": 0.5,
     "passive_mods": { "int_mod": 3 }
   },
-{
+  {
     "type": "mutation",
     "id": "PER_ALPHA",
     "copy-from": "PER_ALPHA",
@@ -121,62 +119,83 @@
     "purifiable": false,
     "cancels": [ "MYOPIC", "HYPEROPIC", "COMPOUND_EYES", "ELFAEYES", "FEL_EYE", "URSINE_EYE", "BIRD_EYE", "LIZ_EYE" ],
     "prereqs2": [ "GOODHEARING" ],
-    "hearing_modifier": 1.50,
+    "hearing_modifier": 1.5,
     "social_modifiers": { "persuade": 5 },
-  "passive_mods": { "per_mod": 3 }
+    "passive_mods": { "per_mod": 3 }
   },
-{
+  {
     "type": "mutation",
     "id": "OMNIVORE_ALPHA",
     "name": { "str": "Prime Metabolism" },
     "points": 8,
     "description": "Your metabolism is perfectly adapted to the post-cataclysm natural order. As a true omnivore, you don't feel bad about devouring inferior non-human humanoids, you process the vitamins in your food more efficiently, and you can consume anything other than rotten material or junk food to receive the full nutritional value from it. This includes mutant flesh and river water.",
-    "cancels": [ "ALCMET", "CARNIVORE", "STRICT_HUMANITARIAN", "CANNIBAL", "VEGETARIAN", "HERBIVORE", "SAPROVORE",  "MEATARIAN", "ANTIFRUIT", "ANTIWHEAT", "LACTOSE" ],
+    "cancels": [
+      "ALCMET",
+      "CARNIVORE",
+      "STRICT_HUMANITARIAN",
+      "CANNIBAL",
+      "VEGETARIAN",
+      "HERBIVORE",
+      "SAPROVORE",
+      "MEATARIAN",
+      "ANTIFRUIT",
+      "ANTIWHEAT",
+      "LACTOSE"
+    ],
     "valid": false,
     "purifiable": false,
     "types": [ "METABOLISM" ],
     "threshreq": [ "THRESH_ALPHA" ],
-    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.1 ], [ "vitA", 1.2 ], [ "vitB", 1.2 ], [ "vitC", 1.2 ], [ "calcium", 1.2 ], [ "iron", 1.2 ] ] ] ],
+    "vitamins_absorb_multi": [
+      [
+        "all",
+        [
+          [ "mutant_toxin", 0.1 ],
+          [ "vitA", 1.2 ],
+          [ "vitB", 1.2 ],
+          [ "vitC", 1.2 ],
+          [ "calcium", 1.2 ],
+          [ "iron", 1.2 ]
+        ]
+      ]
+    ],
     "flags": [ "STRICT_HUMANITARIAN" ],
     "category": [ "ALPHA" ]
   },
-{
-  "type": "mutation",
+  {
+    "type": "mutation",
     "id": "HUNTER_ALPHA",
     "name": { "str": "Prime Hunter" },
     "points": 8,
     "description": "Just like your distant ancestors once did, you are capable of pursuing your prey for hours or days without stopping until it simply keels over. Now if only zombies were capable of exhaustion.",
-      "valid": false,
+    "valid": false,
     "purifiable": false,
     "category": [ "ALPHA" ],
-      "threshreq": [ "THRESH_ALPHA" ],
-  "fatigue_modifier": -0.25,
-  "stamina_regen_modifier": 0.25
-   },
-{
-  "type": "mutation",
+    "threshreq": [ "THRESH_ALPHA" ],
+    "fatigue_modifier": -0.25,
+    "stamina_regen_modifier": 0.25
+  },
+  {
+    "type": "mutation",
     "id": "CLIMATE_ALPHA",
     "name": { "str": "Prime Adaptability" },
     "points": 5,
     "description": "Humans are one of the only species to live in every climate on earth. From the bone-chilling cold north of the Arctic Circle to the searing heat of the Sahara Desert, humans have built communities. In you this climate tolerance is supreme, allowing you to adapt to a wide range of temperatures and to comfortably rest anywhere.",
-      "valid": false,
+    "valid": false,
     "purifiable": false,
     "category": [ "ALPHA" ],
-      "threshreq": [ "THRESH_ALPHA" ],
-  "prereqs": [ "RESISTWARM", "RESISTCHILL" ],
+    "threshreq": [ "THRESH_ALPHA" ],
+    "prereqs": [ "RESISTWARM", "RESISTCHILL" ],
     "cancels": [ "INSOMNIA" ],
-    "enchantments": [ { "condition": "ALWAYS", "values": [ 
-        { "value": "CLIMATE_CONTROL_HEAT", "add": 15 },
-        { "value": "CLIMATE_CONTROL_CHILL", "add": 15 },
-        { "value": "SLEEPY", "add": 20 } 
-    ] } ]
-
-   }
-   ]
-
-
-  
-  
-  
-
-  
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "CLIMATE_CONTROL_HEAT", "add": 15 },
+          { "value": "CLIMATE_CONTROL_CHILL", "add": 15 },
+          { "value": "SLEEPY", "add": 20 }
+        ]
+      }
+    ]
+  }
+]

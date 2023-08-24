@@ -23,7 +23,7 @@
       ]
     }
   },
-   {
+  {
     "id": "EOC_PREVENT_DEATH",
     "type": "effect_on_condition",
     "eoc_type": "PREVENT_DEATH",

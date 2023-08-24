@@ -56,7 +56,7 @@
         "max_item_length": "13 cm",
         "moves": 100
       },
-       {
+      {
         "pocket_type": "CONTAINER",
         "max_item_length": "240 mm",
         "max_contains_volume": "300 ml",
@@ -65,7 +65,7 @@
         "flag_restriction": [ "MAG_COMPACT" ],
         "volume_encumber_modifier": 0.3
       },
-       {
+      {
         "pocket_type": "CONTAINER",
         "max_item_length": "240 mm",
         "max_contains_volume": "300 ml",
@@ -157,7 +157,7 @@
         "max_item_length": "13 cm",
         "moves": 100
       },
-       {
+      {
         "pocket_type": "CONTAINER",
         "max_item_length": "240 mm",
         "max_contains_volume": "300 ml",
@@ -166,7 +166,7 @@
         "flag_restriction": [ "MAG_COMPACT" ],
         "volume_encumber_modifier": 0.3
       },
-       {
+      {
         "pocket_type": "CONTAINER",
         "max_item_length": "240 mm",
         "max_contains_volume": "300 ml",
@@ -181,23 +181,16 @@
     "valid_mods": [ "steel_padded" ],
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ],
-    "armor": [ 
-      { "encumbrance": [ 8, 16 ], 
-       "coverage": 100, 
-       "cover_vitals": 75,
-       "covers": [ "leg_l", "leg_r" ],
-       "material": [
-         {
-           "type": "canvas",
-           "covered_by_mat": 100,
-           "thickness": 1.5
-         },
-         {
-           "type": "kevlar",
-           "covered_by_mat": 95,
-           "thickness": 3
-         }
-       ]
+    "armor": [
+      {
+        "encumbrance": [ 8, 16 ],
+        "coverage": 100,
+        "cover_vitals": 75,
+        "covers": [ "leg_l", "leg_r" ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 3 }
+        ]
       }
     ]
   },

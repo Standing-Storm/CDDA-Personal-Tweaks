@@ -1,19 +1,18 @@
 [
- {
-	    "type": "recipe",
-	    "activity_level": "LIGHT_EXERCISE",
-	    "result": "alpha_sample",
-	    "category": "CC_CHEM",
-	    "subcategory": "CSC_CHEM_MUTAGEN",
-	    "skill_used": "chemistry",
-	    "skills_required": [ "survival", 3 ],
-	    "difficulty": 6,
-	    "time": "5 m",
-	    "batch_time_factors": [ 20, 5 ],
-	    "book_learn": [ [ "recipe_alpha", 6 ] ],
-	    "using": [ [ "mutagen_production_standard", 10 ] ],
-	    "components": [ [ [ "purifier", 2 ] ] ],
-	    "flags": [ "SECRET" ]
-	  }
-
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "alpha_sample",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "skills_required": [ "survival", 3 ],
+    "difficulty": 6,
+    "time": "5 m",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_alpha", 6 ] ],
+    "using": [ [ "mutagen_production_standard", 10 ] ],
+    "components": [ [ [ "purifier", 2 ] ] ],
+    "flags": [ "SECRET" ]
+  }
 ]

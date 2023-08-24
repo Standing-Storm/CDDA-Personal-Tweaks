@@ -1,5 +1,5 @@
 [
-      {
+  {
     "type": "overmap_terrain",
     "id": [ "office_doctor", "office_doctor_1", "office_doctor_2" ],
     "copy-from": "generic_city_building",
@@ -16,7 +16,7 @@
     "name": "doctor's office roof",
     "color": "i_light_red"
   },
-        {
+  {
     "type": "city_building",
     "id": "office_doctor_2",
     "locations": [ "land" ],
@@ -26,7 +26,7 @@
       { "point": [ 0, 0, 2 ], "overmap": "office_doctor_upper_roof_2_north" }
     ]
   },
-    {
+  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "office_doctor_2" ],
@@ -231,4 +231,4 @@
       "furniture": { ":": "f_cellphone_booster", "X": "f_small_satelitte_dish" }
     }
   }
-  ]
+]

@@ -4,16 +4,7 @@
     "id": "ELFA_POLLEN_ENCH",
     "condition": "ALWAYS",
     "has": "HELD",
-    "intermittent_activation": {
-      "effects": [
-        {
-          "frequency": "30 seconds",
-          "spell_effects": [
-            { "id": "elfa_pollen_buff" }
-          ]
-        }
-      ]
-    }
+    "intermittent_activation": { "effects": [ { "frequency": "30 seconds", "spell_effects": [ { "id": "elfa_pollen_buff" } ] } ] }
   },
   {
     "id": "elfa_pollen_buff",
@@ -33,17 +24,24 @@
   {
     "type": "effect_type",
     "id": "effect_elfa_pollen",
-    "name": [ "Invigorated", "Invigorated", "Greatly Invigorated"  ],
+    "name": [ "Invigorated", "Invigorated", "Greatly Invigorated" ],
     "desc": [ "You smell something wonderful and now you feel great." ],
     "apply_message": "",
     "remove_message": "The smell vanishes, and with it the sensation of strength.",
     "rating": "good",
     "int_add_val": 1,
-    "max_intensity": 3,  
+    "max_intensity": 3,
     "max_duration": "2 minutes",
-    "show_intensity": false ,
+    "show_intensity": false,
     "removes_effects": [ "venom_weaken" ],
-    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5], "fatigue_min": [ 1 ], "fatigue_chance": [ 30 ], "fatigue_tick": [ 120] },
-    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [5], "fatigue_chance": [ -10 ], "fatigue_tick": [ -50] }
+    "base_mods": {
+      "str_mod": [ 1 ],
+      "dex_mod": [ 1 ],
+      "speed_mod": [ 5 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_chance": [ 30 ],
+      "fatigue_tick": [ 120 ]
+    },
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [ 5 ], "fatigue_chance": [ -10 ], "fatigue_tick": [ -50 ] }
   }
 ]

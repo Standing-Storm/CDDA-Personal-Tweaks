@@ -13,11 +13,7 @@
     "flags": [ "TRANSPARENT", "AUTODOC", "CONTAINER", "NO_PICKUP_ON_EXAMINE" ],
     "examine_action": "autodoc",
     "surgery_skill_multiplier": 1.0,
-    "deconstruct": {
-      "items": [
-        { "item": "autodoc_folded", "count": 1 }
-      ]
-    },
+    "deconstruct": { "items": [ { "item": "autodoc_folded", "count": 1 } ] },
     "bash": {
       "str_min": 8,
       "str_max": 150,
@@ -50,11 +46,7 @@
     "comfort": 4,
     "floor_bedding_warmth": 500,
     "required_str": 10,
-    "deconstruct": {
-      "items": [
-        { "item": "autodoc_couch_folded", "count": 1 }
-      ]
-    },
+    "deconstruct": { "items": [ { "item": "autodoc_couch_folded", "count": 1 } ] },
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "ORGANIC", "BLOCKSDOOR", "MOUNTABLE", "AUTODOC_COUCH" ],
     "bash": {
       "str_min": 10,
@@ -69,58 +61,44 @@
       ]
     }
   },
-	{
-		"type": "GENERIC",
-		"id": "autodoc_folded",
-		"name": "folded autodoc",
-		"description": "An autodoc, folded for transport.",
-       "flags": [ "NO_SALVAGE" ],
-       "symbol": "H",
-       "color": "white",
-       "price": 250000,
-       "price_postapoc": 150000,
-       "longest_side": "250 cm",
-       "volume": "950 L",
-       "weight": "227 kg",
-       "material": [
-         {
-           "type": "cotton", "portion": 75   
-         },
-         {
-           "type": "wood"
-         }
-     ],
-     "to_hit": -4
-    },
-   {
-	    "type": "GENERIC",
-	    "id": "autodoc_couch_folded",
-	    "name": "folded autodoc couch",
-	    "description": "An autodoc couch, folded for transport.",
-	    "flags": [ "NO_SALVAGE" ],
-       "symbol": "H",
-     "color": "white",
-     "price": 25000,
-     "price_postapoc": 15000,
-     "longest_side": "110 cm",
-     "volume": "750 L",
-     "weight": "27 kg",
-     "material": [
-       {
-         "type": "cotton", "portion": 75
-			 },
-       {
-				 "type": "wood"
-       }
-		 ],
-		 "to_hit": -4
-	 },
-	{
-		"type": "construction_group",
+  {
+    "type": "GENERIC",
+    "id": "autodoc_folded",
+    "name": "folded autodoc",
+    "description": "An autodoc, folded for transport.",
+    "flags": [ "NO_SALVAGE" ],
+    "symbol": "H",
+    "color": "white",
+    "price": 250000,
+    "price_postapoc": 150000,
+    "longest_side": "250 cm",
+    "volume": "950 L",
+    "weight": "227 kg",
+    "material": [ { "type": "cotton", "portion": 75 }, { "type": "wood" } ],
+    "to_hit": -4
+  },
+  {
+    "type": "GENERIC",
+    "id": "autodoc_couch_folded",
+    "name": "folded autodoc couch",
+    "description": "An autodoc couch, folded for transport.",
+    "flags": [ "NO_SALVAGE" ],
+    "symbol": "H",
+    "color": "white",
+    "price": 25000,
+    "price_postapoc": 15000,
+    "longest_side": "110 cm",
+    "volume": "750 L",
+    "weight": "27 kg",
+    "material": [ { "type": "cotton", "portion": 75 }, { "type": "wood" } ],
+    "to_hit": -4
+  },
+  {
+    "type": "construction_group",
     "id": "place_autodoc",
     "name": "Set Up Folded Autodoc"
   },
-     {
+  {
     "type": "construction_group",
     "id": "place_autodoc_couch",
     "name": "Set Up Folded Autodoc Couch"
@@ -137,7 +115,7 @@
     "post_special": "f_autodoc",
     "activity_level": "LIGHT_EXERCISE"
   },
-   {
+  {
     "type": "construction",
     "id": "const_place_autodoc_couch",
     "group": "place_autodoc_couch",

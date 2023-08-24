@@ -1,5 +1,5 @@
 [
- {
+  {
     "type": "furniture",
     "id": "f_adv_solar_unit",
     "name": "mounted advanced solar panel",
@@ -28,7 +28,7 @@
       ]
     }
   },
-   {
+  {
     "type": "vehicle_part",
     "id": "ap_cooler_large",
     "name": { "str": "air conditioner" },
@@ -37,29 +37,23 @@
     "flags": [ "CTRL_ELECTRONIC", "ENABLED_DRAINS_EPOWER", "APPLIANCE", "SPACE_HEATER" ],
     "copy-from": "mountable_cooler",
     "emissions": [ "emit_cooler_house" ],
-    "exhaust": [ ],
+    "exhaust": [  ],
     "epower": -500,
     "requirements": { "removal": { "time": "6 m" } }
   },
-   {
+  {
     "type": "construction",
     "id": "ap_cooler_large",
     "group": "place_cooler_large",
     "category": "APPLIANCE",
     "required_skills": [ [ "fabrication", 4 ] ],
     "time": "5 m",
-    "components": [ 
-      [ [ "large_cooler", 1 ] ],
-      [ [ "nail", 20 ] ],
-      [ [ "hose", 2 ] ],
-      [ [ "pipe", 4 ] ],
-      [ [ "2x4", 6 ] ] 
-    ],
+    "components": [ [ [ "large_cooler", 1 ] ], [ [ "nail", 20 ] ], [ [ "hose", 2 ] ], [ [ "pipe", 4 ] ], [ [ "2x4", 6 ] ] ],
     "pre_special": "check_empty",
     "post_special": "done_appliance",
     "activity_level": "LIGHT_EXERCISE"
   },
-   {
+  {
     "type": "recipe",
     "activity_level": "ACTIVE_EXERCISE",
     "result": "large_cooler",
@@ -73,16 +67,14 @@
     "autolearn": false,
     "book_learn": [ [ "textbook_mechanics", 5 ], [ "manual_mechanics", 5 ], [ "textbook_fabrication", 5 ] ],
     "using": [ [ "welding_standard", 20 ] ],
-    "proficiencies": [
-     { "proficiency": "prof_plasticworking", "required": false, "time_multiplier": 1.1, "learning_time_multiplier": 0.1 }
-    ],
+    "proficiencies": [ { "proficiency": "prof_plasticworking", "required": false, "time_multiplier": 1.1, "learning_time_multiplier": 0.1 } ],
     "qualities": [
       { "id": "HAMMER", "level": 2 },
       { "id": "SAW_M", "level": 1 },
       { "id": "SCREW", "level": 1 },
       { "id": "WRENCH", "level": 1 }
     ],
-     "components": [
+    "components": [
       [ [ "sheet_metal", 2 ] ],
       [ [ "condensor_coil", 2 ] ],
       [ [ "evaporator_coil", 2 ] ],
@@ -94,7 +86,7 @@
       [ [ "scrap", 1 ] ]
     ]
   },
- {
+  {
     "type": "GENERIC",
     "id": "large_cooler",
     "name": { "str": "air conditioner" },
@@ -123,11 +115,10 @@
     "qty": 100,
     "chance": 100
   },
- {
-"type": "vehicle_part",
-  "id": "solar_panel",
-  "copy-from": "solar_panel",
-  "epower": "200 W"
-  
- }
+  {
+    "type": "vehicle_part",
+    "id": "solar_panel",
+    "copy-from": "solar_panel",
+    "epower": "200 W"
+  }
 ]

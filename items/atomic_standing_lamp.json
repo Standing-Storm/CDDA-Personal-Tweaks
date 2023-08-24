@@ -15,9 +15,9 @@
     "symbol": "L",
     "color": "white",
     "looks_like": "atomic_lamp",
-    "flags": [ "ATOMIC_LIGHT"]
+    "flags": [ "ATOMIC_LIGHT" ]
   },
- {
+  {
     "result": "standing_atomic_lamp",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -31,14 +31,9 @@
     "skills_required": [ [ "fabrication", 1 ] ],
     "using": [ [ "soldering_standard", 5 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 } ],
-    "components": [
-      [ [ "cable", 2 ] ],
-      [ [ "atomic_lamp", 1 ] ],
-      [ [ "pipe_fittings", 1 ] ],
-      [ [ "pipe", 2 ] ]
-    ]
+    "components": [ [ [ "cable", 2 ] ], [ [ "atomic_lamp", 1 ] ], [ [ "pipe_fittings", 1 ] ], [ [ "pipe", 2 ] ] ]
   },
- {
+  {
     "id": "ap_standing_atomic_lamp",
     "type": "vehicle_part",
     "name": { "str": "standing atomic lamp" },
@@ -61,12 +56,12 @@
     "flags": [ "CIRCLE_LIGHT", "ATOMIC_LIGHT", "APPLIANCE" ],
     "requirements": { "removal": { "time": "6 m" } }
   },
-{
+  {
     "type": "construction_group",
     "id": "place_standing_atomic_lamp",
     "name": "Place Standing Atomic Lamp"
   },
- {
+  {
     "type": "construction",
     "id": "ap_standing_atomic_lamp",
     "group": "place_standing_atomic_lamp",
@@ -78,7 +73,4 @@
     "post_special": "done_appliance",
     "activity_level": "NO_EXERCISE"
   }
-
 ]
-
-

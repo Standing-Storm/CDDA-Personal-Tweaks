@@ -10,7 +10,7 @@
         { "item": "bio_teleport", "prob": 1 },
         { "item": "bio_probability_travel", "prob": 1 },
         { "item": "bio_batteries", "prob": 10 },
-        { "item": "bio_power_storage", "prob": 10 },  
+        { "item": "bio_power_storage", "prob": 10 },
         { "item": "bio_metabolics", "prob": 5 },
         { "item": "bio_ethanol", "prob": 5 },
         { "item": "bio_ups", "prob": 10 },

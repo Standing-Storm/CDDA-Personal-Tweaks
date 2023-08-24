@@ -1,58 +1,61 @@
 [
-	{
-		"id": "MOSS",
-	    "type": "mutation",
-	    "name": { "str": "Mossy" },
-	    "points": 1,
-	    "visibility": 6,
-	    "ugliness": 3,
-	    "bodytemp_modifiers": [ 250, 600 ],
-	    "bodytemp_sleep": 250,
-	    "description": "A deep viridian moss has sprouted in thick, patterned patches over large areas of your body, providing some protection from the cold and the wet. Also protects you against fire.",
-	    "wet_protection": [
-	      { "part": "head", "neutral": 4, "good": 5 },
-	      { "part": "leg_l", "neutral": 8, "good": 15 },
-	      { "part": "leg_r", "neutral": 8, "good": 15 },
-	      { "part": "foot_l", "neutral": 3, "good": 5 },
-	      { "part": "foot_r", "neutral": 3, "good": 5 },
-	      { "part": "arm_l", "neutral": 8, "good": 14 },
-	      { "part": "arm_r", "neutral": 8, "good": 14 },
-	      { "part": "hand_l", "neutral": 3, "good": 4 },
-	      { "part": "hand_r", "neutral": 3, "good": 4 },
-	      { "part": "torso", "neutral": 15, "good": 27 }
-	    ],
-	    "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4} ],
-	    "prereqs": [ "PLANTSKIN" ],
-	    "category": [ "PLANT", "ELFA" ]	
-		
-	},
-	{
-		"id": "ELFA_POLLEN",
-		"type": "mutation",
-		"name": { "str": "Invigorating Pollen" },
-		"description": "You can shed a pollen that humans find refreshing and energizing.  This also changes your scent when active.",
-		"points": 8,
-		"visibility": 0,
-		"ugliness": 0,
-		"active": true,
-		"player_display": true,
-		"threshreq": [ "THRESH_ELFA" ],
-	    "category": [ "ELFA" ],
-		"transform": { "target": "ELFA_POLLEN_ON", "msg_transform": "Your skin itches and the air takes on a sweet scent.", "active": true, "moves": 10 }
-	},
-	{
-		"id": "ELFA_POLLEN_ON",
-		"type": "mutation",
-		"name": { "str": "Invigorating Pollen (active)" },
-		"copy-from": "ELFA_POLLEN",
-		"description": "You are shedding a pollen that humans find refreshing and energizing.  The air smells vaguely floral around you.",
-		"scent_type": "sc_flower",  
-		"scent_intensity": 800,    
-		"fatigue": true, 
-		"cost": 1,
-		"time": "2 m",
-		"enchantments": [ "ELFA_POLLEN_ENCH" ],   
-		"transform": { "target": "ELFA_POLLEN", "msg_transform": "The air loses its sweet scent.", "active": false, "moves": 10 }
-	}
-			
+  {
+    "id": "MOSS",
+    "type": "mutation",
+    "name": { "str": "Mossy" },
+    "points": 1,
+    "visibility": 6,
+    "ugliness": 3,
+    "bodytemp_modifiers": [ 250, 600 ],
+    "bodytemp_sleep": 250,
+    "description": "A deep viridian moss has sprouted in thick, patterned patches over large areas of your body, providing some protection from the cold and the wet. Also protects you against fire.",
+    "wet_protection": [
+      { "part": "head", "neutral": 4, "good": 5 },
+      { "part": "leg_l", "neutral": 8, "good": 15 },
+      { "part": "leg_r", "neutral": 8, "good": 15 },
+      { "part": "foot_l", "neutral": 3, "good": 5 },
+      { "part": "foot_r", "neutral": 3, "good": 5 },
+      { "part": "arm_l", "neutral": 8, "good": 14 },
+      { "part": "arm_r", "neutral": 8, "good": 14 },
+      { "part": "hand_l", "neutral": 3, "good": 4 },
+      { "part": "hand_r", "neutral": 3, "good": 4 },
+      { "part": "torso", "neutral": 15, "good": 27 }
+    ],
+    "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4 } ],
+    "prereqs": [ "PLANTSKIN" ],
+    "category": [ "PLANT", "ELFA" ]
+  },
+  {
+    "id": "ELFA_POLLEN",
+    "type": "mutation",
+    "name": { "str": "Invigorating Pollen" },
+    "description": "You can shed a pollen that humans find refreshing and energizing.  This also changes your scent when active.",
+    "points": 8,
+    "visibility": 0,
+    "ugliness": 0,
+    "active": true,
+    "player_display": true,
+    "threshreq": [ "THRESH_ELFA" ],
+    "category": [ "ELFA" ],
+    "transform": {
+      "target": "ELFA_POLLEN_ON",
+      "msg_transform": "Your skin itches and the air takes on a sweet scent.",
+      "active": true,
+      "moves": 10
+    }
+  },
+  {
+    "id": "ELFA_POLLEN_ON",
+    "type": "mutation",
+    "name": { "str": "Invigorating Pollen (active)" },
+    "copy-from": "ELFA_POLLEN",
+    "description": "You are shedding a pollen that humans find refreshing and energizing.  The air smells vaguely floral around you.",
+    "scent_type": "sc_flower",
+    "scent_intensity": 800,
+    "fatigue": true,
+    "cost": 1,
+    "time": "2 m",
+    "enchantments": [ "ELFA_POLLEN_ENCH" ],
+    "transform": { "target": "ELFA_POLLEN", "msg_transform": "The air loses its sweet scent.", "active": false, "moves": 10 }
+  }
 ]

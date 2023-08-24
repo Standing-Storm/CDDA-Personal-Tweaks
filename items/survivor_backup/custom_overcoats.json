@@ -15,28 +15,17 @@
     "looks_like": "duster_leather",
     "color": "brown",
     "armor": [
-      { "covers": [ "torso" ], 
-       "coverage": 100, 
-       "cover_vitals": 70,
-       "encumbrance": [ 7, 14 ],
-       "material": [
-         {
-           "type": "canvas",
-           "covered_by_mat": 100,
-           "thickness": 1
-         },
-         {
-           "type": "leather",
-           "covered_by_mat": 100,
-           "thickness": 1.5
-         },
-         {
-           "type": "kevlar",
-           "covered_by_mat": 95,
-           "thickness": 2.5
-         }
-       ] 
-      },   
+      {
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "cover_vitals": 70,
+        "encumbrance": [ 7, 14 ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.5 }
+        ]
+      },
       {
         "covers": [ "leg_l", "leg_r" ],
         "coverage": 86,
@@ -44,30 +33,18 @@
         "specifically_covers": [ "leg_draped_l", "leg_draped_r" ],
         "layers": [ "BELTED" ]
       },
-      { 
+      {
         "covers": [ "arm_l", "arm_r" ],
-        "coverage": 100, 
+        "coverage": 100,
         "cover_vitals": 70,
         "encumbrance": [ 7, 7 ],
         "material": [
-          {
-            "type": "canvas",
-            "covered_by_mat": 100,
-            "thickness": 1
-          },
-          {
-          "type": "leather",
-          "covered_by_mat": 100,
-          "thickness": 1
-         },
-         {
-          "type": "kevlar",
-          "covered_by_mat": 95,
-          "thickness": 2.5
-         }
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.5 }
         ]
       }
-   ],
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -152,27 +129,16 @@
     "looks_like": "duster_survivor",
     "color": "brown",
     "armor": [
-      { "covers": [ "torso" ], 
-       "coverage": 100, 
-       "cover_vitals": 70,
-       "encumbrance": [ 7, 14 ],
-       "material": [
-         {
-           "type": "canvas",
-           "covered_by_mat": 100,
-           "thickness": 1
-         },
-         {
-           "type": "leather",
-           "covered_by_mat": 100,
-           "thickness": 1.5
-         },
-         {
-           "type": "kevlar",
-           "covered_by_mat": 95,
-           "thickness": 2.5
-         }
-       ]
+      {
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "cover_vitals": 70,
+        "encumbrance": [ 7, 14 ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.5 }
+        ]
       }
     ],
     "pocket_data": [
