@@ -3,42 +3,42 @@
     "type": "mutation",
     "id": "PERSISTENCE_HUNTER",
     "copy-from": "PERSISTENCE_HUNTER",
-    "extend": { "category": [ "ALPHA" ], "changes-to": [ "HUNTER_ALPHA" ] }
+    "extend": { "category": [ "ALPHA" ], "changes_to": [ "HUNTER_ALPHA" ] }
   },
   {
     "type": "mutation",
     "id": "RESISTWARM",
     "copy-from": "RESISTWARM",
     "extend": { "category": [ "ALPHA" ] },
-    "changes-to": [ "CLIMATE_ALPHA" ]
+    "changes_to": [ "CLIMATE_ALPHA" ]
   },
   {
     "type": "mutation",
     "id": "RESISTCHILL",
     "copy-from": "RESISTCHILL",
     "extend": { "category": [ "ALPHA" ] },
-    "changes-to": [ "CLIMATE_ALPHA" ]
+    "changes_to": [ "CLIMATE_ALPHA" ]
   },
   {
     "type": "mutation",
     "id": "GOODMEMORY",
     "copy-from": "GOODMEMORY",
     "extend": { "category": [ "ALPHA" ] },
-    "changes-to": [ "INT_ALPHA" ]
+    "changes_to": [ "INT_ALPHA" ]
   },
   {
     "type": "mutation",
     "id": "STRONGBACK",
     "copy-from": "STRONGBACK",
     "extend": { "category": [ "ALPHA" ] },
-    "changes-to": "STR_ALPHA"
+    "changes_to": "STR_ALPHA"
   },
   {
     "type": "mutation",
     "id": "GOODHEARING",
     "copy-from": "GOODHEARING",
     "extend": { "category": [ "ALPHA" ] },
-    "changes-to": "PER_ALPHA"
+    "changes_to": "PER_ALPHA"
   },
   {
     "type": "mutation",

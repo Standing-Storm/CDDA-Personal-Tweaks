@@ -3,7 +3,7 @@
     "id": "enviroment_conditions_block",
     "type": "widget",
     "style": "layout",
-    "label": "5_enviroment block",
+    "label": "1_enviroment block",
     "arrange": "minimum_columns",
     "width": 58,
     "widgets": [ "spacebar_separator_2", "enviroment_conditions_block_2" ]
@@ -14,25 +14,34 @@
     "style": "layout",
     "label": "environment block",
     "arrange": "minimum_columns",
-    "width": 56,
-    "widgets": [ "time_layout", "wether_layout" ]
+    "width": 36,
+    "widgets": [ "time_&_weather_layout" ]
   },
   {
-    "id": "time_layout",
+    "id": "time_&_weather_layout",
+    "type": "widget",
+    "label": "time",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "time_&_layout", "&_weather_layout" ]
+  },
+{
+    "id": "time_&_layout",
     "type": "widget",
     "label": "time",
     "style": "layout",
     "arrange": "rows",
-    "width": 28,
+    "width": 26,
     "widgets": [ "date_desc_label", "time_desc_label", "moon_phase_desc" ]
   },
-  {
-    "id": "wether_layout",
+{
+    "id": "&_weather_layout",
     "type": "widget",
-    "label": "weather",
+    "label": "time",
     "style": "layout",
     "arrange": "rows",
-    "width": 28,
+    "width": 26,
     "widgets": [ "weather_desc", "lighting_desc", "env_temp_desc" ]
   }
 ]

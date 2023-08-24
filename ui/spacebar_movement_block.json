@@ -3,10 +3,10 @@
     "id": "player_movement_block",
     "type": "widget",
     "style": "layout",
-    "label": "3_movement block",
+    "label": "4_movement block",
     "arrange": "rows",
     "width": 48,
-    "widgets": [ "stamina_bar_tmp", "spacebar_move_combine_group_tmp", "chonkbar_carry_weight" ]
+    "widgets": [ "stamina_bar_tmp", "spacebar_move_combine_group_tmp" ]
   },
   {
     "id": "stamina_bar_tmp",
@@ -57,24 +57,5 @@
     "width": 28,
     "arrange": "rows",
     "widgets": [ "move_mode_desc", "speed_num", "vehicle_cruise_desc_label" ]
-  },
-{
-    "id": "chonkbar_carry_weight",
-    "type": "widget",
-    "style": "layout",
-    "label": "movement",
-    "arrange": "minimum_columns",
-    "widgets": [ "spacebar_separator_2", "chonkbar_carry_weight_text" ]
-},
-{
-    "id": "chonkbar_carry_weight_text",
-    "type": "widget",
-    "var": "carry_weight",
-    "style": "graph",
-    "label": "Carry Wt",
-    "arrange": "minimum_columns",
-    "symbols": ".\\|",
-    "colors": [ "c_green", "c_light_green", "c_yellow", "c_white_red" ],
-    "width": 36
   }
 ]

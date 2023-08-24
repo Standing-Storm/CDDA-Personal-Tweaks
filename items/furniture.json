@@ -97,7 +97,7 @@
     "symbol": "C",
     "material": [ "steel" ],
     "volume": "7500 ml",
-    "bashing": 12,
+    "melee_damage": { "bash": 12 },
     "category": "veh_parts",
     "price": 20000,
     "price_postapoc": 1500

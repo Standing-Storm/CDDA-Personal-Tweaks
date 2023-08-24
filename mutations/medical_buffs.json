@@ -50,8 +50,7 @@
     "cost": 2,
     "time": "15 s",
     "fatigue": true,
-    "healing_awake": 400,
-    "healing_resting": 600
+    "healing_multiplier": 400
   },
   {
     "type": "mutation",
@@ -66,7 +65,7 @@
     "types": [ "METABOLISM" ],
     "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 2 ], [ "vitA", 2 ], [ "vitB", 2 ], [ "vitC", 2 ], [ "calcium", 2 ], [ "iron", 2 ] ] ] ],
     "metabolism_modifier": -0.66,
-    "changes-to": [ "MEDICAL_DIGEST2" ]
+    "changes_to": [ "MEDICAL_DIGEST2" ]
   },
   {
     "type": "mutation",

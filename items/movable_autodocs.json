@@ -12,7 +12,7 @@
     "required_str": -1,
     "flags": [ "TRANSPARENT", "AUTODOC", "CONTAINER", "NO_PICKUP_ON_EXAMINE" ],
     "examine_action": "autodoc",
-    "surgery_skill_multiplier": 1.0,
+    "surgery_skill_multiplier": 2.0,
     "deconstruct": { "items": [ { "item": "autodoc_folded", "count": 1 } ] },
     "bash": {
       "str_min": 8,
@@ -112,7 +112,7 @@
     "time": "2 h",
     "components": [ [ [ "autodoc_folded", 1 ] ] ],
     "pre_special": "check_empty",
-    "post_special": "f_autodoc",
+    "post_terrain": "f_autodoc",
     "activity_level": "LIGHT_EXERCISE"
   },
   {
@@ -124,7 +124,7 @@
     "time": "5 m",
     "components": [ [ [ "autodoc_couch_folded", 1 ] ] ],
     "pre_special": "check_empty",
-    "post_special": "f_autodoc_couch",
+    "post_terrain": "f_autodoc_couch",
     "activity_level": "LIGHT_EXERCISE"
   }
 ]

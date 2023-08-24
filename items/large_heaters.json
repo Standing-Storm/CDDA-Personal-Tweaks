@@ -2,7 +2,6 @@
   {
     "id": "emit_heater_vehicle",
     "type": "emit",
-    "copy-from": "emit_heater_vehicle",
     "intensity": 3,
     "field": "fd_hot_air2",
     "qty": 150,
