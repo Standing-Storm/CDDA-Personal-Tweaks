@@ -299,7 +299,7 @@
     "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
-    "id": "lsurvivor_armor",
+    "id": "lsurvivor_armor_old",
     "type": "ARMOR",
     "category": "armor",
     "name": { "str": "light survivor body armor" },
@@ -327,24 +327,24 @@
     "armor": [ { "encumbrance": [ 8, 16 ], "coverage": 95, "covers": [ "torso" ] } ]
   },
   {
-    "id": "xl_lsurvivor_armor",
+    "id": "xl_lsurvivor_armor_old",
     "type": "ARMOR",
     "name": { "str": "XL light survivor body armor" },
-    "copy-from": "lsurvivor_armor",
+    "copy-from": "lsurvivor_armor_old",
     "proportional": { "weight": 1.125, "volume": 1.13, "price": 1.25 },
     "extend": { "flags": [ "OVERSIZE" ] }
   },
   {
-    "id": "xs_lsurvivor_armor",
+    "id": "xs_lsurvivor_armor_old",
     "type": "ARMOR",
-    "copy-from": "lsurvivor_armor",
-    "looks_like": "lsurvivor_armor",
+    "copy-from": "lsurvivor_armor_old",
+    "looks_like": "lsurvivor_armor_old",
     "name": { "str": "XS light survivor body armor" },
     "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
     "extend": { "flags": [ "UNDERSIZE" ] }
   },
   {
-    "id": "lsurvivor_suit",
+    "id": "lsurvivor_suit_old",
     "type": "ARMOR",
     "category": "armor",
     "name": { "str": "light survivor suit" },

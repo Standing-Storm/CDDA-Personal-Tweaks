@@ -1,8 +1,9 @@
 [
   {
-    "id": "UPS_wearable_off",
+    "id": "UPS_wearable",
     "type": "ARMOR",
     "name": { "str": "Wearable UPS", "str_pl": "Wearable UPSes" },
+    "copy-from": "UPS_ON",
     "description": "This is a backpack containing a universal power supply, or UPS.  It is a device developed jointly by military and scientific interests for use in combat and the field.  The UPS is designed to power bionics, armor and some guns, but drains batteries quickly.  It can hold larger batteries than a standard UPS but is bulky and heavy.",
     "weight": "680 g",
     "volume": "2500 ml",
@@ -10,11 +11,9 @@
     "price_postapoc": 1500,
     "to_hit": -1,
     "melee_damage": { "bash": 8 },
-    "material": [ "aluminum", "plastic" ],
     "symbol": ";",
     "color": "light_gray",
-    "ammo": [ "battery" ],
-    "flags": [ "IS_UPS", "BELTED" ],
+    "extend": { "flags": [ "BELTED" ] },
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",

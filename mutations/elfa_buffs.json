@@ -59,5 +59,29 @@
     "id": "BIOLUM0",
     "copy-from": "BIOLUM0",
     "delete": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BIOLUM1",
+    "copy-from": "BIOLUM1",
+    "delete": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BIOLUM1_active",
+    "copy-from": "BIOLUM1_active",
+    "delete": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BIOLUM2",
+    "copy-from": "BIOLUM2",
+    "delete": { "category": [ "ELFA" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BIOLUM2_active",
+    "copy-from": "BIOLUM2_active",
+    "delete": { "category": [ "ELFA" ] }
   }
 ]

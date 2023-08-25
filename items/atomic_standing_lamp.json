@@ -40,6 +40,7 @@
     "item": "standing_atomic_lamp",
     "categories": [ "lighting" ],
     "color": "blue",
+    "variants": [ { "symbols": "*", "symbols_broken": "-" } ],
     "broken_color": "green",
     "durability": 20,
     "description": "An atomic device containing an atomic lamp that provides illumination.",
