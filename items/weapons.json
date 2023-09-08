@@ -26,5 +26,13 @@
     "name": { "str": "engineer's hammer" },
     "copy-from": "hammer_sledge_engineer",
     "extend": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "type": "GUN",
+    "id": "rm103a_pistol",
+    "name": { "str": "RM103A automagnum" },
+    "copy-from": "rm103a_pistol",
+    "description": "Considered overkill by many, the Rivtech RM103A remains one of the most powerful sidearms ever developed.  Accepts stick magazines.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 5 }
   }
 ]
