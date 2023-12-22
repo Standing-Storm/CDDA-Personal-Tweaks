@@ -1,0 +1,29 @@
+[
+  {
+    "type": "mutation",
+    "id": "perk_BACKUP",
+    "name": { "str": "Backup" },
+    "points": 0,
+    "description": "We call this a tactical retreat.\n\nYou gain +50 movement speed for few moments after successfully dealing ballistic damage.",
+    "category": [ "perk" ],
+    "enchantments": [ "perk_ench_backup" ],
+    "purifiable": false,
+    "valid": false
+  },
+   {
+    "type": "effect_type",
+    "id": "effect_perk_backup",
+    "rating": "good",
+    "int_dur_factor": "1 s",
+    "max_duration": "2 s",
+    "show_in_info": false
+  },
+  {
+    "type": "enchantment",
+    "id": "perk_ench_backup",
+    "name": { "str": "The Backup" },
+    "description": "We have a situation here.",
+    "condition": { "u_has_effect": "effect_perk_backup" },
+    "values": [ { "value": "MOVE_COST", "add": -50 } ]
+  }
+]
