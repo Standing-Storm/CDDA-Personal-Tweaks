@@ -299,7 +299,7 @@
        {
         "condition": { "and": [ { "not": { "u_has_trait": "FASTREADER" } }, 
         { "not": { "u_has_trait": "ILLITERATE" } } ] },
-        "text": "Gain [<trait_name:LOVES_BOOKS>]",
+        "text": "Gain [<trait_name:FASTREADER>]",
         "effect": [
           { "set_string_var": "<trait_name:FASTREADER>", "target_var": { "context_val": "trait_name" } },
           {
@@ -311,8 +311,66 @@
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
-      }
+      },
+
        
+       
+       {
+        "condition": { "and": [ { "not": { "u_has_trait": "ELFAEYES" } }, 
+        { "u_has_trait": "HUMAN_EYES" } ] },
+        "text": "Gain [<trait_name:ELFAEYES>]",
+        "effect": [
+          { "set_string_var": "<trait_name:ELFAEYES>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:ELFAEYES>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "ELFAEYES", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
+      },
+
+       
+       
+       
+       {
+        "condition": { "and": [ { "not": { "u_has_trait": "ELFA_EARS" } }, 
+        { "u_has_trait": "HUMAN_EARS" } ] },
+        "text": "Gain [<trait_name:ELFA_EARS>]",
+        "effect": [
+          { "set_string_var": "<trait_name:ELFA_EARS>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:ELFA_EARS>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "ELFA_EARS", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
+      },
+
+
+
+       
+      
+       {
+        "condition": { "not": { "u_has_trait": "FAST_REFLEXES" } },
+        "text": "Gain [<trait_name:FAST_REFLEXES>]",
+        "effect": [
+          { "set_string_var": "<trait_name:FAST_REFLEXES>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:FAST_REFLEXES>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "FAST_REFLEXES", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
+      }
     ]
 
 
