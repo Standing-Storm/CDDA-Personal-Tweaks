@@ -137,6 +137,21 @@
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
+      },
+       {
+        "condition": { "not": { "u_has_trait": "STRONGBACK" } },
+        "text": "Gain [<trait_name:STRONGBACK>]",
+        "effect": [
+          { "set_string_var": "<trait_name:STRONGBACK>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:STRONGBACK>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "STRONGBACK", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
       }
     ]
 
