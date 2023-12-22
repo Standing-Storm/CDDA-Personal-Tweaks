@@ -1,0 +1,56 @@
+[
+{
+    "type": "effect_on_condition",
+    "id": "EOC_Location1w",
+    "//": "Picks a random field.",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_missionspot" },
+        "target_params": {
+          "om_terrain": "field",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 2500,
+          "min_distance": 200,
+          "z": 0,
+          "random": true
+        }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Location2w",
+    "//": "Picks a random forest.",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_missionspot" },
+        "target_params": {
+          "om_terrain": "forest",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 2500,
+          "min_distance": 200,
+          "z": 0,
+          "random": true
+        }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Location3w",
+    "//": "Picks a random house.",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_missionspot" },
+        "target_params": {
+          "om_terrain": "house",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 2500,
+          "min_distance": 200,
+          "z": 0,
+          "random": true
+        }
+      }
+    ]
+  }
+]
