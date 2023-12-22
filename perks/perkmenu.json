@@ -432,6 +432,24 @@
           { "set_condition": "perk_condition", "condition": { "math": [ "u_val('strength')", ">=", "8" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
+      },
+
+
+       
+       {
+        "condition": { "not": { "u_has_trait": "perk_QUICK_RECOVERY" } },
+        "text": "Gain [<trait_name:perk_QUICK_RECOVERY>]",
+        "effect": [
+          { "set_string_var": "<trait_name:perk_QUICK_RECOVERY>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:perk_QUICK_RECOVERY>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "perk_QUICK_RECOVERY", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "math": [ "0", "==", "0" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
       }
 
 
