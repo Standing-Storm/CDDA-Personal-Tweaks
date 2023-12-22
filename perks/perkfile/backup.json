@@ -3,7 +3,7 @@
     "type": "mutation",
     "id": "perk_BACKUP",
     "name": { "str": "Backup" },
-    "points": 0,
+    "points": 2,
     "description": "We call this a tactical retreat.\n\nYou gain +50 movement speed for few moments after successfully dealing ballistic damage.",
     "category": [ "perk" ],
     "enchantments": [ "perk_ench_backup" ],
