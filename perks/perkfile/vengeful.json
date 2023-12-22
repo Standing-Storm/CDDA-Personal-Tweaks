@@ -1,0 +1,37 @@
+[
+ {
+    "type": "mutation",
+    "id": "perk_VENGEFUL",
+    "name": { "str": "Vengeful" },
+    "points": 0,
+    "description": "Oh, they're not getting away with THAT.\n\nYou do +25% damage for two turns after you're injured.",
+    "category": [ "perk" ],
+    "enchantments": [ "perk_ench_vengeful" ],
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_perk_vengeful",
+    "rating": "good",
+    "int_dur_factor": "1 s",
+    "max_duration": "6 s",
+    "show_in_info": false
+  },
+  {
+    "type": "enchantment",
+    "id": "perk_ench_vengeful",
+    "name": { "str": "Vengeful" },
+    "description": "OH you aren't getting away with that.",
+    "condition": { "u_has_effect": "effect_perk_vengeful" },
+    "values": [ { "value": "MELEE_DAMAGE", "multiply": 0.25 }, { "value": "RANGED_DAMAGE", "multiply": 0.25 } ]
+  },
+   {
+    "type": "effect_on_condition",
+    "id": "EOC_PERK_VENGEFUL_TAKE_DAMAGE",
+    "eoc_type": "EVENT",
+    "required_event": "character_takes_damage",
+    "condition": { "and": [ { "u_has_trait": "perk_VENGEFUL" }, { "compare_int": [ { "context_val": "damage" }, ">=", { "const": 1 } ] },
+    "effect": [ { "u_add_effect": "effect_perk_vengeful", "duration": "2 seconds" } ]
+  }
+]
