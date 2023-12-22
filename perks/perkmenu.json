@@ -419,15 +419,15 @@
 
        
        {
-        "condition": { "not": { "u_has_trait": "KINDA_TOUGH" } },
-        "text": "Gain [<trait_name:KINDA_TOUGH>]",
+        "condition": { "not": { "u_has_trait": "perk_KINDA_TOUGH" } },
+        "text": "Gain [<trait_name:perk_KINDA_TOUGH>]",
         "effect": [
-          { "set_string_var": "<trait_name:KINDA_TOUGH>", "target_var": { "context_val": "trait_name" } },
+          { "set_string_var": "<trait_name:perk_KINDA_TOUGH>", "target_var": { "context_val": "trait_name" } },
           {
-            "set_string_var": "<trait_description:KINDA_TOUGH>",
+            "set_string_var": "<trait_description:perk_KINDA_TOUGH>",
             "target_var": { "context_val": "trait_description" }
           },
-          { "set_string_var": "KINDA_TOUGH", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "perk_KINDA_TOUGH", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "Requires Strength 8", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "u_val('strength')", ">=", "8" ] } }
         ],
