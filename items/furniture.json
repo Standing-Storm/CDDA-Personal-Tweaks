@@ -114,29 +114,5 @@
     "intensity": 3,
     "qty": 100,
     "chance": 100
-  },
-  {
-    "type": "vehicle_part",
-    "id": "solar_panel",
-    "copy-from": "solar_panel",
-    "epower": "200 W"
-  },
-  {
-    "type": "vehicle_part",
-    "id": "reinforced_solar_panel",
-    "copy-from": "reinforced_solar_panel",
-    "epower": "180 W"
-  },
-  {
-    "type": "vehicle_part",
-    "id": "solar_panel_v2",
-    "copy-from": "solar_panel_v2",
-    "epower": "400 W"
-  },
-  {
-    "type": "vehicle_part",
-    "id": "reinforced_solar_panel_v2",
-    "copy-from": "reinforced_solar_panel_v2",
-    "epower": "360 W"
   }
 ]
