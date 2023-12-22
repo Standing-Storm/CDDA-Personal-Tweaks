@@ -4,7 +4,7 @@
     "id": "perk_HEALER",
     "name": { "str": "Healer" },
     "points": 0,
-    "description": "You've always been good with fixing bruises. The first time you bandage or disinfect a limb, it instantly heals by 3hp in addition to normal effects.",
+    "description": "You've always been good with fixing bruises. The first time you bandage or disinfect a limb, it instantly heals by 3hp in addition to the normal effects.",
     "category": [ "perk" ],
     "purifiable": false,
     "valid": false
