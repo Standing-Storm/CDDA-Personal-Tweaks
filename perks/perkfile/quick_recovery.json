@@ -1,0 +1,31 @@
+[
+  {
+    "type": "mutation",
+    "id": "perk_QUICK_RECOVERY",
+    "name": { "str": "Quick Recovery" },
+    "points": 2,
+    "description": "You get knocked down, but you get up again.  There is a 75% chance when you are downed that you will stand up again immediately.",
+    "category": [ "perk" ],
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PERK_HEALER_INIT",
+    "eoc_type": "EVENT",
+    "required_event": "character_gains_effect",
+    "condition": {
+      "and": [
+        { "u_has_trait": "perk_QUICK_RECOVERY" },
+        { "x_in_y_chance": { "x": 3, "y": 4 } },
+        {
+          "or": [
+            { "compare_string": [ "downed", { "context_val": "effect" } ] }
+          ]
+        }
+      ]
+    },
+    "effect": [
+      { "u_lose_effect": "downed" }
+    ]
+  },
