@@ -71,8 +71,17 @@
     "id": "perk_PER_UP_2",
     "name": { "str": "Even Sharper" },
     "points": 0,
-    "description": "You HAVE been staring out into the middle distance?.  +2 Perception.",
+    "description": "You HAVE been staring out into the middle distance.  +2 Perception.",
     "category": [ "perk" ],
     "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "add": 2 } ] } ]
+  },
+  {
+    "type": "mutation",
+    "id": "perk_KINDA_TOUGH",
+    "name": { "str": "Kinda Tough" },
+    "points": 0,
+    "description": "You can take a punch.  Maybe two on a good day.  +5% hit points ",
+    "category": [ "perk" ],
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "MAX_HP", "multiply": 0.05 } ] } ]
   }
 ]
