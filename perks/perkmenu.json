@@ -107,6 +107,21 @@
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
+      },
+       {
+        "condition": { "not": { "u_has_trait": "OUTDOORSMAN" } },
+        "text": "Gain [<trait_name:OUTDOORSMAN>]",
+        "effect": [
+          { "set_string_var": "<trait_name:OUTDOORSMAN>", "target_var": { "context_val": "trait_name" } },
+          {
+            "set_string_var": "<trait_description:OUTDOORSMAN>",
+            "target_var": { "context_val": "trait_description" }
+          },
+          { "set_string_var": "OUTDOORSMAN", "target_var": { "context_val": "trait_id" } },
+          { "set_string_var": "Requires Survival 3", "target_var": { "context_val": "trait_requirement_description" } },
+          { "set_condition": "perk_condition", "condition": { "math": [ "u_skill('survival')", ">=", "3" ] } }
+        ],
+        "topic": "TALK_PERK_MENU_SELECT"
       }
     ]
 
