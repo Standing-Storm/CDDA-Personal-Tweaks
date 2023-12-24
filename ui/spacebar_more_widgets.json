@@ -1,23 +1,23 @@
 [
- {
-	    "id": "spacebar_side_by_side_2",
-	    "type": "widget",
-	    "style": "layout",
-	    "label": "3_Location Info",
-	    "arrange": "minimum_columns",
-            "padding": 3,
-            "width": 58,
-	    "widgets": [ "player_weariness_mood_block2", "spacebar_overmap_18x9" ]
-	  },
-{
-	    "id": "spacebar_rs_column_2",
-	    "type": "widget",
-	    "style": "layout",
-	    "label": "stacked",
-	    "arrange": "rows",
-	    "widgets": [ "all_location_info_rows_layout", "rad_badge_desc" ]
-	  },
-{
+  {
+    "id": "spacebar_side_by_side_2",
+    "type": "widget",
+    "style": "layout",
+    "label": "3_Location Info",
+    "arrange": "minimum_columns",
+    "padding": 3,
+    "width": 58,
+    "widgets": [ "player_weariness_mood_block2", "spacebar_overmap_18x9" ]
+  },
+  {
+    "id": "spacebar_rs_column_2",
+    "type": "widget",
+    "style": "layout",
+    "label": "stacked",
+    "arrange": "rows",
+    "widgets": [ "all_location_info_rows_layout", "rad_badge_desc" ]
+  },
+  {
     "id": "player_weariness_mood_block2",
     "type": "widget",
     "style": "layout",
@@ -26,7 +26,7 @@
     "width": 26,
     "widgets": [ "player_weariness_mood_block_tmp2" ]
   },
-{
+  {
     "id": "player_weariness_mood_block_tmp2",
     "type": "widget",
     "style": "layout",
@@ -35,7 +35,7 @@
     "width": 28,
     "widgets": [ "spacebar_personal_mood_focus_activity_layout", "spacebar_all_weariness_layout" ]
   },
-{
+  {
     "id": "wind_sun_rad",
     "type": "widget",
     "style": "layout",
@@ -75,7 +75,7 @@
     "width": 5,
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
   },
-{
+  {
     "id": "spacebar_personal_health_graph",
     "type": "widget",
     "label": "Health",
@@ -86,7 +86,7 @@
     "width": 5,
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
   },
-{
+  {
     "id": "spacebar_personal_cardio_graph",
     "type": "widget",
     "label": "Cardio Fit",
@@ -98,5 +98,3 @@
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
   }
 ]
-
-

@@ -30,7 +30,7 @@
       { "u_add_effect": "effect_perk_healer_heal", "duration": 1, "target_part": { "u_val": "heal_part" } }
     ]
   },
-   {
+  {
     "type": "effect_type",
     "id": "effect_perk_healer_heal",
     "rating": "good",
@@ -39,3 +39,4 @@
     "max_duration": "6 s",
     "base_mods": { "hurt_amount": [ -3 ] }
   }
+]

@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "effect_on_condition",
     "id": "EOC_Location1w",
     "//": "Picks a random field.",

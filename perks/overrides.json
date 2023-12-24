@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "mutation",
     "id": "perk_holdout_pocket",
     "name": { "str": "Holdout Pocket" },

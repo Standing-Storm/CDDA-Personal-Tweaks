@@ -1,5 +1,6 @@
 [
-   "type": "talk_topic",
+  {
+    "type": "talk_topic",
     "id": "TALK_PERK_MENU_MAIN",
     "dynamic_line": "Lifestyle Perks:\nLevel <u_val:current_level>.\n<u_val:num_perks> perk points to spend.\nCurrent EXP: <u_val:available_exp>.\nEXP to next level: <u_val:exp_to_perk>.",
     "responses": [
@@ -13,7 +14,10 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_STR_UP_2", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Must have the Stronger perk.", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Must have the Stronger perk.",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "u_has_trait": "perk_STR_UP" } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
@@ -28,7 +32,10 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_DEX_UP_2", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Must have the Faster perk", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Must have the Faster perk",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "u_has_trait": "perk_DEX_UP" } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
@@ -43,7 +50,10 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_INT_UP_2", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Must have the Smarter perk", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Must have the Smarter perk",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "u_has_trait": "perk_INT_UP" } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
@@ -58,7 +68,10 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_PER_UP_2", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Must have the Sharper perk", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Must have the Sharper perk",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "u_has_trait": "perk_PER_UP" } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
@@ -73,7 +86,10 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_HEALER", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Requires Health Care 5", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Requires Health Care 5",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "math": [ "u_skill('firstaid')", ">=", "5" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
@@ -93,7 +109,7 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-     {
+      {
         "condition": { "not": { "u_has_trait": "perk_VENGEFUL" } },
         "text": "Gain [<trait_name:perk_VENGEFUL>]",
         "effect": [
@@ -108,7 +124,7 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-       {
+      {
         "condition": { "not": { "u_has_trait": "OUTDOORSMAN" } },
         "text": "Gain [<trait_name:OUTDOORSMAN>]",
         "effect": [
@@ -118,12 +134,15 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "OUTDOORSMAN", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Requires Survival 3", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Requires Survival 3",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "math": [ "u_skill('survival')", ">=", "3" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-       {
+      {
         "condition": { "not": { "u_has_trait": "NIGHT_RAIDER" } },
         "text": "Gain [<trait_name:NIGHT_RAIDER>]",
         "effect": [
@@ -138,23 +157,19 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-       {
+      {
         "condition": { "not": { "u_has_trait": "STRONGBACK" } },
         "text": "Gain [<trait_name:STRONGBACK>]",
         "effect": [
           { "set_string_var": "<trait_name:STRONGBACK>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:STRONGBACK>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:STRONGBACK>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "STRONGBACK", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "FASTLEARNER" } },
         "text": "Gain [<trait_name:FASTLEARNER>]",
         "effect": [
@@ -169,43 +184,31 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-       
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "GOURMAND" } },
         "text": "Gain [<trait_name:GOURMAND>]",
         "effect": [
           { "set_string_var": "<trait_name:GOURMAND>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:GOURMAND>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:GOURMAND>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "GOURMAND", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "STYLISH" } },
         "text": "Gain [<trait_name:STYLISH>]",
         "effect": [
           { "set_string_var": "<trait_name:STYLISH>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:STYLISH>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:STYLISH>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "STYLISH", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "STRONGSTOMACH" } },
         "text": "Gain [<trait_name:STRONGSTOMACH>]",
         "effect": [
@@ -220,65 +223,44 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "TOUGH_FEET" } },
         "text": "Gain [<trait_name:TOUGH_FEET>]",
         "effect": [
           { "set_string_var": "<trait_name:TOUGH_FEET>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:TOUGH_FEET>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:TOUGH_FEET>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "TOUGH_FEET", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-
-       {
+      {
         "condition": { "not": { "u_has_trait": "SPIRITUAL" } },
         "text": "Gain [<trait_name:SPIRITUAL>]",
         "effect": [
           { "set_string_var": "<trait_name:SPIRITUAL>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:SPIRITUAL>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:SPIRITUAL>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "SPIRITUAL", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-      
-       {
+      {
         "condition": { "not": { "u_has_trait": "GOODMEMORY" } },
         "text": "Gain [<trait_name:GOODMEMORY>]",
         "effect": [
           { "set_string_var": "<trait_name:GOODMEMORY>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:GOODMEMORY>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:GOODMEMORY>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "GOODMEMORY", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-       
-      
-       {
-        "condition": { "and": [ { "not": { "u_has_trait": "LOVES_BOOKS" } }, 
-        { "not": { "u_has_trait": "ILLITERATE" } } ] },
+      {
+        "condition": { "and": [ { "not": { "u_has_trait": "LOVES_BOOKS" } }, { "not": { "u_has_trait": "ILLITERATE" } } ] },
         "text": "Gain [<trait_name:LOVES_BOOKS>]",
         "effect": [
           { "set_string_var": "<trait_name:LOVES_BOOKS>", "target_var": { "context_val": "trait_name" } },
@@ -292,71 +274,43 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-       
-      
-       {
-        "condition": { "and": [ { "not": { "u_has_trait": "FASTREADER" } }, 
-        { "not": { "u_has_trait": "ILLITERATE" } } ] },
+      {
+        "condition": { "and": [ { "not": { "u_has_trait": "FASTREADER" } }, { "not": { "u_has_trait": "ILLITERATE" } } ] },
         "text": "Gain [<trait_name:FASTREADER>]",
         "effect": [
           { "set_string_var": "<trait_name:FASTREADER>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:FASTREADER>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:FASTREADER>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "FASTREADER", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-       
-       {
-        "condition": { "and": [ { "not": { "u_has_trait": "ELFAEYES" } }, 
-        { "u_has_trait": "HUMAN_EYES" } ] },
+      {
+        "condition": { "and": [ { "not": { "u_has_trait": "ELFAEYES" } }, { "u_has_trait": "HUMAN_EYES" } ] },
         "text": "Gain [<trait_name:ELFAEYES>]",
         "effect": [
           { "set_string_var": "<trait_name:ELFAEYES>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:ELFAEYES>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:ELFAEYES>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "ELFAEYES", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-       
-       
-       {
-        "condition": { "and": [ { "not": { "u_has_trait": "ELFA_EARS" } }, 
-        { "u_has_trait": "HUMAN_EARS" } ] },
+      {
+        "condition": { "and": [ { "not": { "u_has_trait": "ELFA_EARS" } }, { "u_has_trait": "HUMAN_EARS" } ] },
         "text": "Gain [<trait_name:ELFA_EARS>]",
         "effect": [
           { "set_string_var": "<trait_name:ELFA_EARS>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:ELFA_EARS>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:ELFA_EARS>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "ELFA_EARS", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-
-       
-      
-       {
+      {
         "condition": { "not": { "u_has_trait": "FAST_REFLEXES" } },
         "text": "Gain [<trait_name:FAST_REFLEXES>]",
         "effect": [
@@ -371,37 +325,29 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-       
-      
-       {
+      {
         "condition": { "not": { "u_has_trait": "CANNIBAL" } },
         "text": "Gain [<trait_name:CANNIBAL>]",
         "effect": [
           { "set_string_var": "<trait_name:CANNIBAL>", "target_var": { "context_val": "trait_name" } },
-          {
-            "set_string_var": "<trait_description:CANNIBAL>",
-            "target_var": { "context_val": "trait_description" }
-          },
+          { "set_string_var": "<trait_description:CANNIBAL>", "target_var": { "context_val": "trait_description" } },
           { "set_string_var": "CANNIBAL", "target_var": { "context_val": "trait_id" } },
           { "set_string_var": "No Requirements", "target_var": { "context_val": "trait_requirement_description" } },
           { "set_condition": "perk_condition", "condition": { "math": [ "0", "==", "0" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-
-       
-      
-       {
-        "condition": { "and": [ { "not": { "u_has_trait": "NIGHTVISION" } },
-           { "not": { "u_has_trait": "NIGHTVISION2" } },
-           { "not": { "u_has_trait": "NIGHTVISION3" } },
-           { "not": { "u_has_trait": "ELFA_NV" } },
-           { "not": { "u_has_trait": "ELFA_FNV" } },
-           { "not": { "u_has_trait": "FELINE_NV" } }
-        ] },
+      {
+        "condition": {
+          "and": [
+            { "not": { "u_has_trait": "NIGHTVISION" } },
+            { "not": { "u_has_trait": "NIGHTVISION2" } },
+            { "not": { "u_has_trait": "NIGHTVISION3" } },
+            { "not": { "u_has_trait": "ELFA_NV" } },
+            { "not": { "u_has_trait": "ELFA_FNV" } },
+            { "not": { "u_has_trait": "FELINE_NV" } }
+          ]
+        },
         "text": "Gain [<trait_name:NIGHTVISION>]",
         "effect": [
           { "set_string_var": "<trait_name:NIGHTVISION>", "target_var": { "context_val": "trait_name" } },
@@ -415,10 +361,7 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "perk_KINDA_TOUGH" } },
         "text": "Gain [<trait_name:perk_KINDA_TOUGH>]",
         "effect": [
@@ -428,15 +371,15 @@
             "target_var": { "context_val": "trait_description" }
           },
           { "set_string_var": "perk_KINDA_TOUGH", "target_var": { "context_val": "trait_id" } },
-          { "set_string_var": "Requires Strength 8", "target_var": { "context_val": "trait_requirement_description" } },
+          {
+            "set_string_var": "Requires Strength 8",
+            "target_var": { "context_val": "trait_requirement_description" }
+          },
           { "set_condition": "perk_condition", "condition": { "math": [ "u_val('strength')", ">=", "8" ] } }
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       },
-
-
-       
-       {
+      {
         "condition": { "not": { "u_has_trait": "perk_QUICK_RECOVERY" } },
         "text": "Gain [<trait_name:perk_QUICK_RECOVERY>]",
         "effect": [
@@ -451,9 +394,6 @@
         ],
         "topic": "TALK_PERK_MENU_SELECT"
       }
-
-
     ]
-
-
-
+  }
+]

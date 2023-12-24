@@ -16,7 +16,7 @@
     "points": 1,
     "description": "Have you been doing cardio?  +1 Dexterity.",
     "category": [ "perk" ],
-     "changes_to": [ "perk_DEX_UP_2" ],
+    "changes_to": [ "perk_DEX_UP_2" ],
     "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "DEXTERITY", "add": 1 } ] } ]
   },
   {
@@ -26,7 +26,7 @@
     "points": 1,
     "description": "Have you been reading?  +1 Intelligence.",
     "category": [ "perk" ],
-     "changes_to": [ "perk_INT_UP_2" ],
+    "changes_to": [ "perk_INT_UP_2" ],
     "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 1 } ] } ]
   },
   {
@@ -36,7 +36,7 @@
     "points": 1,
     "description": "Have you been staring out into the middle distance?  +1 Perception.",
     "category": [ "perk" ],
-     "changes_to": [ "perk_PER_UP_2" ],
+    "changes_to": [ "perk_PER_UP_2" ],
     "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "add": 1 } ] } ]
   },
   {
