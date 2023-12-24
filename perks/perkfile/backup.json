@@ -36,7 +36,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_PERK_BACKUP_MONSTER_ACTIVATE",
+    "id": "EOC_PERK_BACKUP_CHARACTER_ACTIVATE",
     "eoc_type": "EVENT",
     "required_event": "character_ranged_attacks_character",
     "condition": { "u_has_trait": "perk_BACKUP" },
