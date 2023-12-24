@@ -3,7 +3,7 @@
     "id": "mon_bear",
     "type": "MONSTER",
     "copy-from": "mon_bear",
-    "hp": 150,
+    "hp": 250,
     "attack_cost": 140,
     "morale": 80,
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY", "PLAYER_CLOSE" ],
@@ -52,7 +52,7 @@
     "id": "mon_moose",
     "type": "MONSTER",
     "copy-from": "mon_moose",
-    "hp": 150,
+    "hp": 250,
     "attack_cost": 200,
     "aggression": 9,
     "melee_skill": 8,
@@ -92,7 +92,7 @@
     "id": "mon_bear_mutant_3headed",
     "type": "MONSTER",
     "copy-from": "mon_bear_mutant_3headed",
-    "hp": 250,
+    "hp": 400,
     "special_attacks": [
       {
         "type": "bite",
@@ -110,7 +110,7 @@
     "id": "mon_zombear_acidic",
     "type": "MONSTER",
     "copy-from": "mon_zombear_acidic",
-    "hp": 160,
+    "hp": 280,
     "special_attacks": [
       [ "ACID_BARF", 10 ],
       { "id": "bite_grab", "move_cost": 135, "cooldown": 3, "min_mul": 0.75, "max_mul": 1.5 },
