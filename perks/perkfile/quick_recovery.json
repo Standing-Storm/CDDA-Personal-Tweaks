@@ -11,7 +11,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_PERK_HEALER_INIT",
+    "id": "EOC_PERK_QUICK_RECOVERY_INIT",
     "eoc_type": "EVENT",
     "required_event": "character_gains_effect",
     "condition": {
