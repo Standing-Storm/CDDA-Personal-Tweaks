@@ -56,6 +56,6 @@
     "text_align": "left",
     "width": 28,
     "arrange": "rows",
-    "widgets": [ "move_mode_desc", "speed_num", "vehicle_cruise_desc_label" ]
+    "widgets": [ "move_mode_desc", "move_num", "speed_num", "vehicle_cruise_desc_label" ]
   }
 ]
