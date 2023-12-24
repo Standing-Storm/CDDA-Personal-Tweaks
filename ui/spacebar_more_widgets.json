@@ -62,7 +62,7 @@
     "label": "Mood/Focus/Activity",
     "arrange": "rows",
     "width": 24,
-    "widgets": [ "mood_desc_label", "spacebar_personal_focus_graph", "spacebar_personal_health_graph", "activity_desc", "spacebar_personal_cardio_graph" ]
+    "widgets": [ "mood_desc_label", "spacebar_personal_focus_graph", "health_desc", "activity_desc", "spacebar_personal_cardio_graph" ]
   },
   {
     "id": "spacebar_personal_focus_graph",
