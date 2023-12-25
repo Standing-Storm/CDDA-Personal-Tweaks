@@ -2,6 +2,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_PERK_MENU_MAIN",
+    "insert_before_standard_exits": true,
     "dynamic_line": "Lifestyle Perks:\nLevel <u_val:current_level>.\n<u_val:num_perks> perk points to spend.\nCurrent EXP: <u_val:available_exp>.\nEXP to next level: <u_val:exp_to_perk>.",
     "responses": [
       {
