@@ -1,0 +1,56 @@
+[
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "CBM_SLOTS_ENABLED",
+    "info": "Enables CBM slots mechanics.  If true CBM slots are enabled.",
+    "stype": "bool",
+    "value": true
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SPAWN_ANIMAL_DENSITY",
+    "info": "A scaling factor that determines density of wild, formerly domesticated and mutated animal spawns.",
+    "stype": "float",
+    "value": 1.25
+  },
+  {
+    "type": "skill_boost",
+    "stat": "str",
+    "skills": [ "mechanics", "swimming", "bashing", "cutting", "melee", "throw" ],
+    "skill_offset": -6,
+    "scaling_power": 0.2
+  },
+  {
+    "type": "skill_boost",
+    "stat": "dex",
+    "skills": [ "driving", "survival", "tailor", "traps", "dodge", "stabbing", "unarmed" ],
+    "skill_offset": -6,
+    "scaling_power": 0.2
+  },
+  {
+    "type": "skill_boost",
+    "stat": "int",
+    "skills": [
+      "computer",
+      "cooking",
+      "electronics",
+      "fabrication",
+      "firstaid",
+      "speech",
+      "chemistry",
+      "arcana",
+      "metaphysics",
+      "spellcraft",
+      "gramayre"
+    ],
+    "skill_offset": -6,
+    "scaling_power": 0.1
+  },
+  {
+    "type": "skill_boost",
+    "stat": "per",
+    "skills": [ "archery", "gun", "launcher", "pistol", "rifle", "shotgun", "smg", "deduction" ],
+    "skill_offset": -6,
+    "scaling_power": 0.1
+  }
+]
