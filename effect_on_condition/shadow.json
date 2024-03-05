@@ -2,11 +2,14 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_LIEUTENANT_ACTIVATE_SHADOW",
-    "recurrence": 1,
-    "//1": "TODO long-term: 6 months into the cataclysm AND # of zombie kills? (Let's see how this shakes out first)",
-    "condition": { "and": [ { "days_since_cataclysm": 180 }, { "math": [ "u_Lieutenants_active", "<", "1" ] } ] },
+    "recurrence": "1 second",
+    "global": true,
+    "run_for_npcs": false,
+    "condition": {
+      "and": [ { "math": [ "time_since('cataclysm', 'unit':'days') >= 180" ] }, { "math": [ "Lieutenants_active", "<", "1" ] } ]
+    },
     "//2": "Integer value instead of bool, so more can be added later and use math for conditions",
-    "effect": [ { "u_add_var": "Lieutenants_active", "value": "1" }, { "u_add_var": "Shadow_Lurking", "value": "1" } ],
-    "deactivate_condition": { "math": [ "u_Lieutenants_active", ">=", "1" ] }
+    "effect": [ { "math": [ "Lieutenants_active", "=", "1" ] }, { "math": [ "Shadow_Lurking", "=", "1" ] } ],
+    "deactivate_condition": { "math": [ "Lieutenants_active", ">=", "1" ] }
   }
 ]
