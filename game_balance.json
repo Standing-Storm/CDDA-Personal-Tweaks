@@ -1,0 +1,30 @@
+[
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "CBM_SLOTS_ENABLED",
+    "info": "Enables CBM slots mechanics.  If true CBM slots are enabled.",
+    "stype": "bool",
+    "value": true
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SPAWN_ANIMAL_DENSITY",
+    "info": "A scaling factor that determines density of wild, formerly domesticated and mutated animal spawns.",
+    "stype": "float",
+    "value": 1.25
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "PLAYER_HEALING_RATE",
+    "info": "Set base player healing rate per turn.  Default: 0.0001",
+    "stype": "float",
+    "value": 0.000005
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "NPC_HEALING_RATE",
+    "info": "Set base NPC healing rate per turn.  Default: 0.0001",
+    "stype": "float",
+    "value": 0.000005
+  }
+]
