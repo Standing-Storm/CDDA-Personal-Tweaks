@@ -72,9 +72,17 @@
     "purifiable": false,
     "cancels": [ "BADBACK", "ASTHMA", "GLASSJAW" ],
     "prereqs2": [ "STRONGBACK" ],
-    "movecost_modifier": 0.9,
-    "weight_capacity_modifier": 1.5,
-    "passive_mods": { "str_mod": 3 }
+    "enchantments": [ "ench_strength_prime_bonus" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_strength_prime_bonus",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "CARRY_WEIGHT", "multiply": 0.5 },
+      { "value": "MOVE_COST", "multiply": -0.1 },
+      { "value": "STRENGTH", "add": { "math": [ "alpha_stat_bonus(u_val('strength_base'))" ] } }
+    ]
   },
   {
     "type": "mutation",
@@ -94,8 +102,7 @@
       [ "leg_r", -5 ],
       [ "foot_l", -5 ],
       [ "foot_r", -5 ]
-    ],
-    "passive_mods": { "dex_mod": 3 }
+    ]
   },
   {
     "type": "mutation",
@@ -107,7 +114,13 @@
     "prereqs": [ "INT_UP_2" ],
     "prereqs2": [ "GOODMEMORY" ],
     "skill_rust_multiplier": 0.5,
-    "passive_mods": { "int_mod": 3 }
+    "enchantments": [ "ench_intelligence_prime_bonus" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_intelligence_prime_bonus",
+    "condition": "ALWAYS",
+    "values": [ { "value": "INTELLIGENCE", "add": { "math": [ "alpha_stat_bonus(u_val('intelligence_base'))" ] } } ]
   },
   {
     "type": "mutation",
@@ -119,9 +132,17 @@
     "purifiable": false,
     "cancels": [ "MYOPIC", "HYPEROPIC", "COMPOUND_EYES", "ELFAEYES", "FEL_EYE", "URSINE_EYE", "BIRD_EYE", "LIZ_EYE" ],
     "prereqs2": [ "GOODHEARING" ],
-    "hearing_modifier": 1.5,
-    "social_modifiers": { "persuade": 5 },
-    "passive_mods": { "per_mod": 3 }
+    "enchantments": [ "ench_perception_prime_bonus" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_perception_prime_bonus",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "HEARING_MULT", "multiply": 0.5 },
+      { "value": "SOCIAL_PERSUADE", "add": 5 },
+      { "value": "PERCEPTION", "add": { "math": [ "alpha_stat_bonus(u_val('perception_base'))" ] } }
+    ]
   },
   {
     "type": "mutation",
@@ -172,8 +193,7 @@
     "purifiable": false,
     "category": [ "ALPHA" ],
     "threshreq": [ "THRESH_ALPHA" ],
-    "fatigue_modifier": -0.25,
-    "stamina_regen_modifier": 0.25
+    "enchantments": [ { "values": [ { "value": "FATIGUE", "multiply": -0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.25 } ] } ]
   },
   {
     "type": "mutation",

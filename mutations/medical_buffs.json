@@ -60,12 +60,11 @@
     "description": "Your digestive system is perfectly adapted to gain nutrients and calories from your food.  However, this makes you more vulnerable to toxins as well.",
     "threshreq": [ "THRESH_MEDICAL" ],
     "category": [ "MEDICAL" ],
-    "valid": false,
     "purifiable": false,
     "types": [ "METABOLISM" ],
     "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 2 ], [ "vitA", 2 ], [ "vitB", 2 ], [ "vitC", 2 ], [ "calcium", 2 ], [ "iron", 2 ] ] ] ],
-    "metabolism_modifier": -0.66,
-    "changes_to": [ "MEDICAL_DIGEST2" ]
+    "changes_to": [ "MEDICAL_DIGEST2" ],
+    "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": -0.33 } ] } ]
   },
   {
     "type": "mutation",
@@ -75,12 +74,11 @@
     "description": "Your digestive system and metabolism are preternaturally effective, capable of synthesizing some vitamins that ordinary humans must gain through their diet. However, toxins will cause severe damage to you.",
     "threshreq": [ "THRESH_MEDICAL" ],
     "category": [ "MEDICAL" ],
-    "valid": false,
     "purifiable": false,
     "types": [ "METABOLISM" ],
     "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 10 ], [ "vitA", 3 ], [ "vitB", 3 ], [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ] ] ],
     "vitamin_rates": [ [ "vitA", -1200 ], [ "vitB", -1200 ], [ "vitC", -1200 ] ],
-    "metabolism_modifier": -0.5,
-    "prereqs": [ "MEDICAL_DIGEST" ]
+    "prereqs": [ "MEDICAL_DIGEST" ],
+    "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": -0.5 } ] } ]
   }
 ]

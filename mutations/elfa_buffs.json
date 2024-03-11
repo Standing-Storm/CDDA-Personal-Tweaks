@@ -33,8 +33,13 @@
     "type": "mutation",
     "id": "WAKEFUL2",
     "copy-from": "WAKEFUL2",
-    "fatigue_regen_modifier": 0.25,
-    "fatigue_modifier": -0.25
+    "enchantments": [ "ench_wakeful2_fatigue_normalizer" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_wakeful2_fatigue_normalizer",
+    "condition": "ALWAYS",
+    "values": [ { "value": "FATIGUE", "multiply": -0.25 }, { "value": "FATIGUE_REGEN", "multiply": -0.25 } ]
   },
   {
     "type": "mutation",
