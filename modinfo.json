@@ -2,10 +2,10 @@
   {
     "type": "MOD_INFO",
     "id": "CDDA_personal_tweaks",
-    "name": "My CDDA personal tweaks",
+    "name": "<color_green>My CDDA personal tweaks</color>",
     "authors": [ "Standing-Storm" ],
     "description": "Just a list of changes I like.",
-    "category": "content",
+    "category": "misc_additions",
     "dependencies": [ "dda" ]
   }
 ]
