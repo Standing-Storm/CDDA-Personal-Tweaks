@@ -6,6 +6,6 @@
     "authors": [ "Standing-Storm" ],
     "description": "Just a list of changes I like.",
     "category": "misc_additions",
-    "dependencies": [ "dda" ]
+    "dependencies": [ "dda", "bombastic_perks" ]
   }
 ]
