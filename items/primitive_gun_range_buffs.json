@@ -1,0 +1,37 @@
+[
+  {
+    "type": "GUN",
+    "id": "longrifle_flintlock",
+    "name": { "str": "flintlock rifle" },
+    "copy-from": "longrifle_flintlock",
+    "range": 50
+  },
+  {
+    "type": "GUN",
+    "id": "rifle_flintlock",
+    "name": { "str": "flintlock musket" },
+    "copy-from": "rifle_flintlock",
+    "range": 50
+  },
+  {
+    "type": "GUN",
+    "id": "carbine_flintlock",
+    "name": { "str": "flintlock carbine" },
+    "copy-from": "carbine_flintlock",
+    "range": 45
+  },
+  {
+    "type": "GUN",
+    "id": "pistol_flintlock",
+    "name": { "str": "flintlock pistol" },
+    "copy-from": "pistol_flintlock",
+    "range": 25
+  },
+  {
+    "type": "GUN",
+    "id": "carbine_flintlock_double",
+    "name": { "str": "handmade double-barrel flintlock" },
+    "copy-from": "carbine_flintlock_double",
+    "range": 30
+  }
+]
