@@ -113,14 +113,16 @@
     "cancels": [ "FORGETFUL", "SAVANT" ],
     "prereqs": [ "INT_UP_2" ],
     "prereqs2": [ "GOODMEMORY" ],
-    "skill_rust_multiplier": 0.5,
     "enchantments": [ "ench_intelligence_prime_bonus" ]
   },
   {
     "type": "enchantment",
     "id": "ench_intelligence_prime_bonus",
     "condition": "ALWAYS",
-    "values": [ { "value": "INTELLIGENCE", "add": { "math": [ "alpha_stat_bonus(u_val('intelligence_base'))" ] } } ]
+    "values": [
+      { "value": "INTELLIGENCE", "add": { "math": [ "alpha_stat_bonus(u_val('intelligence_base'))" ] } },
+      { "value": "SKILL_RUST_RESIST", "add": 50 }
+    ]
   },
   {
     "type": "mutation",

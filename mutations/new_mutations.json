@@ -6,8 +6,6 @@
     "points": 1,
     "visibility": 6,
     "ugliness": 3,
-    "bodytemp_modifiers": [ 250, 600 ],
-    "bodytemp_sleep": 250,
     "description": "A deep viridian moss has sprouted in thick, patterned patches over large areas of your body, providing some protection from the cold and the wet. Also protects you against fire.",
     "wet_protection": [
       { "part": "head", "neutral": 4, "good": 5 },
@@ -23,7 +21,8 @@
     ],
     "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4 } ],
     "prereqs": [ "PLANTSKIN" ],
-    "category": [ "PLANT", "ELFA" ]
+    "category": [ "PLANT", "ELFA" ],
+    "enchantments": [ { "values": [ { "value": "BODYTEMP_SLEEP", "add": 10 } ] } ]
   },
   {
     "id": "ELFA_POLLEN",

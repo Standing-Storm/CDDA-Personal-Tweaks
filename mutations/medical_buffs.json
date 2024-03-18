@@ -50,7 +50,7 @@
     "cost": 2,
     "time": "15 s",
     "fatigue": true,
-    "healing_multiplier": 400
+    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": 30 } ] } ]
   },
   {
     "type": "mutation",
