@@ -56,5 +56,24 @@
     "time": "2 m",
     "enchantments": [ "ELFA_POLLEN_ENCH" ],
     "transform": { "target": "ELFA_POLLEN", "msg_transform": "The air loses its sweet scent.", "active": false, "moves": 10 }
+  },
+  {
+    "type": "mutation",
+    "id": "PAINREC_STARTING",
+    "name": { "str": "Better Pain Recovery" },
+    "points": 2,
+    "types": [ "PAIN_RECOVERY" ],
+    "starting_trait": true,
+    "description": "You recover from pain slightly faster than most people."
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "PAINREC_STARTING_EOC",
+    "recurrence": "1 m",
+    "condition": {
+      "and": [ { "x_in_y_chance": { "x": 2, "y": 3 } }, { "math": [ "u_pain()", ">", "0" ] }, { "u_has_trait": "PAINREC_STARTING" } ]
+    },
+    "deactivate_condition": { "not": { "u_has_trait": "PAINREC_STARTING" } },
+    "effect": [ { "math": [ "u_pain()", "-=", "1" ] } ]
   }
 ]

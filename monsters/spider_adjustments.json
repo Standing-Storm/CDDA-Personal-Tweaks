@@ -3,18 +3,18 @@
     "id": "mon_spider_cellar_small",
     "type": "MONSTER",
     "copy-from": "mon_spider_cellar_small",
-    "upgrades": { "half_life": 14, "into_group": "GROUP_SPIDER_CELLAR" },
+    "upgrades": { "half_life": 14, "into_group": "GROUP_SPIDER_CELLAR" }
   },
   {
     "id": "mon_spider_cellar_giant",
     "type": "MONSTER",
     "copy-from": "mon_spider_cellar_giant",
-    "upgrades": { "half_life": 14, "into_group": "GROUP_SPIDER_CELLAR_GIANT" },
+    "upgrades": { "half_life": 14, "into_group": "GROUP_SPIDER_CELLAR_GIANT" }
   },
   {
     "id": "mon_lady_bug",
     "type": "MONSTER",
     "copy-from": "mon_lady_bug",
     "upgrades": { "half_life": 42, "into": "mon_lady_bug_giant" }
-   }
+  }
 ]
