@@ -195,7 +195,7 @@
     "purifiable": false,
     "category": [ "ALPHA" ],
     "threshreq": [ "THRESH_ALPHA" ],
-    "enchantments": [ { "values": [ { "value": "FATIGUE", "multiply": -0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.25 } ] } ]
+    "enchantments": [ { "values": [ { "value": "SLEEPINESS", "multiply": -0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.25 } ] } ]
   },
   {
     "type": "mutation",

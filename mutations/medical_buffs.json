@@ -49,7 +49,7 @@
     "valid": false,
     "cost": 2,
     "time": "15 s",
-    "fatigue": true,
+    "sleepiness": true,
     "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": 30 } ] } ]
   },
   {

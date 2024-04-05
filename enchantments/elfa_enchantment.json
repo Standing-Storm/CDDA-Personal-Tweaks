@@ -38,10 +38,10 @@
       "str_mod": [ 1 ],
       "dex_mod": [ 1 ],
       "speed_mod": [ 5 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_chance": [ 30 ],
-      "fatigue_tick": [ 120 ]
+      "sleepiness_min": [ 1 ],
+      "sleepiness_chance": [ 30 ],
+      "sleepiness_tick": [ 120 ]
     },
-    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [ 5 ], "fatigue_chance": [ -10 ], "fatigue_tick": [ -50 ] }
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "speed_mod": [ 5 ], "sleepiness_chance": [ -10 ], "sleepiness_tick": [ -50 ] }
   }
 ]

@@ -1,0 +1,123 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus", "Chibi_Ultica" ],
+  "tiles-new": [
+    {"file": "normal_furniture.png",
+    "tiles": [
+      { "id": "fd_fatigue", "fg": 11477 },
+      {
+        "id": "fd_fire_brazier",
+      "fg": [
+        { "weight": 11, "sprite": 11478 },
+        { "weight": 11, "sprite": 11479 },
+        { "weight": 11, "sprite": 11480 },
+        { "weight": 11, "sprite": 11481 },
+        { "weight": 11, "sprite": 11482 },
+        { "weight": 11, "sprite": 11483 }
+      ],
+      "rotates": false,
+      "animated": true
+    },
+    {
+      "id": "fd_fire_fireplace",
+      "fg": [
+        { "weight": 11, "sprite": 11484 },
+        { "weight": 11, "sprite": 11485 },
+        { "weight": 11, "sprite": 11486 },
+        { "weight": 11, "sprite": 11487 },
+        { "weight": 11, "sprite": 11488 },
+        { "weight": 11, "sprite": 11489 }
+      ],
+      "rotates": false,
+      "animated": true
+    },
+    {
+      "id": "fd_fire_firering",
+      "fg": [
+        { "weight": 11, "sprite": 11490 },
+        { "weight": 11, "sprite": 11491 },
+        { "weight": 11, "sprite": 11492 },
+        { "weight": 11, "sprite": 11493 },
+        { "weight": 11, "sprite": 11494 },
+        { "weight": 11, "sprite": 11495 }
+      ],
+      "rotates": false,
+      "animated": true
+    },
+    {
+      "id": "fd_fire_woodstove",
+      "fg": [
+        { "weight": 11, "sprite": 11496 },
+        { "weight": 11, "sprite": 11497 },
+        { "weight": 11, "sprite": 11498 },
+        { "weight": 11, "sprite": 11499 },
+        { "weight": 11, "sprite": 11500 },
+        { "weight": 11, "sprite": 11501 }
+      ],
+      "rotates": false,
+      "animated": true}]
+    },
+    {
+      "file": "large_stuff.png",
+      "tiles": [
+        {
+          "id": "fd_fire",
+          "fg": [
+            { "weight": 11, "sprite": 19054 },
+            { "weight": 11, "sprite": 19055 },
+            { "weight": 11, "sprite": 19056 },
+            { "weight": 11, "sprite": 19057 },
+            { "weight": 11, "sprite": 19058 },
+            { "weight": 11, "sprite": 19059 }
+          ],
+          "rotates": false,
+          "animated": true
+        },
+        {
+          "id": "fd_fire_vent",
+          "fg": [
+            { "weight": 11, "sprite": 19060 },
+            { "weight": 11, "sprite": 19061 },
+            { "weight": 11, "sprite": 19062 },
+            { "weight": 11, "sprite": 19063 },
+            { "weight": 11, "sprite": 19064 },
+            { "weight": 11, "sprite": 19065 }
+          ],
+          "rotates": false,
+          "animated": true
+        },
+        {
+          "id": "fd_flame_burst",
+          "fg": [
+            { "weight": 11, "sprite": 19060 },
+            { "weight": 11, "sprite": 19061 },
+            { "weight": 11, "sprite": 19062 },
+            { "weight": 11, "sprite": 19063 },
+            { "weight": 11, "sprite": 19064 },
+            { "weight": 11, "sprite": 19065 }
+          ],
+          "rotates": false,
+          "animated": true
+        },
+        {
+          "id": "fd_plasma",
+          "fg": [
+            { "weight": 11, "sprite": 19066 },
+            { "weight": 11, "sprite": 19067 },
+            { "weight": 11, "sprite": 19068 },
+            { "weight": 11, "sprite": 19069 },
+            { "weight": 11, "sprite": 19070 },
+            { "weight": 11, "sprite": 19071 }
+          ],
+          "rotates": false,
+          "animated": true
+        }
+      ]
+    }
+    ]
+    
+  }
+  
+
+]

@@ -51,7 +51,7 @@
     "description": "You are shedding a pollen that humans find refreshing and energizing.  The air smells vaguely floral around you.",
     "scent_type": "sc_flower",
     "scent_intensity": 800,
-    "fatigue": true,
+    "sleepiness": true,
     "cost": 1,
     "time": "2 m",
     "enchantments": [ "ELFA_POLLEN_ENCH" ],
