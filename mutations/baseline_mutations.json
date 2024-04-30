@@ -16,6 +16,14 @@
         ]
       },
       {
+        "condition": { "math": [ "u_skill('swimming')", ">=", "6" ] },
+        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
+      },
+      {
+        "condition": { "math": [ "u_skill('swimming')", ">=", "9" ] },
+        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
+      },
+      {
         "condition": { "math": [ "u_skill('swimming')", "==", "10" ] },
         "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
       }
