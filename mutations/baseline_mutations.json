@@ -1,0 +1,24 @@
+[
+  {
+    "type": "mutation",
+    "id": "BASELINE_STRENGTH_DEX_GAIN",
+    "name": { "str": "Strength/Dex Athletics bonus" },
+    "description": "Increase your strength and dexterity slightly with your athletics rating.  Max of +3 to each at Athletics 10.",
+    "purifiable": false,
+    "starting_trait": true,
+    "player_display": false,
+    "points": 0,
+    "enchantments": [
+      {
+        "values": [
+          { "value": "STRENGTH", "add": { "math": [ "u_skill('swimming') / 4" ] } },
+          { "value": "DEXTERITY", "add": { "math": [ "u_skill('swimming') / 4" ] } }
+        ]
+      },
+      {
+        "condition": { "math": [ "u_skill('swimming')", "==", "10" ] },
+        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
+      }
+    ]
+  }
+]
