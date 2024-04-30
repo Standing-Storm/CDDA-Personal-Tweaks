@@ -4,11 +4,5 @@
     "type": "MONSTER",
     "copy-from": "mon_zombie_bio_op",
     "dissect": "dissect_mon_zomborg"
-  },
-  {
-    "id": "mon_zombie_bio_op2",
-    "type": "MONSTER",
-    "copy-from": "mon_zombie_bio_op2",
-    "dissect": "dissect_mon_zomborg"
   }
 ]
