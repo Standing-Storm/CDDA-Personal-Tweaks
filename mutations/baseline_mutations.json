@@ -1,11 +1,17 @@
 [
   {
+    "type": "trait_group",
+    "id": "NPC_starting_traits",
+    "subtype": "collection",
+    "traits": [ { "trait": "BASELINE_STRENGTH_DEX_GAIN", "prob": 10 }, { "trait": "BASELINE_HEALING_RATE", "prob": 100 } ]
+  },
+  {
     "type": "mutation",
     "id": "BASELINE_STRENGTH_DEX_GAIN",
     "name": { "str": "Strength/Dex Athletics bonus" },
     "description": "Increase your strength and dexterity slightly with your athletics rating.  Max of +5 to each at Athletics 10.",
     "purifiable": false,
-    "starting_trait": true,
+    "starting_trait": false,
     "player_display": false,
     "points": 0,
     "enchantments": [
@@ -28,5 +34,16 @@
         "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
       }
     ]
+  },
+  {
+    "type": "mutation",
+    "id": "BASELINE_HEALING_RATE",
+    "name": { "str": "More Realistic Healing Rate" },
+    "description": "Reduces healing to 5% of normal.",
+    "purifiable": false,
+    "starting_trait": false,
+    "player_display": false,
+    "points": 0,
+    "enchantments": [ { "values": [ { "value": "MENDING_MODIFIER", "multiply": -0.95 }, { "value": "REGEN_HP", "multiply": -0.95 } ] } ]
   }
 ]

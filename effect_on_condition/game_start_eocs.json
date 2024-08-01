@@ -1,0 +1,14 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GIVE_PLAYER_STARTING_TRAITS",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "effect": [ { "queue_eocs": "EOC_GIVE_PLAYER_STARTING_TRAITS_2", "time_in_future": 2 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GIVE_PLAYER_STARTING_TRAITS_2",
+    "effect": [ { "u_add_trait": "BASELINE_STRENGTH_DEX_GAIN" }, { "u_add_trait": "BASELINE_HEALING_RATE" } ]
+  }
+]
