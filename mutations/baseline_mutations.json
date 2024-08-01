@@ -3,7 +3,7 @@
     "type": "trait_group",
     "id": "NPC_starting_traits",
     "subtype": "collection",
-    "traits": [ { "trait": "BASELINE_STRENGTH_DEX_GAIN", "prob": 10 }, { "trait": "BASELINE_HEALING_RATE", "prob": 100 } ]
+    "traits": [ { "trait": "BASELINE_STRENGTH_DEX_GAIN", "prob": 100 } ]
   },
   {
     "type": "mutation",
