@@ -1,0 +1,66 @@
+[
+  {
+    "id": "adhesive_bandages",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "adhesive bandage" },
+    "copy-from": "adhesive_bandages",
+    "use_action": { "type": "heal", "bandages_power": 0.1, "bleed": 4, "move_cost": 750 }
+  },
+  {
+    "id": "bandages",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "bandage" },
+    "copy-from": "bandages",
+    "use_action": { "type": "heal", "bandages_power": 0.4, "bleed": 15, "move_cost": 6000 }
+  },
+  {
+    "id": "bandages_makeshift",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "makeshift bandage" },
+    "copy-from": "bandages_makeshift",
+    "use_action": { "type": "heal", "bandages_power": 0.2, "bleed": 10, "move_cost": 6000 }
+  },
+  {
+    "id": "bandages_makeshift_bleached",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "bleached makeshift bandag" },
+    "copy-from": "bandages_makeshift_bleached",
+    "use_action": { "type": "heal", "bandages_power": 0.3, "bleed": 10, "move_cost": 6000 }
+  },
+  {
+    "id": "bandages_makeshift_boiled",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "boiled makeshift bandage" },
+    "copy-from": "bandages_makeshift_boiled",
+    "use_action": { "type": "heal", "bandages_power": 0.3, "bleed": 10, "move_cost": 6000 }
+  },
+  {
+    "id": "cotton_ball",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": { "str_sp": "cotton balls" },
+    "copy-from": "cotton_ball",
+    "use_action": { "type": "heal", "bandages_power": 0.1, "bleed": 10, "move_cost": 6000 }
+  },
+  {
+    "id": "medical_gauze",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "medical gauze" },
+    "copy-from": "medical_gauze",
+    "use_action": { "type": "heal", "bandages_power": 0.4, "bleed": 5, "move_cost": 6000 }
+  },
+  {
+    "id": "liq_bandage_spray",
+    "type": "TOOL",
+    "category": "drugs",
+    "name": { "str": "spray bottle of liquid bandage", "str_pl": "spray bottles of liquid bandage" },
+    "copy-from": "liq_bandage_spray",
+    "use_action": { "type": "heal", "bandages_power": 0.1, "bleed": 4, "disinfectant_power": 2, "bite": 0.3, "move_cost": 250 }
+  }
+]
