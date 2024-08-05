@@ -21,7 +21,7 @@
             "value": "STRENGTH",
             "add": {
               "math": [
-                "( (u_skill('swimming') * 3 ) + u_skill('melee') + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + (u_has_proficiency('prof_bow_expert') * 3 ) + ( u_has_proficiency('prof_bow_master') * 5) + u_has_proficiency('prof_athlete_basic') + u_has_proficiency('prof_athlete_expert') ) / 10"
+                "( (u_skill('swimming') * 3 ) + u_skill('melee') + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + (u_has_proficiency('prof_bow_expert') * 3 ) + ( u_has_proficiency('prof_bow_master') * 5) + u_has_proficiency('prof_athlete_basic') + (u_has_proficiency('prof_athlete_expert') * 2 ) ) / 10"
               ]
             }
           },
