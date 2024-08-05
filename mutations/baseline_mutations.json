@@ -21,7 +21,7 @@
             "value": "STRENGTH",
             "add": {
               "math": [
-                "( (u_skill('swimming') * 3 ) + u_skill('melee') + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + (u_has_proficiency('prof_bow_expert') * 3 ) + ( u_has_proficiency('prof_bow_master') * 5) + u_has_proficiency('prof_athlete_basic') + (u_has_proficiency('prof_athlete_expert') * 2 ) ) / 10"
+                "max( ( ( ( (u_skill('swimming') * 4 ) + u_skill('melee') + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + (u_has_proficiency('prof_bow_expert') * 3 ) + ( u_has_proficiency('prof_bow_master') * 5) + u_has_proficiency('prof_athlete_basic') + (u_has_proficiency('prof_athlete_expert') * 2 ) ) / 8) - 2 ), 0)"
               ]
             }
           },
@@ -29,23 +29,12 @@
             "value": "DEXTERITY",
             "add": {
               "math": [
-                "( (u_skill('swimming') * 2 ) + u_skill('melee') + ( u_skill('dodge') * 2 ) + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_expert') + u_has_proficiency('prof_bow_master') + (u_has_proficiency('prof_athlete_basic') * 2 ) + (u_has_proficiency('prof_athlete_expert') * 2) ) / 10"
+                "max( ( (( (u_skill('swimming') * 2 ) + u_skill('melee') + ( u_skill('dodge') * 2 ) + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_expert') + u_has_proficiency('prof_bow_master') + (u_has_proficiency('prof_athlete_basic') * 2 ) + (u_has_proficiency('prof_athlete_expert') * 2) ) / 8 ) - 2), 0)"
               ]
             }
           }
         ]
       }
     ]
-  },
-  {
-    "type": "mutation",
-    "id": "BASELINE_HEALING_RATE",
-    "name": { "str": "More Realistic Healing Rate" },
-    "description": "Reduces healing to 5% of normal.",
-    "purifiable": false,
-    "starting_trait": false,
-    "player_display": false,
-    "points": 0,
-    "enchantments": [ { "values": [ { "value": "MENDING_MODIFIER", "multiply": -0.95 }, { "value": "REGEN_HP", "multiply": -0.95 } ] } ]
   }
 ]
