@@ -9,7 +9,7 @@
     "type": "mutation",
     "id": "BASELINE_STRENGTH_DEX_GAIN",
     "name": { "str": "Strength/Dex Athletics bonus" },
-    "description": "Increase your strength and dexterity slightly with your athletics, dodge, melee, and marksman ratings.  Max of +5 to each.",
+    "description": "Increase your strength and dexterity slightly with your athletics, dodge, melee, and marksman ratings.  Max of +6 to each.",
     "purifiable": false,
     "starting_trait": false,
     "player_display": false,
