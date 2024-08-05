@@ -9,6 +9,6 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_GIVE_PLAYER_STARTING_TRAITS_2",
-    "effect": [ { "u_add_trait": "BASELINE_STRENGTH_DEX_GAIN" } ]
+    "effect": [ { "u_add_trait": "BASELINE_STRENGTH_DEX_GAIN" }, { "u_add_trait": "BASELINE_PERCEPTION_GAIN" } ]
   }
 ]
