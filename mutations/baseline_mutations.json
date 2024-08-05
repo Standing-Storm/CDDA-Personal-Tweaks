@@ -9,7 +9,7 @@
     "type": "mutation",
     "id": "BASELINE_STRENGTH_DEX_GAIN",
     "name": { "str": "Strength/Dex Athletics bonus" },
-    "description": "Increase your strength and dexterity slightly with your athletics rating.  Max of +5 to each at Athletics 10.",
+    "description": "Increase your strength and dexterity slightly with your athletics, dodge, melee, and marksman ratings.  Max of +5 to each.",
     "purifiable": false,
     "starting_trait": false,
     "player_display": false,
@@ -17,21 +17,23 @@
     "enchantments": [
       {
         "values": [
-          { "value": "STRENGTH", "add": { "math": [ "u_skill('swimming') / 4" ] } },
-          { "value": "DEXTERITY", "add": { "math": [ "u_skill('swimming') / 4" ] } }
+          {
+            "value": "STRENGTH",
+            "add": {
+              "math": [
+                "( (u_skill('swimming') * 3 ) + u_skill('melee') + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + (u_has_proficiency('prof_bow_expert') * 3 ) + ( u_has_proficiency('prof_bow_master') * 5) + u_has_proficiency('prof_athlete_basic') + u_has_proficiency('prof_athlete_expert') ) / 10"
+              ]
+            }
+          },
+          {
+            "value": "DEXTERITY",
+            "add": {
+              "math": [
+                "( (u_skill('swimming') * 2 ) + u_skill('melee') + ( u_skill('dodge') * 2 ) + u_skill('gun') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_basic') + u_has_proficiency('prof_bow_expert') + u_has_proficiency('prof_bow_master') + (u_has_proficiency('prof_athlete_basic') * 2 ) + (u_has_proficiency('prof_athlete_expert') * 2) ) / 10"
+              ]
+            }
+          }
         ]
-      },
-      {
-        "condition": { "math": [ "u_skill('swimming')", ">=", "6" ] },
-        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
-      },
-      {
-        "condition": { "math": [ "u_skill('swimming')", ">=", "9" ] },
-        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
-      },
-      {
-        "condition": { "math": [ "u_skill('swimming')", "==", "10" ] },
-        "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 1 } ]
       }
     ]
   },
