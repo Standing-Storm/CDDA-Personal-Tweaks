@@ -21,7 +21,7 @@
             "value": "STRENGTH",
             "add": {
               "math": [
-                "max( ( ( ( (u_skill('swimming') * 4 ) + (u_skill('melee') * 2) + u_skill('gun') + (u_has_proficiency('prof_bow_basic') * 2) + (u_has_proficiency('prof_bow_expert') * 4 ) + ( u_has_proficiency('prof_bow_master') * 6) + (u_has_proficiency('prof_athlete_basic') * 3) + (u_has_proficiency('prof_athlete_expert') * 6 ) + (u_has_proficiency('prof_parkour') * 3 ) ) / 8) - 3 ), 0)"
+                "max( ( ( ( (u_skill('swimming') * 4 ) + (u_skill('melee') * 2) + u_skill('gun') + (u_has_proficiency('prof_bow_basic') * 2) + (u_has_proficiency('prof_bow_expert') * 4 ) + ( u_has_proficiency('prof_bow_master') * 6) + (u_has_proficiency('prof_athlete_basic') * 3) + (u_has_proficiency('prof_athlete_expert') * 6 ) + (u_has_proficiency('prof_athlete_master') * 8 ) + (u_has_proficiency('prof_parkour') * 3 ) ) / 8) - 3 ), 0)"
               ]
             }
           },
@@ -29,7 +29,15 @@
             "value": "DEXTERITY",
             "add": {
               "math": [
-                "max( ( ( ( (u_skill('swimming') * 2 ) + u_skill('melee') + ( u_skill('dodge') * 2 ) + u_skill('gun') + (u_has_proficiency('prof_bow_basic') * 2)+ (u_has_proficiency('prof_bow_expert') * 2 )+ (u_has_proficiency('prof_bow_master') * 4) + (u_has_proficiency('prof_athlete_basic') * 2 ) + (u_has_proficiency('prof_athlete_expert') * 4 ) + (u_has_proficiency('prof_parkour') * 6 ) ) / 8 ) - 2), 0)"
+                "max( ( ( ( (u_skill('swimming') * 2 ) + u_skill('melee') + ( u_skill('dodge') * 2 ) + u_skill('gun') + (u_has_proficiency('prof_bow_basic') * 2)+ (u_has_proficiency('prof_bow_expert') * 2 )+ (u_has_proficiency('prof_bow_master') * 4) + (u_has_proficiency('prof_athlete_basic') * 2 ) + (u_has_proficiency('prof_athlete_expert') * 3 ) + (u_has_proficiency('prof_athlete_master') * 4 ) + (u_has_proficiency('prof_parkour') * 6 ) ) / 8 ) - 2), 0)"
+              ]
+            }
+          },
+          {
+            "value": "CARDIO_MULTIPLIER",
+            "multiply": {
+              "math": [
+                "(sqrt(u_skill('swimming')) * 0.1) + (u_has_proficiency('prof_athlete_basic') * 0.1) + (u_has_proficiency('prof_athlete_expert') * 0.25) + (u_has_proficiency('prof_athlete_master') * 0.4) + (u_has_proficiency('prof_parkour') * 0.15)"
               ]
             }
           }
