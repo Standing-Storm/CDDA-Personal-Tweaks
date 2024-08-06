@@ -1,0 +1,69 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SUBWAY",
+    "//": "Z-2 subways, some lost nether things but otherwise mostly normal mobs",
+    "//2": "SIGNIFICANTLY cut down on subway spawns.",
+    "override": true,
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_null", "weight": 400 },
+      { "group": "GROUP_NETHER_UNVIABLE", "weight": 30, "cost_multiplier": 0 },
+      { "monster": "mon_woodlouse", "weight": 50, "pack_size": [ 1, 3 ] },
+      { "group": "GROUP_SLUG", "weight": 18 },
+      { "group": "GROUP_SPIDER_BASEMENT", "weight": 30, "pack_size": [ 2, 5 ] },
+      {
+        "monster": "mon_mutant_experimental",
+        "weight": 5,
+        "cost_multiplier": 2,
+        "pack_size": [ 1, 3 ],
+        "ends": "14 days"
+      },
+      {
+        "monster": "mon_mutant_experimental",
+        "weight": 5,
+        "cost_multiplier": 2,
+        "pack_size": [ 2, 5 ],
+        "starts": "14 days"
+      },
+      { "monster": "mon_sludge_crawler", "weight": 5 },
+      { "monster": "mon_unseen_hunter", "weight": 5, "cost_multiplier": 2, "starts": "42 hours" },
+      { "monster": "mon_dog_thing", "weight": 2, "cost_multiplier": 2 },
+      { "group": "GROUP_STRAY_DOGS", "weight": 1, "cost_multiplier": 2 },
+      { "monster": "mon_blank", "weight": 2, "cost_multiplier": 2, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_kreck", "weight": 2, "cost_multiplier": 2, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_gracke", "weight": 2, "cost_multiplier": 2, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_hunting_horror", "weight": 2, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_shoggoth", "weight": 1, "cost_multiplier": 3, "starts": "42 hours" }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SUBWAY_CITY",
+    "//": "Normal subway, extra spawns underneath a city",
+    "//2": "Cut down on subway spawns.  There being more under a city makes sense but nonetheless",
+    "override": true,
+    "default": "mon_chud",
+    "monsters": [
+      { "monster": "mon_null", "weight": 300 },
+      { "monster": "mon_chud", "weight": 90 },
+      { "monster": "mon_chud", "weight": 300, "pack_size": [ 2, 3 ] },
+      {
+        "monster": "mon_zombie_survivor",
+        "weight": 50,
+        "cost_multiplier": 3,
+        "pack_size": [ 1, 3 ],
+        "starts": "42 hours"
+      },
+      {
+        "monster": "mon_zombie_survivor_elite",
+        "weight": 50,
+        "cost_multiplier": 4,
+        "pack_size": [ 1, 3 ],
+        "starts": "180 hours"
+      },
+      { "monster": "mon_zombie_technician", "weight": 50, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_zombie_shady", "weight": 100, "cost_multiplier": 2, "pack_size": [ 1, 3 ] }
+    ]
+  }
+]
