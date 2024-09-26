@@ -1,6 +1,13 @@
 [
   {
     "type": "effect_type",
+    "id": "slowed_sleep_healing",
+    "name": [ "Reduced Sleep Healing" ],
+    "desc": [ "Reduces the ludicrous speed your wounds heal while asleep." ],
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "REGEN_HP", "multiply": -0.666 } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "bandaged",
     "name": [ "Bandaged" ],
     "desc": [ "The wounds on your %s are bandaged." ],
@@ -160,5 +167,21 @@
       "move_cost": 6000,
       "used_up_item": { "id": "cotton_ball", "quantity": 1, "charges": 1, "flags": [ "FILTHY" ] }
     }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GENERAL_SLOWED_SLEEP_SPEED_ADD",
+    "eoc_type": "EVENT",
+    "required_event": "character_falls_asleep",
+    "condition": { "not": { "u_has_effect": "slowed_sleep_healing" } },
+    "effect": [ { "u_add_effect": "slowed_sleep_healing", "duration": "12 hours" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GENERAL_SLOWED_SLEEP_SPEED_REMOVE",
+    "eoc_type": "EVENT",
+    "required_event": "character_wakes_up",
+    "condition": { "u_has_effect": "slowed_sleep_healing" },
+    "effect": [ { "u_lose_effect": "slowed_sleep_healing" } ]
   }
 ]
