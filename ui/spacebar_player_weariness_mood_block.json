@@ -6,7 +6,7 @@
     "label": "3_weari_mood_block",
     "arrange": "minimum_columns",
     "width": 58,
-    "widgets": [ "spacebar_separator_2", "player_weariness_mood_block_tmp" ]
+    "widgets": [ "spacebar_separator_2", "player_weariness_mood_block_tmp", "spacebar_important_effects" ]
   },
   {
     "id": "player_weariness_mood_block_tmp",
