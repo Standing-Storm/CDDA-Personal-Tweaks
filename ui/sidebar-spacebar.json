@@ -19,7 +19,8 @@
         "spacebar_side_by_side_2",
         "spacebar_separator",
         "player_movement_block",
-        "spacebar_nether_attunement_block"
+        "spacebar_nether_attunement_block",
+        "spacebar_important_effects"
       ]
     }
   }
