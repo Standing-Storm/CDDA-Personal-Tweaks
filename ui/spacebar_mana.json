@@ -14,13 +14,5 @@
     "label": "mana_number",
     "arrange": "minimum_columns",
     "widgets": [ "spacebar_separator_2", "spacebar_current_max_mana_nums_layout" ]
-  },
-  {
-    "id": "spacebar_nether_attunement_block",
-    "type": "widget",
-    "style": "layout",
-    "label": "Attunement",
-    "arrange": "minimum_columns",
-    "widgets": [ "spacebar_separator_2", "spacebar_nether_attunement_meter" ]
   }
 ]
