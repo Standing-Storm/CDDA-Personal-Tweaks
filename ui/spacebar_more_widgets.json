@@ -1,5 +1,13 @@
 [
   {
+    "id": "spacebar_effects",
+    "type": "widget",
+    "style": "layout",
+    "label": "5_Effects",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_important_effects"]
+  },
+  {
     "id": "spacebar_side_by_side_2",
     "type": "widget",
     "style": "layout",
