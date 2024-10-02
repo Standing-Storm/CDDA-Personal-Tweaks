@@ -1,6 +1,14 @@
 [
    {
-    "id": "spacebar_important_effects",
+      "id": "spacebar_effects",
+      "type": "widget",
+      "style": "layout",
+      "label": "5_Effects",
+      "arrange": "minimum_columns",
+      "widgets": [  "spacebar_important_effects" ]
+   },
+   {
+      "id": "spacebar_important_effects",
     "type": "widget",
     "label": "Effects",
     "style": "text",
