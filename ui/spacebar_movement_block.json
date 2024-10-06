@@ -1,0 +1,32 @@
+[
+  {
+    "id": "player_movement_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "4_movement block",
+    "arrange": "rows",
+    "width": 48,
+    "widgets": [ "stamina_bar_tmp", "carry_weight_graph_label", "spacebar_move_combine_group_tmp" ]
+  },
+  {
+    "id": "spacebar_move_count_cost",
+    "type": "widget",
+    "style": "layout",
+    "label": "Stamina/Speed/Move",
+    "label_align": "right",
+    "text_align": "left",
+    "width": 28,
+    "arrange": "rows",
+    "widgets": [ "move_count_mode_desc", "move_cost_num", "vehicle_fuel_desc_label" ]
+  },
+  {
+    "id": "carry_weight_graph_label",
+    "type": "widget",
+    "var": "carry_weight",
+    "style": "graph",
+    "label": "   Carry Wt",
+    "width": 32,
+    "symbols": ".\\|",
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_white_red" ]
+  }
+]

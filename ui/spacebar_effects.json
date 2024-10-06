@@ -1,0 +1,120 @@
+[
+  {
+    "id": "spacebar_effects_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "5_Effects",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_important_effects" ]
+  },
+  {
+    "id": "spacebar_important_effects",
+    "type": "widget",
+    "label": "Effects",
+    "style": "text",
+    "padding": 0,
+    "clauses": [
+      { "id": "nauseated", "text": "Nauseated", "color": "magenta", "condition": { "u_has_effect": "nausea" } },
+      {
+        "id": "staggered",
+        "text": "Staggered",
+        "color": "red",
+        "condition": { "u_has_effect": "staggered_character" }
+      },
+      { "id": "poisoned", "text": "Poisoned", "color": "light_green", "condition": { "u_has_effect": "poison" } },
+      {
+        "id": "badly_poisoned",
+        "text": "B. Poisoned",
+        "color": "green",
+        "condition": { "u_has_effect": "badpoison" }
+      },
+      {
+        "id": "poisoned_wound",
+        "text": "Poisoned Wound",
+        "color": "light_green",
+        "condition": { "u_has_effect": "venom_dmg" }
+      },
+      {
+        "id": "weaken_posion",
+        "text": "Weaken Poison",
+        "color": "light_green",
+        "condition": { "u_has_effect": "venom_weaken" }
+      },
+      {
+        "id": "pain_posion",
+        "text": "Pain Poison",
+        "color": "light_green",
+        "condition": { "u_has_effect": "venom_pain" }
+      },
+      {
+        "id": "smoke_eyes",
+        "text": "Smoke (Eyes)",
+        "color": "light_blue",
+        "condition": { "u_has_effect": "smoke_eyes" }
+      },
+      {
+        "id": "smoke_lungs",
+        "text": "Smoke (Lungs)",
+        "color": "light_blue",
+        "condition": { "u_has_effect": "smoke_lungs" }
+      },
+      { "id": "bile_stink", "text": "Bile Stink", "color": "magenta", "condition": { "u_has_effect": "bile_stink" } },
+      {
+        "id": "bile_irritant",
+        "text": "Bile Irritant",
+        "color": "magenta",
+        "condition": { "u_has_effect": "bile_irritant" }
+      },
+      {
+        "id": "conjunctivitis",
+        "text": "Conjunctivitis",
+        "color": "light_blue",
+        "condition": { "u_has_effect": "conjunctivitis" }
+      },
+      { "id": "fungus", "text": "Fungalized", "color": "light_red", "condition": { "u_has_effect": "fungus" } },
+      { "id": "tainted", "text": "Tainted Mind", "color": "magenta", "condition": { "u_has_effect": "taint" } },
+      {
+        "id": "getting_sick",
+        "text": "Getting Sick",
+        "color": "light_red",
+        "condition": { "u_has_any_effect": [ "pre_flu", "pre_common_cold" ] }
+      },
+      {
+        "id": "are_sick",
+        "text": "Sick",
+        "color": "red",
+        "condition": { "u_has_any_effect": [ "flu", "common_cold" ] }
+      },
+      {
+        "id": "various_illnesses",
+        "text": "Illness",
+        "color": "red",
+        "condition": { "u_has_any_effect": [ "tapeworm", "bloodworms", "brainworms", "paincysts" ] }
+      },
+      {
+        "id": "anemic",
+        "text": "Anemic",
+        "color": "light_red",
+        "condition": { "u_has_any_effect": [ "redcells_anemia", "anemia" ] }
+      },
+      {
+        "id": "hypovolemia",
+        "text": "Hypovolemic",
+        "color": "light_red",
+        "condition": { "u_has_effect": "hypovolemia" }
+      },
+      {
+        "id": "muscle_cramps",
+        "text": "Muscle Cramps",
+        "color": "light_red",
+        "condition": { "u_has_effect": "tetanus" }
+      },
+      {
+        "id": "zapped",
+        "text": "Zapped",
+        "color": "yellow",
+        "condition": { "u_has_any_effect": [ "zapped", "electrocuted" ] }
+      }
+    ]
+  }
+]

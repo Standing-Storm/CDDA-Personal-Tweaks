@@ -1,0 +1,224 @@
+[
+  {
+    "id": "spacebar_nether_attunement_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Attunement",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "spacebar_nether_attunement_meter" ]
+  },
+  {
+    "id": "spacebar_nether_attunement_meter",
+    "type": "widget",
+    "style": "text",
+    "label": "Attune",
+    "width": 56,
+    "clauses": [
+      {
+        "id": "invisible",
+        "text": "",
+        "color": "c_black",
+        "condition": { "not": { "u_has_effect": "effect_disease_psionic_drain" } }
+      },
+      {
+        "id": "visible_1",
+        "text": "<color_green>Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "15" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "35" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_2",
+        "text": "<color_green>Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "35" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "55" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_3",
+        "text": "<color_light_green>Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "55" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "75" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_4",
+        "text": "<color_light_green>Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "75" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "95" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_5",
+        "text": "<color_yellow>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "95" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "115" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_6",
+        "text": "<color_yellow>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "115" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "135" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_7",
+        "text": "<color_light_red>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "135" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "155" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_8",
+        "text": "<color_light_red>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "155" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "175" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_9",
+        "text": "<color_red>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "175" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "195" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_10",
+        "text": "<color_red>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "195" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "215" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_11",
+        "text": "<color_magenta>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": {
+          "and": [
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "215" ] },
+            { "math": [ "u_vitamin('vitamin_psionic_drain')", "<", "235" ] }
+          ]
+        }
+      },
+      {
+        "id": "visible_12",
+        "text": "<color_magenta>Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ≔≕Ψ</color>",
+        "condition": { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "235" ] }
+      }
+    ],
+    "padding": 0
+  },
+  {
+    "id": "spacebar_nether_attunement_effects",
+    "type": "widget",
+    "style": "text",
+    "width": 56,
+    "clauses": [
+      {
+        "id": "psi_null",
+        "text": "Nullified",
+        "color": "red",
+        "condition": { "u_has_any_effect": [ "effect_psi_null", "effect_psi_null_unbound", "effect_psi_neutralized" ] }
+      },
+      {
+        "id": "nether_attention",
+        "text": "Observed",
+        "color": "cyan",
+        "condition": { "u_has_effect": "psi_nether_attention" }
+      },
+      {
+        "id": "psionic_overload",
+        "text": "Headache",
+        "color": "light_green",
+        "condition": { "u_has_effect": "psionic_overload" }
+      },
+      {
+        "id": "nether_attunement_raiser",
+        "text": "N. Conduit",
+        "color": "magenta",
+        "condition": { "u_has_effect": "effect_nether_attunement_raiser" }
+      },
+      {
+        "id": "nether_attunement_attenuation",
+        "text": "N. Attenuated",
+        "color": "light_gray",
+        "condition": { "u_has_effect": "effect_nether_attunement_attenuation" }
+      },
+      {
+        "id": "psi_reduced_breathing",
+        "text": "Short Breath",
+        "color": "light_blue",
+        "condition": { "u_has_effect": "effect_psi_reduced_breathing" }
+      },
+      {
+        "id": "biokin_overload",
+        "text": "Weakened",
+        "color": "light_red",
+        "condition": { "u_has_effect": "effect_biokin_overload" }
+      },
+      {
+        "id": "electrokin_overload",
+        "text": "Jerky",
+        "color": "yellow",
+        "condition": { "u_has_effect": "effect_electrokin_overload" }
+      },
+      {
+        "id": "pyrokin_overload",
+        "text": "Feverish",
+        "color": "red",
+        "condition": { "u_has_effect": "effect_pyrokin_overload" }
+      },
+      {
+        "id": "teleporter_overload",
+        "text": "Warped Space",
+        "color": "magenta",
+        "condition": { "u_has_effect": "teleporter_overload" }
+      },
+      {
+        "id": "telekin_overload",
+        "text": "Weighted",
+        "color": "light_gray",
+        "condition": { "u_has_effect": "effect_telekin_overload" }
+      },
+      {
+        "id": "vitakin_overload",
+        "text": "Ennervated",
+        "color": "light_green",
+        "condition": { "u_has_effect": "effect_vitakin_overload" }
+      }
+    ],
+    "padding": 0,
+    "flags": [ "W_LABEL_NONE" ]
+  }
+]

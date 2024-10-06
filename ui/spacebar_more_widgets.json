@@ -1,0 +1,100 @@
+[
+  {
+    "id": "spacebar_side_by_side_2",
+    "type": "widget",
+    "style": "layout",
+    "label": "3_Location Info",
+    "arrange": "minimum_columns",
+    "padding": 0,
+    "width": 58,
+    "widgets": [ "player_weariness_mood_block2", "spacebar_overmap_18x9" ]
+  },
+  {
+    "id": "spacebar_rs_column_2",
+    "type": "widget",
+    "style": "layout",
+    "label": "stacked",
+    "arrange": "rows",
+    "widgets": [ "all_location_info_rows_layout", "rad_badge_desc" ]
+  },
+  {
+    "id": "player_weariness_mood_block2",
+    "type": "widget",
+    "style": "layout",
+    "label": "3_weari_mood_block",
+    "arrange": "rows",
+    "width": 26,
+    "widgets": [ "player_weariness_mood_block_tmp2" ]
+  },
+  {
+    "id": "player_weariness_mood_block_tmp2",
+    "type": "widget",
+    "style": "layout",
+    "label": "mood/focus/weariness",
+    "arrange": "rows",
+    "width": 28,
+    "widgets": [ "spacebar_personal_mood_focus_activity_layout", "spacebar_all_weariness_layout" ]
+  },
+  {
+    "id": "wind_sun_rad",
+    "type": "widget",
+    "style": "layout",
+    "label": "wind/sun/radiation",
+    "arrange": "rows",
+    "width": 58,
+    "widgets": [ "wind_desc", "sundial_label_layout", "rad_badge_desc" ]
+  },
+  {
+    "id": "spacebar_overmap_18x9",
+    "type": "widget",
+    "label": "Overmap",
+    "var": "overmap_text",
+    "style": "text",
+    "width": 18,
+    "height": 9,
+    "text_align": "left",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "spacebar_personal_mood_focus_activity_layout",
+    "type": "widget",
+    "style": "layout",
+    "label": "Mood/Focus/Activity",
+    "arrange": "rows",
+    "width": 24,
+    "widgets": [ "mood_desc_label", "spacebar_personal_focus_graph", "health_desc", "activity_desc", "spacebar_personal_cardio_graph" ]
+  },
+  {
+    "id": "spacebar_personal_focus_graph",
+    "type": "widget",
+    "label": "Focus",
+    "style": "graph",
+    "var": "focus",
+    "symbols": ".oO",
+    "fill": "bucket",
+    "width": 5,
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
+  },
+  {
+    "id": "spacebar_personal_health_graph",
+    "type": "widget",
+    "label": "Health",
+    "style": "graph",
+    "var": "health",
+    "symbols": ".oO",
+    "fill": "bucket",
+    "width": 5,
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
+  },
+  {
+    "id": "spacebar_personal_cardio_graph",
+    "type": "widget",
+    "label": "Cardio Fit",
+    "style": "graph",
+    "var": "cardio_fit",
+    "symbols": ".oO",
+    "fill": "bucket",
+    "width": 5,
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
+  }
+]
