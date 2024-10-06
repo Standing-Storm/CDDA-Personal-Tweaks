@@ -1,8 +1,0 @@
-[
-  {
-    "id": "mon_zombie_bio_op",
-    "type": "MONSTER",
-    "copy-from": "mon_zombie_bio_op",
-    "dissect": "dissect_mon_zomborg"
-  }
-]

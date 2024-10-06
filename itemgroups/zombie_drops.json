@@ -1,0 +1,9 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "copy-from": "default_zombie_clothes",
+    "id": "default_zombie_clothes",
+    "extend": { "entries": [ { "item": "ring_wedding", "damage": [ 0, 1 ], "prob": 45 } ] }
+  }
+]
