@@ -1,0 +1,69 @@
+[
+  {
+    "type": "effect_type",
+    "id": "post_healing_injection",
+    "name": [ "Haggard and drawn" ],
+    "desc": [ "The performance enhancing drugs slowly wear off and leave you in a state of existential grade hangover." ],
+    "rating": "bad",
+    "int_dur_factor": "8 h",
+    "max_duration": "24 h",
+    "base_mods": {
+      "stim_min": [ -20 ],
+      "stim_min_val": [ -60 ],
+      "perspiration_min": [ 1 ],
+      "perspiration_chance": [ 60 ],
+      "stamina_min": [ -10 ]
+    },
+    "blood_analysis_description": "Post overdose quantities of multiple drugs in analyzed blood.",
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "decreased_performance",
+    "name": [ "Decreased Performance" ],
+    "desc": [ "The performance enhancing drugs slowly wear off and leave you in a state of existential grade hangover." ],
+    "rating": "bad",
+    "int_dur_factor": "8 h",
+    "max_duration": "24 h",
+    "base_mods": { "speed_mod": [ -5 ], "stamina_min": [ -10 ], "str_mod": [ -2 ], "dex_mod": [ -2 ] },
+    "blood_analysis_description": "Post overdose quantities of multiple drugs in analyzed blood.",
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "post_strength_injection",
+    "name": [ "Weakened and worn down" ],
+    "desc": [ "The performance enhancing drugs slowly wear off and leave you in a state of existential grade hangover." ],
+    "rating": "bad",
+    "int_dur_factor": "8 h",
+    "max_duration": "24 h",
+    "base_mods": { "speed_mod": [ -5 ], "stamina_min": [ -10 ], "str_mod": [ -4 ], "dex_mod": [ -2 ] },
+    "blood_analysis_description": "Dangerous levels of steroids.",
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "post_speed_injection",
+    "name": [ "Slowed Reactions" ],
+    "desc": [ "The performance enhancing drugs slowly wear off and leave you in a state of existential grade hangover." ],
+    "rating": "bad",
+    "int_dur_factor": "8 h",
+    "max_duration": "24 h",
+    "base_mods": { "speed_mod": [ -45 ], "stamina_min": [ -17 ] },
+    "blood_analysis_description": "Dangerous levels of military grade nervous system medications.",
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "cbm_bio_generic_speed_bonus",
+    "name": [ "Movement Optimization (1)", "Movement Optimization (2)", "Movement Optimization (3)", "Movement Optimization (4)" ],
+    "desc": [ "You move with machine-guided precision." ],
+    "rating": "good",
+    "max_intensity": 4,
+    "int_add_val": 1,
+    "int_decay_tick": 500,
+    "base_mods": { "dex_mod": [ 0.5 ], "speed_mod": [ 10 ] },
+    "scaling_mods": { "dex_mod": [ 0.5 ], "speed_mod": [ 10 ] },
+    "show_in_info": true
+  }
+]

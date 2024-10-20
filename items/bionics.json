@@ -14,6 +14,7 @@
     "type": "bionic",
     "name": { "str": "Linguistic Coprocessor" },
     "description": "The left hemisphere of your brain has been augmented with a microcomputer that moderately increases the speed that language and written words are processed, granting a 15% increase to reading speed.",
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "READING_SPEED_MULTIPLIER", "multiply": -0.15 } ] } ],
     "occupied_bodyparts": [ [ "head", 2 ] ]
   },
   {
@@ -35,5 +36,296 @@
     "fuel_efficiency": 1.0,
     "time": "1 s",
     "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_TOGGLED" ]
+  },
+  {
+    "id": "cbm_bio_microgen",
+    "type": "bionic",
+    "name": { "str": "Microfusion Generator" },
+    "description": "An implanted fusion reactor with its own internal nuclear fuel reservoir.  It will last over a century without servicing.",
+    "occupied_bodyparts": [ [ "torso", 7 ] ],
+    "dupes_allowed": true,
+    "enchantments": [ { "values": [ { "value": "POWER_TRICKLE", "add": 6 } ] } ],
+    "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+  },
+  {
+    "id": "cbm_bio_microgen",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Microfusion Generator CBM" },
+    "description": "A miniaturized fusion reactor.  It has modest output, but will run continuously for over two hundred years thanks to its internal nuclear fuel reservoir.",
+    "weight": "500 g",
+    "price": "1 kUSD 200 USD",
+    "price_postapoc": "15 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "cbm_bio_missiles",
+    "type": "bionic",
+    "//": "Watch those wrist rockets!",
+    "name": { "str": "Deployable Grenade Launcher" },
+    "description": "Your right hand can fold inward to reveal a mechanism capable of igniting and firing 40mm grenades across medium distances.",
+    "occupied_bodyparts": [ [ "hand_r", 3 ] ],
+    "fake_weapon": "cbm_bionic_rocket",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "NO_UNWIELD" ],
+    "act_cost": "35 J"
+  },
+  {
+    "id": "cbm_bio_missiles",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Deployable Grenade Launcher CBM" },
+    "description": "A small, folding tube that attaches to your right arm.  Once implanted, it can serve as a portable, integrated tool for firing 40mm grenades and canisters.",
+    "price": "1 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "cbm_bio_dopamine_stimulators",
+    "type": "bionic",
+    "name": { "str": "Dopamine Stimulators" },
+    "description": "Tiny cybernetic stimulators have been installed throughout your ventral tegmental area, and trigger at set intervals using bionic power.  This slowly releases a stream of reward chemicals and hormones into your brain, inducing a state of euphoria that notably elevates mood.",
+    "occupied_bodyparts": [ [ "head", 5 ] ],
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_SLEEP_FRIENDLY" ],
+    "act_cost": "5 J",
+    "react_cost": "5 J",
+    "time": "200 s"
+  },
+  {
+    "id": "cbm_bio_dopamine_stimulators",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Dopamine Stimulators CBM" },
+    "description": "A set of tiny bionic nerve stimulators that install into the reward center of your brain.  When run with bionic power, it periodically releases a hit of dopamine and other reward chemicals, inducing a state of euphoria and suppressing fear.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 8
+  },
+  {
+    "id": "cbm_bio_melee_counteraction",
+    "type": "bionic",
+    "name": { "str": "Counteractive Reflexes" },
+    "description": "Cybernetic stimulators installed across your nervous system boost your reflexes whenever you are hit in melee, granting you an extra action.  This bionic must be active to function.",
+    "occupied_bodyparts": [ [ "head", 4 ], [ "arm_l", 5 ], [ "arm_r", 5 ], [ "leg_l", 6 ], [ "leg_r", 6 ] ],
+    "flags": [ "BIONIC_TOGGLED" ],
+    "enchantments": [ "cbm_melee_counteraction" ],
+    "act_cost": "12 kJ",
+    "react_cost": "12 kJ",
+    "time": "1 s"
+  },
+  {
+    "id": "cbm_bio_melee_counteraction",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Counteractive Reflexes CBM" },
+    "description": "Cybernetic stimulators installed across your nervous system boost your reflexes whenever you are hit in melee, granting you an extra action.  This bionic must be active to function.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 9
+  },
+  {
+    "id": "cbm_bio_blood_plus",
+    "type": "bionic",
+    "name": { "str": "Synthetic Marrow" },
+    "description": "The interior of your femurs have been scrapped clean, the marrow replaced with a Mercurial brand bio-factory that produces high efficiency blood analogues.  The blood substitutes are fine-tuned for combat, increasing stamina, disease resistance and clotting speed.",
+    "cant_remove_reason": "The biofactory has perfectly integrated with your body, removing it would be pointless and potentially fatal.",
+    "occupied_bodyparts": [ [ "head", 2 ], [ "torso", 10 ], [ "arm_l", 6 ], [ "arm_r", 6 ], [ "leg_l", 8 ], [ "leg_r", 8 ] ],
+    "enchantments": [
+      {
+        "ench_effects": [ { "effect": "synth_blood_permanent", "intensity": 2 } ],
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 1.2 } ]
+      }
+    ]
+  },
+  {
+    "id": "cbm_bio_blood_plus",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Synthblood Biofactory CBM" },
+    "description": "A Mercurial Genomics brand biofactory that replaces the user's blood with a synthetic substitute.  Primarily designed to boost combat performance, its common among the corporation's own security forces.  The biofactory can't be removed once integrated with a host.",
+    "price_postapoc": "15 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "cbm_bio_blood_brain",
+    "type": "bionic",
+    "name": { "str": "Blood Neurology" },
+    "description": "Your blood is laced with neuron-analogue nanites, allowing your entire circulatory system to function as a secondary brain.  This radical modification increases your intelligence, reflexes and perception by 4, increases your pain tolerance and allows you to survive brain damage that would otherwise prove fatal.",
+    "occupied_bodyparts": [ [ "head", 4 ], [ "torso", 15 ], [ "arm_l", 7 ], [ "arm_r", 7 ], [ "leg_l", 10 ], [ "leg_r", 10 ] ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "INTELLIGENCE", "add": 4 },
+          { "value": "PERCEPTION", "add": 4 },
+          { "value": "DEXTERITY", "add": 4 },
+          { "value": "PAIN", "multiply": -0.33 },
+          { "value": "PAIN_PENALTY_MOD_INT", "add": -4 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cbm_bio_blood_brain",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Blood Neurology CBM" },
+    "description": "A radical nanite treatment that allows its host's circulatory system to function as a secondary nervous system, greatly increasing their mental acuity and allowing them to survive trauma that would otherwise be fatal.  A cybernetic enhancement of this category is a rare find and could be easily traded for significant favors and resources.",
+    "price_postapoc": "475 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "cbm_bio_melee_optimization_unit",
+    "type": "bionic",
+    "name": { "str": "Melee Optimization Unit" },
+    "description": "An implanted AI module calculates the optimal followup to each of your melee strikes, allowing you to chain them with unnatural speed and grace.  This bionic must be active to function.",
+    "occupied_bodyparts": [ [ "head", 10 ], [ "arm_l", 5 ], [ "arm_r", 5 ], [ "leg_l", 10 ], [ "leg_r", 10 ] ],
+    "flags": [ "BIONIC_TOGGLED" ],
+    "enchantments": [ "cbm_melee_optimization" ],
+    "act_cost": "12 kJ",
+    "react_cost": "12 kJ",
+    "time": "1 s"
+  },
+  {
+    "id": "cbm_bio_melee_optimization_unit",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Melee Optimization Unit CBM" },
+    "description": "An implanted AI executes the optimal followup for each of your melee strikes, allowing you to chain them with unnatural speed and grace.  This bionic must be active to function.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 10
+  },
+  {
+    "id": "cbm_bio_chemical_enhancement_rig",
+    "type": "bionic",
+    "name": { "str": "Chemical Enhancement Rig and computer" },
+    "description": "An implanted AI module and medication dispenser calculates the optimal chemical mix to keep you on your toes and ready for combat.  This bionic must be active to function and while it functions your body is at a heightened performance but if it turns off it will take you several days to get back to normal.  There are a significant number of baseline bonuses granted by this setup but people around will notice your junkie behavior.",
+    "occupied_bodyparts": [ [ "head", 5 ], [ "torso", 10 ], [ "arm_l", 3 ], [ "arm_r", 3 ], [ "leg_l", 3 ], [ "leg_r", 3 ] ],
+    "flags": [ "BIONIC_TOGGLED" ],
+    "activated_eocs": [ "eoc_cbm_chembaseline" ],
+    "activated_on_install": true,
+    "enchantments": [ "cbm_heightened_performance" ],
+    "included_bionics": [ "cbm_bio_speed_injection", "cbm_bio_healing_injection", "cbm_bio_strength_injection" ],
+    "deactivated_eocs": [ "afs_eoc_hangover_baseline" ],
+    "act_cost": "100 J",
+    "react_cost": "20 J",
+    "time": "1 m"
+  },
+  {
+    "id": "cbm_bio_chemical_enhancement_rig",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Chemical Enhancement Rig and computer CBM" },
+    "description": "An implanted AI module and medication dispenser calculates the optimal chemical mix to keep you on your toes and ready for combat.  This bionic must be active to function and while it functions your body is at a heightened performance but if it turns off it will take you several days to get back to normal.  There are a significant number of baseline bonuses granted by this setup but people around will notice your junkie behavior.  This bionic must be active to function.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 9
+  },
+  {
+    "id": "cbm_bio_speed_injection",
+    "type": "bionic",
+    "name": { "str": "Speed Injection System" },
+    "description": "The chemical injection system and microcomputer that when activated greatly enhances your reaction times and overall speed.  Upon deactivation, the user may experience dizziness, heart palpitations and ravenous appetites.",
+    "flags": [ "BIONIC_TOGGLED" ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [
+          { "value": "HUNGER", "multiply": 2 },
+          { "value": "SPEED", "multiply": 1.75 },
+          { "value": "MAX_STAMINA", "multiply": 1.35 },
+          { "value": "THIRST", "multiply": 2.5 },
+          { "value": "METABOLISM", "multiply": 2.5 },
+          { "value": "REGEN_STAMINA", "multiply": 1.15 },
+          { "value": "BONUS_DODGE", "add": 2 }
+        ]
+      }
+    ],
+    "activated_eocs": [ "eoc_cbm_chemspeed" ],
+    "deactivated_eocs": [ "eoc_cbm_hangover_speed" ],
+    "act_cost": "100 J",
+    "react_cost": "20 J",
+    "time": "1 m"
+  },
+  {
+    "id": "cbm_bio_speed_injection",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Speed Injection System CBM" },
+    "description": "Should never be found outside of the chemical enhancement rig, but probably can be uninstalled, there is no point to doing that.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 9
+  },
+  {
+    "id": "cbm_bio_healing_injection",
+    "type": "bionic",
+    "name": { "str": "Pain Suppression Injection System" },
+    "description": "The chemical injection system and microcomputer that when activated gives a burst of chemicals that allows your blood to work a little harder at stabilizing the body and then flushes your system with a powerful anesthetic that allows you to continue operating at high capacity.  Upon deactivation, the user may experience extreme lethargy, sudden loss of consciousness, among other symptoms that may prove potentially fatal if not in a safe location.",
+    "flags": [ "BIONIC_TOGGLED" ],
+    "//": "Pain enchantment doesn't work currently.  Remove spell and this comment once it does.",
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [
+          { "value": "ARMOR_BIO", "add": -7 },
+          { "value": "ARMOR_COLD", "add": -5 },
+          { "value": "PAIN_REMOVE", "add": 45 },
+          { "value": "METABOLISM", "multiply": 1.5 },
+          { "value": "REGEN_HP", "multiply": 2 }
+        ]
+      }
+    ],
+    "activated_eocs": [ "eoc_cbm_chemhealing" ],
+    "processed_eocs": [ "eoc_cbm_chemhealing_pkill" ],
+    "deactivated_eocs": [ "eoc_cbm_hangover_healing" ],
+    "act_cost": "100 J",
+    "react_cost": "20 J",
+    "time": "1 m"
+  },
+  {
+    "id": "cbm_bio_healing_injection",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Pain Suppression Injection System CBM" },
+    "description": "Should never be found outside of the chemical enhancement rig, but probably can be uninstalled, there is no point to doing that.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 9
+  },
+  {
+    "id": "cbm_bio_strength_injection",
+    "type": "bionic",
+    "name": { "str": "Strength Injection System" },
+    "description": "The chemical injection system and microcomputer that when activated greatly enhances your reaction times and overall speed.  Upon deactivation, the user may experience dizziness, heart palpitations and ravenous appetites.",
+    "flags": [ "BIONIC_TOGGLED" ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [
+          { "value": "STRENGTH", "add": 3 },
+          { "value": "MAX_HP", "add": 17 },
+          { "value": "BONUS_BLOCK", "add": 3 },
+          { "value": "MAX_STAMINA", "multiply": 1.25 },
+          { "value": "THIRST", "multiply": 2.5 },
+          { "value": "METABOLISM", "multiply": 2.5 },
+          { "value": "REGEN_STAMINA", "multiply": 1.05 },
+          { "value": "FOOTSTEP_NOISE", "add": 4 }
+        ]
+      }
+    ],
+    "activated_eocs": [ "eoc_cbm_chemstrength" ],
+    "deactivated_eocs": [ "eoc_cbm_hangover_strength" ],
+    "act_cost": "100 J",
+    "react_cost": "20 J",
+    "time": "1 m"
+  },
+  {
+    "id": "cbm_bio_strength_injection",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Strength Injection System CBM" },
+    "description": "Should never be found outside of the chemical enhancement rig, but probably can be uninstalled, there is no point to doing that.",
+    "price": "10 kUSD",
+    "price_postapoc": "1 kUSD",
+    "difficulty": 9
   }
 ]

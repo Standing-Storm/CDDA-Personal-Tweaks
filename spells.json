@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cbm_bio_free_turn",
+    "type": "SPELL",
+    "name": "CBM Extra Turn",
+    "description": "Grants you an extra turn.",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "mod_moves",
+    "shape": "blast",
+    "min_damage": 100,
+    "max_damage": 100,
+    "base_casting_time": 1
+  },
+  {
+    "id": "cbm_bio_speed_bonus",
+    "type": "SPELL",
+    "name": "CBM Stacking Speed Bonus",
+    "description": "Grants you a stackable speed bonus.",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "effect_str": "cbm_bio_generic_speed_bonus",
+    "shape": "blast",
+    "flags": [ "NO_PROJECTILE" ],
+    "base_casting_time": 1,
+    "min_duration": 100,
+    "max_duration": 100
+  }
+]

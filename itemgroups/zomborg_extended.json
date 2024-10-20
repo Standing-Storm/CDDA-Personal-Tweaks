@@ -133,7 +133,8 @@
       { "item": "bio_ethanol", "prob": 50 },
       { "item": "bio_fuel_cell_gasoline", "prob": 50 },
       { "item": "cbm_bio_solar", "prob": 30 },
-      { "item": "bio_torsionratchet", "prob": 200 }
+      { "item": "bio_torsionratchet", "prob": 200 },
+      { "item": "cbm_bio_microgen", "prob": 15 }
     ]
   },
   {
@@ -144,7 +145,9 @@
       { "item": "bio_cqb", "prob": 15 },
       { "item": "bio_heat_absorb", "prob": 5 },
       { "item": "bio_targeting", "prob": 5 },
-      { "item": "bio_adrenaline", "prob": 10 }
+      { "item": "bio_adrenaline", "prob": 10 },
+      { "item": "cbm_bio_melee_optimization_unit", "prob": 10 },
+      { "item": "cbm_bio_chemical_enhancement_rig", "prob": 3 }
     ]
   },
   {
@@ -153,8 +156,10 @@
     "subtype": "distribution",
     "items": [
       [ "bio_climate", 5 ],
+      [ "cbm_bio_dopamine_stimulators", 10 ],
       [ "bio_digestion", 15 ],
       [ "bio_evap", 15 ],
+      [ "cbm_bio_linguistic_coprocessor", 15 ],
       [ "bio_fingerhack", 20 ],
       [ "bio_gills", 10 ],
       [ "bio_purifier", 10 ],
@@ -174,7 +179,8 @@
       { "item": "bio_painkiller", "prob": 5 },
       { "item": "bio_scent_mask", "prob": 30 },
       { "item": "bio_shock", "prob": 5 },
-      { "item": "bio_carbon", "prob": 10 }
+      { "item": "bio_carbon", "prob": 10 },
+      { "item": "cbm_bio_melee_counteraction", "prob": 10 }
     ]
   },
   {
@@ -193,7 +199,9 @@
       [ "bio_laser", 20 ],
       [ "bio_shotgun", 50 ],
       [ "bio_shockwave", 1 ],
-      [ "bio_emp", 3 ]
+      [ "bio_chain_lightning", 5 ],
+      [ "bio_emp", 3 ],
+      [ "cbm_bio_missiles", 1 ]
     ]
   },
   {
@@ -221,7 +229,9 @@
       { "item": "bio_int_enhancer", "prob": 30 },
       { "item": "bio_memory", "prob": 20 },
       { "item": "bio_eye_enhancer", "prob": 40 },
-      { "item": "bio_str_enhancer", "prob": 30 }
+      { "item": "bio_str_enhancer", "prob": 30 },
+      { "item": "cbm_bio_blood_plus", "prob": 20 },
+      { "item": "cbm_bio_blood_brain", "prob": 5 }
     ]
   }
 ]
