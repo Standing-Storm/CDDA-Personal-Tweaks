@@ -1,0 +1,10 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_XE_MAGIC_POTENTIAL_CONDUCTS",
+    "recurrence": [ "10 m", "10 m" ],
+    "condition": { "and": [ { "not": { "u_has_trait": "PATTERN_SORCERY" } }, { "math": [ "u_spell_count('school': 'PATTERN_SORCERY')", ">=", "1" ] } ] },
+    "deactivate_condition": { "u_has_trait": "PATTERN_SORCERY" },
+    "effect": [ { "u_add_trait": "PATTERN_SORCERY" } ] 
+  }
+]
