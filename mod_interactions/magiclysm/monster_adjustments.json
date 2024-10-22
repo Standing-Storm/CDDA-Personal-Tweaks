@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mon_demon_spider",
+    "type": "MONSTER",
+    "copy-from": "mon_demon_spider",
+    "hp": 235,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "vision_day": 30,
+    "vision_night": 4
+  },
+  {
+    "id": "mon_demon_spider_queen",
+    "type": "MONSTER",
+    "copy-from": "mon_demon_spider_queen",
+    "hp": 800,
+    "speed": 80,
+    "melee_skill": 3,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "vision_day": 30,
+    "vision_night": 4
+  },
+  {
+    "id": "mon_bulette",
+    "type": "MONSTER",
+    "copy-from": "mon_bulette",
+    "special_attacks": [
+      {
+        "id": "scratch",
+        "cooldown": 4,
+        "damage_max_instance": [ { "damage_type": "cut", "amount": 15, "armor_multiplier": 0.9 } ]
+      },
+      {
+        "id": "slam",
+        "cooldown": 8,
+        "damage_max_instance": [ { "damage_type": "bash", "amount": 15, "armor_multiplier": 0.8 } ]
+      },
+      [ "SMASH", 10 ]
+    ],
+    "armor": { "bash": 32, "cut": 30, "stab": 15, "bullet": 24 }
+  },
+  {
+    "id": "mon_wisp",
+    "type": "MONSTER",
+    "copy-from": "mon_wisp",
+    "armor": { "electric": 16, "bullet": 999 }
+  }
+]

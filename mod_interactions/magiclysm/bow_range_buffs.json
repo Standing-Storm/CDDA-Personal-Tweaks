@@ -1,0 +1,16 @@
+[
+  {
+    "type": "GUN",
+    "id": "druid_recurve",
+    "name": { "str": "Woodbow" },
+    "copy-from": "druid_recurve",
+    "range": 22
+  },
+  {
+    "type": "GUN",
+    "id": "rune_druid_weapon",
+    "name": { "str": "short bow" },
+    "copy-from": "rune_druid_weapon",
+    "range": 21
+  }
+]

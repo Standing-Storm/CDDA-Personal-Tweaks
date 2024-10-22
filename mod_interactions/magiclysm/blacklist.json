@@ -1,0 +1,13 @@
+[
+  {
+    "type": "MONSTER_BLACKLIST",
+    "monsters": [
+      "mon_leprechaun",
+      "mon_yulecat",
+      "mon_yulecat_cub",
+      "mon_workshop_elf",
+      "mon_yulecat_zombie_brute",
+      "mon_yulecat_zombie"
+    ]
+  }
+]
