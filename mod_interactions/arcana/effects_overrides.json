@@ -1,0 +1,40 @@
+[
+  {
+    "type": "effect_type",
+    "id": "potion_numbness",
+    "name": [ "Intense Numbness" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "Your body feels incredibly numb and sluggish." ],
+    "remove_message": "The numbness fades.",
+    "removes_effects": [ "shakes", "formication" ],
+    "decay_messages": [ [ "The numbing effect of your potion is starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "30 m",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "base_mods": { "pain_tick": [ 25 ], "pain_min": [ -2 ], "speed_mod": [ -25, -15 ] }
+  },
+    {
+    "type": "effect_type",
+    "id": "potion_vulnerary",
+    "name": [ "Vulnerary" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "You can feel a soothing sensation lingering after applying salve to your wounds." ],
+    "remove_message": "The vulnerary's after-effects fade.",
+    "removes_effects": [ "spores" ],
+    "decay_messages": [ [ "The after-effects of the vulnerary are fading.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "20 m",
+    "max_intensity": 20,
+    "int_dur_factor": "1 m",
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_chance": [ 30 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_chance": [ 30 ],
+      "pain_tick": [ 50 ],
+      "pain_min": [ -1 ],
+      "speed_mod": [ -15, -10 ]
+    }
+  }
+]
