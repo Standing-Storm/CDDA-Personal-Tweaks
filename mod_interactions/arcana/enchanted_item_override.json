@@ -1,0 +1,35 @@
+[
+  {
+    "id": "halo_flute_effect",
+    "copy-from": "halo_flute_effect",
+    "type": "ARMOR",
+    "name": { "str": "elusive aura" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOVE_COST", "multiply": -0.4 }, { "value": "BONUS_DODGE", "add": 2 } ],
+          "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "halo_brooch_effect",
+    "copy-from": "halo_brooch_effect",
+    "type": "ARMOR",
+    "name": { "str": "guardian aura" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ALL", "multiply": -0.2 }
+          ]
+        }
+      ]
+    }
+  }
+]
