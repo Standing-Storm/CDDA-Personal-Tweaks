@@ -1,0 +1,194 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_BIOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "BIOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "BIOMANCER" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_BIOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_DRUID_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "DRUID" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "DRUID" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_DRUID_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_EARTHSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "EARTHSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "EARTHSHAPER" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_EARTHSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_KELVINIST_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "KELVINIST" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "KELVINIST" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_KELVINIST_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_STORMSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "STORMSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "STORMSHAPER" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_STORMSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ANIMIST_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "ANIMIST" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "ANIMIST", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "ANIMIST_TECHNOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BIOMANCER_EARTHSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "BIOMANCER" }, { "u_has_trait": "EARTHSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "BIOMANCER", "EARTHSHAPER" ] } },
+    "effect": [ { "u_add_trait": "BIOMANCER_EARTHSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BIOMANCER_KELVINIST_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "BIOMANCER" }, { "u_has_trait": "KELVINIST" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "BIOMANCER", "KELVINIST" ] } },
+    "effect": [ { "u_add_trait": "BIOMANCER_KELVINIST_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BIOMANCER_MAGUS_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "BIOMANCER" }, { "u_has_trait": "MAGUS" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "BIOMANCER", "MAGUS" ] } },
+    "effect": [ { "u_add_trait": "BIOMANCER_MAGUS_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BIOMANCER_STORMSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "BIOMANCER" }, { "u_has_trait": "STORMSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "BIOMANCER", "STORMSHAPER" ] } },
+    "effect": [ { "u_add_trait": "BIOMANCER_STORMSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BIOMANCER_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "BIOMANCER" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "BIOMANCER", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "BIOMANCER_TECHNOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DRUID_EARTHSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "DRUID" }, { "u_has_trait": "EARTHSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "DRUID", "EARTHSHAPER" ] } },
+    "effect": [ { "u_add_trait": "DRUID_EARTHSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DRUID_KELVINIST_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "DRUID" }, { "u_has_trait": "KELVINIST" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "DRUID", "KELVINIST" ] } },
+    "effect": [ { "u_add_trait": "DRUID_KELVINIST_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DRUID_MAGUS_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "DRUID" }, { "u_has_trait": "MAGUS" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "DRUID", "MAGUS" ] } },
+    "effect": [ { "u_add_trait": "DRUID_MAGUS_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DRUID_STORMSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "DRUID" }, { "u_has_trait": "STORMSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "DRUID", "STORMSHAPER" ] } },
+    "effect": [ { "u_add_trait": "DRUID_STORMSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DRUID_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "DRUID" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "DRUID", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "DRUID_TECHNOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_EARTHSHAPER_KELVINIST_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "EARTHSHAPER" }, { "u_has_trait": "KELVINIST" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "EARTHSHAPER", "KELVINIST" ] } },
+    "effect": [ { "u_add_trait": "EARTHSHAPER_KELVINIST_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_EARTHSHAPER_MAGUS_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "EARTHSHAPER" }, { "u_has_trait": "MAGUS" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "EARTHSHAPER", "MAGUS" ] } },
+    "effect": [ { "u_add_trait": "EARTHSHAPER_MAGUS_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_EARTHSHAPER_STORMSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "EARTHSHAPER" }, { "u_has_trait": "STORMSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "EARTHSHAPER", "STORMSHAPER" ] } },
+    "effect": [ { "u_add_trait": "EARTHSHAPER_STORMSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_KELVINIST_MAGUS_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "KELVINIST" }, { "u_has_trait": "MAGUS" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "KELVINIST", "MAGUS" ] } },
+    "effect": [ { "u_add_trait": "KELVINIST_MAGUS_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_KELVINIST_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "KELVINIST" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "KELVINIST", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "KELVINIST_TECHNOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MAGUS_STORMSHAPER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "MAGUS" }, { "u_has_trait": "STORMSHAPER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "MAGUS", "STORMSHAPER" ] } },
+    "effect": [ { "u_add_trait": "MAGUS_STORMSHAPER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MAGUS_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "MAGUS" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "MAGUS", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "MAGUS_TECHNOMANCER_ONLY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_STORMSHAPER_TECHNOMANCER_CHECK",
+    "recurrence": [ "20 minutes", "20 minutes" ],
+    "condition": { "and": [ { "u_has_trait": "STORMSHAPER" }, { "u_has_trait": "TECHNOMANCER" } ] },
+    "deactivate_condition": { "not": { "u_has_any_trait": [ "STORMSHAPER", "TECHNOMANCER" ] } },
+    "effect": [ { "u_add_trait": "STORMSHAPER_TECHNOMANCER_ONLY" } ]
+  }
+]
