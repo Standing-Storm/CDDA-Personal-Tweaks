@@ -1,0 +1,55 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DREAMS_DEDUCTION_SKILL_EXP",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "EATER", "DREAMER", "DREAMSMITH", "INVENTOR", "VAMPIRE" ] },
+        {
+          "or": [
+            { "compare_string": [ "EATER", { "context_val": "school" } ] },
+            { "compare_string": [ "DREAMER", { "context_val": "school" } ] },
+            { "compare_string": [ "DREAMSMITH", { "context_val": "school" } ] },
+            { "compare_string": [ "INVENTOR", { "context_val": "school" } ] },
+            { "compare_string": [ "VAMPIRE", { "context_val": "school" } ] }
+          ]
+        }
+      ]
+    },
+    "effect": [ { "math": [ "u_skill_exp('deduction', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_FAE_GRAMAYRE_SKILL_EXP",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "UNDINE", "SYLPH" ] },
+        {
+          "or": [
+            { "compare_string": [ "ARVORE", { "context_val": "school" } ] },
+            { "compare_string": [ "IERDE", { "context_val": "school" } ] },
+            { "compare_string": [ "HOMULLUS", { "context_val": "school" } ] },
+            { "compare_string": [ "SALAMANDER", { "context_val": "school" } ] },
+            { "compare_string": [ "UNDINE", { "context_val": "school" } ] },
+            { "compare_string": [ "SYLPH", { "context_val": "school" } ] }
+          ]
+        }
+      ]
+    },
+    "effect": [ { "math": [ "u_skill_exp('gramayre', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
+  },
+  {
+    "type": "skill",
+    "ident": "gramayre",
+    "name": { "str": "gramayre" },
+    "description": "Your ability to manipulate fae magicks.",
+    "tags": [ "combat_skill" ],
+    "time_to_attack": { "min_time": 60, "base_time": 200, "time_reduction_per_level": 14 },
+    "display_category": "display_ranged",
+    "sort_rank": 14750
+  }
+]

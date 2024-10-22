@@ -1,0 +1,12 @@
+[
+  {
+    "type": "mutation",
+    "id": "XE_MUNDANE",
+    "name": { "str": "Anoneiric" },
+    "points": 0,
+    "starting_trait": true,
+    "description": "You never really thought too much about your dreams or what they meant.  It's all just nonsense, really.  You are ineligible for developing the Eater of Dreams, Dreamer, Dreamsmith, and Inventor magical classes.",
+    "purifiable": false,
+    "valid": false
+  }
+]

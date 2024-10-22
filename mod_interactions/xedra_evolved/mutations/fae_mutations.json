@@ -1,0 +1,32 @@
+[
+  {
+    "type": "mutation",
+    "id": "PRETTY",
+    "copy-from": "PRETTY",
+    "extend": { "category": [ "ARVORE", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL",
+    "copy-from": "BEAUTIFUL",
+    "extend": { "category": [ "ARVORE", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL2",
+    "copy-from": "BEAUTIFUL2",
+    "extend": {
+      "category": [ "ARVORE", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ],
+      "threshreq": [ "THRESH_ARVORE", "THRESH_IERDE", "THRESH_SALAMANDER", "THRESH_SYLPH", "THRESH_UNDINE" ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL3",
+    "copy-from": "BEAUTIFUL3",
+    "extend": {
+      "category": [ "ARVORE", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ],
+      "threshreq": [ "THRESH_ARVORE", "THRESH_IERDE", "THRESH_SALAMANDER", "THRESH_SYLPH", "THRESH_UNDINE" ]
+    }
+  }
+]

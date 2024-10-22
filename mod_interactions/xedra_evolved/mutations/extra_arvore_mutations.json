@@ -1,0 +1,33 @@
+[
+  {
+    "type": "mutation",
+    "id": "FLOWERS",
+    "copy-from": "FLOWERS",
+    "extend": {
+      "category": [ "ARVORE" ],
+      "threshreq": [ "THRESH_ARVORE" ],
+      "prereqs": [ "ARVORE_SKIN_1", "ARVORE_SKIN_2", "ARVORE_SKIN_3" ],
+      "prereqs2": [ "ARVORE_VERDANT_HAIR" ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ROSEBUDS",
+    "copy-from": "ROSEBUDS",
+    "extend": { "category": [ "ARVORE" ], "threshreq": [ "THRESH_ARVORE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ARVORE_FLORAL_SCENT",
+    "name": { "str": "Floral Scent" },
+    "points": 4,
+    "visibility": 0,
+    "ugliness": -2,
+    "prereqs": [ "ARVORE_VERDANT_HAIR" ],
+    "changes_to": [ "ARVORE_MIND_CONTROL_POLLEN" ],
+    "cancels": [ "SMELLY", "SMELLY2" ],
+    "description": "The flowers in your hair produce a pleasant smell, obvious without being overpowering.  You no longer smell anything like a human and other beings will react to you appropriately.",
+    "category": [ "ARVORE" ],
+    "scent_type": "sc_flower"
+  }
+]
