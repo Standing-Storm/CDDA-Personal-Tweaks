@@ -9,12 +9,9 @@
     "player_display": false,
     "enchantments": [
       {
-        "values": [ 
-          { 
-            "value": "CARDIO_MULTIPLIER", 
-            "multiply": { "math": [ "u_spell_count('school': 'PATTERN_SORCERY') * 0.025" ] }
-          }, 
-          { 
+        "values": [
+          { "value": "CARDIO_MULTIPLIER", "multiply": { "math": [ "u_spell_count('school': 'PATTERN_SORCERY') * 0.025" ] } },
+          {
             "value": "SLEEPINESS_REGEN",
             "multiply": { "math": [ "u_spell_count('school': 'PATTERN_SORCERY') * 0.0125" ] }
           }

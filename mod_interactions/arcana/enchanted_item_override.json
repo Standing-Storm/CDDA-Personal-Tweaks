@@ -21,15 +21,7 @@
     "type": "ARMOR",
     "name": { "str": "guardian aura" },
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_ALL", "multiply": -0.2 }
-          ]
-        }
-      ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ALL", "multiply": -0.2 } ] } ]
     }
   }
 ]

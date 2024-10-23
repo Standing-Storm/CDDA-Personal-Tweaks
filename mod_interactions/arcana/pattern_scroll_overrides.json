@@ -10,7 +10,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_phase_shield",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_phase_shield')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_phase_shield')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_phase_shield')", "=", "1" ] },
             {
@@ -34,7 +34,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_earthweaving",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_earthweaving')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_earthweaving')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_earthweaving')", "=", "1" ] },
             {
@@ -58,7 +58,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_dark_lance",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_dark_lance')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_dark_lance')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_dark_lance')", "=", "1" ] },
             {
@@ -82,7 +82,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_sun",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_consecrate')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_consecrate')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_consecrate')", "=", "1" ] },
             {
@@ -106,7 +106,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_cold_ward')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_cold_ward')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
             {
@@ -130,7 +130,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "=", "1" ] },
             {
@@ -154,7 +154,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "=", "1" ] },
             {
@@ -178,7 +178,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "=", "1" ] },
             {
@@ -202,7 +202,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_eclipse')", "=", "1" ] },
             {
@@ -226,7 +226,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_agility')", "=", "1" ] },
             {
@@ -250,7 +250,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "=", "1" ] },
             {
@@ -274,7 +274,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "=", "1" ] },
             {
@@ -298,7 +298,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "=", "1" ] },
             {
@@ -322,7 +322,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "=", "1" ] },
             {
@@ -346,7 +346,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_free_action')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_free_action')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_free_action')", "=", "1" ] },
             {
@@ -370,7 +370,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_healing')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_healing')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_healing')", "=", "1" ] },
             {
@@ -394,7 +394,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_heat_ward')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_heat_ward')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_heat_ward')", "=", "1" ] },
             {
@@ -418,7 +418,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_insight')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_insight')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_insight')", "=", "1" ] },
             {
@@ -442,7 +442,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "=", "1" ] },
             {
@@ -466,7 +466,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_might')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_might')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_might')", "=", "1" ] },
             {
@@ -490,7 +490,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_overgrowth')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_overgrowth')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_overgrowth')", "=", "1" ] },
             {
@@ -515,7 +515,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "=", "1" ] },
             {
@@ -539,7 +539,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_shockstorm')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_shockstorm')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_shockstorm')", "=", "1" ] },
             {
@@ -563,7 +563,7 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_moon",
-          "condition":  { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "<=", "0" ] },
           "effect": [
             { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "=", "1" ] },
             {
