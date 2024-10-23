@@ -9,7 +9,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MOVE_COST", "multiply": -0.4 }, { "value": "BONUS_DODGE", "add": 2 } ],
+          "values": [ { "value": "MOVE_COST", "multiply": -0.4 }, { "value": "EVASION", "add": 0.25 } ],
           "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
         }
       ]
