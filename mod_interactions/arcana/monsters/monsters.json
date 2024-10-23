@@ -1,0 +1,10 @@
+[
+  {
+    "id": "mon_moruboru",
+    "type": "MONSTER",
+    "copy-from": "mon_moruboru",
+    "extend": {
+      "flags": [ "BASHES" ]
+    }
+  }
+]
