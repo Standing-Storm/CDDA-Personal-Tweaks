@@ -1,0 +1,10 @@
+[
+  {
+    "type": "effect_type",
+    "id": "effect_dragonblood_wing_levitation",
+    "//": "Hidden effect, used to make sure dragonblood can fly.",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "LEVITATION", "CLIMB_FLYING" ]
+  }
+]
