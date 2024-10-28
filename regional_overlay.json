@@ -157,6 +157,7 @@
           "t_tree_dead": 4
         }
       }
-    }
+    },
+    "map_extras": { "road": { "chance": 75, "extras": { "mx_XEDRA_truck": 2 } } }
   }
 ]
