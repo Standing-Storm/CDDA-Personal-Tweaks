@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONWINGS",
-    "copy-from" "ARCANA_DRAGONWINGS",
+    "copy-from": "ARCANA_DRAGONWINGS",
     "changes_to": [ "ARCANA_DRAGONWINGS_FLIGHT" ]
   },
   {
@@ -13,7 +13,7 @@
     "mixed_effect": true,
     "visibility": 4,
     "ugliness": 2,
-    "description": "You have a pair of large, scale-covered wings.  You immune to falling damage, and with the expenditure of mana, you can use them to fly.  Your muscles have adapted to support their movements, improving your strength and stamina further.  Still prevents wearing non-fabric gear on the torso, and a bit more taxing on your dexterity, but they're now less encumbering and don't hinder dodging.",
+    "description": "You have a pair of large, scale-covered wings.  You are immune to falling damage, and with the expenditure of mana, you can use them to fly.  Your muscles have adapted to support their movements, improving your strength and stamina further.  Still prevents wearing non-fabric gear on the torso, and a bit more taxing on your dexterity, but they're now less encumbering and don't hinder dodging.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_DRAGONWINGS" ],
@@ -26,7 +26,7 @@
     "active": true,
     "cost": 5,
     "time": 1,
-    "mana": true,     
+    "mana": true,
     "enchantments": [
       "ENCH_DRAGONBLOOD_DRACONIC_WINGS",
       {
@@ -37,7 +37,7 @@
         ]
       }
     ],
-    "activated_eocs": "EOC_ARCANA_DRAGONWINGS_FLIGHT_activated",
-    "deactivated_eocs": "EOC_ARCANA_DRAGONWINGS_FLIGHT_deactivated"
+    "activated_eocs": [ "EOC_ARCANA_DRAGONWINGS_FLIGHT_activated" ],
+    "deactivated_eocs": [ "EOC_ARCANA_DRAGONWINGS_FLIGHT_deactivated" ]
   }
 ]

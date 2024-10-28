@@ -44,7 +44,7 @@
   {
     "type": "effect_on_condition",
     "id": "arcana_paragon_veilblade_eoc",
-     "eoc_type": "EVENT",
+    "eoc_type": "EVENT",
     "required_event": "character_gains_effect",
     "condition": { "compare_string": [ "arcana_paragon_veilblade_effect", { "context_val": "effect" } ] },
     "effect": [

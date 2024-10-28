@@ -1,5 +1,6 @@
 [
   {
+    "//": "Difficulty to learn permanent spell is spell (Difficulty / 10) + 4",
     "id": "scroll_spell_phase_shield",
     "copy-from": "scroll_spell_phase_shield",
     "type": "COMESTIBLE",
@@ -12,12 +13,29 @@
           "id": "EOC_scroll_spell_phase_shield",
           "condition": { "math": [ "u_spell_level('arcana_magic_phase_shield')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_phase_shield')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, radiant designs seemingly bursting out from the paper…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_phase_shield')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, radiant designs seemingly bursting out from the paper…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, radiant designs seemingly bursting out from the paper…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 7" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -36,12 +54,29 @@
           "id": "EOC_scroll_spell_earthweaving",
           "condition": { "math": [ "u_spell_level('arcana_magic_earthweaving')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_earthweaving')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_earthweaving')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -60,12 +95,26 @@
           "id": "EOC_scroll_spell_dark_lance",
           "condition": { "math": [ "u_spell_level('arcana_magic_dark_lance')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_dark_lance')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_dark_lance')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                { "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…", "type": "good" },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -84,12 +133,29 @@
           "id": "EOC_scroll_spell_sun",
           "condition": { "math": [ "u_spell_level('arcana_magic_consecrate')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_consecrate')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_consecrate')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -108,12 +174,26 @@
           "id": "EOC_scroll_spell_moon",
           "condition": { "math": [ "u_spell_level('arcana_magic_cold_ward')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, constellations of alien skies…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, constellations of alien skies…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                { "u_message": "You gaze deep into the strange patterns, constellations of alien skies…", "type": "good" },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -129,15 +209,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_artiface",
           "condition": { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "12" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 8" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -153,15 +250,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_nature",
           "condition": { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 7" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -177,15 +291,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_destruction",
           "condition": { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -201,15 +332,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_subversion",
           "condition": { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_eclipse')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "13" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_eclipse')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 9" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -225,15 +373,29 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_agile",
           "condition": { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_agility')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, endless spirals weaving through each other…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_agility')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless spirals weaving through each other…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                { "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…", "type": "good" },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -249,15 +411,29 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_clairvoyance",
           "condition": { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                { "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…", "type": "good" },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -273,15 +449,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_clarity",
           "condition": { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -297,15 +490,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_confusion",
           "condition": { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -321,15 +531,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_acidspray",
           "condition": { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -345,15 +572,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_free_action",
           "condition": { "math": [ "u_spell_level('arcana_magic_free_action')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_free_action')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_free_action')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 3" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -369,15 +613,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_heal",
           "condition": { "math": [ "u_spell_level('arcana_magic_healing')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_healing')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_healing')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -393,15 +654,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_flame_armor",
           "condition": { "math": [ "u_spell_level('arcana_magic_heat_ward')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_heat_ward')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_heat_ward')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -417,15 +695,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_insight",
           "condition": { "math": [ "u_spell_level('arcana_magic_insight')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_insight')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_insight')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 3" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -441,15 +736,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_elecresist",
           "condition": { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns,  endless linear paths intersecting and bending in ways defying the laws of geometry…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless linear paths intersecting and bending in ways defying the laws of geometry…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless linear paths intersecting and bending in ways defying the laws of geometry…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -465,15 +777,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_might",
           "condition": { "math": [ "u_spell_level('arcana_magic_might')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_might')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_might')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -489,15 +818,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_plants",
           "condition": { "math": [ "u_spell_level('arcana_magic_overgrowth')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_overgrowth')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_overgrowth')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 2" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -514,15 +860,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_invis",
           "condition": { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -538,15 +901,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_lightning",
           "condition": { "math": [ "u_spell_level('arcana_magic_shockstorm')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_shockstorm')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "6" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_shockstorm')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 2" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]
@@ -562,15 +942,32 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_moon",
+          "id": "EOC_scroll_spell_cleric",
           "condition": { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "<=", "0" ] },
           "effect": [
-            { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "=", "1" ] },
             {
-              "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
-              "type": "good"
-            },
-            { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
           ]
         }
       ]

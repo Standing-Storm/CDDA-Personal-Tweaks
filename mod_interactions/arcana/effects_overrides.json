@@ -36,5 +36,47 @@
       "pain_min": [ -1 ],
       "speed_mod": [ -15, -10 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "triffid_garland_buff",
+    "name": [ "Verdant Boost" ],
+    "desc": [ "Your body's natural stamina and pain recovery is enhanced." ],
+    "remove_message": "The garland's recovery effect fades.",
+    "decay_messages": [ [ "The effect of the verdant triffid garland is starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": "1 m",
+    "base_mods": {
+      "pain_min": [ -1 ],
+      "pain_tick": [ 30 ],
+      "pain_chance": [ 3 ],
+      "stamina_min": [ 20 ],
+      "stamina_tick": [ 30 ],
+      "stamina_chance": [ 3 ],
+      "health_min": [ 1 ],
+      "health_tick": [ 30 ],
+      "health_chance": [ 3 ],
+      "h_mod_min": [ 1 ],
+      "rad_min": [ -1 ],
+      "rad_tick": [ 30 ],
+      "rad_chance": [ 3 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "temporal_stimulation_effect",
+    "name": [ "Temporal Stimulation" ],
+    "//": "This adds the stamina and fatigue effects to TS.",
+    "base_mods": {
+      "stamina_min": [ 20 ],
+      "hunger_min": [ 1 ],
+      "hunger_tick": [ 75 ],
+      "thirst_min": [ 1 ],
+      "thirst_tick": [ 75 ],
+      "sleepiness_min": [ 1 ],
+      "sleepiness_tick": [ 75 ]
+    },
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": 0.75 } ] } ]
   }
 ]
