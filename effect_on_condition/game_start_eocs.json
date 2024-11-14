@@ -4,7 +4,7 @@
     "id": "EOC_GIVE_PLAYER_STARTING_TRAITS",
     "eoc_type": "EVENT",
     "required_event": "game_begin",
-    "effect": [ { "queue_eocs": "EOC_GIVE_PLAYER_STARTING_TRAITS_2", "time_in_future": 2 } ]
+    "effect": [ { "run_eocs": "EOC_GIVE_PLAYER_STARTING_TRAITS_2", "time_in_future": 2 } ]
   },
   {
     "type": "effect_on_condition",
