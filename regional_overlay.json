@@ -158,6 +158,9 @@
         }
       }
     },
-    "map_extras": { "road": { "chance": 75, "extras": { "mx_XEDRA_truck": 2 } } }
+    "map_extras": {
+      "road": { "chance": 75, "extras": { "mx_XEDRA_truck": 2 } },
+      "build": { "chance": 90, "extras": { "mx_exocrash_1": 2, "mx_exocrash_2": 2 } }
+    }
   }
 ]
