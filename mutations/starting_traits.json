@@ -1,0 +1,44 @@
+[
+  {
+    "type": "mutation",
+    "id": "CANNIBAL",
+    "copy-from": "CANNIBAL",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "STRICT_HUMANITARIAN",
+    "copy-from": "STRICT_HUMANITARIAN",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "PSYCHOPATH",
+    "copy-from": "PSYCHOPATH",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "KILLER",
+    "copy-from": "KILLER",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "CHEMIMBALANCE",
+    "copy-from": "CHEMIMBALANCE",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "NARCOLEPTIC",
+    "copy-from": "NARCOLEPTIC",
+    "random_at_chargen": true
+  },
+  {
+    "type": "mutation",
+    "id": "PYROMANIA",
+    "copy-from": "PYROMANIA",
+    "random_at_chargen": true
+  }
+]
