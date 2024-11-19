@@ -44,7 +44,7 @@
   },
   {
     "type": "skill",
-    "ident": "gramayre",
+    "id": "gramayre",
     "name": { "str": "gramayre" },
     "description": "Your ability to manipulate fae magicks.",
     "tags": [ "combat_skill" ],
