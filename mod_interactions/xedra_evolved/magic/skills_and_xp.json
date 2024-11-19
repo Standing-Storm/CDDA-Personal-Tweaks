@@ -40,12 +40,12 @@
         }
       ]
     },
-    "effect": [ { "math": [ "u_skill_exp('gramayre', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
+    "effect": [ { "math": [ "u_skill_exp('gramarye', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
   },
   {
     "type": "skill",
     "id": "gramayre",
-    "name": { "str": "gramayre" },
+    "name": { "str": "gramarye" },
     "description": "Your ability to manipulate fae magicks.",
     "tags": [ "combat_skill" ],
     "time_to_attack": { "min_time": 60, "base_time": 200, "time_reduction_per_level": 14 },
