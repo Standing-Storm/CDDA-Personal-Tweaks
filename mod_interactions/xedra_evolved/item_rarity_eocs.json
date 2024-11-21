@@ -1,0 +1,24 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_XE_item_difficulty",
+    "//": "XE took longer to take effect than the regular Cataclysm, so the disruptions to modern life would have been greater near the end and supplies would have been lower",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "effect": [
+      {
+        "set_item_category_spawn_rates": [
+          { "spawn_rate": 0.8, "id": "guns" },
+          { "spawn_rate": 0.7, "id": "magazines" },
+          { "spawn_rate": 0.6, "id": "ammo" },
+          { "spawn_rate": 0.9, "id": "weapons" },
+          { "spawn_rate": 0.5, "id": "food" },
+          { "spawn_rate": 0.75, "id": "drugs" },
+          { "spawn_rate": 0.9, "id": "other" },
+          { "spawn_rate": 0.6, "id": "fuel" },
+          { "spawn_rate": 0.8, "id": "spare_parts" }
+        ]
+      }
+    ]
+  }
+]
