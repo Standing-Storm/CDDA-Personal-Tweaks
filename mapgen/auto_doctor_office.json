@@ -227,7 +227,7 @@
         "|": "t_gutter",
         "5": "t_gutter_drop"
       },
-      "furniture": { ":": "f_cellphone_booster", "X": "f_small_satelitte_dish" }
+      "furniture": { ":": "f_cellphone_booster", "X": "f_small_satellite_dish" }
     }
   }
 ]
