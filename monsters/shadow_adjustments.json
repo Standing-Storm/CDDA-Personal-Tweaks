@@ -1,0 +1,11 @@
+[
+  {
+    "name": "GROUP_AMALGAMATIONS_SPAWNED",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_spawn_raptor", "weight": 20 },
+      { "monster": "mon_spawn_raptor_shady", "weight": 20 },
+      { "monster": "mon_spawn_raptor_unstable", "weight": 5 }
+    ]
+  }
+]
