@@ -1,0 +1,32 @@
+[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "map_extras": {
+       "forest": {
+        "chance": 40,
+        "extras": {  "mx_bandits_ambush": 5,
+          "mx_bandits_grave": 2,
+          "mx_bandits_outpost": 2 } },
+      "forest_thick": {
+        "chance": 30,
+        "extras": {  "mx_bandits_ambush": 5,
+          "mx_bandits_grave": 2,
+          "mx_bandits_outpost": 2 } },
+      "forest_water": {
+        "chance": 20,
+        "extras": {  "mx_bandits_ambush": 5,
+          "mx_bandits_grave": 2,
+          "mx_bandits_outpost": 2 } },
+         "field": {
+        "chance": 6,
+        "extras": {   "mx_bandits_ambush": 10,
+          "mx_bandits_campsite": 10,
+          "mx_bandits_grave": 10,
+          "mx_bandits_outpost": 10 } },
+      "road": { "chance": 75, "extras": { "mx_XEDRA_truck": 2,  "mx_bandits_ambush": 25 } },
+      "build": { "chance": 90, "extras": { "mx_exocrash_1": 2, "mx_exocrash_2": 2, "mx_bandits_ambush": 10,
+          "mx_bandits_hideout": 10 } }
+    }
+  }
+]
