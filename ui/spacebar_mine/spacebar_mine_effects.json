@@ -1,17 +1,19 @@
 [
   {
-    "id": "spacebar_effects_block",
+    "id": "spacebar_mine_spacebar_effects_block",
     "type": "widget",
     "style": "layout",
     "label": "5_Effects",
     "arrange": "minimum_columns",
-    "widgets": [ "spacebar_important_effects" ]
+    "widgets": [ "spacebar_separator_2", "spacebar_important_effects" ]
   },
   {
     "id": "spacebar_important_effects",
     "type": "widget",
     "label": "Effects",
     "style": "text",
+    "label_align": "right",
+    "text_align": "left",
     "padding": 0,
     "clauses": [
       { "id": "nauseated", "text": "Nauseated", "color": "magenta", "condition": { "u_has_effect": "nausea" } },

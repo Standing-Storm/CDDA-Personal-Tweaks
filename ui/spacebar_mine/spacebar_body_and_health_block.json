@@ -1,6 +1,6 @@
 [
   {
-    "id": "player_health_and_stasistik_block",
+    "id": "spacebar_mine_player_health_and_stasistik_block",
     "type": "widget",
     "style": "layout",
     "label": "2_player_block",
@@ -9,7 +9,7 @@
     "widgets": [ "piktogram", "char_num_block" ]
   },
   {
-    "id": "player_health_and_stasistik_block_sa",
+    "id": "spacebar_mine_player_health_and_stasistik_block_sa",
     "type": "widget",
     "style": "layout",
     "label": "2_player_block (self-aware)",
@@ -145,12 +145,12 @@
     "arrange": "rows",
     "width": 12,
     "widgets": [
-      "hp_head_num_no_label",
-      "hp_torso_num_no_label",
-      "hp_left_arm_num_no_label",
-      "hp_right_arm_num_no_label",
-      "hp_left_leg_num_no_label",
-      "hp_right_leg_num_no_label"
+      "hp_head_num_label",
+      "hp_torso_num_label",
+      "hp_left_arm_num_label",
+      "hp_right_arm_num_label",
+      "hp_left_leg_num_label",
+      "hp_right_leg_num_label"
     ]
   },
   {

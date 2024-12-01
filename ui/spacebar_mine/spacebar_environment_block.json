@@ -1,6 +1,15 @@
 [
   {
-    "id": "enviroment_conditions_block",
+    "id": "spacebar_mine_wind_sun_rad",
+    "type": "widget",
+    "style": "layout",
+    "label": "wind/sun/radiation",
+    "arrange": "rows",
+    "width": 58,
+    "widgets": [ "wind_desc", "sundial_label_layout", "rad_badge_desc" ]
+  },
+  {
+    "id": "spacebar_mine_enviroment_conditions_block",
     "type": "widget",
     "style": "layout",
     "label": "1_enviroment block",
@@ -26,7 +35,7 @@
     "width": 58,
     "widgets": [ "time_&_layout", "&_weather_layout" ]
   },
-{
+  {
     "id": "time_&_layout",
     "type": "widget",
     "label": "time",
@@ -35,7 +44,7 @@
     "width": 26,
     "widgets": [ "date_desc_label", "time_desc_label", "moon_phase_desc" ]
   },
-{
+  {
     "id": "&_weather_layout",
     "type": "widget",
     "label": "time",

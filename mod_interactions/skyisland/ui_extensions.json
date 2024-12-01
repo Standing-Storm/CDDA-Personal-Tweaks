@@ -1,0 +1,8 @@
+[
+  {
+    "copy-from": "spacebar_mine",
+    "type": "widget",
+    "id": "spacebar_mine",
+    "extend": { "widgets": [ "sky_island_expedition_timer" ] }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "spacebar_mine",
+    "type": "widget",
+    "style": "sidebar",
+    "label": { "str": "spacebar (mine)", "ctxt": "spacebar" },
+    "width": 62,
+    "separator": ": ",
+    "padding": 1,
+    "widgets": [
+      "spacebar_mine_wind_sun_rad",
+      "spacebar_separator",
+      "spacebar_mine_enviroment_conditions_block",
+      "spacebar_separator",
+      "spacebar_mine_player_health_and_stasistik_block",
+      "spacebar_mine_player_health_and_stasistik_block_sa",
+      "spacebar_separator",
+      "spacebar_mine_weariness_location_info",
+      "spacebar_separator",
+      "spacebar_mine_player_movement_block",
+      "spacebar_separator",
+      "spacebar_nether_attunement_block",
+      "xe_spacebar_mana_numbers_block",
+      "xe_spacebar_mana_bar_block",
+      "spacebar_separator",
+      "spacebar_mine_player_weapon_and_martial_arts_block",
+      "spacebar_separator",
+      "spacebar_mine_places_compass_block_danger",
+      "spacebar_separator",
+      "spacebar_separator"
+    ]
+  }
+]
