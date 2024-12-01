@@ -7,7 +7,7 @@
     "arrange": "minimum_columns",
     "padding": 0,
     "width": 58,
-    "widgets": [ "spacebar_mine_player_weariness_mood_block", "spacebar_overmap_18x9" ]
+    "widgets": [ "spacebar_separator_2", "spacebar_mine_player_weariness_mood_block", "spacebar_overmap_18x9" ]
   },
   {
     "id": "spacebar_mine_player_weariness_mood_block",

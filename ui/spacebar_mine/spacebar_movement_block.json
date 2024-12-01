@@ -6,12 +6,7 @@
     "label": "4_movement block",
     "arrange": "rows",
     "width": 48,
-    "widgets": [
-      "stamina_bar_tmp",
-      "carry_weight_graph_label",
-      "spacebar_move_combine_group_tmp",
-      "spacebar_mine_spacebar_effects_block"
-    ]
+    "widgets": [ "stamina_bar_tmp", "carry_weight_graph_label", "spacebar_move_combine_group_tmp" ]
   },
   {
     "id": "stamina_bar_tmp",
@@ -28,9 +23,67 @@
     "label": "Stamina/Speed/Move",
     "label_align": "right",
     "text_align": "left",
-    "width": 28,
+    "width": 20,
     "arrange": "rows",
     "widgets": [ "move_count_mode_desc", "move_cost_num", "vehicle_fuel_desc_label" ]
+  },
+  {
+    "id": "spacebar_mine_move_count_mode_desc",
+    "type": "widget",
+    "label": "Mode",
+    "style": "text",
+    "copy-from": "spacebar_mine_move_mode_template",
+    "//": "Full move mode name walking/running/crouching/prone"
+  },
+  {
+    "id": "spacebar_mine_move_mode_template",
+    "type": "widget",
+    "style": "clause",
+    "default_clause": { "text": { "str": "bugging out", "//~": "NO_I18N" }, "sym": "-", "color": "dark_gray" },
+    "clauses": [
+      {
+        "id": "flying",
+        "text": "flying",
+        "sym": "F",
+        "color": "blue",
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_flag": "LEVITATION" }, { "u_has_flag": "TEMPORARY_SHAPESHIFT" } ] },
+            { "u_is_on_terrain": "t_open_air" }
+          ]
+        }
+      },
+      { "id": "run", "text": "running", "sym": "R", "color": "red", "condition": { "u_has_move_mode": "run" } },
+      { "id": "walk", "text": "walking", "sym": "W", "color": "white", "condition": { "u_has_move_mode": "walk" } },
+      {
+        "id": "lope",
+        "text": "loping",
+        "sym": "L",
+        "color": "light_blue",
+        "condition": { "and": [ { "u_has_flag": "TEMPORARY_SHAPESHIFT" }, { "u_has_move_mode": "crouch" } ] }
+      },
+      {
+        "id": "crouch",
+        "text": "crouching",
+        "sym": "C",
+        "color": "light_blue",
+        "condition": { "and": [ { "not": { "u_has_flag": "TEMPORARY_SHAPESHIFT" } }, { "u_has_move_mode": "crouch" } ] }
+      },
+      {
+        "id": "belly",
+        "text": "on belly",
+        "sym": "P",
+        "color": "green",
+        "condition": { "and": [ { "u_has_flag": "TEMPORARY_SHAPESHIFT" }, { "u_has_move_mode": "prone" } ] }
+      },
+      {
+        "id": "prone",
+        "text": "prone",
+        "sym": "P",
+        "color": "green",
+        "condition": { "and": [ { "not": { "u_has_flag": "TEMPORARY_SHAPESHIFT" } }, { "u_has_move_mode": "prone" } ] }
+      }
+    ]
   },
   {
     "id": "carry_weight_graph_label",
@@ -60,7 +113,7 @@
     "style": "layout",
     "label": "Stamina/Speed/Move",
     "arrange": "minimum_columns",
-    "widgets": [ "spacebar_separator_2", "spacebar_move_mode_speed", "spacebar_move_count_cost" ]
+    "widgets": [ "spacebar_separator_2", "spacebar_move_mode_speed", "spacebar_move_count_cost", "spacebar_move_available" ]
   },
   {
     "id": "spacebar_move_mode_speed",
@@ -69,8 +122,27 @@
     "label": "Move",
     "label_align": "right",
     "text_align": "left",
-    "width": 28,
+    "width": 18,
     "arrange": "rows",
-    "widgets": [ "move_mode_desc", "speed_num", "vehicle_cruise_desc_label" ]
+    "widgets": [ "spacebar_mine_move_count_mode_desc", "speed_num", "vehicle_cruise_desc_label" ]
+  },
+  {
+    "id": "spacebar_move_available",
+    "type": "widget",
+    "style": "layout",
+    "label": "Moves Remaining",
+    "label_align": "right",
+    "text_align": "left",
+    "width": 18,
+    "arrange": "rows",
+    "widgets": [ "spacebar_mine_move_remainder" ]
+  },
+  {
+    "id": "spacebar_mine_move_remainder",
+    "type": "widget",
+    "label": "Left",
+    "var": "move_remainder",
+    "style": "number",
+    "colors": [ "c_white", "c_green" ]
   }
 ]
