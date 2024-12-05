@@ -1,0 +1,37 @@
+[
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "CBM_SLOTS_ENABLED",
+    "//": "Enables CBM slots mechanics.  If true CBM slots are enabled.",
+    "stype": "bool",
+    "value": true
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SPAWN_ANIMAL_DENSITY",
+    "//": "A scaling factor that determines density of wild, formerly domesticated and mutated animal spawns.",
+    "stype": "float",
+    "value": 1.25
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "PLAYER_HEALING_RATE",
+    "//": "Set base player healing rate per turn.  Default: 0.0001",
+    "stype": "float",
+    "value": 0.000002
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "NPC_HEALING_RATE",
+    "//": "Set base NPC healing rate per turn.  Default: 0.0001",
+    "stype": "float",
+    "value": 0.000002
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SPAWN_CITY_HORDE_THRESHOLD",
+    "//": "Minimum city size to guarantee extra zombies are spawned in cities.  0 means all cities spawn extra zombies.  Negative values disable extra city zombies.",
+    "stype": "int",
+    "value": 10
+  }
+]
