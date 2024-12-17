@@ -1,0 +1,18 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SPRINTING_MOVE_COST_ADJUSTMENT",
+    "eoc_type": "EVENT",
+    "required_event": "character_wakes_up",
+    "effect": [ { "run_eocs": "EOC_CHECK_STAMINA" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_AVATAR_SPRINT_CHECK",
+    "eoc_type": "EVENT",
+    "required_event": "avatar_moves",
+    "condition": { "compare_string": [ "sprint", { "context_val": "movement_mode" } ] },
+    "effect": { "math": [ "u_currently_sprinting = 1" ] },
+    "false_effect": { "math": [ "u_currently_sprinting = 0" ] }
+  }
+]
