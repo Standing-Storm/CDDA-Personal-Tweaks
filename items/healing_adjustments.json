@@ -7,7 +7,7 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ { "value": "REGEN_HP", "multiply": { "math": [ "min((u_val('health') * -0.003333333), -0.1)" ] } } ]
+        "values": [ { "value": "REGEN_HP", "multiply": { "math": [ "min((u_health() * -0.003333333), -0.1)" ] } } ]
       }
     ]
   },
