@@ -10,9 +10,8 @@
     "type": "effect_on_condition",
     "id": "EOC_SPRINTING_ONE_TIME_CHECK",
     "eoc_type": "EVENT",
-    "required_event": "game_load",
-    "condition": { "not": { "math": [ "u_game_checked_le_sprint != 1" ] } },
-    "effect": [ { "run_eocs": "EOC_CHECK_STAMINA" }, { "math": [ "u_game_checked_le_sprint = 1" ] } ]
+    "required_event": "game_start",
+    "effect": [ { "run_eocs": "EOC_CHECK_STAMINA" } ]
   },
   {
     "type": "effect_on_condition",
