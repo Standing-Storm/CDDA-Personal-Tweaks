@@ -1,0 +1,9 @@
+[
+  {
+    "//": "Extend the custom sidebar with Magiclysm-specific sections",
+    "copy-from": "spacebar_mine",
+    "type": "widget",
+    "id": "spacebar_mine",
+    "extend": { "widgets": [ "current_max_mana_nums_layout", "mana_graph_layout", "mana_pool_layout" ] }
+  }
+]

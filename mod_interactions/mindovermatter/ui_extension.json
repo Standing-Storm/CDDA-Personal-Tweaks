@@ -1,0 +1,9 @@
+[
+  {
+    "//": "Extend the custom sidebar with Mind Over Matter-specific sections",
+    "copy-from": "spacebar_mine",
+    "type": "widget",
+    "id": "spacebar_mine",
+    "extend": { "widgets": [ "spacebar_nether_attunement_block" ] }
+  }
+]
