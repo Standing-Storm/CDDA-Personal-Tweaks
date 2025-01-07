@@ -1,0 +1,8 @@
+[
+  {
+    "id": "blends_till_full",
+    "//": "A feature that blends into surrounding features until you're on top of it",
+    "type": "oter_vision",
+    "levels": [ { "blends_adjacent": true }, { "blends_adjacent": true }, { "blends_adjacent": true } ]
+  }
+]

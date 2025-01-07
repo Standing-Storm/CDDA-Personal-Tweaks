@@ -250,5 +250,77 @@
       ],
       "terrain": { " ": "t_rock", "#": "t_rock_hematite", "?": [ "t_rock", "t_rock_hematite" ] }
     }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "vein_maybe" ],
+    "method": "json",
+    "weight": 75,
+    "//": "Magnetite vein.",
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "       ??               ",
+        "        ???             ",
+        "        ?##?            ",
+        "         ?##?           ",
+        "          ?##?          ",
+        "           ?##?         ",
+        "            ???         ",
+        "               ?        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { " ": "t_rock", "#": "t_rock_magnetite", "?": [ "t_rock", "t_rock_magnetite" ] }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "vein_maybe" ],
+    "method": "json",
+    "weight": 75,
+    "//": "Magnetite vein.",
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "       ??               ",
+        "        ???             ",
+        "        ?##?            ",
+        "         ?##?           ",
+        "          ?##?          ",
+        "           ?##?         ",
+        "            ???         ",
+        "               ?        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { " ": "t_rock", "#": "t_rock_magnetite", "?": [ "t_rock", "t_rock_magnetite" ] }
+    }
   }
 ]

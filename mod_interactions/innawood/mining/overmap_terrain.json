@@ -5,6 +5,7 @@
     "name": "mineral vein",
     "sym": "%",
     "color": "light_gray",
+    "vision_levels": "blends_till_full",
     "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
@@ -14,24 +15,27 @@
     "name": "mineral vein",
     "sym": "%",
     "color": "light_gray",
+    "vision_levels": "blends_till_full",
     "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
     "id": "vein_maybe",
-    "name": "mineral vein?",
+    "name": "mineral vein",
     "sym": "%",
     "color": "light_gray",
+    "vision_levels": "blends_till_full",
     "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
     "id": "field_shallow",
-    "name": "field?",
+    "name": "field ore vein",
     "sym": ".",
     "color": "brown",
+    "vision_levels": "blends_till_full",
     "see_cost": "none",
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
@@ -39,9 +43,10 @@
   {
     "type": "overmap_terrain",
     "id": "field_deep",
-    "name": "field?",
+    "name": "field ore vein",
     "sym": ".",
     "color": "brown",
+    "vision_levels": "blends_till_full",
     "see_cost": "none",
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
@@ -49,9 +54,10 @@
   {
     "type": "overmap_terrain",
     "id": "forest_vein",
-    "name": "forest?",
+    "name": "forest ore vein",
     "sym": "F",
     "color": "green",
+    "vision_levels": "blends_till_full",
     "see_cost": "spaced_high",
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
@@ -59,9 +65,10 @@
   {
     "type": "overmap_terrain",
     "id": "swamp_hematite",
-    "name": "swamp?",
+    "name": "swamp ore vein",
     "sym": "F",
     "color": "cyan",
+    "vision_levels": "blends_till_full",
     "see_cost": "spaced_high",
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
@@ -69,9 +76,10 @@
   {
     "type": "overmap_terrain",
     "id": "swamp_vein",
-    "name": "swamp?",
+    "name": "swamp ore vein",
     "sym": "F",
     "color": "cyan",
+    "vision_levels": "blends_till_full",
     "see_cost": "spaced_high",
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
@@ -82,6 +90,7 @@
     "name": "alluvial deposit",
     "sym": ".",
     "color": "light_gray",
+    "vision_levels": "blends_till_full",
     "see_cost": "none",
     "extras": "field"
   }

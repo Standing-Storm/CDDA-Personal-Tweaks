@@ -6,7 +6,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 20 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
@@ -14,10 +14,10 @@
     "type": "overmap_special",
     "id": "vein_field_shallow",
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "field_shallow" }, { "point": [ 0, 0, -1 ], "overmap": "vein_rock" } ],
-    "locations": [ "wilderness" ],
+    "locations": [ "field" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
@@ -28,7 +28,7 @@
     "locations": [ "swamp" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
@@ -46,7 +46,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
@@ -61,10 +61,10 @@
       { "point": [ 0, 0, -4 ], "overmap": "vein_maybe" },
       { "point": [ 0, 0, -5 ], "overmap": "vein_maybe" }
     ],
-    "locations": [ "wilderness" ],
+    "locations": [ "field" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
@@ -82,7 +82,7 @@
     "locations": [ "swamp" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 20 ],
+    "occurrences": [ 0, 5 ],
     "rotate": false,
     "flags": [ "CLASSIC", "WILDERNESS" ]
   },
