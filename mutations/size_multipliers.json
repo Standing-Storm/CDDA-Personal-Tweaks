@@ -50,29 +50,13 @@
     "type": "mutation",
     "id": "LARGE",
     "copy-from": "LARGE",
-    "enchantments": [
-      {
-        "values": [
-          { "value": "STRENGTH", "multiply": 0.25 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.5 },
-          { "value": "CARRY_WEIGHT", "multiply": 0.05 }
-        ]
-      }
-    ]
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "multiply": 0.25 }, { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.5 } ] } ]
   },
   {
     "type": "mutation",
     "id": "LARGE_OK",
     "copy-from": "LARGE_OK",
-    "enchantments": [
-      {
-        "values": [
-          { "value": "STRENGTH", "multiply": 0.25 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.5 },
-          { "value": "CARRY_WEIGHT", "multiply": 0.05 }
-        ]
-      }
-    ]
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "multiply": 0.25 }, { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.5 } ] } ]
   },
   {
     "type": "mutation",
@@ -83,8 +67,7 @@
         "values": [
           { "value": "STRENGTH", "multiply": 0.5 },
           { "value": "SLEEPINESS", "multiply": 0.15 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1 },
-          { "value": "CARRY_WEIGHT", "multiply": 0.1 }
+          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1 }
         ]
       }
     ]
@@ -93,14 +76,6 @@
     "type": "mutation",
     "id": "HUGE_OK",
     "copy-from": "HUGE_OK",
-    "enchantments": [
-      {
-        "values": [
-          { "value": "STRENGTH", "multiply": 0.5 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1 },
-          { "value": "CARRY_WEIGHT", "multiply": 0.1 }
-        ]
-      }
-    ]
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "multiply": 0.5 }, { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1 } ] } ]
   }
 ]
