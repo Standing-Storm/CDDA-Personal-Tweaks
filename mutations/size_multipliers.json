@@ -10,7 +10,6 @@
           { "value": "DODGE_CHANCE", "add": 2 },
           { "value": "MAX_HP", "multiply": -0.3 },
           { "value": "FOOTSTEP_NOISE", "multiply": -1 },
-          { "value": "CARRY_WEIGHT", "multiply": -0.5 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": -0.5 }
         ]
       }
@@ -27,8 +26,7 @@
           { "value": "DODGE_CHANCE", "add": 2 },
           { "value": "MAX_HP", "multiply": -0.25 },
           { "value": "FOOTSTEP_NOISE", "multiply": -1 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": -0.5 },
-          { "value": "CARRY_WEIGHT", "multiply": -0.3 }
+          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": -0.5 }
         ]
       }
     ]
@@ -43,8 +41,7 @@
           { "value": "STRENGTH", "multiply": -0.25 },
           { "value": "DODGE_CHANCE", "add": 1 },
           { "value": "MAX_HP", "multiply": -0.05 },
-          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": -0.5 },
-          { "value": "CARRY_WEIGHT", "multiply": -0.2 }
+          { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": -0.5 }
         ]
       }
     ]
