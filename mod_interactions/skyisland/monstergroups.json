@@ -1,0 +1,11 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VANILLA_ONLY_HUMANS",
+    "default": "mon_zombie",
+    "monsters": [
+      { "group": "GROUP_MANSION_START", "weight": 50, "cost_multiplier": 2 },
+      { "group": "GROUP_MANSION_ARMORED", "weight": 10, "cost_multiplier": 8 }
+    ]
+  }
+]

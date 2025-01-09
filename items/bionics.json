@@ -5,8 +5,8 @@
     "type": "BIONIC_ITEM",
     "name": { "str": "Linguistic Coprocessor CBM" },
     "description": "A microcomputer installed into the left hemisphere of your brain to increase the speed that it processes language.  When installed, it provides a passive boost to reading speed.",
-    "price": 100000,
-    "price_postapoc": 50000,
+    "price": "1 kUSD",
+    "price_postapoc": "500 USD",
     "difficulty": 5
   },
   {
@@ -23,7 +23,7 @@
     "type": "BIONIC_ITEM",
     "name": { "str": "Solar Panels CBM" },
     "description": "Installed on your back is a set of retractable solar panels.  When in direct sunlight, they will automatically deploy and slowly recharge your power level.",
-    "price": 350000,
+    "price": "3 kUSD 500 USD",
     "difficulty": 4
   },
   {

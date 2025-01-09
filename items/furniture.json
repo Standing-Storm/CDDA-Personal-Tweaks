@@ -99,8 +99,8 @@
     "volume": "7500 ml",
     "melee_damage": { "bash": 12 },
     "category": "veh_parts",
-    "price": 20000,
-    "price_postapoc": 1500
+    "price": "200 USD",
+    "price_postapoc": "15 USD"
   },
   {
     "type": "construction_group",
