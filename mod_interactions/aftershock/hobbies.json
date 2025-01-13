@@ -1,0 +1,29 @@
+[
+  {
+    "type": "profession",
+    "subtype": "hobby",
+    "id": "afs_physical_stat_genemod",
+    "name": "Physical Genemods",
+    "description": "Everyone except the very poor or those from low-tech planets has had their genetics tweaked.  Dangerous recessives removed, physical and mental capabilities increased, resistance to many normal maladies.  This is the suite of physical genemods, offering increased strength, manual dexterity, and sensory acuity.",
+    "points": 2,
+    "traits": [ "AFS_PHYSICAL_GENEMODS" ]
+  },
+  {
+    "type": "profession",
+    "subtype": "hobby",
+    "id": "afs_mental_stat_genemod",
+    "name": "Mental Genemods",
+    "description": "Everyone except the very poor or those from low-tech planets has had their genetics tweaked.  Dangerous recessives removed, physical and mental capabilities increased, resistance to many normal maladies.  This is the suite of mental genemods, offering increased mental processing speed, ability to concentrate, and long-term memory resilience.",
+    "points": 2,
+    "traits": [ "AFS_MENTAL_GENEMODS" ]
+  },
+  {
+    "type": "profession",
+    "subtype": "hobby",
+    "id": "afs_health_genemod",
+    "name": "Health Genemods",
+    "description": "Everyone except the very poor or those from low-tech planets has had their genetics tweaked.  Dangerous recessives removed, physical and mental capabilities increased, resistance to many normal maladies.  This is the suite of health genemods, offering resistance to disease, increased conditioning, and less requirement for sleep.",
+    "points": 2,
+    "traits": [ "AFS_HEALTH_GENEMODS" ]
+  }
+]

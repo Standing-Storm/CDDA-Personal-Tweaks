@@ -1,0 +1,41 @@
+[
+  {
+    "type": "mutation",
+    "id": "AFS_PHYSICAL_GENEMODS",
+    "name": { "str": "Physical Genemods" },
+    "points": 2,
+    "description": "Your physical capabilities have been increased through in-vitro genetic engineering.",
+    "enchantments": [
+      {
+        "values": [ { "value": "STRENGTH", "add": 2 }, { "value": "DEXTERITY", "add": 2 }, { "value": "PERCEPTION", "add": 2 } ]
+      }
+    ],
+    "flags": [ "IMMUNE_HEARING_DAMAGE" ]
+  },
+  {
+    "type": "mutation",
+    "id": "AFS_HEALTH_GENEMODS",
+    "name": { "str": "Mental Genemods" },
+    "points": 2,
+    "description": "Your mental capabilities have been increased through in-vitro genetic engineering.",
+    "enchantments": [ { "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "LEARNING_FOCUS", "add": 10 } ] } ]
+  },
+  {
+    "type": "mutation",
+    "id": "AFS_MENTAL_GENEMODS",
+    "name": { "str": "Health Genemods" },
+    "points": 2,
+    "description": "Your resilience and endurance have been increased through in-vitro genetic engineering.",
+    "enchantments": [
+      { "mutations": [ "DISRESISTANT", "FASTHEALER", "PAINREC1" ] },
+      {
+        "values": [
+          { "value": "CARDIO_MULTIPLIER", "multiply": 0.2 },
+          { "value": "SLEEPINESS_REGEN", "multiply": 0.2 },
+          { "value": "SLEEPINESS", "multiply": -0.2 }
+        ]
+      }
+    ],
+    "flags": [ "MEND_ALL" ]
+  }
+]
