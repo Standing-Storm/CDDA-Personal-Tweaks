@@ -1,6 +1,6 @@
 [
   {
-    "name": "GROUP_AMALGAMATIONS_SPAWNED",
+    "id": "GROUP_AMALGAMATIONS_SPAWNED",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_spawn_raptor", "weight": 20 },
