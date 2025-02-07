@@ -1,0 +1,64 @@
+[
+  {
+    "id": "changeling_spring_summon_grass_field_spell",
+    "copy-from": "changeling_spring_summon_grass_field_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "min_range": {
+      "math": [ "min( ( 3 + (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 0.8) + u_skill('gramayre')), 30)" ]
+    },
+    "max_range": {
+      "math": [ "min( ( 3 + (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 0.8) + u_skill('gramayre')), 30)" ]
+    },
+    "min_aoe": {
+      "math": [
+        "min( ( 2 + (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 0.25) + (u_skill('gramayre') * 0.5)), 15) * (global_what_is_the_season == 3 ? 0.5 : 1)"
+      ]
+    },
+    "max_aoe": {
+      "math": [
+        "min( ( 2 + (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 0.25) + (u_skill('gramayre') * 0.5)), 15) * (global_what_is_the_season == 3 ? 0.5 : 1)"
+      ]
+    },
+    "base_energy_cost": {
+      "math": [
+        "max( ( 150 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 3) - (u_skill('gramayre') * 4)), 50) * (global_what_is_the_season == 3 ? 4 : 1)"
+      ]
+    },
+    "base_casting_time": {
+      "math": [
+        "max( ( 150 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 3) - (u_skill('gramayre') * 5)), 75)  * (global_what_is_the_season == 3 ? 4 : 1)"
+      ]
+    }
+  },
+  {
+    "id": "changeling_spring_minor_restore_stamina_and_pain_spell",
+    "copy-from": "changeling_spring_minor_restore_stamina_and_pain_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "base_energy_cost": {
+      "math": [ "max( ( 200 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 8) - (u_skill('gramayre') * 10)), 75)" ]
+    },
+    "base_casting_time": {
+      "math": [
+        "max( ( 1500 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 25) - (u_skill('gramayre') * 50)), 150)"
+      ]
+    }
+  },
+  {
+    "id": "changeling_spring_growing_plants_spell",
+    "copy-from": "changeling_spring_growing_plants_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "base_energy_cost": {
+      "math": [
+        "max( ( 1000 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 8) - (u_skill('gramayre') * 10)), 500)  * (global_what_is_the_season == 4 ? 10000 : 1)"
+      ]
+    },
+    "base_casting_time": {
+      "math": [
+        "max( ( 6000 - (u_spell_count('school': 'CHANGELING_SEASONAL_MAGIC_SPRING') * 150) - (u_skill('gramayre') * 75)), 1500)"
+      ]
+    }
+  }
+]

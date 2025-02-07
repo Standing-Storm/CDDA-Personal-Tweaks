@@ -27,9 +27,14 @@
     "required_event": "spellcasting_finish",
     "condition": {
       "and": [
-        { "u_has_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "UNDINE", "SYLPH" ] },
+        { "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "UNDINE", "SYLPH" ] },
         {
           "or": [
+            { "compare_string": [ "CHANGELING_MAGIC", { "context_val": "school" } ] },
+            { "compare_string": [ "CHANGELING_SEASONAL_MAGIC_SPRING", { "context_val": "school" } ] },
+            { "compare_string": [ "CHANGELING_SEASONAL_MAGIC_SUMMER", { "context_val": "school" } ] },
+            { "compare_string": [ "CHANGELING_SEASONAL_MAGIC_AUTUMN", { "context_val": "school" } ] },
+            { "compare_string": [ "CHANGELING_SEASONAL_MAGIC_WINTER", { "context_val": "school" } ] },
             { "compare_string": [ "ARVORE", { "context_val": "school" } ] },
             { "compare_string": [ "IERDE", { "context_val": "school" } ] },
             { "compare_string": [ "HOMULLUS", { "context_val": "school" } ] },

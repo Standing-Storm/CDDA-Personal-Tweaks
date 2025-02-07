@@ -1,0 +1,38 @@
+[
+  {
+    "id": "changeling_research_new_seasonal_spells",
+    "copy-from": "changeling_research_new_seasonal_spells",
+    "type": "SPELL",
+    "skill": "gramayre"
+  },
+  {
+    "id": "changeling_disguise_as_nature_spell",
+    "copy-from": "changeling_disguise_as_nature_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "min_duration": { "math": [ "(changeling_common_traits() * 2250) + (u_skill('gramayre') * 23400) + 35100" ] },
+    "max_duration": { "math": [ "(changeling_common_traits() * 5750) + (u_skill('gramayre') * 56300) + 78900" ] },
+    "base_energy_cost": { "math": [ "max(( 150 - (changeling_common_traits() * 2) - (u_skill('gramayre') * 3)), 50)" ] },
+    "base_casting_time": { "math": [ "max(( 100 - changeling_common_traits() - (u_skill('gramayre') * 3)), 30)" ] }
+  },
+  {
+    "id": "changeling_invisibility_spell",
+    "copy-from": "changeling_invisibility_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "min_duration": { "math": [ "(changeling_common_traits() * 50) + (u_skill('gramayre') * 500) + 2600" ] },
+    "max_duration": { "math": [ "(changeling_common_traits() * 163) + (u_skill('gramayre') * 1200) + 13900" ] },
+    "base_energy_cost": { "math": [ "max(( 750 - (changeling_common_traits() * 5) - (u_skill('gramayre') * 20)), 350)" ] },
+    "base_casting_time": { "math": [ "max(( 250 - (changeling_common_traits() * 3) - (u_skill('gramayre') * 8)), 50)" ] }
+  },
+  {
+    "id": "changeling_summon_will_o_the_wisps_spell",
+    "copy-from": "changeling_summon_will_o_the_wisps_spell",
+    "type": "SPELL",
+    "skill": "gramayre",
+    "min_duration": { "math": [ "(changeling_common_traits() * 190) + (u_skill('gramayre') * 3980) + 16500" ] },
+    "max_duration": { "math": [ "(changeling_common_traits() * 608) + (u_skill('gramayre') * 9750) + 39800" ] },
+    "base_energy_cost": { "math": [ "max(( 300 - (changeling_common_traits() * 3) - (u_skill('gramayre') * 10)), 100)" ] },
+    "base_casting_time": { "math": [ "max(( 100 - changeling_common_traits() - (u_skill('gramayre') * 3)), 50)" ] }
+  }
+]
