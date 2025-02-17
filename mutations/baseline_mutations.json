@@ -42,17 +42,6 @@
             }
           }
         ]
-      },
-      {
-        "condition": {
-          "and": [ { "math": [ "u_currently_sprinting == 0" ] }, { "math": [ "(u_val('stamina') / u_stamina_max_value) >= 0.15" ] } ]
-        },
-        "values": [
-          {
-            "value": "MOVE_COST",
-            "multiply": { "math": [ "-1 * ( (1 - (  u_val('stamina') / u_stamina_max_value ) ) / 1.95)" ] }
-          }
-        ]
       }
     ]
   },
