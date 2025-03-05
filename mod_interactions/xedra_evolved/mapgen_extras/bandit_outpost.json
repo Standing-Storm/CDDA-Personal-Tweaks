@@ -53,8 +53,18 @@
       },
       "furniture": { "@": "f_chair", "B": "f_barricade_road", "c": "f_crate_o", "C": "f_crate_c", "s": "f_sandbag_half" },
       "items": {
-        "c": { "item": "ammo_rifle_common", "chance": 75, "repeat": [ 1, 4 ] },
-        "C": { "item": "ammo_pistol_common", "chance": 75, "repeat": [ 1, 4 ] }
+        "c": [
+          { "item": "9mm_loose", "chance": 50, "repeat": [ 1, 4 ] },
+          { "item": "10mm_loose", "chance": 45, "repeat": [ 1, 4 ] },
+          { "item": "45_loose", "chance": 35, "repeat": [ 1, 4 ] },
+          { "item": "45colt_loose", "chance": 10, "repeat": [ 1, 4 ] }
+        ],
+        "C": [
+          { "item": "9mm_loose", "chance": 50, "repeat": [ 1, 4 ] },
+          { "item": "10mm_loose", "chance": 45, "repeat": [ 1, 4 ] },
+          { "item": "45_loose", "chance": 35, "repeat": [ 1, 4 ] },
+          { "item": "45colt_loose", "chance": 10, "repeat": [ 1, 4 ] }
+        ]
       },
       "npcs": { "@": { "class": "raider" } }
     }
@@ -106,8 +116,17 @@
       },
       "furniture": { "@": "f_chair", "B": "f_barricade_road", "c": "f_crate_o", "C": "f_crate_c", "s": "f_sandbag_half" },
       "items": {
-        "c": { "item": "ammo_rifle_common", "chance": 75, "repeat": [ 1, 4 ] },
-        "C": { "item": "ammo_pistol_common", "chance": 75, "repeat": [ 1, 4 ] }
+        "c": [
+          { "item": "9mm_loose", "chance": 50, "repeat": [ 1, 4 ] },
+          { "item": "10mm_loose", "chance": 45, "repeat": [ 1, 4 ] },
+          { "item": "45_loose", "chance": 35, "repeat": [ 1, 4 ] },
+          { "item": "45colt_loose", "chance": 10, "repeat": [ 1, 4 ] }
+        ],
+        "C": [
+          { "item": "308_loose", "chance": 10, "repeat": [ 1, 4 ] },
+          { "item": "3006_loose", "chance": 10, "repeat": [ 1, 4 ] },
+          { "item": "223_loose", "chance": 35, "repeat": [ 1, 4 ] }
+        ]
       },
       "npcs": { "@": { "class": "raider" } }
     }
