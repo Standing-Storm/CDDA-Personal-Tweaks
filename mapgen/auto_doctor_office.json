@@ -78,7 +78,7 @@
         "C": { "item": "dresser", "chance": 75 },
         "O": { "item": "bionics", "chance": 40 },
         "T": { "item": "office_breakroom", "chance": 80 },
-        "f": { "item": "office_paper", "chance": 90 },
+        "f": { "item": "SUS_office_filing_cabinet", "chance": 90 },
         "H": [
           { "item": "harddrugs", "chance": 60 },
           { "item": "gear_medical", "chance": 60, "repeat": [ 1, 3 ] },
@@ -173,7 +173,7 @@
       },
       "items": {
         "b": { "item": "hospital_bed", "chance": 60 },
-        "f": { "item": "office_paper", "chance": 70 },
+        "f": { "item": "SUS_office_filing_cabinet", "chance": 70 },
         "L": [
           { "item": "harddrugs", "chance": 60, "repeat": [ 1, 3 ] },
           { "item": "gear_medical", "chance": 60, "repeat": [ 1, 3 ] },

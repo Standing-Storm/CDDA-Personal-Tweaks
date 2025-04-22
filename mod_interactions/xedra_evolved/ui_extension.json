@@ -4,6 +4,44 @@
     "copy-from": "spacebar_mine",
     "type": "widget",
     "id": "spacebar_mine",
-    "extend": { "widgets": [ "xe_spacebar_mana_numbers_block", "xe_spacebar_mana_bar_block" ] }
+    "extend": {
+      "widgets": [
+        "xe_spacebar_mana_numbers_block",
+        "xe_spacebar_mana_bar_block",
+        "spacebar_vampire_blood_levels_block",
+        "spacebar_vampire_blood_levels_numbers_block",
+        "spacebar_vampire_blood_levels_graph_block",
+        "spacebar_ruach_counter_block",
+        "spacebar_ruach_numbers_block",
+        "spacebar_ruach_graph_block"
+      ]
+    }
+  },
+  {
+    "id": "spacebar_vampire_blood_levels_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Blood Levels",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "vampire_blood_levels" ]
+  },
+  {
+    "id": "spacebar_vampire_blood_levels_numbers_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Blood Numbers",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "vampire_blood_levels_numbers" ]
+  },
+  {
+    "id": "spacebar_vampire_blood_levels_graph_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Blood Graph",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "ruach_counter_spacebar_numbers" ]
   }
 ]
