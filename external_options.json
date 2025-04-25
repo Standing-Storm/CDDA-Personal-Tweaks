@@ -33,5 +33,19 @@
     "//": "Minimum city size to guarantee extra zombies are spawned in cities.  0 means all cities spawn extra zombies.  Negative values disable extra city zombies.",
     "stype": "int",
     "value": 10
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "INT_BASED_LEARNING_FOCUS_ADJUSTMENT",
+    "//": "The amount of focus gained per each INT point above INT_BASED_LEARNING_BASE_VALUE",
+    "stype": "int",
+    "value": 3
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "NPC_SPAWNRATE",
+    "//": "Baseline average number of days between random NPC spawns. Higher Number means fewer NPCs. 0 to disable NPCs. Min: 0.01, Max: 100.0, Default: 4.0",
+    "stype": "float",
+    "value": 2.0
   }
 ]
