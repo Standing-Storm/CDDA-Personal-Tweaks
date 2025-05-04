@@ -3,7 +3,8 @@
     "//": "Difficulty to learn permanent spell is spell (Difficulty / 10) + 4",
     "id": "scroll_spell_phase_shield",
     "copy-from": "scroll_spell_phase_shield",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -44,7 +45,8 @@
   {
     "id": "scroll_spell_earthweaving",
     "copy-from": "scroll_spell_earthweaving",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -85,7 +87,8 @@
   {
     "id": "scroll_spell_dark_lance",
     "copy-from": "scroll_spell_dark_lance",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -123,7 +126,8 @@
   {
     "id": "scroll_spell_sun",
     "copy-from": "scroll_spell_sun",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Consecrate)", "str_pl": "Pattern Scrolls (Consecrate)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -164,7 +168,8 @@
   {
     "id": "scroll_spell_moon",
     "copy-from": "scroll_spell_moon",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Cold Ward)", "str_pl": "Pattern Scrolls (Cold Ward)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -202,7 +207,8 @@
   {
     "id": "scroll_spell_artiface",
     "copy-from": "scroll_spell_artiface",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Sundering Quake)", "str_pl": "Pattern Scrolls (Sundering Quake)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -243,7 +249,8 @@
   {
     "id": "scroll_spell_nature",
     "copy-from": "scroll_spell_nature",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -284,7 +291,8 @@
   {
     "id": "scroll_spell_destruction",
     "copy-from": "scroll_spell_destruction",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Summon Centipedes)", "str_pl": "Pattern Scrolls (Summon Centipedes)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -325,7 +333,8 @@
   {
     "id": "scroll_spell_subversion",
     "copy-from": "scroll_spell_subversion",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Eclipse)", "str_pl": "Pattern Scrolls (Eclipse)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -366,7 +375,8 @@
   {
     "id": "scroll_spell_agile",
     "copy-from": "scroll_spell_agile",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Agility)", "str_pl": "Pattern Scrolls (Agility)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -404,7 +414,8 @@
   {
     "id": "scroll_spell_clairvoyance",
     "copy-from": "scroll_spell_clairvoyance",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Clairvoyance)", "str_pl": "Pattern Scrolls (Clairvoyance)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -442,7 +453,8 @@
   {
     "id": "scroll_spell_clarity",
     "copy-from": "scroll_spell_clarity",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Clarity of Blood)", "str_pl": "Pattern Scrolls (Clarity of Blood)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -483,7 +495,8 @@
   {
     "id": "scroll_spell_confusion",
     "copy-from": "scroll_spell_confusion",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Confuse Monsters)", "str_pl": "Pattern Scrolls (Confuse Monsters)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -524,7 +537,8 @@
   {
     "id": "scroll_spell_acidspray",
     "copy-from": "scroll_spell_acidspray",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -565,7 +579,8 @@
   {
     "id": "scroll_spell_free_action",
     "copy-from": "scroll_spell_free_action",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Free Action)", "str_pl": "Pattern Scrolls (Free Action)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -606,7 +621,8 @@
   {
     "id": "scroll_spell_heal",
     "copy-from": "scroll_spell_heal",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Healing)", "str_pl": "Pattern Scrolls (Healing)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -647,7 +663,8 @@
   {
     "id": "scroll_spell_flame_armor",
     "copy-from": "scroll_spell_flame_armor",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Heat Ward)", "str_pl": "Pattern Scrolls (Heat Ward)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -688,7 +705,8 @@
   {
     "id": "scroll_spell_insight",
     "copy-from": "scroll_spell_insight",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Insight)", "str_pl": "Pattern Scrolls (Insight)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -729,7 +747,8 @@
   {
     "id": "scroll_spell_elecresist",
     "copy-from": "scroll_spell_elecresist",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -770,7 +789,8 @@
   {
     "id": "scroll_spell_might",
     "copy-from": "scroll_spell_might",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Might)", "str_pl": "Pattern Scrolls (Might)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -811,7 +831,8 @@
   {
     "id": "scroll_spell_plants",
     "copy-from": "scroll_spell_plants",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Overgrowth)", "str_pl": "Pattern Scrolls (Overgrowth)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -853,7 +874,8 @@
     "id": "scroll_spell_invis",
     "copy-from": "scroll_spell_invis",
     "//": "ID retained to avoid breaking stuff.",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Serpentine Shield)", "str_pl": "Pattern Scrolls (Serpentine Shield)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -894,7 +916,8 @@
   {
     "id": "scroll_spell_lightning",
     "copy-from": "scroll_spell_lightning",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
     "use_action": {
       "type": "effect_on_conditions",
@@ -935,7 +958,8 @@
   {
     "id": "scroll_spell_cleric",
     "copy-from": "scroll_spell_cleric",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
     "use_action": {
       "type": "effect_on_conditions",

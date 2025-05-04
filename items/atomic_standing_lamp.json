@@ -1,6 +1,6 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "standing_atomic_lamp",
     "name": { "str": "standing atomic lamp" },
     "description": "It's a standing lamp. It's an atomic lamp. It's a combination standing and atomic lamp. Produces less light than a standing lamp but does not require power.",

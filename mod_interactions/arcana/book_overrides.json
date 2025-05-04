@@ -1,7 +1,8 @@
 [
   {
     "id": "book_sacrifice",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Oaths to the Chalice", "str_pl": "copies of Oaths to the Chalice" },
     "copy-from": "book_sacrifice",
@@ -9,7 +10,8 @@
   },
   {
     "id": "book_hexenhammer",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "The Cleansing Flame", "str_pl": "copies of The Cleansing Flame" },
     "copy-from": "book_hexenhammer",
@@ -17,7 +19,8 @@
   },
   {
     "id": "book_scrollcraft",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "The Six Pillars", "str_pl": "copies of The Six Pillars" },
     "copy-from": "book_scrollcraft",

@@ -1,9 +1,0 @@
-[
-  {
-    "type": "GENERIC",
-    "id": "dreamforged_arming_sword",
-    "copy-from": "dreamforged_arming_sword",
-    "name": { "str": "dreamforged arming sword" },
-    "proportional": { "melee_damage": { "cut": 0.8 } }
-  }
-]

@@ -1,34 +1,7 @@
 [
   {
-    "type": "GENERIC",
-    "id": "hammer_sledge_heavy",
-    "name": { "str": "heavy sledge hammer" },
-    "copy-from": "hammer_sledge_heavy",
-    "extend": { "flags": [ "DURABLE_MELEE" ] }
-  },
-  {
-    "type": "GENERIC",
-    "id": "hammer_sledge",
-    "name": { "str": "sledge hammer" },
-    "copy-from": "hammer_sledge",
-    "extend": { "flags": [ "DURABLE_MELEE" ] }
-  },
-  {
-    "type": "GENERIC",
-    "id": "hammer_sledge_short",
-    "name": { "str": "short sledge hammer" },
-    "copy-from": "hammer_sledge_short",
-    "extend": { "flags": [ "DURABLE_MELEE" ] }
-  },
-  {
-    "type": "GENERIC",
-    "id": "hammer_sledge_engineer",
-    "name": { "str": "engineer's hammer" },
-    "copy-from": "hammer_sledge_engineer",
-    "extend": { "flags": [ "DURABLE_MELEE" ] }
-  },
-  {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "id": "rm103a_pistol",
     "name": { "str": "RM103A automagnum" },
     "copy-from": "rm103a_pistol",
@@ -37,7 +10,8 @@
   },
   {
     "id": "cbm_bionic_rocket",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "name": { "str": "deployed grenade launcher" },
     "description": "A grenade launcher mounted onto your right-hand wrist.  Less powerful than a proper grenade launcher, but infinitely more portable, and quick to reload.",
     "volume": "2250 ml",
@@ -57,7 +31,7 @@
     "melee_damage": { "bash": 9 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "teeth_macuahuitl",
     "name": { "str": "teeth-bladed macuahuitl" },
     "copy-from": "teeth_macuahuitl",

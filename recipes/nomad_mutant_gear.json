@@ -21,7 +21,8 @@
   },
   {
     "id": "nomad_bodyglove_2xl",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "nomad_bodyglove_2",
     "category": "armor",
     "name": { "str": "XL nomad bodymesh", "str_pl": " XL nomad bodymeshes" },

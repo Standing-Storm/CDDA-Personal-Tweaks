@@ -1,83 +1,95 @@
 [
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "selfbow",
     "name": { "str": "survival bow" },
     "copy-from": "selfbow",
     "range": 14
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "shortbow",
     "name": { "str": "short bow" },
     "copy-from": "shortbow",
     "range": 16
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "compbow",
     "name": { "str": "compound hunting bow" },
     "copy-from": "compbow",
     "range": 29
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "compositebow",
     "name": { "str": "composite bow (heavy)", "str_pl": "composite bows (heavy)" },
     "copy-from": "compositebow",
     "range": 19
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "reflexbow",
     "name": { "str": "composite bow (light)", "str_pl": "composite bows (light)" },
     "copy-from": "reflexbow",
     "range": 19
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "recurbow",
     "name": { "str": "modern recurve bow" },
     "copy-from": "recurbow",
     "range": 22
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "takedown_recurbow",
     "name": { "str": "takedown recurve bow" },
     "copy-from": "takedown_recurbow",
     "range": 22
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "longbow",
     "name": { "str": "longbow" },
     "copy-from": "longbow",
     "range": 29
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "woodgreatbow",
     "name": { "str": "wooden greatbow" },
     "copy-from": "woodgreatbow",
     "range": 32
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "greatbow_meteor",
     "name": { "str": "blackwood greatbow" },
     "copy-from": "greatbow_meteor",
     "range": 32
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "compgreatbow",
     "name": { "str": "compound greatbow" },
     "copy-from": "compgreatbow",
     "range": 35
   },
   {
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "GUN" ],
     "id": "reflexrecurvebow",
     "name": { "str": "Olympic style target bow" },
     "copy-from": "reflexrecurvebow",

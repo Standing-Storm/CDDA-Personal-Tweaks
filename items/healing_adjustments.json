@@ -28,7 +28,7 @@
   },
   {
     "id": "adhesive_bandages",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "adhesive bandage" },
     "copy-from": "adhesive_bandages",
@@ -36,7 +36,7 @@
   },
   {
     "id": "bandages",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "bandage" },
     "copy-from": "bandages",
@@ -44,7 +44,7 @@
   },
   {
     "id": "bandages_makeshift",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "makeshift bandage" },
     "copy-from": "bandages_makeshift",
@@ -52,7 +52,7 @@
   },
   {
     "id": "bandages_makeshift_bleached",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "bleached makeshift bandag" },
     "copy-from": "bandages_makeshift_bleached",
@@ -60,7 +60,7 @@
   },
   {
     "id": "bandages_makeshift_boiled",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "boiled makeshift bandage" },
     "copy-from": "bandages_makeshift_boiled",
@@ -68,7 +68,7 @@
   },
   {
     "id": "cotton_ball",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "spare_parts",
     "name": { "str_sp": "cotton balls" },
     "copy-from": "cotton_ball",
@@ -76,7 +76,7 @@
   },
   {
     "id": "medical_gauze",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "medical gauze" },
     "copy-from": "medical_gauze",
@@ -84,7 +84,8 @@
   },
   {
     "id": "liq_bandage_spray",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "drugs",
     "name": { "str": "spray bottle of liquid bandage", "str_pl": "spray bottles of liquid bandage" },
     "copy-from": "liq_bandage_spray",
@@ -92,7 +93,8 @@
   },
   {
     "id": "disinfectant",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "MED",
     "name": { "str_sp": "antiseptic" },
     "description": "A powerful antiseptic commonly used to disinfect wounds.",
@@ -101,7 +103,8 @@
   },
   {
     "id": "disinfectant_makeshift",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "makeshift antiseptic" },
     "copy-from": "disinfectant_makeshift",
     "description": "Makeshift antiseptic made from ethanol.  Can be used to disinfect wounds.",
@@ -109,7 +112,8 @@
   },
   {
     "id": "bfipowder",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "MED",
     "name": { "str_sp": "antiseptic powder" },
     "description": "A powdered form of chemical antiseptic, this bismuth formic iodide cleans wounds quickly and painlessly.",
@@ -118,7 +122,8 @@
   },
   {
     "id": "chem_hydrogen_peroxide",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "MED",
     "name": { "str_sp": "hydrogen peroxide" },
     "description": "Dilute hydrogen peroxide, for use as an antiseptic and for bleaching hair or textiles.  Foams a little when in contact with organic matter, but otherwise harmless.",
@@ -127,7 +132,8 @@
   },
   {
     "id": "thyme_oil",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "MED",
     "name": { "str_sp": "thyme oil" },
     "description": "Some essential oil made from thyme, which can act as a mildly irritating antiseptic.",
@@ -136,7 +142,7 @@
   },
   {
     "id": "alcohol_wipes",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "alcohol wipe" },
     "description": "A wet wipe saturated with alcohol and stored in a sterile package.  Used for personal hygiene or disinfecting small wounds.",
@@ -145,7 +151,7 @@
   },
   {
     "id": "disinrag",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str": "antiseptic soaked rag" },
     "description": "A rag soaked in antiseptic.  Useful for light wounds, probably won't help with deep bites.",
@@ -160,7 +166,7 @@
   },
   {
     "id": "disincotton_ball",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "drugs",
     "name": { "str_sp": "antiseptic soaked cotton balls" },
     "description": "Fluffy balls of clean white cotton.  Now that they've been soaked with antiseptic, they are somewhat useful to disinfect a wound.",

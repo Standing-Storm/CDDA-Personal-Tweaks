@@ -87,7 +87,7 @@
     ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "large_cooler",
     "name": { "str": "air conditioner" },
     "description": "A portable air conditioning unit.",

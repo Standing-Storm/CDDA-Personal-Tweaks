@@ -1,7 +1,8 @@
 [
   {
     "id": "red_black_vulnerary",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "copy-from": "red_black_vulnerary",
     "name": { "str": "carmine vulnerary", "str_pl": "carmine vulnerary" },
     "use_action": {
@@ -20,7 +21,8 @@
   },
   {
     "id": "water_talisman",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "copy-from": "water_talisman",
     "comestible_type": "MED",
     "category": "other",
