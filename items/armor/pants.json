@@ -1,0 +1,21 @@
+[
+  {
+    "id": "armor_mercenary_bottom",
+    "copy-from": "armor_mercenary_bottom",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 0.5 },
+          { "type": "kevlar_layered", "covered_by_mat": 50, "thickness": 4.4 }
+        ],
+        "volume_encumber_modifier": 0.3,
+        "encumbrance": 12,
+        "coverage": 100,
+        "cover_vitals": 90,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ]
+  }
+]
