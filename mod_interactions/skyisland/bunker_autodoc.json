@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": "bunker_basement_1",
     "//": "Adds back autodoc",
     "weight": 25000,

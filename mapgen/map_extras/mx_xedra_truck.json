@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_XEDRA_truck",
     "object": {
       "place_vehicles": [ { "vehicle": "truck_XEDRA", "x": 7, "y": 15, "chance": 100, "status": 1, "rotation": 0 } ],

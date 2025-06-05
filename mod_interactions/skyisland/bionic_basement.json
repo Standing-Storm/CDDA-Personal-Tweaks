@@ -17,7 +17,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": "basement_bionic",
     "object": {
       "fill_ter": "t_thconc_floor",
@@ -76,7 +75,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "basement_bionic" ],
     "object": {
       "fill_ter": "t_thconc_floor",

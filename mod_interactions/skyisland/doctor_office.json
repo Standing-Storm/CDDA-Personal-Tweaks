@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": "office_doctor_roof_2",
     "weight": 500,
     "object": {
