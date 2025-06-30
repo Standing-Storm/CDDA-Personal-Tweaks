@@ -1,0 +1,100 @@
+[
+  {
+    "id": "totem_agile",
+    "copy-from": "totem_agile",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Zéphuros's Grace)", "str_pl": "Magic Seals (Zéphuros's Grace)" }
+  },
+  {
+    "id": "totem_clairvoyance",
+    "copy-from": "totem_clairvoyance",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Sight Beyond Sight)", "str_pl": "Magic Seals (Sight Beyond Sight)" }
+  },
+  {
+    "id": "totem_confusion",
+    "copy-from": "totem_confusion",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Anointment of Lunacy)", "str_pl": "Magic Seals (Anointment of Lunacy)" }
+  },
+  {
+    "id": "totem_acidspray",
+    "copy-from": "totem_acidspray",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Caustic Eruption)", "str_pl": "Magic Seals (Caustic Eruption)" }
+  },
+  {
+    "id": "totem_free_action",
+    "copy-from": "totem_free_action",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (The Unbound Heart)", "str_pl": "Magic Seals (The Unbound Heart)" }
+  },
+  {
+    "id": "totem_heal",
+    "copy-from": "totem_heal",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Corporeal Restoration)", "str_pl": "Magic Seals (Corporeal Restoration)" }
+  },
+  {
+    "id": "totem_flamearmor",
+    "copy-from": "totem_flamearmor",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Forge-Hardened Flesh)", "str_pl": "Magic Seals (Forge-Hardened Flesh)" }
+  },
+  {
+    "id": "totem_insight",
+    "copy-from": "totem_insight",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Opening the Inner Eye)", "str_pl": "Magic Seals (Opening the Inner Eye)" }
+  },
+  {
+    "id": "totem_elecresist",
+    "copy-from": "totem_elecresist",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (The Eye of the Storm)", "str_pl": "Magic Seals (The Eye of the Storm)" }
+  },
+  {
+    "id": "totem_strength",
+    "copy-from": "totem_strength",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Otherworldly Potence)", "str_pl": "Magic Seals (Otherworldly Potence)" }
+  },
+  {
+    "id": "totem_plants",
+    "copy-from": "totem_plants",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (A Spread of Rampant Green)", "str_pl": "Magic Seals (A Spread of Rampant Green)" }
+  },
+  {
+    "id": "totem_invis",
+    "copy-from": "totem_invis",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Obsidian Mantle of Darkness)", "str_pl": "Magic Seals (Obsidian Mantle of Darkness)" }
+  },
+  {
+    "id": "totem_lightning",
+    "copy-from": "totem_lightning",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Fulminating Wave)", "str_pl": "Magic Seals (Fulminating Wave)" }
+  },
+  {
+    "id": "totem_cleric",
+    "copy-from": "totem_cleric",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Abjuration of the Darkness)", "str_pl": "Magic Seals (Abjuration of the Darkness)" }
+  }
+]
