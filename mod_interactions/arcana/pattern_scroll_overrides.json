@@ -5,7 +5,7 @@
     "copy-from": "scroll_spell_phase_shield",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
+    "name": { "str": "Pattern Scroll (Halo of the Sun)", "str_pl": "Pattern Scrolls (Halo of the Sun)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -89,7 +89,7 @@
     "copy-from": "scroll_spell_dark_lance",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
+    "name": { "str": "Pattern Scroll (Tenebrous Lance)", "str_pl": "Pattern Scrolls (Tenebrous Lance)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -128,7 +128,7 @@
     "copy-from": "scroll_spell_sun",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Consecrate)", "str_pl": "Pattern Scrolls (Consecrate)" },
+    "name": { "str": "Pattern Scroll (Banish the Beyond)", "str_pl": "Pattern Scrolls (Banish the Beyond)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -170,7 +170,7 @@
     "copy-from": "scroll_spell_moon",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Cold Ward)", "str_pl": "Pattern Scrolls (Cold Ward)" },
+    "name": { "str": "Pattern Scroll (Hyperborean Mantle)", "str_pl": "Pattern Scrolls (Hyperborean Mantle)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -209,7 +209,7 @@
     "copy-from": "scroll_spell_artiface",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Sundering Quake)", "str_pl": "Pattern Scrolls (Sundering Quake)" },
+    "name": { "str": "Pattern Scroll (Cleaving the Living Earth)", "str_pl": "Pattern Scrolls (Cleaving the Living Earth)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -251,7 +251,7 @@
     "copy-from": "scroll_spell_nature",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
+    "name": { "str": "Pattern Scroll (Wrath of the Elements)", "str_pl": "Pattern Scrolls (Wrath of the Elements)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -293,7 +293,7 @@
     "copy-from": "scroll_spell_destruction",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Summon Centipedes)", "str_pl": "Pattern Scrolls (Summon Centipedes)" },
+    "name": { "str": "Pattern Scroll (Call Forth the Crawling Ones)", "str_pl": "Pattern Scrolls (Call Forth the Crawling Ones)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -377,7 +377,7 @@
     "copy-from": "scroll_spell_agile",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Agility)", "str_pl": "Pattern Scrolls (Agility)" },
+    "name": { "str": "Pattern Scroll (Zéphuros's Grace)", "str_pl": "Pattern Scrolls (Zéphuros's Grace)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -416,7 +416,7 @@
     "copy-from": "scroll_spell_clairvoyance",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Clairvoyance)", "str_pl": "Pattern Scrolls (Clairvoyance)" },
+    "name": { "str": "Pattern Scroll (Sight Beyond Sight)", "str_pl": "Pattern Scrolls (Sight Beyond Sight)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -497,7 +497,7 @@
     "copy-from": "scroll_spell_confusion",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Confuse Monsters)", "str_pl": "Pattern Scrolls (Confuse Monsters)" },
+    "name": { "str": "Pattern Scroll (Anointment of Lunacy)", "str_pl": "Pattern Scrolls (Anointment of Lunacy)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -539,7 +539,7 @@
     "copy-from": "scroll_spell_acidspray",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
+    "name": { "str": "Pattern Scroll (Caustic Eruption)", "str_pl": "Pattern Scrolls (Caustic Eruption)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -581,7 +581,7 @@
     "copy-from": "scroll_spell_free_action",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Free Action)", "str_pl": "Pattern Scrolls (Free Action)" },
+    "name": { "str": "Pattern Scroll (The Unbound Heart)", "str_pl": "Pattern Scrolls (The Unbound Heart)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -623,7 +623,7 @@
     "copy-from": "scroll_spell_heal",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Healing)", "str_pl": "Pattern Scrolls (Healing)" },
+    "name": { "str": "Pattern Scroll (Corporeal Restoration)", "str_pl": "Pattern Scrolls (Corporeal Restoration)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -665,7 +665,7 @@
     "copy-from": "scroll_spell_flame_armor",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Heat Ward)", "str_pl": "Pattern Scrolls (Heat Ward)" },
+    "name": { "str": "Pattern Scroll (Forge-Hardened Flesh)", "str_pl": "Pattern Scrolls (Forge-Hardened Flesh)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -707,7 +707,7 @@
     "copy-from": "scroll_spell_insight",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Insight)", "str_pl": "Pattern Scrolls (Insight)" },
+    "name": { "str": "Pattern Scroll (Opening the Inner Eye)", "str_pl": "Pattern Scrolls (Opening the Inner Eye)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -749,7 +749,7 @@
     "copy-from": "scroll_spell_elecresist",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
+    "name": { "str": "Pattern Scroll (The Eye of the Storm)", "str_pl": "Pattern Scrolls (The Eye of the Storm)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -791,7 +791,7 @@
     "copy-from": "scroll_spell_might",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Might)", "str_pl": "Pattern Scrolls (Might)" },
+    "name": { "str": "Pattern Scroll (Otherworldly Potence)", "str_pl": "Pattern Scrolls (Otherworldly Potence)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -833,7 +833,7 @@
     "copy-from": "scroll_spell_plants",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Overgrowth)", "str_pl": "Pattern Scrolls (Overgrowth)" },
+    "name": { "str": "Pattern Scroll (A Spread of Rampant Green)", "str_pl": "Pattern Scrolls (A Spread of Rampant Green)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -876,7 +876,7 @@
     "//": "ID retained to avoid breaking stuff.",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Serpentine Shield)", "str_pl": "Pattern Scrolls (Serpentine Shield)" },
+    "name": { "str": "Pattern Scroll (Obsidian Mantle of Darkness)", "str_pl": "Pattern Scrolls (Obsidian Mantle of Darkness)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -918,7 +918,7 @@
     "copy-from": "scroll_spell_lightning",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
+    "name": { "str": "Pattern Scroll (Fulminating Wave)", "str_pl": "Pattern Scrolls (Fulminating Wave)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
@@ -960,7 +960,7 @@
     "copy-from": "scroll_spell_cleric",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
+    "name": { "str": "Pattern Scroll (Abjuration of the Darkness)", "str_pl": "Pattern Scrolls (Abjuration of the Darkness)" },
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
