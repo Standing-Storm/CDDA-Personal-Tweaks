@@ -1,5 +1,12 @@
 [
   {
+    "id": "arcana_pattern_sorcery",
+    "type": "magic_type",
+    "energy_source": "NONE",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC" ],
+    "cannot_cast_message": "You cannot use your sorcery now!"
+  },
+  {
     "id": "arcana_magic_agility",
     "type": "SPELL",
     "name": { "str": "Sign: Agility" },
@@ -27,7 +34,8 @@
     "min_duration": 144000,
     "max_duration": 288000,
     "duration_increment": 14400,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_capacitance",
@@ -58,7 +66,8 @@
     "base_casting_time": 240,
     "final_casting_time": 120,
     "casting_time_increment": -12,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_clairvoyance",
@@ -87,7 +96,8 @@
     "min_duration": 216000,
     "max_duration": 432000,
     "duration_increment": 21600,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_clarity_blood",
@@ -117,7 +127,8 @@
     "min_duration": 48000,
     "max_duration": 96000,
     "duration_increment": 4800,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_cold_ward",
@@ -147,7 +158,8 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_confuse_monster",
@@ -178,7 +190,8 @@
     "min_duration": 1800,
     "max_duration": 3600,
     "duration_increment": 180,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_conjure_acid",
@@ -226,7 +239,8 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_conjure_flame",
@@ -274,7 +288,8 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_consecrate",
@@ -310,7 +325,8 @@
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_dark_lance",
@@ -348,7 +364,8 @@
     "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_dampening",
@@ -388,7 +405,8 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_earthweaving",
@@ -417,7 +435,8 @@
     "base_energy_cost": 2500,
     "final_energy_cost": 1250,
     "energy_increment": -125,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_eclipse",
@@ -450,7 +469,8 @@
     "min_duration": 324000,
     "max_duration": 648000,
     "duration_increment": 32400,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_elemental_burst",
@@ -486,7 +506,8 @@
     "base_energy_cost": 4000,
     "final_energy_cost": 2000,
     "energy_increment": -200,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_free_action",
@@ -519,7 +540,8 @@
     "min_duration": 36000,
     "max_duration": 72000,
     "duration_increment": 3600,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_harden_senses",
@@ -549,7 +571,8 @@
     "min_duration": 24000,
     "max_duration": 48000,
     "duration_increment": 2400,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_healing",
@@ -584,7 +607,8 @@
     "min_duration": 100,
     "max_duration": 100,
     "energy_source": "STAMINA",
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_heat_ward",
@@ -614,7 +638,8 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_insight",
@@ -644,7 +669,8 @@
     "min_duration": 108000,
     "max_duration": 216000,
     "duration_increment": 10800,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_light",
@@ -680,7 +706,8 @@
     "field_chance": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_lightning_ward",
@@ -710,7 +737,8 @@
     "min_duration": 48000,
     "max_duration": 96000,
     "duration_increment": 4800,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_might",
@@ -740,7 +768,8 @@
     "min_duration": 180000,
     "max_duration": 360000,
     "duration_increment": 18000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_open_lock",
@@ -776,7 +805,8 @@
     "base_energy_cost": 2500,
     "final_energy_cost": 1250,
     "energy_increment": -125,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_overgrowth",
@@ -809,7 +839,8 @@
     "base_energy_cost": 2000,
     "final_energy_cost": 1000,
     "energy_increment": -100,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_phase_shield",
@@ -838,7 +869,8 @@
     "min_duration": 84000,
     "max_duration": 168000,
     "duration_increment": 8400,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_poison_armor",
@@ -868,7 +900,8 @@
     "min_duration": 36000,
     "max_duration": 72000,
     "duration_increment": 3600,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_serpentine_shield",
@@ -898,7 +931,8 @@
     "min_duration": 72000,
     "max_duration": 144000,
     "duration_increment": 7200,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_shockstorm",
@@ -947,7 +981,8 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_sundering_quake",
@@ -986,7 +1021,8 @@
     "base_energy_cost": 4500,
     "final_energy_cost": 2250,
     "energy_increment": -225,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_giant_centipedes",
@@ -1021,7 +1057,8 @@
     "min_duration": 720000,
     "max_duration": 1440000,
     "duration_increment": 72000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",
@@ -1053,7 +1090,8 @@
     "min_duration": 360000,
     "max_duration": 720000,
     "duration_increment": 36000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_shadow",
@@ -1085,7 +1123,8 @@
     "min_duration": 600000,
     "max_duration": 1200000,
     "duration_increment": 60000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_shadow_snake",
@@ -1118,7 +1157,8 @@
     "min_duration": 720000,
     "max_duration": 1440000,
     "duration_increment": 72000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_surge_adrenaline",
@@ -1148,7 +1188,8 @@
     "max_duration": 144000,
     "duration_increment": 7200,
     "energy_source": "STAMINA",
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_temporal_aura",
@@ -1178,7 +1219,8 @@
     "base_energy_cost": 4500,
     "final_energy_cost": 2250,
     "energy_increment": -225,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_ward_against_evil",
@@ -1208,6 +1250,7 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "PATTERN_SORCERY"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   }
 ]

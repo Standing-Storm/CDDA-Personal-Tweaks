@@ -6,5 +6,12 @@
     "name": [ "" ],
     "desc": [ "" ],
     "flags": [ "LEVITATION", "CLIMB_FLYING" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_no_arcana_casting",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "NO_ARCANA_MAGIC" ]
   }
 ]
