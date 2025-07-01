@@ -17,8 +17,8 @@
   {
     "type": "effect_type",
     "id": "effect_halo_phase_shield",
-    "name": { "str": "sunstone halo" },
-    "description": "A strange radiance permeating your body, repelling nearby attackers away from you.",
+    "name": [ "sunstone halo" ],
+    "desc": [ "A strange radiance permeating your body, repelling nearby attackers away from you." ],
     "enchantments": [
       {
         "hit_me_effect": [
