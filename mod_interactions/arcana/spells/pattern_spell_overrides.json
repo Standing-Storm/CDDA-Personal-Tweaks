@@ -907,7 +907,7 @@
     "id": "arcana_magic_serpentine_shield",
     "//": "ID retained to avoid breaking saves.",
     "type": "SPELL",
-    "name": { "str": "Sign: Obsidian Mantle of Darkness" },
+    "name": { "str": "Sign: Obsidian Mantle of Shadows" },
     "description": "Magic Sign\nUsing this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike attackers blind with otherworldly darkness.",
     "message": "\"Fear not the darkness, but those who lure you into it…\"  You cast %s!",
     "valid_targets": [ "self" ],

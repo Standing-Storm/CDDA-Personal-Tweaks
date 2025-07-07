@@ -81,7 +81,7 @@
     "copy-from": "totem_invis",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Magic Seal (Obsidian Mantle of Darkness)", "str_pl": "Magic Seals (Obsidian Mantle of Darkness)" }
+    "name": { "str": "Magic Seal (Obsidian Mantle of Shadows)", "str_pl": "Magic Seals (Obsidian Mantle of Shadows)" }
   },
   {
     "id": "totem_lightning",
