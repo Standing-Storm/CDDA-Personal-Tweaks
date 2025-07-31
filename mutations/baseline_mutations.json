@@ -40,7 +40,8 @@
                 "(sqrt(u_skill('swimming')) * 0.1) + (u_has_proficiency('prof_athlete_basic') * 0.1) + (u_has_proficiency('prof_athlete_expert') * 0.25) + (u_has_proficiency('prof_athlete_master') * 0.4) + (u_has_proficiency('prof_parkour') * 0.15)"
               ]
             }
-          }
+          },
+          { "value": "SPEED", "add": { "math": [ "clamp( ( (u_val('dexterity') - 10) / 2 ), 0,10)" ] } }
         ]
       }
     ]
