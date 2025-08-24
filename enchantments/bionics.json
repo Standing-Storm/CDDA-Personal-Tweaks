@@ -25,7 +25,7 @@
     "values": [
       { "value": "DEXTERITY", "add": 1 },
       { "value": "STRENGTH", "add": 1 },
-      { "value": "SPEED", "add": 3 },
+      { "value": "SPEED", "multiply": 0.3 },
       { "value": "HUNGER", "multiply": 1.1 },
       { "value": "THIRST", "multiply": 1.1 },
       { "value": "METABOLISM", "multiply": 1.1 },

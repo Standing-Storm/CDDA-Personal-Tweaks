@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bio_power_storage",
+    "copy-from": "bio_power_storage",
+    "type": "bionic",
+    "name": { "str": "Power Storage" },
+    "occupied_bodyparts": [ [ "torso", 2 ] ]
+  },
+  {
+    "id": "bio_power_storage_mkII",
+    "copy-from": "bio_power_storage_mkII",
+    "type": "bionic",
+    "name": { "str": "Power Storage Mk. II" },
+    "occupied_bodyparts": [ [ "torso", 2 ] ]
+  }
+]
