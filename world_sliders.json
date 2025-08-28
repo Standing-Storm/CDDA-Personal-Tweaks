@@ -91,8 +91,7 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 90 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 75 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 2 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 }
         ]
       },
       {
@@ -102,8 +101,7 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 85 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1.5 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 }
         ]
       },
       {
@@ -113,8 +111,7 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 100 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 1 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 1 }
         ]
       },
       {
@@ -124,8 +121,7 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 120 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.91 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 }
         ]
       },
       {
@@ -135,8 +131,7 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 110 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 150 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 2 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.88 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 2 }
         ]
       },
       {
@@ -146,9 +141,41 @@
         "options": [
           { "option": "MONSTER_SPEED", "type": "int", "val": 120 },
           { "option": "MONSTER_RESILIENCE", "type": "int", "val": 200 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 3 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.75 }
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 3 }
         ]
+      }
+    ]
+  },
+  {
+    "type": "option_slider",
+    "id": "evolution_scale",
+    "context": "WORLDGEN",
+    "name": "Evolution Scale",
+    "default": 3,
+    "levels": [
+      {
+        "level": 0,
+        "name": "Half",
+        "description": "Evolution happens twice as fast. Prepare to die.",
+        "options": [ { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.5 } ]
+      },
+      {
+        "level": 1,
+        "name": "Normal",
+        "description": "Evolution happens as normal.",
+        "options": [ { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1 } ]
+      },
+      {
+        "level": 2,
+        "name": "Double",
+        "description": "Evolution happens half as fast.",
+        "options": [ { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 2 } ]
+      },
+      {
+        "level": 3,
+        "name": "Quadruple",
+        "description": "Evolution happens one quarter as fast.",
+        "options": [ { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 4 } ]
       }
     ]
   },
