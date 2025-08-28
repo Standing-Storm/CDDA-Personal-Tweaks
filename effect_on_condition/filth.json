@@ -1,0 +1,21 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HIT_BY_BOOMER_CHANCE_FILTHY",
+    "eoc_type": "EVENT",
+    "required_event": "character_gains_effect",
+    "condition": { "compare_string": [ "boomered", { "context_val": "effect" } ] },
+    "effect": [
+      {
+        "u_run_inv_eocs": "all",
+        "search_data": [ { "worn_only": true } ],
+        "true_eocs": [
+          {
+            "id": "EOC_HIT_BY_BOOMER_CHANCE_FILTHY_AFFECT",
+            "effect": [ { "if": { "math": [ "rand(2) >= 1" ] }, "then": [ { "npc_set_flag": "FILTHY" } ] } ]
+          }
+        ]
+      }
+    ]
+  }
+]

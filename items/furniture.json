@@ -38,7 +38,7 @@
     "copy-from": "mountable_cooler",
     "emissions": [ "emit_cooler_house" ],
     "exhaust": [  ],
-    "epower": -500,
+    "epower": "-500 W",
     "requirements": { "removal": { "time": "6 m" } }
   },
   {
