@@ -25,7 +25,7 @@
     "description": "This is a primitive pickaxe, traditionally made from antler or bone, and fire-hardened for greater hardness.  Less than ideal, but still suitable for striking the earth.",
     "sub": "pickaxe",
     "weight": "760 g",
-    "volume": 10,
+    "volume": "3 L",
     "price": "8 USD",
     "to_hit": -3,
     "melee_damage": { "bash": 10, "stab": 3 },
@@ -44,7 +44,8 @@
     "qualities": [ [ "ANVIL", 1 ] ]
   },
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "material_sand_black",
     "category": "spare_parts",
     "name": { "str_sp": "black sand" },
