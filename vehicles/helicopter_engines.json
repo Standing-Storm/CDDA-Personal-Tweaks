@@ -1,0 +1,17 @@
+[
+  {
+    "id": "engine_turbine_small",
+    "copy-from": "engine_turbine_small",
+    "type": "vehicle_part",
+    "description": "A small but powerful gas turbine engine, suitable for powering a small one or two-seat helicopter.",
+    "power": "480000 W",
+    "energy_consumption": "200000 W"
+  },
+  {
+    "id": "engine_turbine_medium",
+    "copy-from": "engine_turbine_medium",
+    "type": "vehicle_part",
+    "description": "A heavy-duty gas turbine engine, like those typically found in a Medevac, Apache, or Blackhawk helicopter.",
+    "energy_consumption": "3740431 W"
+  }
+]
