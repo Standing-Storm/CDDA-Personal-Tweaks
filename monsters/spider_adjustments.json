@@ -6,6 +6,15 @@
     "upgrades": { "half_life": 14, "into_group": "GROUP_SPIDER_CELLAR" }
   },
   {
+    "type": "monstergroup",
+    "id": "GROUP_SPIDER_CELLAR",
+    "monsters": [
+      { "monster": "mon_spider_cellar_small", "weight": 10 },
+      { "monster": "mon_spider_cellar_giant", "weight": 4 },
+      { "monster": "mon_spider_cellar_mom", "weight": 1 }
+    ]
+  },
+  {
     "id": "mon_spider_cellar_giant",
     "type": "MONSTER",
     "copy-from": "mon_spider_cellar_giant",

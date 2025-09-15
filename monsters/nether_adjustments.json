@@ -3,7 +3,7 @@
     "id": "mon_flying_polyp",
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_flaming_eye",
@@ -15,48 +15,48 @@
     "id": "mon_darkman",
     "copy-from": "mon_darkman",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_shrapnel_swarm",
     "copy-from": "mon_shrapnel_swarm",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_vortex",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_shifting_mass",
     "copy-from": "mon_shifting_mass",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_impossible_shape",
     "copy-from": "mon_impossible_shape",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_absence",
     "copy-from": "mon_absence",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_swarm_structure",
     "copy-from": "mon_swarm_structure",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   },
   {
     "id": "mon_twisting_blade",
     "copy-from": "mon_twisting_blade",
     "type": "MONSTER",
-    "extend": { "armor": { "bullet": 9999 } }
+    "extend": { "flags": [ "BULLETPROOF" ] }
   }
 ]
