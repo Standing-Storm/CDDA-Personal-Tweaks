@@ -42,6 +42,6 @@
     "label": "Blood Graph",
     "arrange": "minimum_columns",
     "width": 58,
-    "widgets": [ "spacebar_separator_2", "ruach_counter_spacebar_numbers" ]
+    "widgets": [ "spacebar_separator_2", "vampire_blood_levels_graph" ]
   }
 ]
