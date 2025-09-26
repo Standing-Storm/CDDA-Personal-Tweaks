@@ -32,17 +32,5 @@
     "tools": [ [ [ "pickaxe", -1 ], [ "jackhammer", 30 ], [ "elec_jackhammer", 30 ] ] ],
     "pre_terrain": "f_boulder_large",
     "post_terrain": "f_anvil_stone"
-  },
-  {
-    "type": "construction",
-    "id": "constr_extract_sand_black",
-    "group": "extract_sand_black",
-    "category": "OTHER",
-    "required_skills": [ [ "survival", 0 ] ],
-    "time": "120 m",
-    "qualities": [ [ { "id": "DIG", "level": 1 } ] ],
-    "byproducts": [ { "item": "material_sand_black", "charges": [ 200, 400 ] } ],
-    "pre_terrain": "t_sand_black",
-    "post_special": "done_extract_maybe_revert_to_dirt"
   }
 ]
