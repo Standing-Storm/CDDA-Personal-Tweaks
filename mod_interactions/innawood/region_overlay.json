@@ -1,7 +1,0 @@
-[
-  {
-    "type": "region_overlay",
-    "regions": [ "all" ],
-    "forest_mapgen_settings": { "forest_thick": { "terrains": [ "forest_vein" ] } }
-  }
-]
