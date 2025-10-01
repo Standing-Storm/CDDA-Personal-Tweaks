@@ -5,11 +5,6 @@
     "name": "Make Stone Anvil"
   },
   {
-    "type": "construction_group",
-    "id": "extract_sand_black",
-    "name": "Extract Black Sand"
-  },
-  {
     "type": "construction",
     "id": "minmod_anvil_med",
     "group": "make_stone_anvil",
