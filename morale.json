@@ -3,5 +3,10 @@
     "id": "morale_afs_drugs",
     "type": "morale_type",
     "text": "Chemical enhancement moodswing"
+  },
+  {
+    "id": "morale_cataclysm_is_bad",
+    "type": "morale_type",
+    "text": "Your family and friends are dead, civilization has collapsed, and the dead have risen to eat the living"
   }
 ]

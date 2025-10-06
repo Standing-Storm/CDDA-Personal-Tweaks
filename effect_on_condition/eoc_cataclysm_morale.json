@@ -1,0 +1,85 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CATACLYSM_MORALE_INITIAL",
+    "eoc_type": "EVENT",
+    "required_event": "game_start",
+    "condition": { "not": { "u_has_flag": "PSYCHOPATH" } },
+    "effect": [ { "run_eocs": "EOC_CATACLYSM_MORALE_INITIAL_DELAY", "time_in_future": 2 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CATACLYSM_MORALE_INITIAL_DELAY",
+    "effect": [
+      {
+        "u_add_morale": "morale_cataclysm_is_bad",
+        "bonus": -40,
+        "max_bonus": -40,
+        "duration": "1 days",
+        "decay_start": "1 days"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CATACLYSM_MORALE_GRADUAL",
+    "eoc_type": "EVENT",
+    "required_event": "character_wakes_up",
+    "condition": { "and": [ { "not": { "u_has_flag": "PSYCHOPATH" } }, { "math": [ "time_since('cataclysm', 'unit':'days') < 180" ] } ] },
+    "effect": [
+      {
+        "switch": { "math": [ "time_since('cataclysm', 'unit':'days')" ] },
+        "cases": [
+          {
+            "case": 0,
+            "effect": [
+              {
+                "u_add_morale": "morale_cataclysm_is_bad",
+                "bonus": -40,
+                "max_bonus": -40,
+                "duration": "1 days",
+                "decay_start": "1 days"
+              }
+            ]
+          },
+          {
+            "case": 30,
+            "effect": [
+              {
+                "u_add_morale": "morale_cataclysm_is_bad",
+                "bonus": -30,
+                "max_bonus": -30,
+                "duration": "1 days",
+                "decay_start": "1 days"
+              }
+            ]
+          },
+          {
+            "case": 60,
+            "effect": [
+              {
+                "u_add_morale": "morale_cataclysm_is_bad",
+                "bonus": -20,
+                "max_bonus": -20,
+                "duration": "1 days",
+                "decay_start": "1 days"
+              }
+            ]
+          },
+          {
+            "case": 120,
+            "effect": [
+              {
+                "u_add_morale": "morale_cataclysm_is_bad",
+                "bonus": -10,
+                "max_bonus": -10,
+                "duration": "1 days",
+                "decay_start": "1 days"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

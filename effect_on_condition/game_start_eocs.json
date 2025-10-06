@@ -8,19 +8,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_CHECK_STAMINA_ON_GAME_START",
-    "eoc_type": "EVENT",
-    "required_event": "game_start",
-    "effect": [ { "run_eocs": "EOC_CHECK_STAMINA", "time_in_future": 2 } ]
-  },
-  {
-    "type": "effect_on_condition",
     "id": "EOC_GIVE_PLAYER_STARTING_TRAITS_2",
     "effect": [ { "u_add_trait": "BASELINE_STRENGTH_DEX_GAIN" }, { "u_add_trait": "BASELINE_PERCEPTION_GAIN" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_CHECK_STAMINA",
-    "effect": [ { "math": [ "u_stamina_max_value = u_val('stamina')" ] } ]
   }
 ]
