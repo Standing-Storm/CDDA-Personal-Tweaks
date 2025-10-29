@@ -4,6 +4,8 @@
     "copy-from": "armor_mercenary_bottom",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
+    "name": { "str_sp": "mercenary pants" },
+    "description": "A sturdy pair of pants fit for a soldier of fortune.  Made from work pants padded with Kevlar panels.  It gives good protection and decent storage, but the added thickness makes it uncomfortable to wear any armor over it.",
     "armor": [
       {
         "material": [

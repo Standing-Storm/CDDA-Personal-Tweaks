@@ -1,0 +1,38 @@
+[
+  {
+    "type": "ITEM",
+    "id": "bone",
+    "copy-from": "bone",
+    "looks_like": "bone",
+    "name": { "str": "bone" },
+    "description": "A bone from some creature or other.  Could be used in cooking and crafting.",
+    "delete": { "flags": [ "DAMAGE_VEHICLE_WHEELS" ] }
+  },
+  {
+    "type": "ITEM",
+    "id": "bone_tainted",
+    "copy-from": "bone_tainted",
+    "looks_like": "bone_tainted",
+    "name": { "str": "tainted bone" },
+    "description": "A rotten, brittle bone from some unnatural creature or other.  Could be used to make some stuff, like charcoal or glue.  You could eat it, but it will poison you.",
+    "delete": { "flags": [ "DAMAGE_VEHICLE_WHEELS" ] }
+  },
+  {
+    "type": "ITEM",
+    "id": "bone_human",
+    "copy-from": "bone_human",
+    "looks_like": "bone_human",
+    "name": { "str": "human bone" },
+    "description": "A bone from a human being.  Could be used to make some stuff, if you're feeling sufficiently ghoulish.",
+    "delete": { "flags": [ "DAMAGE_VEHICLE_WHEELS" ] }
+  },
+  {
+    "type": "ITEM",
+    "id": "bone_demihuman",
+    "copy-from": "bone_demihuman",
+    "looks_like": "bone_demihuman",
+    "name": { "str": "demihuman bone" },
+    "description": "A bone from a demihuman being.  Could be used to make some stuff, if you're feeling sufficiently ghoulish.",
+    "delete": { "flags": [ "DAMAGE_VEHICLE_WHEELS" ] }
+  }
+]

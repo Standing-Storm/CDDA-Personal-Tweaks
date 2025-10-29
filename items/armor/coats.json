@@ -4,6 +4,8 @@
     "copy-from": "armor_mercenary_top",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
+    "name": { "str": "mercenary coat" },
+    "description": "A sturdy coat fit for a soldier of fortune.  Made from a ballistic vest combined with a military jacket reinforced with soft armor panels.  Has pockets for armor inserts and MOLLE webbing to attach accessories.",
     "armor": [
       {
         "//": "stats of a bullet proof vest",
