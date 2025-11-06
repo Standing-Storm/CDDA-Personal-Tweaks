@@ -1,50 +1,40 @@
 [
   {
-    "type": "region_settings_map_extras",
-    "id": "default_xe_interaction",
-    "extras": [
-      "forest_xe_interaction",
-      "forest_thick_xe_interaction",
-      "forest_water_xe_interaction",
-      "field_xe_interaction",
-      "road_xe_interaction",
-      "build_xe_interaction"
-    ]
+    "type": "map_extra_collection",
+    "id": "forest_thick",
+    "copy-from": "forest_thick",
+    "extend": { "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ] }
   },
   {
     "type": "map_extra_collection",
-    "id": "forest_xe_interaction",
-    "overlay_id": "forest",
-    "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ]
+    "id": "forest",
+    "copy-from": "forest",
+    "extend": { "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ] }
   },
   {
     "type": "map_extra_collection",
-    "id": "forest_thick_xe_interaction",
-    "overlay_id": "forest_thick",
-    "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ]
+    "id": "forest_water",
+    "copy-from": "forest_water",
+    "extend": { "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ] }
   },
   {
     "type": "map_extra_collection",
-    "id": "forest_water_xe_interaction",
-    "overlay_id": "forest_water",
-    "extras": [ [ "mx_bandits_ambush", 5 ], [ "mx_bandits_grave", 2 ], [ "mx_bandits_outpost", 2 ] ]
+    "id": "field",
+    "copy-from": "field",
+    "extend": { "extras": [ [ "mx_bandits_ambush", 10 ], [ "mx_bandits_grave", 10 ], [ "mx_bandits_outpost", 10 ] ] }
   },
   {
     "type": "map_extra_collection",
-    "id": "field_xe_interaction",
-    "overlay_id": "field",
-    "extras": [ [ "mx_bandits_ambush", 10 ], [ "mx_bandits_grave", 10 ], [ "mx_bandits_outpost", 10 ] ]
+    "id": "road",
+    "copy-from": "road",
+    "extend": { "extras": [ [ "mx_XEDRA_truck", 2 ], [ "mx_bandits_ambush", 25 ] ] }
   },
   {
     "type": "map_extra_collection",
-    "id": "road_xe_interaction",
-    "overlay_id": "road",
-    "extras": [ [ "mx_XEDRA_truck", 2 ], [ "mx_bandits_ambush", 25 ] ]
-  },
-  {
-    "type": "map_extra_collection",
-    "id": "build_xe_interaction",
-    "overlay_id": "build",
-    "extras": [ [ "mx_exocrash_1", 2 ], [ "mx_exocrash_2", 2 ], [ "mx_bandits_ambush", 10 ], [ "mx_bandits_hideout", 10 ] ]
+    "id": "build",
+    "copy-from": "build",
+    "extend": {
+      "extras": [ [ "mx_exocrash_1", 2 ], [ "mx_exocrash_2", 2 ], [ "mx_bandits_ambush", 10 ], [ "mx_bandits_hideout", 10 ] ]
+    }
   }
 ]
