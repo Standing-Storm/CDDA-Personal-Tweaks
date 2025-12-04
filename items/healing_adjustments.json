@@ -32,7 +32,7 @@
     "category": "drugs",
     "name": { "str": "adhesive bandage" },
     "copy-from": "adhesive_bandages",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 4, "move_cost": 750 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 4, "move_cost": 750 }
   },
   {
     "id": "bandages",
@@ -40,7 +40,7 @@
     "category": "drugs",
     "name": { "str": "bandage" },
     "copy-from": "bandages",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 15, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 15, "move_cost": 6000 }
   },
   {
     "id": "bandages_makeshift",
@@ -48,7 +48,7 @@
     "category": "drugs",
     "name": { "str": "makeshift bandage" },
     "copy-from": "bandages_makeshift",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 10, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 10, "move_cost": 6000 }
   },
   {
     "id": "bandages_makeshift_bleached",
@@ -56,7 +56,7 @@
     "category": "drugs",
     "name": { "str": "bleached makeshift bandag" },
     "copy-from": "bandages_makeshift_bleached",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 10, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 10, "move_cost": 6000 }
   },
   {
     "id": "bandages_makeshift_boiled",
@@ -64,7 +64,7 @@
     "category": "drugs",
     "name": { "str": "boiled makeshift bandage" },
     "copy-from": "bandages_makeshift_boiled",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 10, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 10, "move_cost": 6000 }
   },
   {
     "id": "cotton_ball",
@@ -72,7 +72,7 @@
     "category": "spare_parts",
     "name": { "str_sp": "cotton balls" },
     "copy-from": "cotton_ball",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 10, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 10, "move_cost": 6000 }
   },
   {
     "id": "medical_gauze",
@@ -80,7 +80,7 @@
     "category": "drugs",
     "name": { "str": "medical gauze" },
     "copy-from": "medical_gauze",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 5, "move_cost": 6000 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 5, "move_cost": 6000 }
   },
   {
     "id": "liq_bandage_spray",
@@ -89,7 +89,7 @@
     "category": "drugs",
     "name": { "str": "spray bottle of liquid bandage", "str_pl": "spray bottles of liquid bandage" },
     "copy-from": "liq_bandage_spray",
-    "use_action": { "type": "heal", "bandages_power": 1, "bleed": 4, "disinfectant_power": 1, "bite": 0.3, "move_cost": 250 }
+    "use_action": { "type": "heal", "bandages_power": 0.48, "bleed": 4, "disinfectant_power": 1, "bite": 0.3, "move_cost": 250 }
   },
   {
     "id": "disinfectant",
@@ -99,7 +99,7 @@
     "name": { "str_sp": "antiseptic" },
     "description": "A powerful antiseptic commonly used to disinfect wounds.",
     "copy-from": "disinfectant",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.95, "move_cost": 3000 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.95, "move_cost": 3000 }
   },
   {
     "id": "disinfectant_makeshift",
@@ -108,7 +108,7 @@
     "name": { "str_sp": "makeshift antiseptic" },
     "copy-from": "disinfectant_makeshift",
     "description": "Makeshift antiseptic made from ethanol.  Can be used to disinfect wounds.",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.95, "move_cost": 3000 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.95, "move_cost": 3000 }
   },
   {
     "id": "bfipowder",
@@ -118,7 +118,7 @@
     "name": { "str_sp": "antiseptic powder" },
     "description": "A powdered form of chemical antiseptic, this bismuth formic iodide cleans wounds quickly and painlessly.",
     "copy-from": "bfipowder",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.95, "move_cost": 2000 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.95, "move_cost": 2000 }
   },
   {
     "id": "chem_hydrogen_peroxide",
@@ -128,7 +128,7 @@
     "name": { "str_sp": "hydrogen peroxide" },
     "description": "Dilute hydrogen peroxide, for use as an antiseptic and for bleaching hair or textiles.  Foams a little when in contact with organic matter, but otherwise harmless.",
     "copy-from": "chem_hydrogen_peroxide",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.95, "move_cost": 2000 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.95, "move_cost": 2000 }
   },
   {
     "id": "thyme_oil",
@@ -138,7 +138,7 @@
     "name": { "str_sp": "thyme oil" },
     "description": "Some essential oil made from thyme, which can act as a mildly irritating antiseptic.",
     "copy-from": "thyme_oil",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.95, "move_cost": 3000 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.95, "move_cost": 3000 }
   },
   {
     "id": "alcohol_wipes",
@@ -147,7 +147,7 @@
     "name": { "str": "alcohol wipe" },
     "description": "A wet wipe saturated with alcohol and stored in a sterile package.  Used for personal hygiene or disinfecting small wounds.",
     "copy-from": "alcohol_wipes",
-    "use_action": { "type": "heal", "disinfectant_power": 1, "bite": 0.3, "move_cost": 500 }
+    "use_action": { "type": "heal", "disinfectant_power": 0.48, "bite": 0.3, "move_cost": 500 }
   },
   {
     "id": "disinrag",
