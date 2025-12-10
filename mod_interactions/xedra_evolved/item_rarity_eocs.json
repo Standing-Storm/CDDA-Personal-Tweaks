@@ -5,6 +5,7 @@
     "//": "XE took longer to take effect than the regular Cataclysm, so the disruptions to modern life would have been greater near the end and supplies would have been lower",
     "eoc_type": "EVENT",
     "required_event": "game_begin",
+    "condition": { "not": { "mod_is_loaded": "classic_zombies" } },
     "effect": [
       {
         "set_item_category_spawn_rates": [
