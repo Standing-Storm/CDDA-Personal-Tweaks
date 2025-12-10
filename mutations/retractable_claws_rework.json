@@ -1,0 +1,44 @@
+[
+  {
+    "type": "mutation",
+    "id": "CLAWS_RETRACT",
+    "name": { "str": "Retractable Claws" },
+    "description": "You have claws on the ends of your fingers, and can extend or retract them as desired.  Gloves will still get in the way, though.",
+    "category": [ "FELINE" ],
+    "types": [ "CLAWS" ],
+    "prereqs": [ "CLAWS" ],
+    "points": 2,
+    "active": true,
+    "activated_is_setup": true,
+    "cost": 0,
+    "vitamin_cost": 160,
+    "activation_msg": "You extend your claws",
+    "activated_eocs": [ "EOC_CLAWS_RETRACT_give_claws" ],
+    "deactivated_eocs": [ "EOC_CLAWS_RETRACT_take_claws" ]
+  },
+  {
+    "type": "mutation",
+    "id": "CLAWS_RETRACT_active",
+    "name": { "str": "Extended Claws" },
+    "description": "Sharp claws are extending from the end of your fingers.",
+    "category": [ "FELINE" ],
+    "prereqs": [ "CLAWS" ],
+    "points": 2,
+    "cost": 0,
+    "copy-from": "CLAWS_RETRACT",
+    "valid": false,
+    "player_display": false,
+    "ugliness": 1,
+    "integrated_armor": [ "integrated_claws" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CLAWS_RETRACT_give_claws",
+    "effect": [ { "u_add_trait": "CLAWS_RETRACT_active" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CLAWS_RETRACT_take_claws",
+    "effect": [ { "u_lose_trait": "CLAWS_RETRACT_active" } ]
+  }
+]
