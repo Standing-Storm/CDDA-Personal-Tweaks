@@ -25,7 +25,6 @@
     "prereqs": [ "CLAWS" ],
     "points": 2,
     "cost": 0,
-    "copy-from": "CLAWS_RETRACT",
     "valid": false,
     "player_display": false,
     "ugliness": 1,
