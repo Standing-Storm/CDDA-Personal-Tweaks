@@ -145,6 +145,33 @@
   },
   {
     "type": "region_terrain_furniture",
+    "id": "default_t_region_shrub_forest_dense",
+    "ter_id": "t_region_shrub_forest_dense",
+    "replace_with_terrain": [
+      [ "t_underbrush", 300 ],
+      [ "t_shrub", 100 ],
+      [ "t_fern", 45 ],
+      [ "t_shrub_hobblebush", 2 ],
+      [ "t_shrub_blueberry", 2 ],
+      [ "t_shrub_raspberry", 2 ],
+      [ "t_shrub_huckleberry", 2 ],
+      [ "t_shrub_strawberry", 1 ],
+      [ "t_shrub_grape", 1 ]
+    ]
+  },
+  {
+    "type": "region_terrain_furniture",
+    "id": "default_t_region_shrub_forest",
+    "ter_id": "t_region_shrub_forest",
+    "replace_with_terrain": [
+      [ "t_region_shrub_forest_dense", 65 ],
+      [ "t_shrub_rose", 5 ],
+      [ "t_shrub_blackberry", 5 ],
+      [ "t_shrub_autumn_olive", 5 ]
+    ]
+  },
+  {
+    "type": "region_terrain_furniture",
     "id": "default_t_region_tree_evergreen",
     "copy-from": "default_t_region_tree_evergreen",
     "ter_id": "t_region_tree_evergreen",
