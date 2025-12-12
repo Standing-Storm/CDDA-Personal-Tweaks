@@ -18,13 +18,27 @@
     "type": "map_extra_collection",
     "id": "forest_thick",
     "copy-from": "forest_thick",
-    "extend": { "extras": [ [ "mx_strawberry_patch", 6250 ] ] }
+    "extend": {
+      "extras": [
+        [ "mx_strawberry_patch", 6250 ],
+        [ "mx_blueberry_patch", 6250 ],
+        [ "mx_raspberry_patch", 6250 ],
+        [ "mx_blackberry_patch", 6250 ]
+      ]
+    }
   },
   {
     "type": "map_extra_collection",
     "id": "forest",
     "copy-from": "forest",
-    "extend": { "extras": [ [ "mx_strawberry_patch", 150 ] ] }
+    "extend": {
+      "extras": [
+        [ "mx_strawberry_patch", 150 ],
+        [ "mx_blueberry_patch", 150 ],
+        [ "mx_raspberry_patch", 150 ],
+        [ "mx_blackberry_patch", 150 ]
+      ]
+    }
   },
   {
     "type": "map_extra_collection",
