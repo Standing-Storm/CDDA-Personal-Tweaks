@@ -1,0 +1,23 @@
+[
+  {
+    "type": "region_settings_forest",
+    "id": "default",
+    "copy-from": "default",
+    "noise_threshold_forest": 0.15,
+    "noise_threshold_forest_thick": 0.25,
+    "noise_threshold_swamp_adjacent_water": 0.2,
+    "noise_threshold_swamp_isolated": 0.6
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "road",
+    "copy-from": "road",
+    "extend": { "extras": [ [ "mx_XEDRA_truck", 2 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "build",
+    "copy-from": "build",
+    "extend": { "extras": [ [ "mx_exocrash_1", 2 ], [ "mx_exocrash_2", 2 ] ] }
+  }
+]
