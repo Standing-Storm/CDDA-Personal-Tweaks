@@ -1,0 +1,32 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DHAMPIR_CHECK_FOR_POWER_UPGRADES",
+    "recurrence": 3600,
+    "condition": { "and": [ { "u_has_trait": "DHAMPIR_TRAIT" }, { "math": [ "u_dhampir_blood_spent_compare_value_for_powers > 0" ] } ] },
+    "deactivate_condition": { "not": { "u_has_trait": "DHAMPIR_TRAIT" } },
+    "effect": [
+      {
+        "math": [
+          "_target_value = (400000 + ( (vampire_total_tier_one_traits() * 7500) + (vampire_total_tier_two_traits() * 15000) + (vampire_total_tier_three_traits() * 30000) ) )"
+        ]
+      },
+      {
+        "u_message": "Odds of gaining a new power are <u_val:dhampir_blood_spent_compare_value_for_powers> in <context_val:target_value>.",
+        "type": "debug"
+      },
+      {
+        "if": {
+          "and": [
+            { "not": { "u_has_effect": "sleep" } },
+            {
+              "x_in_y_chance": { "x": { "math": [ "u_dhampir_blood_spent_compare_value_for_powers" ] }, "y": { "math": [ "_target_value" ] } }
+            }
+          ]
+        },
+        "then": { "run_eocs": "EOC_DHAMPIR_GAIN_NEW_POWER" },
+        "else": { "math": [ "u_dhampir_blood_spent_compare_value_for_powers -= (rand(2) + 1)" ] }
+      }
+    ]
+  }
+]
