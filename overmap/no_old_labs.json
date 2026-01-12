@@ -11,7 +11,7 @@
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
     "occurrences": [ 0, 100 ],
-    "flags": [ "LAB", "GLOBAL_UNIQUE", "MAN_MADE" ]
+    "flags": [ "LAB", "GLOBAL_UNIQUE", "MAN_MADE", "OLD_LAB" ]
   },
   {
     "type": "overmap_special",
@@ -26,7 +26,7 @@
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
     "occurrences": [ 0, 100 ],
-    "flags": [ "ANT", "GLOBALLY_UNIQUE", "MAN_MADE" ],
+    "flags": [ "ANT", "GLOBALLY_UNIQUE", "MAN_MADE", "OLD_LAB" ],
     "spawns": { "group": "GROUP_ANT_SURFACE", "population": [ 1000, 2000 ], "radius": [ 10, 30 ] }
   },
   {
@@ -77,7 +77,7 @@
     "city_distance": [ 15, -1 ],
     "priority": 1,
     "occurrences": [ 0, 100 ],
-    "flags": [ "GLOBALLY_UNIQUE", "LAB", "WILDERNESS", "MAN_MADE" ],
+    "flags": [ "GLOBALLY_UNIQUE", "LAB", "WILDERNESS", "MAN_MADE", "OLD_LAB" ],
     "rotate": false
   },
   {
@@ -92,6 +92,6 @@
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
     "occurrences": [ 0, 100 ],
-    "flags": [ "LAB", "GLOBALLY_UNIQUE", "MAN_MADE" ]
+    "flags": [ "LAB", "GLOBALLY_UNIQUE", "MAN_MADE", "OLD_LAB" ]
   }
 ]
