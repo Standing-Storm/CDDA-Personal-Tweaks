@@ -43,5 +43,162 @@
     "arrange": "minimum_columns",
     "width": 58,
     "widgets": [ "spacebar_separator_2", "vampire_blood_levels_graph" ]
+  },
+  {
+    "//": "spacebar Wide bar-graph of current mana level, using the default 'bucket' fill.",
+    "id": "xe_spacebar_mana_graph",
+    "type": "widget",
+    "copy-from": "xe_mana_base",
+    "label": "Mana",
+    "style": "graph",
+    "width": 36,
+    "symbols": ".oO",
+    "fill": "bucket"
+  },
+  {
+    "//": "spacebar Current number of mana points, with color.",
+    "id": "xe_spacebar_mana_num",
+    "type": "widget",
+    "copy-from": "xe_mana_base",
+    "label": "Mana",
+    "width": 28,
+    "style": "number",
+    "colors": [ "c_pink" ]
+  },
+  {
+    "//": "spacebar Maximum mana points, in light blue color.",
+    "id": "xe_spacebar_max_mana_num",
+    "type": "widget",
+    "label": "Max Mana",
+    "style": "number",
+    "var": "max_mana",
+    "width": 28,
+    "colors": [ "c_pink" ]
+  },
+  {
+    "//": "spacebar Both current and maximum mana numbers, side by side",
+    "id": "xe_spacebar_current_max_mana_nums_layout",
+    "type": "widget",
+    "label": "Xedra Current/Max Mana",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 56,
+    "widgets": [ "xe_spacebar_mana_num", "xe_spacebar_max_mana_num" ]
+  },
+  {
+    "id": "xe_spacebar_mana_bar_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "xe_mana_bar",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_separator_2", "xe_spacebar_mana_graph" ]
+  },
+  {
+    "id": "xe_spacebar_mana_numbers_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "xe_mana_number",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_separator_2", "xe_spacebar_current_max_mana_nums_layout" ]
+  },
+  {
+    "id": "ruach_counter_spacebar_numbers",
+    "type": "widget",
+    "style": "text",
+    "label": "Ruach",
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ],
+    "clauses": [
+      {
+        "id": "ruach_numbers",
+        "text": "<color_green><u_val:ruach_amount_for_graph></color>          Max: <color_green><u_val:ruach_max_amount_for_graph></color>          Days: <color_green><u_val:ruach_days_left></color>",
+        "parse_tags": true,
+        "condition": { "u_has_trait": "LILIN_TRAITS" }
+      }
+    ],
+    "padding": 0
+  },
+  {
+    "id": "ruach_counter_meter_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Descriptor",
+    "arrange": "minimum_columns",
+    "widgets": [ "ruach_counter_meter" ]
+  },
+  {
+    "id": "ruach_counter_numbers_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Numbers",
+    "arrange": "minimum_columns",
+    "widgets": [ "ruach_counter_numbers" ]
+  },
+  {
+    "id": "ruach_counter_graph_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Graph",
+    "arrange": "minimum_columns",
+    "widgets": [ "ruach_counter_graph" ]
+  },
+  {
+    "id": "spacebar_ruach_counter_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Descriptor",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "ruach_counter_meter" ]
+  },
+  {
+    "id": "spacebar_ruach_numbers_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Numbers",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "ruach_counter_spacebar_numbers" ]
+  },
+  {
+    "id": "spacebar_ruach_graph_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "Ruach Graph",
+    "arrange": "minimum_columns",
+    "width": 58,
+    "widgets": [ "spacebar_separator_2", "ruach_counter_spacebar_graph" ]
+  },
+  {
+    "id": "ruach_counter_spacebar_graph",
+    "type": "widget",
+    "label": "Ruach",
+    "var": "custom",
+    "custom_var": {
+      "value": { "math": [ "u_vitamin('lilin_ruach_vitamin')" ] },
+      "range": [
+        0,
+        {
+          "math": [
+            "(1680 + (u_has_trait('LILIN_HOLD_MORE_RUACH') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_2') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_3') * 1680) ) * 0.333333"
+          ]
+        },
+        {
+          "math": [
+            "(1680 + (u_has_trait('LILIN_HOLD_MORE_RUACH') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_2') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_3') * 1680) ) * 0.6666666"
+          ]
+        },
+        {
+          "math": [
+            "1680 + (u_has_trait('LILIN_HOLD_MORE_RUACH') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_2') * 1680) + (u_has_trait('LILIN_HOLD_MORE_RUACH_3') * 1680)"
+          ]
+        }
+      ]
+    },
+    "style": "graph",
+    "width": 56,
+    "symbols": ".יוא",
+    "fill": "bucket",
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
+    "padding": 0
   }
 ]
