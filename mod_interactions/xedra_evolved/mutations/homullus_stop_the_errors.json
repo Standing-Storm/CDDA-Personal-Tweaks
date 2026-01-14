@@ -1,0 +1,21 @@
+[
+  {
+    "//": "This is absolutely not balanced, I'm just tired of the game throwing errors when I'll never play Homullus",
+    "type": "mutation",
+    "id": "GOODMEMORY",
+    "copy-from": "GOODMEMORY",
+    "extend": { "category": [ "HOMULLUS" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "STRONGBACK",
+    "copy-from": "STRONGBACK",
+    "extend": { "category": [ "HOMULLUS" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "GOODHEARING",
+    "copy-from": "GOODHEARING",
+    "extend": { "category": [ "HOMULLUS" ] }
+  }
+]
