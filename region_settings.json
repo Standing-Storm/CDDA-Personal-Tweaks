@@ -1,0 +1,8 @@
+[
+  {
+    "type": "region_settings",
+    "id": "default",
+    "copy-from": "default",
+    "feature_flag_settings": { "blacklist": [ "OLD_LAB", "HIGHLANDS" ], "whitelist": [  ] }
+  }
+]

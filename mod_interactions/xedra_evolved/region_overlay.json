@@ -36,11 +36,5 @@
     "extend": {
       "extras": [ [ "mx_exocrash_1", 2 ], [ "mx_exocrash_2", 2 ], [ "mx_bandits_ambush", 10 ], [ "mx_bandits_hideout", 10 ] ]
     }
-  },
-  {
-    "type": "region_settings",
-    "id": "default",
-    "copy-from": "default",
-    "feature_flag_settings": { "blacklist": [ "OLD_LAB", "HIGHLANDS" ], "whitelist": [  ] }
   }
 ]
