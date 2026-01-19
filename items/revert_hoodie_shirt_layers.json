@@ -1,0 +1,20 @@
+[
+  {
+    "id": "hoodie",
+    "copy-from": "hoodie",
+    "type": "ITEM",
+    "delete": { "flags": [ "OUTER" ] }
+  },
+  {
+    "id": "wool_hoodie",
+    "copy-from": "wool_hoodie",
+    "type": "ITEM",
+    "delete": { "flags": [ "OUTER" ] }
+  },
+  {
+    "id": "tshirt",
+    "copy-from": "tshirt",
+    "type": "ITEM",
+    "extend": { "flags": [ "SKINTIGHT" ] }
+  }
+]
