@@ -1,9 +1,73 @@
 [
   {
-    "//": "Extend the custom sidebar with Magiclysm-specific sections",
+    "//": "Extend the custom sidebar with Xedra Evolved-specific sections",
     "copy-from": "spacebar_mine",
     "type": "widget",
     "id": "spacebar_mine",
-    "extend": { "widgets": [ "current_max_mana_nums_layout", "mana_graph_layout", "mana_pool_layout" ] }
+    "extend": { "widgets": [ "xe_spacebar_mana_numbers_block", "xe_spacebar_mana_bar_block" ] }
+  },
+  {
+    "//": "spacebar Wide bar-graph of current mana level, using the default 'bucket' fill.",
+    "id": "xe_spacebar_mana_graph",
+    "type": "widget",
+    "copy-from": "xe_mana_base",
+    "label": "Mana",
+    "style": "graph",
+    "width": 36,
+    "symbols": ".oO",
+    "fill": "bucket"
+  },
+  {
+    "//": "spacebar Current number of mana points, with color.",
+    "id": "xe_spacebar_mana_num",
+    "type": "widget",
+    "copy-from": "xe_mana_base",
+    "label": "Mana",
+    "width": 28,
+    "style": "number",
+    "colors": [ "c_pink" ]
+  },
+  {
+    "//": "spacebar Maximum mana points, in light blue color.",
+    "id": "xe_spacebar_max_mana_num",
+    "type": "widget",
+    "label": "Max Mana",
+    "style": "number",
+    "var": "max_mana",
+    "width": 28,
+    "colors": [ "c_pink" ]
+  },
+  {
+    "//": "spacebar Both current and maximum mana numbers, side by side",
+    "id": "xe_spacebar_current_max_mana_nums_layout",
+    "type": "widget",
+    "label": "Xedra Current/Max Mana",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 56,
+    "widgets": [ "xe_spacebar_mana_num", "xe_spacebar_max_mana_num" ]
+  },
+  {
+    "id": "xe_spacebar_mana_bar_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "xe_mana_bar",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_separator_2", "xe_spacebar_mana_graph" ]
+  },
+  {
+    "id": "xe_spacebar_mana_numbers_block",
+    "type": "widget",
+    "style": "layout",
+    "label": "xe_mana_number",
+    "arrange": "minimum_columns",
+    "widgets": [ "spacebar_separator_2", "xe_spacebar_current_max_mana_nums_layout" ]
+  },
+  {
+    "//": "Base widget for other mana widgets to copy-from.  Sets var and colors.",
+    "id": "xe_mana_base",
+    "type": "widget",
+    "var": "mana",
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_blue" ]
   }
 ]

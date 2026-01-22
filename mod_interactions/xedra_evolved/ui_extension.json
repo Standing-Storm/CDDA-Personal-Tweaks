@@ -200,5 +200,12 @@
     "fill": "bucket",
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
     "padding": 0
+  },
+  {
+    "//": "Base widget for other mana widgets to copy-from.  Sets var and colors.",
+    "id": "xe_mana_base",
+    "type": "widget",
+    "var": "mana",
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_blue" ]
   }
 ]
