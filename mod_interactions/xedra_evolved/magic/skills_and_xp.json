@@ -18,7 +18,11 @@
         }
       ]
     },
-    "effect": [ { "math": [ "u_skill_exp('deduction', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
+    "effect": [
+      {
+        "math": [ "u_skill_exp('deduction', 'format': 'raw')", "+=", "250 * _difficulty * game_option('SKILL_TRAINING_SPEED')" ]
+      }
+    ]
   },
   {
     "type": "effect_on_condition",
@@ -45,7 +49,11 @@
         }
       ]
     },
-    "effect": [ { "math": [ "u_skill_exp('gramarye', 'format': 'raw')", "+=", "250 * _difficulty" ] } ]
+    "effect": [
+      {
+        "math": [ "u_skill_exp('gramarye', 'format': 'raw')", "+=", "250 * _difficulty * game_option('SKILL_TRAINING_SPEED')" ]
+      }
+    ]
   },
   {
     "type": "skill",
