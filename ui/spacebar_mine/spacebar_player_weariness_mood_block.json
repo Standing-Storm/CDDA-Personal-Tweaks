@@ -34,7 +34,14 @@
     "label": "Mood/Focus/Activity",
     "arrange": "rows",
     "width": 24,
-    "widgets": [ "mood_desc_label", "spacebar_mine_focus_graph", "health_desc", "activity_desc", "spacebar_personal_cardio_graph" ]
+    "widgets": [
+      "mood_desc_label",
+      "spacebar_mine_focus_graph",
+      "health_desc",
+      "activity_desc",
+      "spacebar_personal_cardio_graph",
+      "oxygen_personal_layout"
+    ]
   },
   {
     "id": "spacebar_all_weariness_layout",
@@ -51,7 +58,7 @@
     "type": "widget",
     "label": "Transition",
     "style": "graph",
-    "symbols": ".oO",
+    "symbols": ".oO0",
     "width": 5,
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
     "var": "weary_transition_level"
@@ -76,6 +83,17 @@
     "symbols": ".oO",
     "fill": "bucket",
     "width": 5,
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
+  },
+  {
+    "id": "oxygen_personal_layout",
+    "type": "widget",
+    "var": "oxygen",
+    "label": "Oxygen",
+    "style": "graph",
+    "width": 5,
+    "symbols": ".oO",
+    "fill": "bucket",
     "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ]
   },
   {
