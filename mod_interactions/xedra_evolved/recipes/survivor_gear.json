@@ -1,0 +1,186 @@
+[
+  {
+    "id": "nested_survivor_trenchcoat",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "name": "survivor trenchcoats",
+    "description": "Recipes related to tailoring long coats from Kevlar, known as trenchcoats.",
+    "skill_used": "tailor",
+    "nested_category_data": [ "trenchcoat_survivor", "sleeveless_trenchcoat_survivor", "sleeveless_trenchcoat_survivor_from_trenchcoat_survivor" ],
+    "difficulty": 3
+  },
+  {
+    "id": "nested_trenchcoats",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "name": "trenchcoats",
+    "description": "Recipes related to tailoring long coats, known as trenchcoats.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "nested_cotton_trenchcoat",
+      "nested_fur_trenchcoat",
+      "nested_leather_trenchcoat",
+      "nested_faux_fur_trenchcoat",
+      "nested_survivor_trenchcoat"
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "nested_all_duster",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "name": "dusters",
+    "description": "Recipes related to tailoring long coats, known as dusters.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "nested_cotton_duster",
+      "nested_fur_duster",
+      "nested_leather_duster",
+      "nested_faux_fur_duster",
+      "nested_survivor_duster"
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "nested_survivor_duster",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "name": "survivor dusters",
+    "description": "Recipes related to tailoring durable long coats from Kevlar and other materials, known as dusters.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "duster_survivor",
+      "xs_duster_survivor",
+      "xl_duster_survivor",
+      "sleeveless_duster_survivor",
+      "sleeveless_duster_survivor_from_duster_survivor"
+    ],
+    "difficulty": 6
+  },
+  {
+    "result": "duster_survivor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "12 h 10 m",
+    "autolearn": true,
+    "using": [ [ "sewing_kevlar", 135 ], [ "tailoring_canvas_patchwork", 19 ], [ "tailoring_kevlar_fabric", 50 ] ],
+    "components": [
+      [ [ "coat_rain", 1 ] ],
+      [ [ "duster", 1 ] ],
+      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 75 ], [ "sheet_kevlar_patchwork", 75 ] ],
+      [
+        [ "tacvest", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 4 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 135 ] ]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" }
+    ]
+  },
+  {
+    "result": "xs_duster_survivor",
+    "type": "recipe",
+    "copy-from": "duster_survivor",
+    "time": "12 h 10 m",
+    "using": [ [ "sewing_kevlar", 101 ], [ "tailoring_canvas_patchwork", 14 ], [ "tailoring_kevlar_fabric", 40 ] ],
+    "components": [
+      [ [ "coat_rain", 1 ] ],
+      [ [ "duster", 1 ], [ "xs_duster", 1 ] ],
+      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 70 ], [ "sheet_kevlar_patchwork", 70 ] ],
+      [
+        [ "tacvest", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 4 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 101 ] ]
+    ]
+  },
+  {
+    "result": "xl_duster_survivor",
+    "type": "recipe",
+    "copy-from": "duster_survivor",
+    "time": "13 h 40 m",
+    "using": [ [ "sewing_kevlar", 175 ], [ "tailoring_canvas_patchwork", 26 ], [ "tailoring_kevlar_fabric", 75 ] ],
+    "components": [
+      [ [ "coat_rain", 2 ] ],
+      [ [ "xl_duster", 1 ] ],
+      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 80 ], [ "sheet_kevlar_patchwork", 80 ] ],
+      [
+        [ "tacvest", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 4 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 200 ] ]
+    ]
+  },
+  {
+    "result": "trenchcoat_survivor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "10 h 30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_kevlar", 75 ], [ "tailoring_kevlar_fabric", 60 ] ],
+    "components": [
+      [ [ "coat_rain", 1 ] ],
+      [ [ "trenchcoat", 1 ] ],
+      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 75 ], [ "sheet_kevlar_patchwork", 75 ] ],
+      [
+        [ "tacvest", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 4 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 100 ] ]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" }
+    ]
+  }
+]
