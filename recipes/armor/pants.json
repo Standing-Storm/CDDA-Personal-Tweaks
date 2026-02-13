@@ -8,7 +8,7 @@
     "name": "light survivor pants",
     "description": "Recipes related to constructing various sizes of light survivor cargo pants.",
     "skill_used": "tailor",
-    "nested_category_data": [ "lsurvivor_pants", "xs_lsurvivor_pants", "xl_lsurvivor_pants" ],
+    "nested_category_data": [ "lsurvivor_pants_keep", "xs_lsurvivor_pants_keep", "xl_lsurvivor_pants_keep" ],
     "difficulty": 5
   },
   {
@@ -20,7 +20,7 @@
     "name": "survivor pants",
     "description": "Recipes related to constructing various sizes of survivor cargo pants.",
     "skill_used": "tailor",
-    "nested_category_data": [ "pants_survivor", "xs_pants_survivor", "xl_pants_survivor" ],
+    "nested_category_data": [ "pants_survivor_keep", "xs_pants_survivor_keep", "xl_pants_survivor_keep" ],
     "difficulty": 5
   },
   {
@@ -36,7 +36,7 @@
     "difficulty": 5
   },
   {
-    "result": "lsurvivor_pants",
+    "result": "lsurvivor_pants_keep",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_*",
@@ -70,9 +70,9 @@
     ]
   },
   {
-    "result": "xs_lsurvivor_pants",
+    "result": "xs_lsurvivor_pants_keep",
     "type": "recipe",
-    "copy-from": "lsurvivor_pants",
+    "copy-from": "lsurvivor_pants_keep",
     "time": "12 h",
     "using": [
       [ "tailoring_cotton_patchwork", 1 ],
@@ -93,9 +93,9 @@
     ]
   },
   {
-    "result": "xl_lsurvivor_pants",
+    "result": "xl_lsurvivor_pants_keep",
     "type": "recipe",
-    "copy-from": "lsurvivor_pants",
+    "copy-from": "lsurvivor_pants_keep",
     "time": "13 h 30 m",
     "using": [
       [ "tailoring_cotton_patchwork", 4 ],
@@ -116,7 +116,7 @@
     ]
   },
   {
-    "result": "pants_survivor",
+    "result": "pants_survivor_keep",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_*",
@@ -153,9 +153,9 @@
     ]
   },
   {
-    "result": "xs_pants_survivor",
+    "result": "xs_pants_survivor_keep",
     "type": "recipe",
-    "copy-from": "pants_survivor",
+    "copy-from": "pants_survivor_keep",
     "time": "14 h",
     "using": [
       [ "tailoring_kevlar_fabric", 3 ],
@@ -179,9 +179,9 @@
     ]
   },
   {
-    "result": "xl_pants_survivor",
+    "result": "xl_pants_survivor_keep",
     "type": "recipe",
-    "copy-from": "pants_survivor",
+    "copy-from": "pants_survivor_keep",
     "time": "15 h 45 m",
     "using": [
       [ "tailoring_kevlar_fabric", 6 ],

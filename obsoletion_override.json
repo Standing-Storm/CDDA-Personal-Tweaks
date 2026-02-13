@@ -1,0 +1,62 @@
+[
+  {
+    "type": "MIGRATION",
+    "id": "duster_survivor",
+    "replace": "duster_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xl_duster_survivor",
+    "replace": "xl_duster_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xs_duster_survivor",
+    "replace": "xs_duster_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "sleeveless_duster_survivor",
+    "replace": "sleeveless_duster_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "trenchcoat_survivor",
+    "replace": "trenchcoat_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "sleeveless_trenchcoat_survivor",
+    "replace": "sleeveless_trenchcoat_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "lsurvivor_pants",
+    "replace": "lsurvivor_pants_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xs_lsurvivor_pants",
+    "replace": "xs_lsurvivor_pants_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xl_lsurvivor_pants",
+    "replace": "xl_lsurvivor_pants_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "pants_survivor",
+    "replace": "pants_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xl_pants_survivor",
+    "replace": "xl_pants_survivor_keep"
+  },
+  {
+    "type": "MIGRATION",
+    "id": "xs_pants_survivor",
+    "replace": "xs_pants_survivor_keep"
+  }
+]

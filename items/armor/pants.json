@@ -21,7 +21,7 @@
     ]
   },
   {
-    "id": "lsurvivor_pants",
+    "id": "lsurvivor_pants_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -83,28 +83,38 @@
     "material_thickness": 3,
     "environmental_protection": 1,
     "flags": [ "VARSIZE", "WATERPROOF", "POCKETS", "RAINPROOF", "STURDY" ],
-    "armor": [ { "encumbrance": [ 8, 16 ], "coverage": 95, "covers": [ "leg_l", "leg_r" ] } ]
+    "armor": [
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 1.5 }
+        ],
+        "encumbrance": [ 8, 16 ],
+        "coverage": 95,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ]
   },
   {
-    "id": "xl_lsurvivor_pants",
+    "id": "xl_lsurvivor_pants_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "copy-from": "lsurvivor_pants",
+    "copy-from": "lsurvivor_pants_keep",
     "name": { "str_sp": "light survivor cargo pants" },
     "proportional": { "weight": 1.25, "volume": 1.13, "price": 1.25 },
     "extend": { "flags": [ "OVERSIZE", "PREFIX_XL" ] }
   },
   {
-    "id": "xs_lsurvivor_pants",
+    "id": "xs_lsurvivor_pants_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "copy-from": "lsurvivor_pants",
+    "copy-from": "lsurvivor_pants_keep",
     "name": { "str_sp": "light survivor cargo pants" },
     "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
     "extend": { "flags": [ "UNDERSIZE", "PREFIX_XS" ] }
   },
   {
-    "id": "pants_survivor",
+    "id": "pants_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -116,7 +126,7 @@
     "price_postapoc": "20 USD",
     "material": [ "cotton", "kevlar" ],
     "symbol": "[",
-    "looks_like": "pants_army",
+    "looks_like": "pants_survivor",
     "color": "green",
     "pocket_data": [
       {
@@ -181,22 +191,32 @@
     "valid_mods": [ "steel_padded" ],
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ],
-    "armor": [ { "encumbrance": [ 10, 20 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+    "armor": [
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 1.5 }
+        ],
+        "encumbrance": [ 12, 24 ],
+        "coverage": 100,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ]
   },
   {
-    "id": "xl_pants_survivor",
+    "id": "xl_pants_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "copy-from": "pants_survivor",
+    "copy-from": "pants_survivor_keep",
     "name": { "str_sp": "survivor cargo pants" },
     "proportional": { "weight": 1.25, "volume": 1.13, "price": 1.25 },
     "extend": { "flags": [ "OVERSIZE", "PREFIX_XL" ] }
   },
   {
-    "id": "xs_pants_survivor",
+    "id": "xs_pants_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "copy-from": "pants_survivor",
+    "copy-from": "pants_survivor_keep",
     "name": { "str_sp": "survivor cargo pants" },
     "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
     "extend": { "flags": [ "UNDERSIZE", "PREFIX_XS" ] }

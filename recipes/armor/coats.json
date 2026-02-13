@@ -8,7 +8,11 @@
     "name": "survivor trenchcoats",
     "description": "Recipes related to tailoring long coats from Kevlar, known as trenchcoats.",
     "skill_used": "tailor",
-    "nested_category_data": [ "trenchcoat_survivor", "sleeveless_trenchcoat_survivor", "sleeveless_trenchcoat_survivor_from_trenchcoat_survivor" ],
+    "nested_category_data": [
+      "trenchcoat_survivor_keep",
+      "sleeveless_trenchcoat_survivor_keep",
+      "sleeveless_trenchcoat_survivor_keep_from_trenchcoat_survivor"
+    ],
     "difficulty": 3
   },
   {
@@ -57,16 +61,16 @@
     "description": "Recipes related to tailoring durable long coats from Kevlar and other materials, known as dusters.",
     "skill_used": "tailor",
     "nested_category_data": [
-      "duster_survivor",
-      "xs_duster_survivor",
-      "xl_duster_survivor",
-      "sleeveless_duster_survivor",
-      "sleeveless_duster_survivor_from_duster_survivor"
+      "duster_survivor_keep",
+      "xs_duster_survivor_keep",
+      "xl_duster_survivor_keep",
+      "sleeveless_duster_survivor_keep",
+      "sleeveless_duster_survivor_keep_from_duster_survivor"
     ],
     "difficulty": 6
   },
   {
-    "result": "duster_survivor",
+    "result": "duster_survivor_keep",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_*",
@@ -101,9 +105,9 @@
     ]
   },
   {
-    "result": "xs_duster_survivor",
+    "result": "xs_duster_survivor_keep",
     "type": "recipe",
-    "copy-from": "duster_survivor",
+    "copy-from": "duster_survivor_keep",
     "time": "12 h 10 m",
     "using": [ [ "sewing_kevlar", 101 ], [ "tailoring_canvas_patchwork", 14 ], [ "tailoring_kevlar_fabric", 40 ] ],
     "components": [
@@ -125,9 +129,9 @@
     ]
   },
   {
-    "result": "xl_duster_survivor",
+    "result": "xl_duster_survivor_keep",
     "type": "recipe",
-    "copy-from": "duster_survivor",
+    "copy-from": "duster_survivor_keep",
     "time": "13 h 40 m",
     "using": [ [ "sewing_kevlar", 175 ], [ "tailoring_canvas_patchwork", 26 ], [ "tailoring_kevlar_fabric", 75 ] ],
     "components": [
@@ -149,7 +153,7 @@
     ]
   },
   {
-    "result": "trenchcoat_survivor",
+    "result": "trenchcoat_survivor_keep",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_*",
@@ -182,5 +186,57 @@
       { "proficiency": "prof_closures" },
       { "proficiency": "prof_closures_waterproofing" }
     ]
+  },
+  {
+    "result": "sleeveless_trenchcoat_survivor_keep",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.  The sleeveless survivor trenchcoat is the exception with the premade wearable items.",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "11 h 45 m",
+    "autolearn": true,
+    "using": [ [ "sewing_kevlar", 75 ], [ "tailoring_kevlar_fabric", 20 ] ],
+    "components": [
+      [ [ "coat_rain", 1 ] ],
+      [ [ "trenchcoat", 1 ], [ "sleeveless_trenchcoat", 1 ] ],
+      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 75 ], [ "sheet_kevlar_patchwork", 75 ] ],
+      [
+        [ "tacvest", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 4 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 85 ] ]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_polymerworking" },
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" }
+    ]
+  },
+  {
+    "result": "sleeveless_trenchcoat_survivor_keep",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "id_suffix": "from_trenchcoat_survivor",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
+    "skill_used": "tailor",
+    "time": "6 m",
+    "autolearn": true,
+    "byproducts": [ [ "cotton_patchwork", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "flags": [ "NO_RESIZE" ],
+    "components": [ [ [ "trenchcoat_survivor", 1 ] ] ]
   }
 ]

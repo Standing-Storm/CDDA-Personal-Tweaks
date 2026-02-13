@@ -1,6 +1,6 @@
 [
   {
-    "id": "duster_survivor",
+    "id": "duster_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -12,18 +12,38 @@
     "price_postapoc": "80 USD",
     "material": [ "canvas", "kevlar" ],
     "symbol": "[",
-    "looks_like": "duster_leather",
+    "looks_like": "duster_survivor",
     "color": "brown",
     "armor": [
-      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 8, 13 ] },
       {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 95,
+        "encumbrance": [ 8, 13 ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
         "covers": [ "leg_l", "leg_r" ],
         "coverage": 86,
         "encumbrance": [ 5, 6 ],
         "specifically_covers": [ "leg_draped_l", "leg_draped_r" ],
         "layers": [ "BELTED" ]
       },
-      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 8, 8 ] }
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 95,
+        "encumbrance": [ 8, 8 ]
+      }
     ],
     "pocket_data": [
       {
@@ -76,25 +96,25 @@
     "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
-    "id": "xl_duster_survivor",
+    "id": "xl_duster_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "name": { "str": "survivor duster" },
-    "copy-from": "duster_survivor",
+    "copy-from": "duster_survivor_keep",
     "proportional": { "weight": 1.125, "volume": 1.13, "price": 1.25 },
     "extend": { "flags": [ "OVERSIZE", "PREFIX_XL" ] }
   },
   {
-    "id": "xs_duster_survivor",
+    "id": "xs_duster_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "copy-from": "duster_survivor",
+    "copy-from": "duster_survivor_keep",
     "name": { "str": "survivor duster" },
     "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
     "extend": { "flags": [ "UNDERSIZE", "PREFIX_XS" ] }
   },
   {
-    "id": "sleeveless_duster_survivor",
+    "id": "sleeveless_duster_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -134,7 +154,7 @@
     "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
-    "id": "trenchcoat_survivor",
+    "id": "trenchcoat_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -146,23 +166,55 @@
     "price_postapoc": "80 USD",
     "material": [ "canvas", "kevlar" ],
     "symbol": "[",
-    "looks_like": "trenchcoat",
+    "looks_like": "trenchcoat_survivor",
     "color": "brown",
     "armor": [
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 8, 15 ] },
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 0, 0 ] },
-      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 8, 8 ] },
       {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": [ 11, 21 ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "coverage": 95,
+        "encumbrance": [ 11, 21 ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
         "covers": [ "leg_l", "leg_r" ],
-        "specifically_covers": [ "leg_hip_l", "leg_hip_r" ],
         "coverage": 90,
-        "encumbrance": [ 5, 6 ]
+        "encumbrance": [ 7, 11 ],
+        "specifically_covers": [ "leg_hip_l", "leg_hip_r" ],
+        "layers": [ "BELTED" ]
       },
       {
         "covers": [ "leg_l", "leg_r" ],
-        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "specifically_covers": [ "leg_draped_l", "leg_draped_r", "leg_upper_l", "leg_upper_r" ],
         "coverage": 80,
-        "encumbrance": [ 0, 0 ]
+        "encumbrance": [ 5, 8 ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 95,
+        "encumbrance": [ 12, 12 ]
       }
     ],
     "pocket_data": [
@@ -216,7 +268,7 @@
     "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
-    "id": "sleeveless_trenchcoat_survivor",
+    "id": "sleeveless_trenchcoat_survivor_keep",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
@@ -245,25 +297,53 @@
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ],
     "armor": [
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 8, 15 ] },
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 0, 0 ] },
       {
-        "covers": [ "arm_l", "arm_r" ],
-        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
-        "coverage": 40,
-        "encumbrance": [ 0, 0 ]
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": [ 11, 21 ]
       },
       {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "coverage": 95,
+        "encumbrance": [ 11, 21 ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
+        "coverage": 35,
+        "encumbrance": [ 2, 2 ]
+      },
+      {
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_hip_r" ],
         "coverage": 90,
-        "encumbrance": [ 5, 6 ]
+        "encumbrance": [ 7, 11 ],
+        "layers": [ "BELTED" ]
       },
       {
         "covers": [ "leg_l", "leg_r" ],
-        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "specifically_covers": [ "leg_draped_l", "leg_draped_r", "leg_upper_l", "leg_upper_r" ],
         "coverage": 80,
-        "encumbrance": [ 0, 0 ]
+        "encumbrance": [ 5, 8 ],
+        "layers": [ "BELTED" ]
       }
     ]
   },
@@ -299,57 +379,5 @@
         "covers": [ "arm_l", "arm_r" ]
       }
     ]
-  },
-  {
-    "result": "sleeveless_trenchcoat_survivor",
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
-    "category": "CC_*",
-    "subcategory": "CSC_*_NESTED",
-    "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.  The sleeveless survivor trenchcoat is the exception with the premade wearable items.",
-    "skill_used": "tailor",
-    "difficulty": 6,
-    "skills_required": [ "fabrication", 5 ],
-    "time": "11 h 45 m",
-    "autolearn": true,
-    "using": [ [ "sewing_kevlar", 75 ], [ "tailoring_kevlar_fabric", 20 ] ],
-    "components": [
-      [ [ "coat_rain", 1 ] ],
-      [ [ "trenchcoat", 1 ], [ "sleeveless_trenchcoat", 1 ] ],
-      [ [ "stab_vest", 1 ], [ "sheet_kevlar", 75 ], [ "sheet_kevlar_patchwork", 75 ] ],
-      [
-        [ "tacvest", 1 ],
-        [ "legrig", 1 ],
-        [ "vest", 1 ],
-        [ "tool_belt", 1 ],
-        [ "ragpouch", 4 ],
-        [ "leather_pouch", 2 ],
-        [ "dump_pouch", 1 ],
-        [ "purse", 2 ],
-        [ "fanny", 2 ]
-      ],
-      [ [ "duct_tape", 85 ] ]
-    ],
-    "proficiencies": [
-      { "proficiency": "prof_polymerworking" },
-      { "proficiency": "prof_closures" },
-      { "proficiency": "prof_closures_waterproofing" }
-    ]
-  },
-  {
-    "result": "sleeveless_trenchcoat_survivor",
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
-    "id_suffix": "from_trenchcoat_survivor",
-    "category": "CC_*",
-    "subcategory": "CSC_*_NESTED",
-    "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
-    "skill_used": "tailor",
-    "time": "6 m",
-    "autolearn": true,
-    "byproducts": [ [ "cotton_patchwork", 4 ] ],
-    "qualities": [ { "id": "CUT", "level": 2 } ],
-    "flags": [ "NO_RESIZE" ],
-    "components": [ [ [ "trenchcoat_survivor", 1 ] ] ]
   }
 ]
