@@ -73,7 +73,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_BIOMANCER_EARTHSHAPER_CHECK",
+    "id": "BIOMANCER_EARTHSHAPER_ONLY",
     "name": "Biomancer Earthshaper Only",
     "points": 0,
     "description": "You can only be a Biomancer and an Earthshaper.",
@@ -85,7 +85,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_BIOMANCER_KELVINIST_CHECK",
+    "id": "BIOMANCER_KELVINIST_ONLY",
     "name": "Biomancer Kelvinist Only",
     "points": 0,
     "description": "You can only be a Biomancer and an Earthshaper.",
@@ -97,7 +97,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_BIOMANCER_MAGUS_CHECK",
+    "id": "BIOMANCER_MAGUS_ONLY",
     "name": "Biomancer Magus Only",
     "points": 0,
     "description": "You can only be a Biomancer and a Magus.",
@@ -109,7 +109,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_BIOMANCER_STORMSHAPER_CHECK",
+    "id": "BIOMANCER_STORMSHAPER_ONLY",
     "name": "Biomancer Stormshaper Only",
     "points": 0,
     "description": "You can only be a Biomancer and a Stormshaper.",
@@ -121,7 +121,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_BIOMANCER_TECHNOMANCER_CHECK",
+    "id": "BIOMANCER_TECHNOMANCER_ONLY",
     "name": "Biomancer Technomancer Only",
     "points": 0,
     "description": "You can only be a Biomancer and a Technomancer.",
@@ -133,7 +133,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_DRUID_EARTHSHAPER_CHECK",
+    "id": "DRUID_EARTHSHAPER_ONLY",
     "name": "Druid Earthshaper Only",
     "points": 0,
     "description": "You can only be a Druid and an Earthshaper.",
@@ -145,7 +145,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_DRUID_KELVINIST_CHECK",
+    "id": "DRUID_KELVINIST_ONLY",
     "name": "Druid Kelvinist Only",
     "points": 0,
     "description": "You can only be a Druid and a Kelvinist.",
@@ -157,7 +157,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_DRUID_MAGUS_CHECK",
+    "id": "DRUID_MAGUS_ONLY",
     "name": "Druid Magus Only",
     "points": 0,
     "description": "You can only be a Druid and a Magus.",
@@ -169,7 +169,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_DRUID_STORMSHAPER_CHECK",
+    "id": "DRUID_STORMSHAPER_ONLY",
     "name": "Druid Stormshaper Only",
     "points": 0,
     "description": "You can only be a Druid and a Stormshaper.",
@@ -181,7 +181,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_DRUID_TECHNOMANCER_CHECK",
+    "id": "DRUID_TECHNOMANCER_ONLY",
     "name": "Druid Technomancer Only",
     "points": 0,
     "description": "You can only be a Druid and a Technomancer.",
@@ -193,7 +193,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_EARTHSHAPER_KELVINIST_CHECK",
+    "id": "EARTHSHAPER_KELVINIST_ONLY",
     "name": "Earthshaper Kelvinist Only",
     "points": 0,
     "description": "You can only be an Earthshaper and a Kelvinist.",
@@ -205,7 +205,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_EARTHSHAPER_MAGUS_CHECK",
+    "id": "EARTHSHAPER_MAGUS_ONLY",
     "name": "Earthshaper Magus Only",
     "points": 0,
     "description": "You can only be an Earthshaper and a Magus.",
@@ -217,7 +217,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_EARTHSHAPER_STORMSHAPER_CHECK",
+    "id": "EARTHSHAPER_STORMSHAPER_ONLY",
     "name": "Earthshaper Stormshaper Only",
     "points": 0,
     "description": "You can only be an Earthshaper and a Stormshaper.",
@@ -229,7 +229,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_KELVINIST_MAGUS_CHECK",
+    "id": "KELVINIST_MAGUS_ONLY",
     "name": "Kelvinist Magus Only",
     "points": 0,
     "description": "You can only be a Kelvinist and a Magus.",
@@ -241,7 +241,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_KELVINIST_TECHNOMANCER_CHECK",
+    "id": "KELVINIST_TECHNOMANCER_ONLY",
     "name": "Kelvinist Technomancer Only",
     "points": 0,
     "description": "You can only be a Kelvinist and a Technomancer.",
@@ -253,7 +253,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_MAGUS_STORMSHAPER_CHECK",
+    "id": "MAGUS_STORMSHAPER_ONLY",
     "name": "Magus Stormshaper Only",
     "points": 0,
     "description": "You can only be a Magus and a Stormshaper.",
@@ -265,7 +265,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_MAGUS_TECHNOMANCER_CHECK",
+    "id": "MAGUS_TECHNOMANCER_ONLY",
     "name": "Magus Technomancer Only",
     "points": 0,
     "description": "You can only be a Magus and a Technomancer.",
@@ -277,7 +277,7 @@
   },
   {
     "type": "mutation",
-    "id": "EOC_STORMSHAPER_TECHNOMANCER_CHECK",
+    "id": "STORMSHAPER_TECHNOMANCER_ONLY",
     "name": "Stormshaper Technomancer Only",
     "points": 0,
     "description": "You can only be a Stormshaper and a Technomancer.",
