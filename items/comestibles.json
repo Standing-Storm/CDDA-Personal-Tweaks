@@ -1,0 +1,9 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "butter",
+    "copy-from": "butter",
+    "fun": -1
+  }
+]
