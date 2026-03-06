@@ -213,7 +213,7 @@
     "activated_on_install": true,
     "enchantments": [ "cbm_heightened_performance" ],
     "included_bionics": [ "cbm_bio_speed_injection", "cbm_bio_healing_injection", "cbm_bio_strength_injection" ],
-    "deactivated_eocs": [ "afs_eoc_hangover_baseline" ],
+    "deactivated_eocs": [ "eoc_cbm_hangover_baseline" ],
     "act_cost": "100 J",
     "react_cost": "20 J",
     "time": "1 m"
