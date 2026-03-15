@@ -1,0 +1,89 @@
+[
+  {
+    "id": "boots_lsurvivor_keep",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str_sp": "light survivor boots (pair)" },
+    "description": "Custom boots of treated leather sealed with polymer coating.  Tough and acid-proof with steel toes for extra safety.",
+    "weight": "1120 g",
+    "volume": "2 L",
+    "price": "240 USD",
+    "price_postapoc": "50 USD",
+    "to_hit": { "grip": "none", "length": "hand", "surface": "any", "balance": "clumsy" },
+    "material": [ "leather_treated", "rubber", "vinyl", "hc_steel" ],
+    "symbol": "[",
+    "looks_like": "boots_lsurvivor",
+    "color": "green",
+    "warmth": 20,
+    "material_thickness": 2,
+    "environmental_protection": 5,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
+    "armor": [
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_ankle_r", "foot_ankle_l", "foot_arch_r", "foot_arch_l", "foot_heel_r", "foot_heel_l" ],
+        "material": [
+          { "type": "leather_treated", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "vinyl", "covered_by_mat": 100, "thickness": 0.2 }
+        ],
+        "encumbrance": 14,
+        "coverage": 100
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_toes_r", "foot_toes_l" ],
+        "material": [
+          { "type": "leather_treated", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "vinyl", "covered_by_mat": 100, "thickness": 0.2 },
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 0.3 }
+        ],
+        "coverage": 100
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_sole_r", "foot_sole_l" ],
+        "material": [
+          { "type": "leather_treated", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "rubber", "covered_by_mat": 100, "thickness": 5.0 }
+        ],
+        "coverage": 100
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "xl_boots_lsurvivor_keep",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "name": { "str_sp": "light survivor boots (pair)" },
+    "copy-from": "boots_lsurvivor_keep",
+    "looks_like": "boots_lsurvivor",
+    "proportional": { "weight": 1.4, "volume": 1.4 },
+    "extend": { "flags": [ "OVERSIZE", "PREFIX_XL" ] }
+  },
+  {
+    "id": "xs_boots_lsurvivor_keep",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "boots_lsurvivor_keep",
+    "looks_like": "boots_lsurvivor",
+    "name": { "str_sp": "light survivor boots (pair)" },
+    "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
+    "extend": { "flags": [ "UNDERSIZE", "PREFIX_XS" ] }
+  },
+  {
+    "id": "boots_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "boots_survivor",
+    "name": { "str_sp": "survivor boots (pair)" }
+  },
+  {
+    "id": "boots_wsurvivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "boots_wsurvivor",
+    "name": { "str_sp": "winterized survivor boots (pair)" }
+  }
+]

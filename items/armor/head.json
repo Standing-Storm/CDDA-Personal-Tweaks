@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hood_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "hood_survivor",
+    "name": { "str_sp": "survivor hood" }
+  },
+  {
+    "id": "hood_wsurvivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "hood_wsurvivor",
+    "name": { "str_sp": "winterized survivor hood" }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gloves_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "gloves_survivor",
+    "name": { "str_sp": "survivor gloves (pair)" }
+  },
+  {
+    "id": "xl_gloves_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "xl_gloves_survivor",
+    "name": { "str_sp": "survivor gloves (pair)" }
+  },
+  {
+    "id": "xs_gloves_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "xs_gloves_survivor",
+    "name": { "str_sp": "survivor gloves (pair)" }
+  },
+  {
+    "id": "gloves_wsurvivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "gloves_wsurvivor",
+    "name": { "str_sp": "winterized survivor gloves (pair)" }
+  }
+]
