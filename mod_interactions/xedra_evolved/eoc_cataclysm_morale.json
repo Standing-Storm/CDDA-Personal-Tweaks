@@ -1,0 +1,17 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CATACLYSM_BAD_MORALE_CONDITIONS",
+    "condition": {
+      "and": [
+        { "not": { "u_has_flag": "PSYCHOPATH" } },
+        {
+          "not": {
+            "u_has_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "SYLPH", "UNDINE", "NATIVE_SHAPESHIFTER", "LILIN_TRAITS", "GRACKEN" ]
+          }
+        }
+      ]
+    },
+    "effect": [  ]
+  }
+]

@@ -25,7 +25,12 @@
     "id": "EOC_CATACLYSM_MORALE_GRADUAL",
     "eoc_type": "EVENT",
     "required_event": "character_wakes_up",
-    "condition": { "and": [ { "not": { "u_has_flag": "PSYCHOPATH" } }, { "math": [ "time_since('cataclysm', 'unit':'days') < 180" ] } ] },
+    "condition": {
+      "and": [
+        { "test_eoc": "EOC_CATACLYSM_BAD_MORALE_CONDITIONS" },
+        { "math": [ "time_since('cataclysm', 'unit':'days') < 180" ] }
+      ]
+    },
     "effect": [
       {
         "switch": { "math": [ "time_since('cataclysm', 'unit':'days')" ] },
@@ -81,5 +86,11 @@
         ]
       }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CATACLYSM_BAD_MORALE_CONDITIONS",
+    "condition": { "not": { "u_has_flag": "PSYCHOPATH" } },
+    "effect": [  ]
   }
 ]
