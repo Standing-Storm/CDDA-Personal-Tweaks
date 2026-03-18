@@ -4,7 +4,7 @@
     "id": "EOC_CATACLYSM_MORALE_INITIAL",
     "eoc_type": "EVENT",
     "required_event": "game_start",
-    "condition": { "not": { "u_has_flag": "PSYCHOPATH" } },
+    "condition": { "test_eoc": "EOC_CATACLYSM_BAD_MORALE_CONDITIONS" },
     "effect": [ { "run_eocs": "EOC_CATACLYSM_MORALE_INITIAL_DELAY", "time_in_future": 2 } ]
   },
   {
