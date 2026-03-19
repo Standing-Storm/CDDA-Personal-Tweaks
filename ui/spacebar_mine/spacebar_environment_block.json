@@ -3,10 +3,10 @@
     "id": "spacebar_mine_wind_sun_rad",
     "type": "widget",
     "style": "layout",
-    "label": "wind/sun/radiation",
+    "label": "wind/sun/radiation/snow",
     "arrange": "rows",
     "width": 58,
-    "widgets": [ "wind_desc", "sundial_label_layout", "rad_badge_desc" ]
+    "widgets": [ "wind_desc", "sundial_label_layout", "rad_badge_desc", "snow_depth_desc" ]
   },
   {
     "id": "spacebar_mine_enviroment_conditions_block",
@@ -16,6 +16,14 @@
     "arrange": "minimum_columns",
     "width": 58,
     "widgets": [ "spacebar_separator_2", "enviroment_conditions_block_2" ]
+  },
+  {
+    "id": "snow_depth_desc",
+    "type": "widget",
+    "label": "Snow",
+    "style": "text",
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ],
+    "copy-from": "snow_depth_desc"
   },
   {
     "id": "enviroment_conditions_block_2",
