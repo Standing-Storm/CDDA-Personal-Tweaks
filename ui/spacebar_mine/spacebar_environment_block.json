@@ -6,7 +6,16 @@
     "label": "wind/sun/radiation/snow",
     "arrange": "rows",
     "width": 58,
-    "widgets": [ "wind_desc", "sundial_label_layout", "rad_badge_desc", "snow_depth_desc" ]
+    "widgets": [ "wind_snow_descs", "sundial_label_layout", "rad_badge_desc" ]
+  },
+  {
+    "id": "wind_snow_descs",
+    "type": "widget",
+    "style": "layout",
+    "label": "1_enviroment block",
+    "arrange": "columns",
+    "width": 58,
+    "widgets": [ "wind_desc", "snow_depth_desc" ]
   },
   {
     "id": "spacebar_mine_enviroment_conditions_block",
