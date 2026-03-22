@@ -135,7 +135,7 @@
     "text_align": "left",
     "width": 18,
     "arrange": "rows",
-    "widgets": [ "spacebar_mine_move_remainder" ]
+    "widgets": [ "spacebar_mine_move_remainder", "spacebar_separator_2", "vehicle_battery_desc_label" ]
   },
   {
     "id": "spacebar_mine_move_remainder",
