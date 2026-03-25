@@ -4,5 +4,12 @@
     "id": "default",
     "copy-from": "default",
     "feature_flag_settings": { "extend": { "blacklist": [ "OLD_LAB" ] } }
+  },
+  {
+    "type": "region_settings_city",
+    "id": "default",
+    "copy-from": "default",
+    "city_size": 12,
+    "city_spacing": 7
   }
 ]
