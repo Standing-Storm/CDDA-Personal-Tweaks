@@ -12,7 +12,12 @@
         "true_eocs": [
           {
             "id": "EOC_HIT_BY_BOOMER_CHANCE_FILTHY_AFFECT",
-            "effect": [ { "if": { "math": [ "rand(2) >= 1" ] }, "then": [ { "npc_set_flag": "FILTHY" } ] } ]
+            "effect": [
+              {
+                "if": { "and": [ { "math": [ "rand(2) >= 1" ] }, { "not": { "npc_has_flag": "INTEGRATED" } } ] },
+                "then": [ { "npc_set_flag": "FILTHY" } ]
+              }
+            ]
           }
         ]
       }
