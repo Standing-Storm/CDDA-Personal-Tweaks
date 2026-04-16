@@ -8,6 +8,6 @@
     "min_max_zlevel": [ 0, 0 ],
     "sym": "X",
     "color": "light_red",
-    "autonote": true
+    "autonote_visibility": "details"
   }
 ]
