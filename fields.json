@@ -1,0 +1,63 @@
+[
+  {
+    "id": "fd_candle_tainted_smoke",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "swirl of caustic smoke",
+        "translucency": 5,
+        "effects": [
+          {
+            "effect_id": "effect_candle_tainted",
+            "dangerous": true,
+            "intensity": 1,
+            "min_duration": "1 minutes",
+            "max_duration": "3 minutes",
+            "is_environmental": true,
+            "immunity_data": { "body_part_env_resistance": [ [ "mouth", 3 ] ], "flags": [ "INHALED_TOXIN_IMMUNE" ] }
+          }
+        ]
+      },
+      {
+        "name": "caustic smoke",
+        "color": "light_gray",
+        "effects": [
+          {
+            "effect_id": "effect_candle_tainted",
+            "dangerous": true,
+            "intensity": 1,
+            "min_duration": "2 minutes",
+            "max_duration": "5 minutes",
+            "is_environmental": true,
+            "immunity_data": { "body_part_env_resistance": [ [ "mouth", 3 ] ], "flags": [ "INHALED_TOXIN_IMMUNE" ] }
+          }
+        ]
+      },
+      {
+        "name": "thick caustic smoke",
+        "color": "dark_gray",
+        "effects": [
+          {
+            "effect_id": "effect_candle_tainted",
+            "dangerous": true,
+            "intensity": 1,
+            "min_duration": "4 minutes",
+            "max_duration": "10 minutes",
+            "is_environmental": true,
+            "immunity_data": { "body_part_env_resistance": [ [ "mouth", 3 ] ], "flags": [ "INHALED_TOXIN_IMMUNE" ] }
+          }
+        ]
+      }
+    ],
+    "decay_amount_factor": 5,
+    "percent_spread": 250,
+    "outdoor_age_speedup": "6 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "35 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_smoke"
+  }
+]

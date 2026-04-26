@@ -1,0 +1,9 @@
+[
+  {
+    "id": "emit_candle_tainted_lit",
+    "type": "emit",
+    "field": "fd_candle_tainted_smoke",
+    "intensity": 2,
+    "chance": 3
+  }
+]

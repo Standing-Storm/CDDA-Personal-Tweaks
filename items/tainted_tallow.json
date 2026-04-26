@@ -1,0 +1,61 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "tallow_tainted_keep",
+    "looks_like": "tallow",
+    "name": { "str_sp": "tainted tallow" },
+    "category": "chems",
+    "weight": "128 g",
+    "color": "light_gray",
+    "use_action": [ "POISON" ],
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -10,
+    "calories": 18,
+    "description": "A smooth grayish block of cleaned and rendered monster fat.  It will remain 'fresh' for a very long time, and can be used as an ingredient in many projects.  You could eat it, but it will poison you.",
+    "price": "1 cent",
+    "price_postapoc": "12 cent",
+    "//": "Not for use in edible/foodsafe recipes.  Inefficiency is handled by tainted tallow recipe requiring 200% as much materials input as regular tallow recipe.",
+    "material": [ "flesh" ],
+    "volume": "62 ml",
+    "fun": -18,
+    "vitamins": [ [ "meat_allergen", 1 ] ]
+  },
+  {
+    "id": "candle_tainted",
+    "copy-from": "candle",
+    "type": "ITEM",
+    "ascii_picture": "candle",
+    "name": { "str": "tainted candle" },
+    "looks_like": "candle",
+    "description": "A thick wax candle made from tainted tallow.  It doesn't provide very much light, but it can burn for quite a long time.  You'll need a lighter or matches to light it, though you're honestly not sure that's a good idea.",
+    "use_action": {
+      "target": "candle_tainted_lit",
+      "msg": "You light the candle.",
+      "need_fire": 1,
+      "menu_text": { "str": "Light", "ctxt": "verb" },
+      "type": "transform"
+    }
+  },
+  {
+    "id": "candle_tainted_lit",
+    "type": "ITEM",
+    "ascii_picture": "candle",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "burning tainted candle" },
+    "description": "A thick wax candle.  It doesn't provide very much light, but it can burn for quite a long time.  This candle is lit.  The smoke it produces smells incredibly foul.",
+    "emits": [ "emit_candle_tainted_lit" ],
+    "use_action": [
+      { "type": "firestarter", "moves": 500, "moves_slow": 6000 },
+      {
+        "ammo_scale": 0,
+        "target": "candle_tainted",
+        "msg": "The candle winks out.",
+        "menu_text": "Extinguish",
+        "type": "transform"
+      }
+    ],
+    "copy-from": "candle_lit"
+  }
+]
