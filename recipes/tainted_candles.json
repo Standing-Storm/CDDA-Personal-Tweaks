@@ -1,0 +1,16 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "candle_tainted",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CONTAIN", "level": 1 } ],
+    "flags": [ "FULL_MAGAZINE" ],
+    "tools": [ [ [ "lighter", 5 ], [ "ref_lighter", 5 ], [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ [ [ "tallow_tainted_keep", 20 ] ], [ [ "cordage_short", 1, "LIST" ] ] ]
+  }
+]

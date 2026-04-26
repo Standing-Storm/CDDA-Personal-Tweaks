@@ -1,0 +1,25 @@
+[
+  {
+    "type": "effect_type",
+    "id": "effect_candle_tainted",
+    "name": [ "Breathed in caustic smoke" ],
+    "desc": [ "The smoke from that candle was absolutely foul." ],
+    "miss_messages": [ [ "You cough.", 1 ] ],
+    "rating": "bad",
+    "pain_sizing": true,
+    "hurt_sizing": true,
+    "base_mods": {
+      "per_mod": [ -1 ],
+      "health_amount": [ -1 ],
+      "health_min": [ -1 ],
+      "health_chance": [ 150 ],
+      "pain_min": [ 2 ],
+      "pain_chance": [ 150, 900 ],
+      "speed_mod": [ -10 ],
+      "cough_chance": [ 10 ]
+    },
+    "show_in_info": true,
+    "limb_score_mods": [ { "limb_score": "breathing", "modifier": 0.6 } ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ]
+  }
+]
