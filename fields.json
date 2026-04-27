@@ -6,10 +6,10 @@
       {
         "name": "swirl of caustic smoke",
         "translucency": 5,
+        "dangerous": true,
         "effects": [
           {
             "effect_id": "effect_candle_tainted",
-            "dangerous": true,
             "intensity": 1,
             "min_duration": "1 minutes",
             "max_duration": "3 minutes",
@@ -21,10 +21,10 @@
       {
         "name": "caustic smoke",
         "color": "light_gray",
+        "dangerous": true,
         "effects": [
           {
             "effect_id": "effect_candle_tainted",
-            "dangerous": true,
             "intensity": 1,
             "min_duration": "2 minutes",
             "max_duration": "5 minutes",
@@ -36,10 +36,10 @@
       {
         "name": "thick caustic smoke",
         "color": "dark_gray",
+        "dangerous": true,
         "effects": [
           {
             "effect_id": "effect_candle_tainted",
-            "dangerous": true,
             "intensity": 1,
             "min_duration": "4 minutes",
             "max_duration": "10 minutes",
