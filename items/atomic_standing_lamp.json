@@ -48,7 +48,7 @@
     "damage_modifier": 10,
     "looks_like": "atomic_lamp",
     "breaks_into": [
-      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "cable", "count": [ 1, 4 ] },
       { "item": "steel_chunk", "count": [ 0, 2 ] },
       { "item": "scrap", "count": [ 1, 2 ] }
     ],

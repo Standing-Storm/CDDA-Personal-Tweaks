@@ -20,7 +20,7 @@
         { "item": "solar_cell_v2", "count": [ 1, 5 ] },
         { "item": "scrap", "count": [ 3, 6 ] },
         { "item": "amplifier", "prob": 50 },
-        { "item": "cable", "charges": [ 10, 15 ] },
+        { "item": "cable", "count": [ 10, 15 ] },
         { "item": "power_supply", "prob": 50 },
         { "item": "scrap", "count": [ 4, 6 ] },
         { "item": "plastic_chunk", "count": [ 1, 2 ] },
