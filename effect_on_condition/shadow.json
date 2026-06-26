@@ -6,7 +6,7 @@
     "global": true,
     "run_for_npcs": false,
     "condition": {
-      "and": [ { "math": [ "time_since('cataclysm', 'unit':'days') >= 180" ] }, { "math": [ "Lieutenants_active", "<", "1" ] } ]
+      "and": [ { "math": [ "time_since('cataclysm', 'unit':'days') >= 14" ] }, { "math": [ "Lieutenants_active", "<", "1" ] } ]
     },
     "//2": "Integer value instead of bool, so more can be added later and use math for conditions",
     "effect": [ { "math": [ "Lieutenants_active", "=", "1" ] }, { "math": [ "Shadow_Lurking", "=", "1" ] } ],
