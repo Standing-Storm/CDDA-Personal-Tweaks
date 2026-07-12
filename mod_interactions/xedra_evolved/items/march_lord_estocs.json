@@ -1,0 +1,26 @@
+[
+  {
+    "id": "spring_lord_estoc",
+    "copy-from": "spring_lord_estoc",
+    "looks_like": "qt_estoc",
+    "type": "ITEM"
+  },
+  {
+    "id": "summer_lord_estoc",
+    "copy-from": "summer_lord_estoc",
+    "looks_like": "qt_estoc",
+    "type": "ITEM"
+  },
+  {
+    "id": "autumn_lord_estoc",
+    "copy-from": "autumn_lord_estoc",
+    "looks_like": "qt_estoc",
+    "type": "ITEM"
+  },
+  {
+    "id": "winter_lord_estoc",
+    "copy-from": "winter_lord_estoc",
+    "looks_like": "qt_estoc",
+    "type": "ITEM"
+  }
+]
