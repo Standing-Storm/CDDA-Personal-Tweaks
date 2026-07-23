@@ -43,6 +43,16 @@
           },
           { "value": "SPEED", "add": { "math": [ "clamp( ( (u_val('dexterity') - 10) / 2 ), 0,10)" ] } }
         ]
+      },
+      {
+        "condition": {
+          "and": [
+            { "u_has_wielded_with_flag": "REACH3" },
+            { "math": [ "u_monsters_nearby('radius': 1) > 0" ] },
+            { "or": [ { "u_is_on_terrain": "t_gutter" }, { "u_is_on_terrain": "t_gutter_drop" } ] }
+          ]
+        },
+        "values": [ { "value": "MELEE_RANGE_MODIFIER", "add": 1 } ]
       }
     ]
   },
