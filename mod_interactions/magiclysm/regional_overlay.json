@@ -10,12 +10,6 @@
   },
   {
     "type": "map_extra_collection",
-    "id": "road",
-    "copy-from": "road",
-    "extend": { "extras": [ [ "mx_XEDRA_truck", 2 ] ] }
-  },
-  {
-    "type": "map_extra_collection",
     "id": "build",
     "copy-from": "build",
     "extend": { "extras": [ [ "mx_exocrash_1", 2 ], [ "mx_exocrash_2", 2 ] ] }
