@@ -49,7 +49,9 @@
           "and": [
             { "u_has_wielded_with_flag": "REACH3" },
             { "math": [ "u_monsters_nearby('radius': 1) > 0" ] },
-            { "or": [ { "u_is_on_terrain": "t_gutter" }, { "u_is_on_terrain": "t_gutter_drop" } ] }
+            {
+              "or": [ { "u_is_on_terrain": "t_gutter" }, { "u_is_on_terrain": "t_gutter_drop" }, { "u_is_on_terrain": "t_glass_railing" } ]
+            }
           ]
         },
         "values": [ { "value": "MELEE_RANGE_MODIFIER", "add": 1 } ]
