@@ -68,5 +68,12 @@
     "//": "Sets the scale evolution. 2 is half as fast, 0.5 is twice as fast.",
     "stype": "float",
     "value": 3.0
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "DISABLE_ANIMAL_CLASH",
+    "//": "Disable additional spawn of large groups of monsters fighting each other on swamps.",
+    "stype": "bool",
+    "value": true
   }
 ]
