@@ -1,6 +1,12 @@
 [
   {
     "type": "effect_type",
+    "id": "effect_bio_hydraulics_active",
+    "rating": "good",
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "add": { "math": [ "35 - u_bio_hydraulics_strength_adjustment" ] } } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "post_healing_injection",
     "name": [ "Haggard and drawn" ],
     "desc": [ "The performance enhancing drugs slowly wear off and leave you in a state of existential grade hangover." ],
