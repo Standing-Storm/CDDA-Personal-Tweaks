@@ -6,34 +6,6 @@
     "hp": 250,
     "attack_cost": 140,
     "morale": 80,
-    "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY", "PLAYER_CLOSE" ],
-    "weakpoints": [
-      {
-        "name": "the inside of the mouth",
-        "armor_penalty": { "physical": 20 },
-        "coverage": 3,
-        "damage_mult": { "all": 1.5 },
-        "crit_mult": { "all": 1.5 }
-      },
-      {
-        "name": "the eye",
-        "armor_penalty": { "physical": 20 },
-        "coverage": 1,
-        "damage_mult": { "all": 1.5 },
-        "crit_mult": { "all": 1.5 },
-        "effects": [
-          { "effect": "blind", "duration": [ 1, 3 ], "chance": 50, "message": "The %s is blinded!", "damage_required": [ 1, 40 ] },
-          {
-            "effect": "blind",
-            "permanent": true,
-            "chance": 20,
-            "message": "The %s's eyes are obliterated!",
-            "damage_required": [ 30, 199 ]
-          }
-        ]
-      }
-    ],
-    "families": [ "prof_intro_biology", "prof_wp_large_mammal" ],
     "special_attacks": [
       [ "EAT_FOOD", 20 ],
       {
@@ -63,8 +35,7 @@
         "max_mul": 1.1,
         "infection_chance": 2
       }
-    ],
-    "armor": { "bash": 12, "cut": 12, "bullet": 8, "stab": 8, "electric": 1 }
+    ]
   },
   {
     "id": "mon_zombear_acidic",
