@@ -1,0 +1,44 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "Cabin_Lapin",
+    "copy-from": "Cabin_Lapin",
+    "occurrences": [ 10, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "mil_base",
+    "copy-from": "mil_base",
+    "occurrences": [ 3, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "irradiator",
+    "copy-from": "irradiator",
+    "occurrences": [ 8, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "hub_01",
+    "copy-from": "hub_01",
+    "occurrences": [ 20, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Isherwood Farm Mutable",
+    "copy-from": "Isherwood Farm Mutable",
+    "occurrences": [ 20, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "New England Church Retreat",
+    "copy-from": "New England Church Retreat",
+    "occurrences": [ 15, 100 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "evac_center",
+    "copy-from": "evac_center",
+    "occurrences": [ 50, 100 ]
+  }
+]
