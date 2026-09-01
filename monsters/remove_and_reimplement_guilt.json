@@ -1,0 +1,67 @@
+[
+  {
+    "//": "This doesn't account for Dinomod hatchlings because I don't play with Dinomod",
+    "type": "MONSTER",
+    "id": "mon_zombie_waif",
+    "copy-from": "mon_zombie_waif",
+    "delete": { "flags": [ "GUILT_CHILD" ] },
+    "extend": { "flags": [ "CAUSES_CHILD_GUILT_MONSTER" ] }
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_mutant_alpha_boss",
+    "copy-from": "mon_mutant_alpha_boss",
+    "delete": { "flags": [ "GUILT_CHILD" ] },
+    "extend": { "flags": [ "CAUSES_CHILD_GUILT_MONSTER" ] }
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_zombie_child",
+    "copy-from": "mon_zombie_child",
+    "delete": { "flags": [ "GUILT_CHILD" ] },
+    "extend": { "flags": [ "CAUSES_CHILD_GUILT_MONSTER" ] }
+  },
+  {
+    "id": "death_guilt",
+    "type": "SPELL",
+    "name": { "str": "Death Guilt", "//~": "NO_I18N" },
+    "description": { "str": "Feeling guilty over killing a monster.", "//~": "NO_I18N" },
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_CAUSE_GUILT",
+    "min_range": 20,
+    "max_range": 20
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CAUSE_GUILT",
+    "condition": {
+      "and": [
+        { "not": { "u_has_flag": "PSYCHOPATH" } },
+        { "not": { "u_has_flag": "NUMB" } },
+        { "not": { "u_has_flag": "PRED3" } },
+        { "not": { "u_has_flag": "PRED4" } }
+      ]
+    },
+    "effect": [
+      {
+        "u_add_morale": "morale_killed_monster",
+        "bonus": { "math": [ "-15 + min( (u_guilt_causing_child_monster_kills / 25), 10)" ] },
+        "max_bonus": -75,
+        "duration": "24 hours",
+        "decay_start": "12 hours"
+      },
+      { "u_message": "You feel guilty for killing the <npc_name>." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GUILT_REPLACEMENT_TRACKER",
+    "eoc_type": "EVENT",
+    "required_event": "character_kills_monster",
+    "condition": { "and": [ "u_is_avatar", { "npc_has_flag": "CAUSES_CHILD_GUILT_MONSTER" } ] },
+    "effect": [ { "math": [ "u_guilt_causing_child_monster_kills += 1" ] } ]
+  }
+]
