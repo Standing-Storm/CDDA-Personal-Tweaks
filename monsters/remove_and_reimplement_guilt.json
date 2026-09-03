@@ -139,7 +139,7 @@
     },
     "effect": [
       { "math": [ "_guilt_variable = 3" ] },
-      { "if": { "u_has_trait": "PACIFIST" }, "then": { "math": [ "_guilt_variable += 4" ] } },
+      { "if": { "u_has_trait": "PACIFIST" }, "then": { "math": [ "_guilt_variable += 25" ] } },
       {
         "if": { "x_in_y_chance": { "x": { "math": [ "_guilt_variable" ] }, "y": 200 } },
         "then": { "u_add_effect": { "effect": "effect_death_guilt", "duration": "24 hours" } }
@@ -167,7 +167,7 @@
     },
     "effect": [
       { "math": [ "_guilt_variable = 1" ] },
-      { "if": { "u_has_trait": "PACIFIST" }, "then": { "math": [ "_guilt_variable += 2" ] } },
+      { "if": { "u_has_trait": "PACIFIST" }, "then": { "math": [ "_guilt_variable += 10" ] } },
       { "if": { "npc_has_flag": "CAUSES_CHILD_GUILT_MONSTER" }, "then": { "math": [ "_guilt_variable += 4" ] } },
       {
         "if": { "x_in_y_chance": { "x": { "math": [ "_guilt_variable" ] }, "y": 200 } },
