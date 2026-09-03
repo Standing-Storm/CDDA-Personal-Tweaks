@@ -206,7 +206,7 @@
       { "u_lose_effect": "effect_death_guilt" },
       {
         "if": { "x_in_y_chance": { "x": { "math": [ "u_effect_intensity('effect_acquired_death_guilt)" ] }, "y": 10 } },
-        "then": [ { "u_add_effect": { "effect": "effect_long_term_desensitization", "duration": "365 days" } } ]
+        "then": [ { "u_add_effect": { "effect": "effect_long_term_desensitization", "duration": "PERMANENT" } } ]
       }
     ]
   },
