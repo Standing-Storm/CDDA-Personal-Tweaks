@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gold_small",
+    "copy-from": "gold_small",
+    "type": "ITEM",
+    "price_postapoc": "10 cent"
+  },
+  {
+    "id": "1l_gold",
+    "copy-from": "1l_gold",
+    "type": "ITEM",
+    "price_postapoc": "12 USD"
+  },
+  {
+    "id": "5l_gold",
+    "copy-from": "5l_gold",
+    "type": "ITEM",
+    "price_postapoc": "60 USD"
+  },
+  {
+    "id": "10l_gold",
+    "copy-from": "10l_gold",
+    "type": "ITEM",
+    "price_postapoc": "120 USD"
+  },
+  {
+    "id": "silver_small",
+    "copy-from": "silver_small",
+    "type": "ITEM",
+    "price_postapoc": "2 cent"
+  }
+]
