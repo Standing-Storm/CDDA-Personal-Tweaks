@@ -35,7 +35,7 @@
     "name": [ "" ],
     "desc": [ "" ],
     "rating": "bad",
-    "encahntments": [ { "condition": "ALWAYS", "mutations": [ "BADTEMPER" ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "mutations": [ "BADTEMPER" ] } ]
   },
   {
     "type": "effect_type",
@@ -43,7 +43,7 @@
     "name": [ "" ],
     "desc": [ "" ],
     "rating": "bad",
-    "encahntments": [ { "condition": "ALWAYS", "mutations": [ "JITTERY" ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "mutations": [ "JITTERY" ] } ]
   },
   {
     "type": "effect_type",
@@ -51,7 +51,7 @@
     "name": [ "" ],
     "desc": [ "" ],
     "rating": "bad",
-    "encahntments": [ { "condition": "ALWAYS", "mutations": [ "INSOMNIA" ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "mutations": [ "INSOMNIA" ] } ]
   },
   {
     "type": "effect_type",
@@ -59,7 +59,7 @@
     "name": [ "" ],
     "desc": [ "" ],
     "rating": "bad",
-    "encahntments": [ { "condition": "ALWAYS", "mutations": [ "MOODSWINGS" ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "mutations": [ "MOODSWINGS" ] } ]
   },
   {
     "//": "This doesn't account for Dinomod hatchlings because I don't play with Dinomod",
