@@ -5,5 +5,12 @@
     "id": "butter",
     "copy-from": "butter",
     "fun": -1
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "pine_tea",
+    "copy-from": "pine_tea",
+    "vitamins": [ [ "vitC", "23400 μg" ] ]
   }
 ]
