@@ -39,7 +39,6 @@
   },
   {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "id": "spear_copper",
     "copy-from": "spear_copper",
     "extend": { "flags": [ "DURABLE_MELEE" ] }
